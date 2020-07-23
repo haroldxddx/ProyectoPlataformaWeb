@@ -75,6 +75,113 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Prueba.aspx" />
+    <Content Include="Vista\css\animate.css" />
+    <Content Include="Vista\css\animate.min.css" />
+    <Content Include="Vista\css\bootstrap-touch-slider.css" />
+    <Content Include="Vista\css\bootstrap.min.css" />
+    <Content Include="Vista\css\colors.css" />
+    <Content Include="Vista\css\custom.css" />
+    <Content Include="Vista\css\flaticon.css" />
+    <Content Include="Vista\css\font-awesome.css" />
+    <Content Include="Vista\css\font-awesome.min.css" />
+    <Content Include="Vista\css\owl.carousel.css" />
+    <Content Include="Vista\css\prettyPhoto.css" />
+    <Content Include="Vista\css\pr_loading.css" />
+    <Content Include="Vista\css\responsive.css" />
+    <Content Include="Vista\css\timeline.min.css" />
+    <Content Include="Vista\css\versions.css" />
+    <Content Include="Vista\fonts\Flaticon.svg" />
+    <Content Include="Vista\fonts\fontawesome-webfont.svg" />
+    <Content Include="Vista\images\about_02.jpg" />
+    <Content Include="Vista\images\about_03.jpg" />
+    <Content Include="Vista\images\ajax-loader.gif" />
+    <Content Include="Vista\images\apple-touch-icon.png" />
+    <Content Include="Vista\images\arrow-left.svg" />
+    <Content Include="Vista\images\arrow-right.svg" />
+    <Content Include="Vista\images\author.jpg" />
+    <Content Include="Vista\images\avatar-01.jpg" />
+    <Content Include="Vista\images\avatar-02.jpg" />
+    <Content Include="Vista\images\avatar-03.jpg" />
+    <Content Include="Vista\images\banner.jpg" />
+    <Content Include="Vista\images\bg.png" />
+    <Content Include="Vista\images\blog_1.jpg" />
+    <Content Include="Vista\images\blog_2.jpg" />
+    <Content Include="Vista\images\blog_3.jpg" />
+    <Content Include="Vista\images\blog_4.jpg" />
+    <Content Include="Vista\images\blog_5.jpg" />
+    <Content Include="Vista\images\blog_6.jpg" />
+    <Content Include="Vista\images\blog_single.jpg" />
+    <Content Include="Vista\images\favicon.ico" />
+    <Content Include="Vista\images\img-01.jpg" />
+    <Content Include="Vista\images\img-02.jpg" />
+    <Content Include="Vista\images\img-03.jpg" />
+    <Content Include="Vista\images\img-04.jpg" />
+    <Content Include="Vista\images\logo.png" />
+    <Content Include="Vista\images\logo_01.png" />
+    <Content Include="Vista\images\logo_02.png" />
+    <Content Include="Vista\images\logo_03.png" />
+    <Content Include="Vista\images\logo_04.png" />
+    <Content Include="Vista\images\logo_05.png" />
+    <Content Include="Vista\images\logo_06.png" />
+    <Content Include="Vista\images\parallax_04.jpg" />
+    <Content Include="Vista\images\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="Vista\images\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="Vista\images\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="Vista\images\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="Vista\images\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="Vista\images\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="Vista\images\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="Vista\images\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="Vista\images\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="Vista\images\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="Vista\images\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="Vista\images\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="Vista\images\prettyPhoto\default\default_thumb.png" />
+    <Content Include="Vista\images\prettyPhoto\default\loader.gif" />
+    <Content Include="Vista\images\prettyPhoto\default\sprite.png" />
+    <Content Include="Vista\images\prettyPhoto\default\sprite_next.png" />
+    <Content Include="Vista\images\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="Vista\images\prettyPhoto\default\sprite_x.png" />
+    <Content Include="Vista\images\prettyPhoto\default\sprite_y.png" />
+    <Content Include="Vista\images\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="Vista\images\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="Vista\images\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="Vista\images\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="Vista\images\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="Vista\images\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="Vista\images\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="Vista\images\prettyPhoto\facebook\loader.gif" />
+    <Content Include="Vista\images\prettyPhoto\facebook\sprite.png" />
+    <Content Include="Vista\images\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Vista\images\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Vista\images\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="Vista\images\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Vista\images\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Vista\images\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="Vista\images\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="Vista\images\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="Vista\images\prettyPhoto\light_square\loader.gif" />
+    <Content Include="Vista\images\prettyPhoto\light_square\sprite.png" />
+    <Content Include="Vista\images\search-icon.png" />
+    <Content Include="Vista\images\slider-01.jpg" />
+    <Content Include="Vista\images\slider-02.jpg" />
+    <Content Include="Vista\images\slider-03.jpg" />
+    <Content Include="Vista\images\team-01.png" />
+    <Content Include="Vista\images\team-02.png" />
+    <Content Include="Vista\images\team-03.png" />
+    <Content Include="Vista\images\team-04.png" />
+    <Content Include="Vista\images\testi_01.png" />
+    <Content Include="Vista\images\testi_02.png" />
+    <Content Include="Vista\images\testi_03.png" />
+    <Content Include="Vista\images\world-map.png" />
+    <Content Include="Vista\index.html" />
+    <Content Include="Vista\js\01-custom-places-example.js" />
+    <Content Include="Vista\js\all.js" />
+    <Content Include="Vista\js\custom.js" />
+    <Content Include="Vista\js\mapsed.js" />
+    <Content Include="Vista\js\modernizer.js" />
+    <Content Include="Vista\js\timeline.min.js" />
+    <Content Include="Vista\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +196,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="Vista\fonts\Flaticon.eot" />
+    <Content Include="Vista\fonts\Flaticon.ttf" />
+    <Content Include="Vista\fonts\Flaticon.woff" />
+    <Content Include="Vista\fonts\fontawesome-webfont.eot" />
+    <Content Include="Vista\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Vista\fonts\fontawesome-webfont.woff" />
+    <Content Include="Vista\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Vista\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -100,7 +215,6 @@
     <Folder Include="Datos\" />
     <Folder Include="Entidades\" />
     <Folder Include="Logica\" />
-    <Folder Include="Vista\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
