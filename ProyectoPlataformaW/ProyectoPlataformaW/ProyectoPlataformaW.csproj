@@ -97,7 +97,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Datos\" />
+    <Folder Include="Entidades\" />
     <Folder Include="Logica\" />
+    <Folder Include="Vista\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
