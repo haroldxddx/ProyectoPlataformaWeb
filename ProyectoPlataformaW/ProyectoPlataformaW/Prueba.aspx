@@ -10,7 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            puto el que lo lea :v</div>
+            puto el que lo lea :v<br />
+            desputo el que edite </div>
     </form>
 </body>
 </html>

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index2.aspx.cs" Inherits="ProyectoPlataformaW.index2" %>
+
+<!DOCTYPE html>
 <html lang="en">
 
     <!-- Basic -->
@@ -750,4 +752,4 @@
 		});
 	</script>
 </body>
-</html>
+
