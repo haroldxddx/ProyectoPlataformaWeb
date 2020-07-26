@@ -2,9 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-  <!DOCTYPE html>
+    <!DOCTYPE html>
   <html lang="en">
-  <head runat="server">
+  <head >
      <meta charset="utf-8" />
   <meta http-equiv="Content-Type" content="text/html"/>
 
@@ -49,7 +49,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <div id="home" class="first-section" style="background-image:url('images/slider-01.jpg');">
+          <div id="home" class="first-section" style="background-image:url('Vista/images/slider-01.jpg');">
             <div class="dtab">
               <div class="container">
                 <div class="row">
@@ -68,7 +68,7 @@
           </div><!-- end section -->
         </div>
         <div class="carousel-item">
-          <div id="home" class="first-section" style="background-image:url('images/slider-02.jpg');">
+          <div id="home" class="first-section" style="background-image:url('Vista/images/slider-02.jpg');">
             <div class="dtab">
               <div class="container">
                 <div class="row">
@@ -87,7 +87,7 @@
           </div><!-- end section -->
         </div>
         <div class="carousel-item">
-          <div id="home" class="first-section" style="background-image:url('images/slider-03.jpg');">
+          <div id="home" class="first-section" style="background-image:url('Vista/images/slider-03.jpg');">
             <div class="dtab">
               <div class="container">
                 <div class="row">
