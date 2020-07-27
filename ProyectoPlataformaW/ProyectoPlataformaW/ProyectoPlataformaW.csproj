@@ -79,6 +79,8 @@
     <Content Include="Imagenes\logo-email-2-g-suite.png" />
     <Content Include="inicio.aspx" />
     <Content Include="inicioAdmin.aspx" />
+    <Content Include="inicioEstu.aspx" />
+    <Content Include="Vista\course-grid-4.html" />
     <Content Include="Vista\index2.aspx" />
     <Content Include="Prueba.aspx" />
     <Content Include="Vista\css\animate.css" />
@@ -207,12 +209,26 @@
     <Compile Include="inicioAdmin.aspx.designer.cs">
       <DependentUpon>inicioAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="inicioEstu.aspx.cs">
+      <DependentUpon>inicioEstu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inicioEstu.aspx.designer.cs">
+      <DependentUpon>inicioEstu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPageAdmin.Master.cs">
       <DependentUpon>MasterPageAdmin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPageAdmin.Master.designer.cs">
       <DependentUpon>MasterPageAdmin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageEstud.Master.cs">
+      <DependentUpon>MasterPageEstud.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageEstud.Master.designer.cs">
+      <DependentUpon>MasterPageEstud.Master</DependentUpon>
     </Compile>
     <Compile Include="Vista\index2.aspx.cs">
       <DependentUpon>index2.aspx</DependentUpon>
@@ -250,6 +266,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MasterPageAdmin.Master" />
+    <Content Include="MasterPageEstud.Master" />
     <None Include="packages.config" />
     <Content Include="Vista\fonts\Flaticon.eot" />
     <Content Include="Vista\fonts\Flaticon.ttf" />

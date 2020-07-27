@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW
 {
 
 
-    public partial class Prueba
+    public partial class inicioEstu
     {
     }
 }
