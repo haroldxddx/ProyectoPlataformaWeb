@@ -74,6 +74,9 @@
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Imagenes\colegioestu.jpeg" />
+    <Content Include="Imagenes\colegioporteria %282%29.jpg" />
+    <Content Include="Imagenes\logo-email-2-g-suite.png" />
     <Content Include="inicio.aspx" />
     <Content Include="Vista\index2.aspx" />
     <Content Include="Prueba.aspx" />

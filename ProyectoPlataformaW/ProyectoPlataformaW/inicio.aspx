@@ -1,5 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MaterPage.Master" AutoEventWireup="true" CodeBehind="inicio.aspx.cs" Inherits="ProyectoPlataformaW.inicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            color: #FFFFFF;
+        }
+        .auto-style2 {
+            width: 98%;
+            height: 515px;
+        }
+        .auto-style3 {
+            width: 99%;
+            height: 370px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <!DOCTYPE html>
@@ -15,7 +28,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- Site Metas -->
-  <title>GLVschool</title>
+  <title>GlvClassroom</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -48,15 +61,15 @@
         <li data-target="#carouselExampleControls" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
+        <div class="carousel-item active" style="left: 0px; top: 0px; height: 402px">
           <div id="home" class="first-section" style="background-image:url('Vista/images/slider-01.jpg');">
             <div class="dtab">
               <div class="container">
                 <div class="row">
                   <div class="col-md-12 col-sm-12 text-right">
                     <div class="big-tagline">
-                      <h2><strong>GLVClasroom</strong> Una Comunidad de Puertas Abiertas</h2>
-                      <p class="lead">Somos el hogar de estudiantes, profesores y personal experto, una comunidad que representa con orgullo a la ciudad de Duitama.</p>
+                      <h2><strong>GLVClassroom</strong> Una Comunidad de Puertas Abiertas</h2>
+                      <p class="lead">&nbsp;Somos el hogar de estudiantes, profesores y personal experto, una comunidad que representa con orgullo a la ciudad de Duitama.</p>
                         <a href="#" class="hover-btn-new"><span>Contactanos</span></a>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href="#" class="hover-btn-new"><span>Ver mas</span></a>
@@ -67,7 +80,7 @@
             </div>
           </div><!-- end section -->
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item style="left: 0px; top: 0px; height: 402px">
           <div id="home" class="first-section" style="background-image:url('Vista/images/slider-02.jpg');">
             <div class="dtab">
               <div class="container">
@@ -143,15 +156,13 @@
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        <img src="Vista/images/about_02.jpg" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
+                        &nbsp;<img alt="colegioport" class="auto-style2" src="Imagenes/colegioporteria%20(2).jpg" /></div><!-- end media -->
                 </div><!-- end col -->
       </div>
       <div class="row align-items-center">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        <img src="Vista/images/about_03.jpg" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
+                        &nbsp;<img alt="estudiantes" class="auto-style3" src="Imagenes/colegioestu.jpeg" /></div><!-- end media -->
                 </div><!-- end col -->
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -168,70 +179,6 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    <section class="section lb page-section">
-    <div class="container">
-       <div class="section-title row text-center">
-                <div class="col-md-8 offset-md-2">
-                    <h3>Nuestra historia</h3>
-                    <p class="lead">-----</p>
-                </div>
-            </div><!-- end title -->
-      <div class="timeline">
-        <div class="timeline__wrap">
-          <div class="timeline__items">
-            <div class="timeline__item">
-              <div class="timeline__content img-bg-01">
-                <h2>2018</h2>
-                <p>------</p>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__content img-bg-02">
-                <h2>2015</h2>
-                <p>------.</p>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__content img-bg-03">
-                <h2>2014</h2>
-                <p>------</p>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__content img-bg-04">
-                <h2>2012</h2>
-                <p>--------.</p>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__content img-bg-01">
-                <h2>2010</h2>
-                <p>-------.</p>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__content img-bg-02">
-                <h2>2007</h2>
-                <p>--------</p>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__content img-bg-03">
-                <h2>2004</h2>
-                <p>-----</p>
-              </div>
-            </div>
-            <div class="timeline__item">
-              <div class="timeline__content img-bg-04">
-                <h2>2002</h2>
-                <p>------</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
   <div class="section cl">
     <div class="container">
       <div class="row text-left stat-wrap">
@@ -290,9 +237,9 @@
               <div class="col-lg-4 col-md-4 col-xs-12">
                   <div class="widget clearfix">
                       <div class="widget-title">
-                          <h3>About US</h3>
+                          <h3>Sobre Nosotros</h3>
                       </div>
-                      <p> Integer rutrum ligula eu dignissim laoreet. Pellentesque venenatis nibh sed tellus faucibus bibendum. Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.</p>
+                      <p> Colegio Guillermo Leon Valencia Duitama,Boyaca Cra7b#15a2</p>
           <div class="footer-right">
             <ul class="footer-links-soi">
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -308,7 +255,7 @@
       <div class="col-lg-4 col-md-4 col-xs-12">
                   <div class="widget clearfix">
                       <div class="widget-title">
-                          <h3>Information Link</h3>
+                          <h3>Informacion</h3>
                       </div>
                       <ul class="footer-links">
                           <li><a href="#">Home</a></li>
@@ -323,14 +270,14 @@
               <div class="col-lg-4 col-md-4 col-xs-12">
                   <div class="widget clearfix">
                       <div class="widget-title">
-                          <h3>Contact Details</h3>
+                          <h3>Contactos</h3>
                       </div>
 
                       <ul class="footer-links">
-                          <li><a href="mailto:#">info@yoursite.com</a></li>
+                          <li><a href="mailto:#">haroldzabala5@gmail.com&nbsp; kimzu11112@gmail.com&nbsp; mauriciorinconb.glv@gmail.com&nbsp; </a></li>
                           <li><a href="#">www.yoursite.com</a></li>
-                          <li>PO Box 16122 Collins Street West Victoria 8007 Australia</li>
-                          <li>+61 3 8376 6284</li>
+                          <li>Cra7b#15a2</li>
+                          <li>Duitama,Boyaca</li>
                       </ul><!-- end links -->
                   </div><!-- end clearfix -->
               </div><!-- end col -->
@@ -345,7 +292,7 @@
       <div class="container">
           <div class="footer-distributed">
               <div class="footer-center">
-                  <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">SmartEDU</a> Design By : <a href="https://html.design/">html design</a></p>
+                  <p class="footer-company-name">All Rights Reserved. © 2020 <a href="#"><span class="auto-style1">GlvClassroom</span></a> Design By : <a href="https://html.design/">G<span class="auto-style1">rupo 4</span></a></p>
               </div>
           </div>
       </div><!-- end container -->
