@@ -1,40 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageEstud.Master" AutoEventWireup="true" CodeBehind="inicioEstu.aspx.cs" Inherits="ProyectoPlataformaW.inicioEstu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="inicioProfesor.aspx.cs" Inherits="ProyectoPlataformaW.Vista.inicioProfesor" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style2 {
-            font-weight: 500;
-            font-size: 18px;
-            text-transform: capitalize;
-        }
-    .auto-style3 {
-        width: 338px;
-        height: 239px;
-    }
-    .auto-style4 {
-        width: 1140px;
-        height: 239px;
-    }
-    .auto-style5 {
-        width: 600px;
-        height: 238px;
-    }
-    .auto-style8 {
-        width: 900px;
-        height: 239px;
-    }
-    .auto-style9 {
-        width: 800px;
-        height: 239px;
-    }
-    .auto-style10 {
-        width: 1600px;
-        height: 239px;
-    }
-    .auto-style11 {
-        width: 626px;
-        height: 239px;
-    }
-    </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <!DOCTYPE html>
@@ -48,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>GlvClassroom</title>  
+    <title>SmartEDU - Education Responsive HTML5 Template</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -98,7 +63,7 @@
 	
 	<div class="all-title-box">
 		<div class="container text-center">
-			<h1>Materias<span class="m_1"></span></h1>
+			<h1>Cursos<span class="m_1"></span></h1>
 		</div>
 	</div>
 	
@@ -106,7 +71,7 @@
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
-                    <p class="lead">Seleccione la materia</p>
+                    <p class="lead">Listado de cursos en los que se dicta</p>
                 </div>
             </div><!-- end title -->
 
@@ -116,70 +81,76 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							&nbsp;<img alt="mathe" class="auto-style3" src="../Imagenes/math.jpg" /></div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="#" title="">M</a><a href="#"><span class="auto-style2">atematicas</span></a></h2>
+								<h2><a href="#" title="">Curso 806</a></h2>
 							</div>
 							<div class="course-desc">
-								<p>Decimo</p>
+								<p>Octavo</p>
 							</div>
 							<div class="course-rating">
-								<p>Seccion Basica Media</p>
+								<p>Seccion Basica Secundaria</p>
 															
 							</div>
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li>Profesor : Martin Rojas</li>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 32 Estudiantes</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
 							</ul>
 						</div>
 					</div>
                 </div><!-- end col -->
 
-                 <div class="col-lg-3 col-md-6 col-12">
+                <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							&nbsp;<img alt="espa" class="auto-style4" src="../Imagenes/esp.jpg" /></div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="#" title=""></a><a href="#"><span class="auto-style2">Español</span></a></h2>
+								<h2><a href="#" title="">Curso 702</a></h2>
 							</div>
 							<div class="course-desc">
-								<p>Decimo</p>
+								<p>Septimo</p>
 							</div>
 							<div class="course-rating">
-								<p>Seccion Basica Media</p>
+								<p>Seccion Basica Secundaria</p>
 															
 							</div>
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li>Profesor : Aurora Vargas</li>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 35 Student</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
 							</ul>
 						</div>
 					</div>
                 </div><!-- end col -->	
 				
-				 <div class="col-lg-3 col-md-6 col-12">
+				<div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							&nbsp;<img alt="qui" class="auto-style5" src="../Imagenes/quimica.jpg" /></div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="#" title=""></a><a href="#"><span class="auto-style2">Quimica</span></a></h2>
+								<h2><a href="#" title="">Curso 705</a></h2>
 							</div>
 							<div class="course-desc">
-								<p>Decimo</p>
+								<p>Septimo</p>
 							</div>
 							<div class="course-rating">
-								<p>Seccion Basica Media</p>
+								<p>Seccion Basica Secundaria</p>
 															
 							</div>
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li>Profesor : William Pita</li>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 29 Estudiantes</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
 							</ul>
 						</div>
 					</div>
@@ -188,22 +159,24 @@
 				<div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							&nbsp;<img alt="fisk" class="auto-style11" src="../Imagenes/fisica.jpg" /></div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="#" title="">F</a><a href="#"><span class="auto-style2">isica</span></a></h2>
+								<h2><a href="#" title="">Curso 908</a></h2>
 							</div>
 							<div class="course-desc">
-								<p>Decimo</p>
+								<p>Noveno</p>
 							</div>
 							<div class="course-rating">
-								<p>Seccion Basica Media</p>
+								<p>Seccion Basica Secundaria</p>
 															
 							</div>
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li>Profesor : Henry </li>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 36 Estudiantes</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
 							</ul>
 						</div>
 					</div>
@@ -213,25 +186,27 @@
 			<hr class="hr3"> 
 			
             <div class="row"> 
-				 <div class="col-lg-3 col-md-6 col-12">
+				<div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							&nbsp;<img alt="rel" class="auto-style10" src="../Imagenes/rel.jpg" /></div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="#" title=""></a><a href="#"><span class="auto-style2">Religion</span></a></h2>
+								<h2><a href="#" title="">Curso 901</a></h2>
 							</div>
 							<div class="course-desc">
-								<p>Decimo</p>
+								<p>Noveno</p>
 							</div>
 							<div class="course-rating">
-								<p>Seccion Basica Media</p>
+								<p>Seccion Basica Secundaria</p>
 															
 							</div>
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li>Profesor : Edward </li>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 34 Estudiantes</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
 							</ul>
 						</div>
 					</div>
@@ -240,51 +215,29 @@
 				<div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							&nbsp;<img alt="ingles" class="auto-style8" src="../Imagenes/ing.jpg" /></div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="#" title="">I</a><a href="#"><span class="auto-style2">ngles </span></a></h2>
+								<h2><a href="#" title="">Curso 811</a></h2>
 							</div>
 							<div class="course-desc">
-								<p>Decimo</p>
+								<p>Octavo</p>
 							</div>
 							<div class="course-rating">
-								<p>Seccion Basica Media</p>
+								<p>Seccion Basica Secundaria</p>
 															
 							</div>
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li>Profesor : Adriana Saenz</li>
+								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
+								<li><i class="fa fa-users" aria-hidden="true"></i> 37 Estudiantes</li>
+								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
 							</ul>
 						</div>
 					</div>
                 </div><!-- end col -->
 				
-				
-				 <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;<img alt="est" class="auto-style9" src="../Imagenes/estadistica.jpg" /></div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title=""></a><a href="#"><span class="auto-style2">Estadistica</span></a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Decimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : Dario Mesa</li>
-							</ul>
-						</div>
-					</div>
-                </div>
                 <!-- end col -->
 
                <!-- end col -->

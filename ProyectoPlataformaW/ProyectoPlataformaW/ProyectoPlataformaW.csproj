@@ -76,11 +76,17 @@
     </Content>
     <Content Include="Imagenes\colegioestu.jpeg" />
     <Content Include="Imagenes\colegioporteria %282%29.jpg" />
+    <Content Include="Imagenes\esp.jpg" />
+    <Content Include="Imagenes\estadistica.jpg" />
+    <Content Include="Imagenes\fisica.jpg" />
+    <Content Include="Imagenes\ing.jpg" />
     <Content Include="Imagenes\logo-email-2-g-suite.png" />
+    <Content Include="Imagenes\math.jpg" />
+    <Content Include="Imagenes\quimica.jpg" />
+    <Content Include="Imagenes\rel.jpg" />
     <Content Include="inicio.aspx" />
     <Content Include="inicioAdmin.aspx" />
     <Content Include="Vista\inicioEstu.aspx" />
-    <Content Include="Vista\index2.aspx" />
     <Content Include="Vista\css\animate.css" />
     <Content Include="Vista\css\animate.min.css" />
     <Content Include="Vista\css\bootstrap-touch-slider.css" />
@@ -180,7 +186,7 @@
     <Content Include="Vista\images\testi_02.png" />
     <Content Include="Vista\images\testi_03.png" />
     <Content Include="Vista\images\world-map.png" />
-    <Content Include="Vista\index.html" />
+    <Content Include="Vista\inicioProfesor.aspx" />
     <Content Include="Vista\js\01-custom-places-example.js" />
     <Content Include="Vista\js\all.js" />
     <Content Include="Vista\js\custom.js" />
@@ -207,6 +213,13 @@
     <Compile Include="inicioAdmin.aspx.designer.cs">
       <DependentUpon>inicioAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MasterPageProfesor.Master.cs">
+      <DependentUpon>MasterPageProfesor.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPageProfesor.Master.designer.cs">
+      <DependentUpon>MasterPageProfesor.Master</DependentUpon>
+    </Compile>
     <Compile Include="Vista\inicioEstu.aspx.cs">
       <DependentUpon>inicioEstu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -228,13 +241,6 @@
     <Compile Include="MasterPageEstud.Master.designer.cs">
       <DependentUpon>MasterPageEstud.Master</DependentUpon>
     </Compile>
-    <Compile Include="Vista\index2.aspx.cs">
-      <DependentUpon>index2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\index2.aspx.designer.cs">
-      <DependentUpon>index2.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MaterPage.Master.cs">
       <DependentUpon>MaterPage.Master</DependentUpon>
@@ -242,6 +248,13 @@
     </Compile>
     <Compile Include="MaterPage.Master.designer.cs">
       <DependentUpon>MaterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\inicioProfesor.aspx.cs">
+      <DependentUpon>inicioProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\inicioProfesor.aspx.designer.cs">
+      <DependentUpon>inicioProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>
@@ -251,6 +264,7 @@
   <ItemGroup>
     <Content Include="MasterPageAdmin.Master" />
     <Content Include="MasterPageEstud.Master" />
+    <Content Include="MasterPageProfesor.Master" />
     <None Include="packages.config" />
     <Content Include="Vista\fonts\Flaticon.eot" />
     <Content Include="Vista\fonts\Flaticon.ttf" />

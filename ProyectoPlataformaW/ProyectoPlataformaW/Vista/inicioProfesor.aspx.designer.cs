@@ -7,11 +7,11 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoPlataformaW
+namespace ProyectoPlataformaW.Vista
 {
 
 
-    public partial class index2
+    public partial class inicioProfesor
     {
     }
 }
