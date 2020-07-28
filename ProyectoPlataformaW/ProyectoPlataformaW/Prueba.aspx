@@ -193,8 +193,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_1.jpg" alt="" class="img-fluid">
-						</div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="#" title="">Engineering</a></h2>
@@ -224,8 +223,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_2.jpg" alt="" class="img-fluid">
-						</div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="#" title="">Hotel Management</a></h2>
@@ -255,8 +253,7 @@
 				<div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_3.jpg" alt="" class="img-fluid">
-						</div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="#" title="">Biotechnology</a></h2>
@@ -286,8 +283,7 @@
 				<div class="col-lg-3 col-md-6 col-12">
                    <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_4.jpg" alt="" class="img-fluid">
-						</div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="#" title="">Medical Sciences</a></h2>
@@ -321,8 +317,7 @@
 				<div class="col-lg-3 col-md-6 col-12">
                    <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_4.jpg" alt="" class="img-fluid">
-						</div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="#" title="">Medical Sciences</a></h2>
@@ -352,8 +347,7 @@
 				<div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_2.jpg" alt="" class="img-fluid">
-						</div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="#" title="">Hotel Management</a></h2>
@@ -383,8 +377,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_5.jpg" alt="" class="img-fluid">
-						</div>		
+							&nbsp;</div>		
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="#" title="">Finance</a></h2>
@@ -414,8 +407,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_6.jpg" alt="" class="img-fluid">
-						</div>
+							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="#" title="">Fashion Designing</a></h2>
@@ -448,24 +440,6 @@
     <div class="parallax section dbcolor">
         <div class="container">
             <div class="row logos">
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
-                </div>
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->

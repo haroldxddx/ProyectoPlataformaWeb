@@ -189,7 +189,7 @@
     <Content Include="Vista\js\mapsed.js" />
     <Content Include="Vista\js\modernizer.js" />
     <Content Include="Vista\js\timeline.min.js" />
-    <Content Include="Vista\style.css" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebService.asmx" />
