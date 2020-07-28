@@ -72,7 +72,6 @@
 				<!-- Nav tabs -->
 				                <ul class="nav nav-tabs">
                                     <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
-                                    
                                 </ul>
 				<!-- Tab panes -->
 				                <div class="tab-content">
@@ -159,7 +158,6 @@
                         &nbsp;<p>
                         &nbsp;<p>
                         &nbsp;<p>
-                      <pre>hello</pre>
                         <br />
                     
                 </asp:ContentPlaceHolder>
