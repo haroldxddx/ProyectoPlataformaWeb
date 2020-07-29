@@ -72,6 +72,7 @@
 				<!-- Nav tabs -->
 				                <ul class="nav nav-tabs">
                                     <li><a class="active" href="#Login" data-toggle="tab">Login</a></li>
+                                    
                                 </ul>
 				<!-- Tab panes -->
 				                <div class="tab-content">
@@ -92,12 +93,42 @@
                                                     <button type="submit" class="btn btn-light btn-radius btn-brd grd1">
                                                         Ingresar
                                                     </button>
-                                                    <a class="for-pwd" href="javascript:;">¿Olvidaste la contraseña?</a>
+                                                    <!-- <a class="for-pwd" href="inicioAdmin.aspx">¿Olvidaste la contraseña?</a> -->
+                                                    <ul class="nav nav-tabs">
+                                                         <a href="#Registration" data-toggle="tab">¿Olvidaste la contraseña?</a>
+                                                        </ul>
                                                 </div>
                                             </div>
+
                                         </form>
                                     </div>
+
+                   <div class="tab-pane" id="Registration">
+						<form role="form" class="form-horizontal">
+                            <asp:Label ID="Label2" runat="server" Text="Recuperacion de contraseña"></asp:Label>
+
+                            
+							<div class="form-group">
+								<div class="col-sm-12">
+                                    <asp:Label ID="Label1" runat="server" Text="Ingrese el correo electronico asociado con su cuenta"></asp:Label>
+									<input class="form-control" placeholder="Email" type="text">
+								</div>
+							</div>
+							
+							
+							<div class="row">							
+								<div class="col-sm-10">
+									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
+										Enviar
+									</button>
+									
+								</div>
+							</div>
+						</form>
+					</div>
+
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -124,6 +155,7 @@
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
                                     <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Ingresar</span></a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
