@@ -74,6 +74,7 @@
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="correoPrueba.aspx" />
     <Content Include="Imagenes\colegioestu.jpeg" />
     <Content Include="Imagenes\colegioporteria %282%29.jpg" />
     <Content Include="Imagenes\esp.jpg" />
@@ -200,7 +201,16 @@
     <Content Include="WebService.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="correoPrueba.aspx.cs">
+      <DependentUpon>correoPrueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="correoPrueba.aspx.designer.cs">
+      <DependentUpon>correoPrueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
+    <Compile Include="Datos\clRecuperarContra.cs" />
     <Compile Include="inicio.aspx.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

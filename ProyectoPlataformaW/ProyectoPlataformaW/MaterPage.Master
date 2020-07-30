@@ -111,7 +111,8 @@
 							<div class="form-group">
 								<div class="col-sm-12">
                                     <asp:Label ID="Label1" runat="server" Text="Ingrese el correo electronico asociado con su cuenta"></asp:Label>
-									<input class="form-control" placeholder="Email" type="text">
+									
+                                    <asp:TextBox ID="txtEmail" runat="server" class="form-control" placeholder="Email" type="text"></asp:TextBox>
 								</div>
 							</div>
 							
