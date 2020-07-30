@@ -118,10 +118,9 @@
 							
 							<div class="row">							
 								<div class="col-sm-10">
-									<button type="button" class="btn btn-light btn-radius btn-brd grd1">
-										Enviar
-									</button>
 									
+
+									<asp:Button ID="btnEnviar" class="btn btn-light btn-radius btn-brd grd1" runat="server" OnClick="btnEnviar_Click" Text="Enviar" />
 								</div>
 							</div>
 						</form>

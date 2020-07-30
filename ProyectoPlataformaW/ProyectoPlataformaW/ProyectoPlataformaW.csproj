@@ -200,6 +200,7 @@
     <Content Include="WebService.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\clConexion.cs" />
     <Compile Include="inicio.aspx.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -284,7 +285,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Datos\" />
     <Folder Include="Entidades\" />
     <Folder Include="Logica\" />
   </ItemGroup>
