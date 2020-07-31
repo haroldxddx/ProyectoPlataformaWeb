@@ -11,31 +11,30 @@ namespace ProyectoPlataformaW.Datos
     {
 
         MailMessage correos = new MailMessage();
-        //Permite agregar destinatarios mensajes etc
         SmtpClient envios = new SmtpClient();
-        //Verificacion de si el correo emisor y la contraseña son validos conectar a servidor de gmail
+        
 
         public void enviarCorreo(string correo)
         {
             try
             {
-                correos.To.Clear();//Limpiar campos despues de enviar un mensaje
-                correos.Body = ""; //Eliminar body y asunto
+                correos.To.Clear();
+                correos.Body = ""; 
                 correos.Subject = "";
-                correos.Body = "Hola! Buen dia, Usted solicito recuperar su contraseña: " + "1234";//Asignar mensaje 
-                correos.Subject = ("Recuperar Contraseña");//Asignar asunto
-                correos.IsBodyHtml = true;//
+                correos.Body = "Hola! Buen dia, Usted solicito recuperar su contraseña: " + "1234";
+                correos.Subject = ("Recuperar Contraseña");
+                correos.IsBodyHtml = true;
                 correos.To.Add(correo.Trim());
 
-                correos.From = new MailAddress("haroldzabala5@gmail.com"); //Enviar informacion
-                envios.Credentials = new NetworkCredential("haroldzabala5@gmail.com", "3213064314e");//enviar correo verificacion correo y password
+                correos.From = new MailAddress("glvduitama0@gmail.com"); //Enviar informacion
+                envios.Credentials = new NetworkCredential("glvduitama0@gmail.com", "integrado");//enviar correo verificacion correo y password
 
-                //DATOS NO MODIFICABLES PARA TENER ACCESO A LA CUENTA
-                envios.Host = "smtp.gmail.com";//Servidor gmail
-                envios.Port = 587;//Puerto Host Gmil
-                envios.EnableSsl = true; //XD
+               
+                envios.Host = "smtp.gmail.com";
+                envios.Port = 587;
+                envios.EnableSsl = true; 
 
-                envios.Send(correos);//Enviar Correo
+                envios.Send(correos);
             
 
             }
