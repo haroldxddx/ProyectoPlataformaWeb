@@ -154,7 +154,7 @@
                                     <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li><a class="hover-btn-new log orange" href="#" data-toggle="modal" data-target="#login"><span>Ingresar</span></a></li>
+                                    <li><a class="hover-btn-new log orange" href="login/login.aspx " ><span>Ingresar</span></a></li>
                                     
                                 </ul>
                             </div>
