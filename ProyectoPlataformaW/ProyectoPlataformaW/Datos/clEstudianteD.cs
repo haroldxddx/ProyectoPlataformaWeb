@@ -10,9 +10,9 @@ namespace ProyectoPlataformaW.Datos
     public class clEstudianteD
     {
 
-        public List<clEntidadEstudiante> mtdListar(clEntidadEstudiante objEs)
+       public List<clEntidadEstudiante> mtdListar()
         {
-            string sql = "select Contrasena from Estudiante where Email = "+ objEs.Email;
+            string sql = "select Email,Contrasena from Estudiante" ;
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblEstud = new DataTable();
             tblEstud = objSql.mtdDesconectado(sql);
@@ -22,8 +22,10 @@ namespace ProyectoPlataformaW.Datos
             for (int i = 0; i < tblEstud.Rows.Count; i++)
             {
                 clEntidadEstudiante objEstu = new clEntidadEstudiante();
-                objEstu.Email = tblEstud.Rows[i][4].ToString();
-                objEstu.Contrasena = tblEstud.Rows[i][5].ToString();
+                objEstu.Email = tblEstud.Rows[i][0].ToString();
+                objEstu.Contrasena = tblEstud.Rows[i][1].ToString();
+
+                listaEstud.Add(objEstu);
 
             }
 

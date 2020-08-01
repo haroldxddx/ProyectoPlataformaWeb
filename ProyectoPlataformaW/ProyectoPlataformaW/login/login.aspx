@@ -66,21 +66,21 @@
 							</label>
 						</div>
 
-						<div>
-							<a href="#" class="txt1">
-								olvidaste la contraseña>
-						</div>
 					</div>
+
+							<a href="#" class="txt1">
 
 					<div class="container-login100-form-btn">
 						
                         <asp:Button ID="btnIngrear"   class="login100-form-btn" runat="server"  Text="Ingresar" OnClick="btnIngrear_Click" />
 
+		
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
 	
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
