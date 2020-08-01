@@ -13,6 +13,7 @@
             <br />
             <asp:TextBox ID="txtCorreo" runat="server"></asp:TextBox>
             <asp:Button ID="btnEnviar" runat="server" OnClick="btnEnviar_Click" Text="Enviar" />
+            <asp:Label ID="lblError" runat="server" Text="."></asp:Label>
             <br />
         </div>
     </form>
