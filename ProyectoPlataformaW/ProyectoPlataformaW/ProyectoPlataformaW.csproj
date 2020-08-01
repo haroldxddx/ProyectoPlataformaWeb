@@ -228,6 +228,7 @@
     <Compile Include="inicioAdmin.aspx.designer.cs">
       <DependentUpon>inicioAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logica\clEstudianteL.cs" />
     <Compile Include="MasterPageProfesor.Master.cs">
       <DependentUpon>MasterPageProfesor.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -297,9 +298,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Logica\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
