@@ -12,11 +12,11 @@ namespace ProyectoPlataformaW.Logica
 
         //List<clEstudianteE> listaEstudiante = new List<clEstudianteE>();
 
-        public List<clEstudianteE> mtdListarApb1(clEstudianteE objDatos)
+        public List<clEntidadEstudiante> mtdListarApb1(clEntidadEstudiante objDatos)
         {
             clEstudianteD objAsA = new clEstudianteD();
-            List<clEstudianteE> listaApb1 = new List<clEstudianteE>();
-            listaApb1 = objAsA.mtdListar(objDatos);
+            List<clEntidadEstudiante> listaApb1 = new List<clEntidadEstudiante>();
+            listaApb1 = objAsA.mtdListarlogin(objDatos);
             return listaApb1;
         }
 

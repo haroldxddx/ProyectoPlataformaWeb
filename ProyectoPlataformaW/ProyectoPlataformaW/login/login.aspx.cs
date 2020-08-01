@@ -7,11 +7,12 @@ using System.Web.UI.WebControls;
 using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
 
+
 namespace ProyectoPlataformaW.login
 {
     public partial class login : System.Web.UI.Page
     {
-        List<clEstudianteE> listaPro = new List<clEstudianteE>();
+        List<clEntidadEstudiante> listaPro = new List<clEntidadEstudiante>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,11 +25,11 @@ namespace ProyectoPlataformaW.login
             string usuario = txtUsuario.Text;
 
 
-            List<clEstudianteE> listaBus = new List<clEstudianteE>();
+            List<clEntidadEstudiante> listaBus = new List<clEntidadEstudiante>();
 
 
-            clEstudianteE objEstudiante = new clEstudianteE();
-            objEstudiante.Contraseña = contraseña;
+            clEntidadEstudiante objEstudiante = new clEntidadEstudiante();
+            objEstudiante.Contrasena = contraseña;
             objEstudiante.Email = usuario;
 
             clEstudianteL objEstudianteL = new clEstudianteL();

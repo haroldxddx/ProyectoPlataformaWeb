@@ -119,3 +119,6 @@ C:\Users\Equipo\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoP
 C:\Users\Equipo\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csproj.CopyComplete
 C:\Users\Equipo\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.dll
 C:\Users\Equipo\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csprojAssemblyReference.cache
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
