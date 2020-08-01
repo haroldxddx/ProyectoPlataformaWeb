@@ -211,6 +211,7 @@
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
+    <Compile Include="Datos\cllogEstudianteE.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
     <Compile Include="Entidades\clEntidadEstudiante.cs" />
     <Compile Include="inicio.aspx.cs">
