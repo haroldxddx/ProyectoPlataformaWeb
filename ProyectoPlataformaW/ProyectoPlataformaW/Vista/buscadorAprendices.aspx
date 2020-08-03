@@ -22,6 +22,13 @@
             top: 245px;
             left: 622px;
         }
+        .auto-style5 {
+            width: 135px;
+            height: 35px;
+            position: absolute;
+            top: 286px;
+            left: 455px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -36,7 +43,8 @@
         </asp:DropDownList>
     </p>
     <p>
-        &nbsp;</p>
+        <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Buscar por nombre"></asp:Label>
+    </p>
     <p>
         &nbsp;</p>
     <p>
