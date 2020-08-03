@@ -13,5 +13,11 @@ namespace ProyectoPlataformaW
         {
 
         }
+        protected void lblcerrarsesion_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("~/inicio.aspx");
+        }
+
     }
 }

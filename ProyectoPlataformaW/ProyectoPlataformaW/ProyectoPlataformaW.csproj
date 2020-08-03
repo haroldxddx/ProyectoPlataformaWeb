@@ -87,7 +87,7 @@
     <Content Include="Imagenes\quimica.jpg" />
     <Content Include="Imagenes\rel.jpg" />
     <Content Include="inicio.aspx" />
-    <Content Include="inicioAdmin.aspx" />
+    <Content Include="Administrador.aspx" />
     <Content Include="login\css\main.css" />
     <Content Include="login\css\util.css" />
     <Content Include="login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
@@ -346,12 +346,14 @@
     <Compile Include="correoPrueba.aspx.designer.cs">
       <DependentUpon>correoPrueba.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Datos\clAdministradorD.cs" />
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clCursoD.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
+    <Compile Include="Entidades\clEntidadAdministradorE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
     <Compile Include="Entidades\clEntidadEstudiante.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
@@ -369,13 +371,14 @@
     <Compile Include="inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="inicioAdmin.aspx.cs">
-      <DependentUpon>inicioAdmin.aspx</DependentUpon>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="inicioAdmin.aspx.designer.cs">
-      <DependentUpon>inicioAdmin.aspx</DependentUpon>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logica\clAdministradorL.cs" />
     <Compile Include="Logica\clCursoL.cs" />
     <Compile Include="Logica\clEstudianteL.cs" />
     <Compile Include="Logica\clProfesorL.cs" />
