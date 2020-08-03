@@ -76,11 +76,17 @@
     </Content>
     <Content Include="Imagenes\colegioestu.jpeg" />
     <Content Include="Imagenes\colegioporteria %282%29.jpg" />
+    <Content Include="Imagenes\descarga-directa %281%29.png" />
+    <Content Include="Imagenes\descarga-directa %282%29.png" />
+    <Content Include="Imagenes\descarga-directa.png" />
     <Content Include="Imagenes\logo-email-2-g-suite.png" />
+    <Content Include="Imagenes\registro.png" />
+    <Content Include="Imagenes\sobresalir %282%29.png" />
     <Content Include="inicio.aspx" />
     <Content Include="inicioAdmin.aspx" />
     <Content Include="inicioEstu.aspx" />
-    <Content Include="Vista\course-grid-4.html" />
+    <Content Include="RegistrarProfesor.aspx" />
+    <Content Include="Vista\images\sobresalir %282%29.png" />
     <Content Include="Vista\index2.aspx" />
     <Content Include="Prueba.aspx" />
     <Content Include="Vista\css\animate.css" />
@@ -189,12 +195,22 @@
     <Content Include="Vista\js\mapsed.js" />
     <Content Include="Vista\js\modernizer.js" />
     <Content Include="Vista\js\timeline.min.js" />
+    <Content Include="RegistrarCurso.aspx" />
+    <Content Include="RegistrarEstudiante.aspx" />
     <Content Include="Vista\style.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebService.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datos\clAdminSQL.cs" />
+    <Compile Include="Datos\clConexion.cs" />
+    <Compile Include="Datos\clCursoR.cs" />
+    <Compile Include="Datos\clEstudianteR.cs" />
+    <Compile Include="Datos\clProfesorR.cs" />
+    <Compile Include="Entidades\clEntidadCurso.cs" />
+    <Compile Include="Entidades\clEntidadEstudianteT.cs" />
+    <Compile Include="Entidades\clEntidadProfesor.cs" />
     <Compile Include="inicio.aspx.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -230,6 +246,13 @@
     <Compile Include="MasterPageEstud.Master.designer.cs">
       <DependentUpon>MasterPageEstud.Master</DependentUpon>
     </Compile>
+    <Compile Include="RegistrarProfesor.aspx.cs">
+      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarProfesor.aspx.designer.cs">
+      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vista\index2.aspx.cs">
       <DependentUpon>index2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -251,6 +274,20 @@
     </Compile>
     <Compile Include="MaterPage.Master.designer.cs">
       <DependentUpon>MaterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCurso.aspx.cs">
+      <DependentUpon>RegistrarCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarCurso.aspx.designer.cs">
+      <DependentUpon>RegistrarCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarEstudiante.aspx.cs">
+      <DependentUpon>RegistrarEstudiante.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarEstudiante.aspx.designer.cs">
+      <DependentUpon>RegistrarEstudiante.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -285,8 +322,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Datos\" />
-    <Folder Include="Entidades\" />
     <Folder Include="Logica\" />
   </ItemGroup>
   <PropertyGroup>
