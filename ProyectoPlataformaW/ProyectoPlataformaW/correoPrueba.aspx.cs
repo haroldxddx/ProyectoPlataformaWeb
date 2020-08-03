@@ -48,7 +48,7 @@ namespace ProyectoPlataformaW
 
                 }else
                 {
-                    lblError.Text = "error ";
+                   // lblError.Text = "error ";
 
                 }
             }
