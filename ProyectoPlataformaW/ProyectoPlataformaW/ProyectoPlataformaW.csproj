@@ -222,6 +222,7 @@
     <Content Include="login\vendor\select2\select2.min.css" />
     <Content Include="login\vendor\select2\select2.min.js" />
     <Content Include="logo-email-2-g-suite.png" />
+    <Content Include="Profesor.aspx" />
     <Content Include="Vista\buscadorAprendices.aspx" />
     <Content Include="Vista\index.html" />
     <Content Include="Vista\inicioEstu.aspx" />
@@ -398,6 +399,13 @@
     </Compile>
     <Compile Include="MasterPageProfesor.Master.designer.cs">
       <DependentUpon>MasterPageProfesor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Profesor.aspx.cs">
+      <DependentUpon>Profesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Profesor.aspx.designer.cs">
+      <DependentUpon>Profesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\buscadorAprendices.aspx.cs">
       <DependentUpon>buscadorAprendices.aspx</DependentUpon>

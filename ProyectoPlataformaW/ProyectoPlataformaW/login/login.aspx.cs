@@ -26,14 +26,34 @@ namespace ProyectoPlataformaW.login
 
 
             List<clEntidadEstudiante> listaBus = new List<clEntidadEstudiante>();
+            List<clEntidadProfesorE> listaBusp = new List<clEntidadProfesorE>();
+
 
 
             clEntidadEstudiante objEstudiante = new clEntidadEstudiante();
             objEstudiante.Contrasena = contraseña;
             objEstudiante.Email = usuario;
 
+            clEntidadProfesorE objProfesor = new clEntidadProfesorE();
+            objProfesor.Contrasena = contraseña;
+            objProfesor.Email = usuario;
+
+
+
             clEstudianteL objEstudianteL = new clEstudianteL();
             listaBus = objEstudianteL.mtdListarApb1(objEstudiante);
+
+            clProfesorL objProfesorL = new clProfesorL();
+            listaBusp = objProfesorL.mtdListarApb1(objProfesor);
+
+
+
+
+
+
+
+
+
 
 
             // dataGridView1.DataSource = listaVt;
@@ -54,6 +74,24 @@ namespace ProyectoPlataformaW.login
             }
 
 
+
+            if (listaBusp.Count != 0)
+            {
+                Session["usuario"] = txtUsuario.Text;
+                Session["general"] = "profesor";
+                // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
+                Response.Redirect("~/Profesor.aspx");
+
+
+            }
+            else
+            {
+                Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
+                txtContraseña.Text = "";
+                txtUsuario.Text = "";
+
+
+            }
 
 
 

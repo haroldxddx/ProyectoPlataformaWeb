@@ -39,5 +39,32 @@ namespace ProyectoPlataformaW.Datos
 
 
         }
+
+        //login
+        public List<clEntidadProfesorE> mtdListarlogin(clEntidadProfesorE objest)
+        {
+            string consulta = "SELECT Profesor.idProfesor, Profesor.Contrasena, Profesor.Email FROM Profesor WHERE (Profesor.Contrasena = '" + objest.Contrasena + "') AND (Profesor.Email = '" + objest.Email + "')";
+
+            clAdminSQL objAdmin = new clAdminSQL();
+
+            DataTable tblDatos = new DataTable();
+            tblDatos = objAdmin.mtdDesconectado(consulta);
+
+            List<clEntidadProfesorE > listaProfesor = new List<clEntidadProfesorE>();
+            for (int i = 0; i < tblDatos.Rows.Count; i++)
+            {
+                clEntidadProfesorE objPasDatos = new clEntidadProfesorE();
+                objPasDatos.idProfesor = int.Parse(tblDatos.Rows[i][0].ToString());
+                objPasDatos.Contrasena = tblDatos.Rows[i][1].ToString();
+                objPasDatos.Email = tblDatos.Rows[i][2].ToString();
+
+
+                listaProfesor.Add(objPasDatos);
+            }
+            return listaProfesor;
+
+        }
+
+
     }
 }

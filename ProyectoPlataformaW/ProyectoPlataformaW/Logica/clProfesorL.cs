@@ -9,6 +9,20 @@ namespace ProyectoPlataformaW.Logica
 {
     public class clProfesorL
     {
+
+
+        public List<clEntidadProfesorE> mtdListarApb1(clEntidadProfesorE objDatos)
+        {
+            clProfesorD objAsA = new clProfesorD();
+            List<clEntidadProfesorE> listaApb1 = new List<clEntidadProfesorE>();
+            listaApb1 = objAsA.mtdListarlogin(objDatos);
+            return listaApb1;
+        }
+
+
+
+
+
         public List<clEntidadProfesorE> mtdListProf()
         {
             clProfesorD objProf = new clProfesorD();

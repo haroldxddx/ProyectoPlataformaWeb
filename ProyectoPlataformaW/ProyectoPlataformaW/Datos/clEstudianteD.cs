@@ -34,7 +34,7 @@ namespace ProyectoPlataformaW.Datos
         
         }
 
-        //por modificar login
+        // login
         public List<clEntidadEstudiante> mtdListarlogin(clEntidadEstudiante objest)
         {
             string consulta = "SELECT Estudiante.idEstudiante, Estudiante.Contrasena, Estudiante.Email FROM Estudiante WHERE (Estudiante.Contrasena = '" + objest.Contrasena + "') AND (Estudiante.Email = '" + objest.Email + "')";
