@@ -33,6 +33,18 @@
 
 
 
+    <style type="text/css">
+        .auto-style1 {
+            width: 190px;
+            position: absolute;
+            left: 370px;
+            top: 421px;
+            height: 24px;
+        }
+    </style>
+
+
+
 </head>
 <body>
    <div class="limiter">
@@ -66,21 +78,30 @@
 							</label>
 						</div>
 
-						<div>
-							<a href="#" class="txt1">
-								olvidaste la contraseña>
-						</div>
 					</div>
+
+							<a href="#" class="txt1">
 
 					<div class="container-login100-form-btn">
 						
                         <asp:Button ID="btnIngrear"   class="login100-form-btn" runat="server"  Text="Ingresar" OnClick="btnIngrear_Click" />
 
+		
+							<a href="#" class="txt1">
+
+		
+					    <asp:LinkButton ID="LinkButton1" class="login100-form-btn" runat="server" Text="¿Olvidaste tu contraseña?" CssClass="auto-style1" PostBackUrl="~/login/recuperarContra.aspx"></asp:LinkButton>
+
+		
+					    </a>
+
+		
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
 	
 <!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>

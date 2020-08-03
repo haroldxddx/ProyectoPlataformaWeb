@@ -20,6 +20,14 @@ namespace ProyectoPlataformaW.Logica
             return listaApb1;
         }
 
+        public List<clEntidadEstudiante> mtdRecup()
+        {
+            clEstudianteD objEstu = new clEstudianteD();
+            List<clEntidadEstudiante> listE = new List<clEntidadEstudiante>();
+            listE = objEstu.mtdListar();
+            return listE;
+        }
+
 
     }
 }

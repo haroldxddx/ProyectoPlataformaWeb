@@ -190,6 +190,7 @@
     <Content Include="login\Login_v15\__MACOSX\Login_v15\vendor\select2\._select2.js" />
     <Content Include="login\Login_v15\__MACOSX\Login_v15\vendor\select2\._select2.min.css" />
     <Content Include="login\Login_v15\__MACOSX\Login_v15\vendor\select2\._select2.min.js" />
+    <Content Include="login\recuperarContra.aspx" />
     <Content Include="login\vendor\animate\animate.css" />
     <Content Include="login\vendor\animsition\css\animsition.css" />
     <Content Include="login\vendor\animsition\css\animsition.min.css" />
@@ -220,6 +221,8 @@
     <Content Include="login\vendor\select2\select2.js" />
     <Content Include="login\vendor\select2\select2.min.css" />
     <Content Include="login\vendor\select2\select2.min.js" />
+    <Content Include="logo-email-2-g-suite.png" />
+    <Content Include="Vista\buscadorAprendices.aspx" />
     <Content Include="Vista\index.html" />
     <Content Include="Vista\inicioEstu.aspx" />
     <Content Include="Vista\css\animate.css" />
@@ -329,6 +332,7 @@
     <Content Include="Vista\js\modernizer.js" />
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
+    <Content Include="Vista\listadoProfesor.aspx" />
     <Content Include="Vista\style.css" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
@@ -343,10 +347,13 @@
     </Compile>
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
+    <Compile Include="Datos\clCursoD.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
-    <Compile Include="Datos\cllogEstudianteE.cs" />
+    <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
+    <Compile Include="Entidades\clEntidadCursosE.cs" />
     <Compile Include="Entidades\clEntidadEstudiante.cs" />
+    <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Estudiante.aspx.cs">
       <DependentUpon>Estudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -368,7 +375,9 @@
     <Compile Include="inicioAdmin.aspx.designer.cs">
       <DependentUpon>inicioAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logica\clCursoL.cs" />
     <Compile Include="Logica\clEstudianteL.cs" />
+    <Compile Include="Logica\clProfesorL.cs" />
     <Compile Include="login\login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -376,12 +385,26 @@
     <Compile Include="login\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login\recuperarContra.aspx.cs">
+      <DependentUpon>recuperarContra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login\recuperarContra.aspx.designer.cs">
+      <DependentUpon>recuperarContra.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPageProfesor.Master.cs">
       <DependentUpon>MasterPageProfesor.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPageProfesor.Master.designer.cs">
       <DependentUpon>MasterPageProfesor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\buscadorAprendices.aspx.cs">
+      <DependentUpon>buscadorAprendices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\buscadorAprendices.aspx.designer.cs">
+      <DependentUpon>buscadorAprendices.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\inicioEstu.aspx.cs">
       <DependentUpon>inicioEstu.aspx</DependentUpon>
@@ -418,6 +441,13 @@
     </Compile>
     <Compile Include="Vista\inicioProfesor.aspx.designer.cs">
       <DependentUpon>inicioProfesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\listadoProfesor.aspx.cs">
+      <DependentUpon>listadoProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\listadoProfesor.aspx.designer.cs">
+      <DependentUpon>listadoProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>

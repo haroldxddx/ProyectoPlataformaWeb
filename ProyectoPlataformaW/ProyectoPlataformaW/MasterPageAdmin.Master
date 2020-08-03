@@ -64,14 +64,21 @@
                 <header class="top-navbar">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
-                            <a class="navbar-brand" href="index.html">&nbsp;<img alt="logo2" class="auto-style1" src="Imagenes/logo-email-2-g-suite.png" /></a>
+                            <a class="navbar-brand" href="index.html">&nbsp;<img alt="logo2" class="auto-style1" src="/logo-email-2-g-suite.png" /></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                             </button>
                             <div class="collapse navbar-collapse" id="navbars-host">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active"><a class="nav-link" href="#">Cursos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Profesores</a></li>
+                                    <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Profesores </a>
+							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+								            <a class="dropdown-item" href="/Vista/listadoProfesor.aspx">Listado de Profesores</a>
+								            <a class="dropdown-item" href="course-grid-3.html">Registro de profesores </a>
+								            <a class="dropdown-item" href="course-grid-4.html">Asignacion de profesores </a>
+							            </div>
+						            </li>
                                     <li class="nav-item"><a class="nav-link" href="#">Estudiantes</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Anuncios</a></li>
                                 </ul>

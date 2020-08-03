@@ -13,7 +13,7 @@ namespace ProyectoPlataformaW
     
     public partial class Site1 : System.Web.UI.MasterPage
     {
-        clRecuperarContra clrecuperar = new clRecuperarContra();
+       
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -21,9 +21,10 @@ namespace ProyectoPlataformaW
         }
 
    
+
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-            clrecuperar.enviarCorreo(txtEmail.Text);
+            
         }
 
        
