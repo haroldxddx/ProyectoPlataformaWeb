@@ -222,6 +222,7 @@
     <Content Include="login\vendor\select2\select2.min.css" />
     <Content Include="login\vendor\select2\select2.min.js" />
     <Content Include="logo-email-2-g-suite.png" />
+    <Content Include="Vista\buscadorAprendices.aspx" />
     <Content Include="Vista\index.html" />
     <Content Include="Vista\inicioEstu.aspx" />
     <Content Include="Vista\css\animate.css" />
@@ -346,9 +347,11 @@
     </Compile>
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
+    <Compile Include="Datos\clCursoD.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
+    <Compile Include="Entidades\clEntidadCursosE.cs" />
     <Compile Include="Entidades\clEntidadEstudiante.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Estudiante.aspx.cs">
@@ -372,6 +375,7 @@
     <Compile Include="inicioAdmin.aspx.designer.cs">
       <DependentUpon>inicioAdmin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logica\clCursoL.cs" />
     <Compile Include="Logica\clEstudianteL.cs" />
     <Compile Include="Logica\clProfesorL.cs" />
     <Compile Include="login\login.aspx.cs">
@@ -394,6 +398,13 @@
     </Compile>
     <Compile Include="MasterPageProfesor.Master.designer.cs">
       <DependentUpon>MasterPageProfesor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\buscadorAprendices.aspx.cs">
+      <DependentUpon>buscadorAprendices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\buscadorAprendices.aspx.designer.cs">
+      <DependentUpon>buscadorAprendices.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\inicioEstu.aspx.cs">
       <DependentUpon>inicioEstu.aspx</DependentUpon>
