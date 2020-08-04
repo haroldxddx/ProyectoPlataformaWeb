@@ -155,6 +155,28 @@ namespace ProyectoPlataformaW.Datos
 
         }
 
+        //Actualizar Informacion Personal
+
+        public int mtdActualizarInfo(clEntidadEstudiante objEst)
+        {
+
+            string sql = "UPDATE Estudiante SET Nombres = '" + objEst.Nombres + "', Apellidos = '"+ objEst.Apellidos +"', Documento = '"+ objEst.Documento +"', Email ='"+ objEst.Email +"' WHERE Email = '"+ objEst.Email +"'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+        //Cambiar Contraseña
+        public int mtdCambiarCo(clEntidadEstudiante objEst)
+        {
+
+            string sql = "UPDATE Estudiante SET Contrasena = '"+ objEst.Contrasena +"' WHERE Email = '" + objEst.Email + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
 
 
     }
