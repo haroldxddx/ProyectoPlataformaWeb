@@ -10,10 +10,11 @@ namespace ProyectoPlataformaW.Entidades
         public int idAdministrador { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
-        public int Documentos { get; set; }
+        public int Documento { get; set; }
         public string Email { get; set; }
         public string Contrasena { get; set; }
         public string Tipo { get; set; }
+
 
     }
 }
