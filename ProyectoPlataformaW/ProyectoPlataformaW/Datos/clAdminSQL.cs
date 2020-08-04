@@ -17,7 +17,7 @@ namespace ProyectoPlataformaW.Datos
             clConexion objConexion = new clConexion();
             conex = objConexion.mtdConexion();
             conex.Open();
-            SqlCommand cmdSql = new SqlCommand(sql, conex);
+            SqlCommand cmdSql = new SqlCommand(sql,conex);
             int resultado = cmdSql.ExecuteNonQuery();
             conex.Close();
             return resultado;
@@ -28,7 +28,7 @@ namespace ProyectoPlataformaW.Datos
             clConexion objConexion = new clConexion();
             conex = objConexion.mtdConexion();
             conex.Open();
-            SqlDataAdapter adaptador = new SqlDataAdapter(sql, conex);
+            SqlDataAdapter adaptador = new SqlDataAdapter(sql,conex);
             DataTable tblDatos = new DataTable();
             adaptador.Fill(tblDatos);
             conex.Close();
