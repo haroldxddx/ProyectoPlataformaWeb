@@ -224,6 +224,7 @@
     <Content Include="logo-email-2-g-suite.png" />
     <Content Include="Profesor.aspx" />
     <Content Include="Vista\buscadorAprendices.aspx" />
+    <Content Include="Vista\editarPerfilE.aspx" />
     <Content Include="Vista\index.html" />
     <Content Include="Vista\inicioEstu.aspx" />
     <Content Include="Vista\css\animate.css" />
@@ -416,6 +417,13 @@
     </Compile>
     <Compile Include="Vista\buscadorAprendices.aspx.designer.cs">
       <DependentUpon>buscadorAprendices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\editarPerfilE.aspx.cs">
+      <DependentUpon>editarPerfilE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\editarPerfilE.aspx.designer.cs">
+      <DependentUpon>editarPerfilE.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\inicioEstu.aspx.cs">
       <DependentUpon>inicioEstu.aspx</DependentUpon>
