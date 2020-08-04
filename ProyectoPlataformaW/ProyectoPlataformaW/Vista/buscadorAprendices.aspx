@@ -12,40 +12,88 @@
             width: 127px;
             height: 31px;
             position: absolute;
-            top: 241px;
-            left: 472px;
+            top: 298px;
+            left: 435px;
         }
         .auto-style4 {
             width: 96px;
             height: 22px;
             position: absolute;
-            top: 245px;
-            left: 622px;
+            top: 298px;
+            left: 587px;
         }
         .auto-style5 {
             width: 135px;
             height: 35px;
             position: absolute;
-            top: 286px;
-            left: 455px;
+            top: 254px;
+            left: 392px;
         }
+    .auto-style6 {
+        width: 316px;
+        height: 186px;
+        position: absolute;
+        top: 345px;
+        left: 424px;
+    }
+    .auto-style7 {
+        width: 152px;
+        height: 22px;
+        position: absolute;
+        top: 251px;
+        left: 535px;
+    }
+    .auto-style8 {
+        width: 61px;
+        height: 28px;
+        position: absolute;
+        top: 251px;
+        left: 725px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p>
-        <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Text="Buscador de aprendices"></asp:Label>
+        <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Text="Buscador de Estudiantes"></asp:Label>
     </p>
     <p>
         &nbsp;</p>
     <p>
         <asp:Label ID="Label2" runat="server" CssClass="auto-style3" Text="Flitrar Por Cursos"></asp:Label>
-        <asp:DropDownList ID="cmbCurso" runat="server" AutoPostBack="True" CssClass="auto-style4">
+        <asp:DropDownList ID="cmbCurso" runat="server" AutoPostBack="True" CssClass="auto-style4" OnSelectedIndexChanged="cmbCurso_SelectedIndexChanged">
         </asp:DropDownList>
+        <asp:TextBox ID="txtNombreE" runat="server" CssClass="auto-style7"></asp:TextBox>
+        <asp:Button ID="btnBuscar" runat="server" CssClass="auto-style8" Text="Buscar" OnClick="btnBuscar_Click" />
     </p>
     <p>
         <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Buscar por nombre"></asp:Label>
     </p>
     <p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
+        <asp:GridView ID="gvEstu" runat="server" CellPadding="4" CssClass="auto-style6" ForeColor="#333333" GridLines="None">
+            <AlternatingRowStyle BackColor="White" />
+            <EditRowStyle BackColor="#2461BF" />
+            <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+            <RowStyle BackColor="#EFF3FB" />
+            <SelectedRowStyle BackColor="#D1DDF1" Font-Bold="True" ForeColor="#333333" />
+            <SortedAscendingCellStyle BackColor="#F5F7FB" />
+            <SortedAscendingHeaderStyle BackColor="#6D95E1" />
+            <SortedDescendingCellStyle BackColor="#E9EBEF" />
+            <SortedDescendingHeaderStyle BackColor="#4870BE" />
+        </asp:GridView>
+</p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
+        &nbsp;</p>
+<p>
         &nbsp;</p>
     <p>
         &nbsp;</p>

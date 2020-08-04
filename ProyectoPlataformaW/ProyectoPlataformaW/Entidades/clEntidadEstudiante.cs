@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ProyectoPlataformaW.Entidades
 {
-    public class clEntidadEstudiante
+    public class clEntidadEstudiante:clEntidadCursosE
     {
         public int IdEstudiante { get; set; }
         public string Nombres { get; set; }
@@ -13,6 +13,6 @@ namespace ProyectoPlataformaW.Entidades
         public int Documento { get; set; }
         public string Email { get; set; }
         public string Contrasena { get; set; }
-
+     
     }
 }
