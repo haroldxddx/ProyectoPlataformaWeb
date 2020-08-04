@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
+using static ProyectoPlataformaW.Datos.clEncrypt;
 
 
 namespace ProyectoPlataformaW.login
@@ -39,8 +40,11 @@ namespace ProyectoPlataformaW.login
             objProfesor.Contrasena = contraseña;
             objProfesor.Email = usuario;
 
+
+            string pass = Encrypt.GetSHA256(contraseña);
+
             clEntidadAdministradorE objAdministrador = new clEntidadAdministradorE();
-            objAdministrador.Contrasena = contraseña;
+            objAdministrador.Contrasena = pass;
             objAdministrador.Email = usuario;
 
 
