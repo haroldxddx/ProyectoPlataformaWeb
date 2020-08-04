@@ -223,6 +223,7 @@
     <Content Include="login\vendor\select2\select2.min.js" />
     <Content Include="logo-email-2-g-suite.png" />
     <Content Include="Profesor.aspx" />
+    <Content Include="Vista\adminregistro.aspx" />
     <Content Include="Vista\buscadorAprendices.aspx" />
     <Content Include="Vista\editarPerfilE.aspx" />
     <Content Include="Vista\index.html" />
@@ -351,6 +352,7 @@
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clCursoD.cs" />
+    <Compile Include="Datos\clEncrypt.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
@@ -410,6 +412,13 @@
     </Compile>
     <Compile Include="Profesor.aspx.designer.cs">
       <DependentUpon>Profesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\adminregistro.aspx.cs">
+      <DependentUpon>adminregistro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\adminregistro.aspx.designer.cs">
+      <DependentUpon>adminregistro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\buscadorAprendices.aspx.cs">
       <DependentUpon>buscadorAprendices.aspx</DependentUpon>

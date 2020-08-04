@@ -37,6 +37,17 @@ namespace ProyectoPlataformaW.Datos
 
 
 
+        public int mtdRegistrar(clEntidadAdministradorE objDatos)
+        {
+            string consulta = "insert into Administradores (Nombres,Apellidos,Documento,Email,Contrasena,tipo)" +
+                 "values ('" + objDatos.Nombres + "','" + objDatos.Apellidos + "','" + objDatos.Documento + "' ,'" + objDatos.Email + "','" + objDatos.Contrasena + "','" + objDatos.Tipo + "')";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int reg = objConexion.mtdConectado(consulta);
+            return reg;
+        }
+
+
 
 
     }
