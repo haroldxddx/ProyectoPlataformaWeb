@@ -81,6 +81,8 @@
 						            </li>
                                     <li class="nav-item"><a class="nav-link" href="#">Estudiantes</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Anuncios</a></li>
+                                     <li class="nav-item"> <asp:LinkButton ID="lbcerrarsesion" class="nav-link"  runat="server" OnClick="lblcerrarsesion_Click" >cerrar sesion</asp:LinkButton></li>
+
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
                                 </ul>

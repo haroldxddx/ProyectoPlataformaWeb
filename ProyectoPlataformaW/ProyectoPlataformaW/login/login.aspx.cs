@@ -26,32 +26,113 @@ namespace ProyectoPlataformaW.login
 
 
             List<clEntidadEstudiante> listaBus = new List<clEntidadEstudiante>();
+            List<clEntidadProfesorE> listaBusp = new List<clEntidadProfesorE>();
+            List<clEntidadAdministradorE> listaBusa = new List<clEntidadAdministradorE>();
+
 
 
             clEntidadEstudiante objEstudiante = new clEntidadEstudiante();
             objEstudiante.Contrasena = contraseña;
             objEstudiante.Email = usuario;
 
+            clEntidadProfesorE objProfesor = new clEntidadProfesorE();
+            objProfesor.Contrasena = contraseña;
+            objProfesor.Email = usuario;
+
+            clEntidadAdministradorE objAdministrador = new clEntidadAdministradorE();
+            objAdministrador.Contrasena = contraseña;
+            objAdministrador.Email = usuario;
+
+
+
             clEstudianteL objEstudianteL = new clEstudianteL();
             listaBus = objEstudianteL.mtdListarApb1(objEstudiante);
 
+            clProfesorL objProfesorL = new clProfesorL();
+            listaBusp = objProfesorL.mtdListarApb1(objProfesor);
+
+            clAdministradorL objAdministradorL = new clAdministradorL();
+            listaBusa = objAdministradorL.mtdListarApb1(objAdministrador);
+
+          
+
+
+
+          
+                    if (listaBus.Count != 0)
+                    {
+                        Session["usuario"] = txtUsuario.Text;
+                        Session["general"] = "estudiante";
+                        // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
+                        Response.Redirect("~/Estudiante.aspx");
+
+
+                    }
+                    else
+                    {
+                        Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
+                        txtContraseña.Text = "";
+                        txtUsuario.Text = "";
+
+
+                    }
+                   
+
+                
+                    if (listaBusp.Count != 0)
+                    {
+                        Session["usuario"] = txtUsuario.Text;
+                        Session["general"] = "profesor";
+                        // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
+                        Response.Redirect("~/Profesor.aspx");
+
+
+                    }
+                    else
+                    {
+                        Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
+                        txtContraseña.Text = "";
+                        txtUsuario.Text = "";
+
+
+                    }
+                    
+
+                
+
+                    if (listaBusa.Count != 0)
+                    {
+                        Session["usuario"] = txtUsuario.Text;
+                        Session["general"] = "administrador";
+                        // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
+                        Response.Redirect("~/Administrador.aspx");
+
+
+                    }
+                    else 
+                    {
+                        Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
+                        txtContraseña.Text = "";
+                        txtUsuario.Text = "";
+
+
+                    }
+                  
+
+                
+
+                    
+
+            
+
+
 
             // dataGridView1.DataSource = listaVt;
-            if (listaBus.Count !=0)
-            {
-                Session["usuario"] = txtUsuario.Text;
-                Session["general"] = "estudiante";
-                // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                Response.Redirect("~/Estudiante.aspx");
-               
-
-            }
-            else { Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
-                txtContraseña.Text = "";
-                txtUsuario.Text = "";
+           
 
 
-            }
+
+            
 
 
 
@@ -59,8 +140,6 @@ namespace ProyectoPlataformaW.login
 
 
 
-            //Session["usuario"] = txtUsuario.Text;
-            //Response.Redirect("~/Estudiante.aspx");
 
 
 
