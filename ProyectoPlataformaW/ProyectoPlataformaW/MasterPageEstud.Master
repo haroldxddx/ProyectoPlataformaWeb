@@ -76,7 +76,7 @@
 							        <a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown" 
                                         <asp:Label ID="lblUser" runat="server" Text="Label"></asp:Label> </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
-								            <a class="dropdown-item" href="/Vista/editarPerfilE.aspx">Editar Perfil</a>
+								            <a class="dropdown-item" href="/Vista/editPerfil2.aspx">Editar Perfil</a>
 								            
 							            </div>
 						            </li>

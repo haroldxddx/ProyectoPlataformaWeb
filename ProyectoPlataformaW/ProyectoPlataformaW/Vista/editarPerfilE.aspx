@@ -1,5 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageEstud.Master" AutoEventWireup="true" CodeBehind="editarPerfilE.aspx.cs" Inherits="ProyectoPlataformaW.Vista.editarPerfilE" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
+ <script src="/Vista/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/Vista/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/Vista/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="/Vista/dist/js/demo.js"></script>
     <style type="text/css">
     .auto-style2 {
         width: 40px;
@@ -7,13 +15,6 @@
         position: absolute;
         top: 256px;
         left: 349px;
-    }
-    .auto-style3 {
-        width: 155px;
-        height: 22px;
-        position: absolute;
-        top: 253px;
-        left: 458px;
     }
         .auto-style4 {
             width: 99px;
@@ -113,13 +114,25 @@
             top: 444px;
             left: 655px;
         }
-        .auto-style18 {
-            width: 129px;
-            height: 34px;
-            position: absolute;
-            top: 512px;
-            left: 345px;
-        }
+        
+
+    .auto-style18 {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-clip: padding-box;
+        border-radius: .25rem;
+        transition: none;
+        position: relative;
+        left: 414px;
+        top: -39px;
+        width: 221px;
+        border: 1px solid #ced4da;
+        background-color: #fff;
+    }
+        
+
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -131,7 +144,7 @@
         &nbsp;</p>
 <p>
     <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Text="Nombre"></asp:Label>
-    <asp:TextBox ID="txtNom" runat="server" CssClass="auto-style3" Enabled="False"></asp:TextBox>
+    <asp:TextBox ID="txtNom" runat="server" CssClass="auto-style18" Enabled="False" Height="23px"></asp:TextBox>
     <asp:CheckBox ID="chbN" runat="server" AutoPostBack="True" CssClass="auto-style4"/>
 </p>
 <p>
@@ -156,7 +169,7 @@
     </p>
     <p>
         &nbsp;</p>
-    <asp:Button ID="btnEditar" runat="server" CssClass="auto-style18" OnClick="btnEditar_Click" Text="Editar Informacion" />
+    <asp:Button ID="btnEditar" runat="server" CssClass="btn-info disabled" OnClick="btnEditar_Click" Text="Editar Informacion" BorderStyle="None" Height="50px" style="position: absolute; top: 511px; left: 345px" Width="223px" />
     <p>
         &nbsp;</p>
 <p>
