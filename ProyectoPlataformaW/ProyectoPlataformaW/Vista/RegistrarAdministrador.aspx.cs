@@ -35,6 +35,7 @@ namespace ProyectoPlataformaW
             txtEma.Text = "";
             txtCon.Text = "";
            
+
         }
     }
 }
