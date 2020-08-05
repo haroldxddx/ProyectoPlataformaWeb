@@ -12,6 +12,7 @@ namespace ProyectoPlataformaW
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
         }
         protected void lblcerrarsesion_Click(object sender, EventArgs e)
         {
