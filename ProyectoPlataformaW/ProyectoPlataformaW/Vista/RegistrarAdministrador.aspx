@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.Master" AutoEventWireup="true" CodeBehind="RegistrarAdministrador.aspx.cs" Inherits="ProyectoPlataformaW.RegistrarAdministrador" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.Master" AutoEventWireup="true" CodeBehind="registrarAdministrador.aspx.cs" Inherits="ProyectoPlataformaW.RegistrarAdministrador" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     
    <style type="text/css">
