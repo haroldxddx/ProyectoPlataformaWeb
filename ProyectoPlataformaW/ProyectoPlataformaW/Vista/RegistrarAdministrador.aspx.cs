@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static ProyectoPlataformaW.Datos.clEncrypt;
 
 namespace ProyectoPlataformaW
 {
@@ -23,7 +24,7 @@ namespace ProyectoPlataformaW
             objEAdmin.Apellidos = txtApe.Text;
             objEAdmin.Documento = int.Parse(txtDoc.Text);
             objEAdmin.Email = txtEma.Text;
-            objEAdmin.Contrasena = txtCon.Text;
+            objEAdmin.Contrasena = Encrypt.GetSHA256( txtCon.Text);
             objEAdmin.Tipo = dpdTipo.Text;
 
             clAdministradorR objAdmin = new clAdministradorR();

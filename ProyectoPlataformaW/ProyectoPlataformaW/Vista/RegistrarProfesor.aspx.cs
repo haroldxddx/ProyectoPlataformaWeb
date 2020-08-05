@@ -6,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static ProyectoPlataformaW.Datos.clEncrypt;
+
 
 namespace ProyectoPlataformaW
 {
@@ -25,7 +27,7 @@ namespace ProyectoPlataformaW
             objEProfe.Apellidos = txtApe.Text;
             objEProfe.Documento = int.Parse(txtDoc.Text);
             objEProfe.Email = txtEma.Text;
-            objEProfe.Contrasena = txtCon.Text;
+            objEProfe.Contrasena = Encrypt.GetSHA256(txtCon.Text);
             objEProfe.Especialidad = txtEsp.Text;
 
             clProfesorR objProfe = new clProfesorR();
