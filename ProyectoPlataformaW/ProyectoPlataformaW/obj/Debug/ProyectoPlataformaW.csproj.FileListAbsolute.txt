@@ -179,3 +179,7 @@ D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\Pr
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csproj.CopyComplete
+C:\Users\USUARIO\source\repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csprojAssemblyReference.cache
+C:\Users\USUARIO\source\repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\source\repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.dll
+C:\Users\USUARIO\source\repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
