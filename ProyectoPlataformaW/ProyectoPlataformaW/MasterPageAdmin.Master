@@ -79,7 +79,13 @@
 								            <a class="dropdown-item" href="course-grid-4.html">Asignacion de profesores </a>
 							            </div>
 						            </li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Estudiantes</a></li>
+                                    <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Estudiantes </a>
+							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+								            <a class="dropdown-item" href="/Vista/buscadorAprendices.aspx">Buscador de aprendices</a>
+								            
+							            </div>
+						            </li>
                                     <li class="nav-item"><a class="nav-link" href="#">Anuncios</a></li>
                                      <li class="nav-item"> <asp:LinkButton ID="lbcerrarsesion" class="nav-link"  runat="server" OnClick="lblcerrarsesion_Click" >cerrar sesion</asp:LinkButton></li>
 
