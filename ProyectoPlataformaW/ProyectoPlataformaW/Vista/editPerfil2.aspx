@@ -116,17 +116,18 @@
                       Cambiar Contraseña
                         <br />
                     <asp:TextBox ID="txtCo" runat="server" type="password" class="form-control" Width="436px" Enabled="False" ></asp:TextBox>
-                  </div>
-                  
-                  <div class="form-check">
+                        <br />
                       <asp:CheckBox ID="cbhC" runat="server" AutoPostBack="True" CssClass="auto-style6" />
 &nbsp; Editar</div>
+                  
+                  <div class="form-check">
+                      </div>
                 </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
                   
-                    <asp:Button ID="btnEditar" type="submit" class="btn btn-primary" runat ="server" Text="Editar Informacion" />
+                    <asp:Button ID="btnEditar" type="submit" class="btn btn-primary" runat ="server" Text="Editar Informacion" OnClick="btnEditar_Click" />
                     <br />
                 </div>
               </form>

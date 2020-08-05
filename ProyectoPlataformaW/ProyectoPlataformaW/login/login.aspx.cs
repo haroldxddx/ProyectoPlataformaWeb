@@ -68,7 +68,7 @@ namespace ProyectoPlataformaW.login
                         Session["usuario"] = txtUsuario.Text;
                         Session["general"] = "estudiante";
                         // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                        Response.Redirect("~/Estudiante.aspx");
+                        Response.Redirect("~/Vista/inicioEstu.aspx");
 
 
                     }
