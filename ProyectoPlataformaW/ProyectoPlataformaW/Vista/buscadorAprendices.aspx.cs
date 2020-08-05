@@ -15,22 +15,76 @@ namespace ProyectoPlataformaW.Vista
         List<clEntidadEstudiante> listEestu = new List<clEntidadEstudiante>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            List<clEntidadCursosE> listC = new List<clEntidadCursosE>();
-            List<clEntidadEstudiante> listE = new List<clEntidadEstudiante>();
 
-            clCursoL objCurso = new clCursoL();
-            clEstudianteL objEstud = new clEstudianteL();
+            //para editar esta pagina descomentarear esta linea by mao
+           // Session["general"] = "administrador";
 
-            listC = objCurso.mtdComboCur();
-            listE = objEstud.mtdListadoComEs();
-            cmbCurso.DataSource = listC;
-            cmbCurso.DataTextField = "Curso";
-            cmbCurso.DataValueField = "IdCurso";
-            cmbCurso.DataBind();
 
-            gvEstu.DataSource= listE;
-            gvEstu.DataBind();
+            try
+            {
+                if (Session["general"].ToString() == null)
+                {
+                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                }
 
+                if (Session["general"].ToString() == "administrador")
+                {
+                    List<clEntidadCursosE> listC = new List<clEntidadCursosE>();
+                    List<clEntidadEstudiante> listE = new List<clEntidadEstudiante>();
+
+                    clCursoL objCurso = new clCursoL();
+                    clEstudianteL objEstud = new clEstudianteL();
+
+                    listC = objCurso.mtdComboCur();
+                    listE = objEstud.mtdListadoComEs();
+                    cmbCurso.DataSource = listC;
+                    cmbCurso.DataTextField = "Curso";
+                    cmbCurso.DataValueField = "IdCurso";
+                    cmbCurso.DataBind();
+
+                    gvEstu.DataSource = listE;
+                    gvEstu.DataBind();
+
+
+                }
+                else if (Session["general"].ToString() != "administrador")
+                {
+
+                    Response.Redirect("~/inicio.aspx");
+                }
+            }
+            catch (Exception)
+            {
+                //quitar despues de editar 
+                Response.Write("<script> alert(" + "'modo edicion'" + ") </script>");
+
+               
+                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
+                //Session.Clear();
+                //redirigir a login //Response.Redirect("~/inicio.aspx");
+
+
+
+
+
+
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+            
 
         }
 

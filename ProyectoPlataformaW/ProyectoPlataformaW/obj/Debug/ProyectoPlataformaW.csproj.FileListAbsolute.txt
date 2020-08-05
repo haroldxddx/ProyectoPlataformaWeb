@@ -300,3 +300,4 @@ C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataforma
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csproj.CopyComplete
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csprojAssemblyReference.cache

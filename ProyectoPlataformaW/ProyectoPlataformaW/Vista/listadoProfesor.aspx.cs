@@ -23,9 +23,57 @@ namespace ProyectoPlataformaW.Vista
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            mtdCargarGrid();
-        }
 
+
+
+            try
+            {
+                if (Session["general"].ToString() == null)
+                {
+                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                }
+
+                if (Session["general"].ToString() == "administrador")
+                {
+                    mtdCargarGrid();
+                    // Response.Redirect("~/inicio.aspx");
+
+                }
+                else if (Session["general"].ToString() != "administrador")
+                {
+
+                    Response.Redirect("~/inicio.aspx");
+                }
+            }
+            catch (Exception)
+            {
+
+                Response.Write("<script> alert(" + "'modo edicion'" +") </script>");
+
+                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
+                //Session.Clear();
+                //redirigir a login //Response.Redirect("~/inicio.aspx");
+
+
+               
+
+
+
+
+
+
+
+
+            }
+
+
+            
+        }
         
+
+
+
+
+
     }
 }
