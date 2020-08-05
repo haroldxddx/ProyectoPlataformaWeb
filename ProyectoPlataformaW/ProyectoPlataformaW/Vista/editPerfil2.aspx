@@ -1,5 +1,37 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageEstud.Master" AutoEventWireup="true" CodeBehind="editPerfil2.aspx.cs" Inherits="ProyectoPlataformaW.Vista.editPerfil2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style2 {
+            width: 93px;
+            height: 21px;
+            top: 42px;
+            left: 463px;
+        }
+        .auto-style3 {
+            width: 93px;
+            height: 21px;
+            top: 86px;
+            left: 463px;
+        }
+        .auto-style4 {
+            width: 93px;
+            height: 21px;
+            top: 128px;
+            left: 464px;
+        }
+        .auto-style5 {
+            width: 93px;
+            height: 21px;
+            top: 171px;
+            left: 464px;
+        }
+        .auto-style6 {
+            width: 93px;
+            height: 21px;
+            top: 214px;
+            left: 466px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <!DOCTYPE html>
@@ -53,34 +85,49 @@
                 <div class="card-body">
                   <div class="form-group">
                       Nombres
-                    <asp:TextBox ID="txtNom" runat="server" class="form-control" ></asp:TextBox>
-                  </div>
+                      <br />
+                    <asp:TextBox ID="txtNom" runat="server" class="form-control" Width="437px" Enabled="False" ></asp:TextBox>
+                      <br />
+                      <asp:CheckBox ID="chbN" runat="server" AutoPostBack="True" CssClass="auto-style2" />
+&nbsp; Editar</div>
                     <div class="form-group">
                       Apellidos
-                    <asp:TextBox ID="txtAp" runat="server"  class="form-control" ></asp:TextBox>
-                  </div>
+                        <br />
+                    <asp:TextBox ID="txtAp" runat="server"  class="form-control" Width="435px" Enabled="False" ></asp:TextBox>
+                        <br />
+                        <asp:CheckBox ID="chbA" runat="server" AutoPostBack="True" CssClass="auto-style5" />
+&nbsp; Editar</div>
                     <div class="form-group">
                       Documento
-                    <asp:TextBox ID="txtDoc" runat="server" class="form-control" ></asp:TextBox>
-                  </div>
+                        <br />
+                    <asp:TextBox ID="txtDoc" runat="server" class="form-control" Width="435px" Enabled="False" ></asp:TextBox>
+                        <br />
+                        <asp:CheckBox ID="chbD" runat="server" AutoPostBack="True" CssClass="auto-style3" />
+&nbsp; Editar</div>
                     <div class="form-group">
                       Email
-                    <asp:TextBox ID="txtEmail" runat="server" type="email" class="form-control" ></asp:TextBox>
-                  </div>
+                        <br />
+                    <asp:TextBox ID="txtEmail" runat="server" type="email" class="form-control" Width="436px" Enabled="False" ></asp:TextBox>
+                        <br />
+                        <asp:CheckBox ID="chbE" runat="server" AutoPostBack="True" CssClass="auto-style4" />
+&nbsp; Editar</div>
 
                     <div class="form-group">
                       Cambiar Contraseña
-                    <asp:TextBox ID="txtCo" runat="server" type="password" class="form-control" ></asp:TextBox>
+                        <br />
+                    <asp:TextBox ID="txtCo" runat="server" type="password" class="form-control" Width="436px" Enabled="False" ></asp:TextBox>
                   </div>
                   
                   <div class="form-check">
-                    &nbsp;<label class="form-check-label" for="exampleCheck1">Check me out</label>
-                  </div>
+                      <asp:CheckBox ID="cbhC" runat="server" AutoPostBack="True" CssClass="auto-style6" />
+&nbsp; Editar</div>
                 </div>
                 <!-- /.card-body -->
 
                 <div class="card-footer">
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  
+                    <asp:Button ID="btnEditar" type="submit" class="btn btn-primary" runat ="server" Text="Editar Informacion" />
+                    <br />
                 </div>
               </form>
             </div>
