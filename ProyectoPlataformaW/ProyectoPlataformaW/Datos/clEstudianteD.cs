@@ -160,7 +160,7 @@ namespace ProyectoPlataformaW.Datos
         public int mtdActualizarInfo(clEntidadEstudiante objEst)
         {
 
-            string sql = "UPDATE Estudiante SET Nombres = '" + objEst.Nombres + "', Apellidos = '"+ objEst.Apellidos +"', Documento = '"+ objEst.Documento +"', Email ='"+ objEst.Email +"' WHERE Email = '"+ objEst.Email +"'";
+            string sql = "UPDATE Estudiante SET Nombres = '" + objEst.Nombres + "', Apellidos = '"+ objEst.Apellidos +"', Documento = '"+ objEst.Documento +"', Email = '"+ objEst.Email +"' WHERE Email = '"+ objEst.Email +"'";
 
             clAdminSQL objConexion = new clAdminSQL();
             int xd = objConexion.mtdConectado(sql);

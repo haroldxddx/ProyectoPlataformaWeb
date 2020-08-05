@@ -308,7 +308,6 @@
     <Content Include="Vista\dist\js\pages\dashboard3.js" />
     <Content Include="Vista\editarPerfilE.aspx" />
     <Content Include="Vista\editPerfil2.aspx" />
-    <Content Include="Vista\general.html" />
     <Content Include="Vista\index.html" />
     <Content Include="Vista\inicioEstudiante.aspx" />
     <Content Include="Vista\css\animate.css" />

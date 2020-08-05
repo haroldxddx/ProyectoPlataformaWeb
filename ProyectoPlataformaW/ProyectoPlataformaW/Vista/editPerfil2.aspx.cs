@@ -60,5 +60,43 @@ namespace ProyectoPlataformaW.Vista
 
             }
         }
+
+        protected void btnEditar_Click(object sender, EventArgs e)
+        {
+            clEntidadEstudiante objEs = new clEntidadEstudiante();
+            clEntidadEstudiante objEe = new clEntidadEstudiante();
+            objEs.Nombres = txtNom.Text;
+            objEs.Apellidos = txtAp.Text;
+            objEs.Documento = int.Parse(txtDoc.Text);
+            objEs.Email = txtEmail.Text;
+            objEe.Contrasena = txtCo.Text;
+
+
+            clEstudianteL clE = new clEstudianteL();
+               
+
+            if (txtCo.Text == "")
+            {
+                int result = clE.mtdEdit(objEs);
+                if (result > 0)
+                {
+
+                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    Response.Redirect("~/Vista/inicioEstu.aspx");
+                }
+                
+            }
+            else
+            {
+                int r = clE.mtdCambiarC(objEe);
+                if (r > 0)
+                {
+                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente 1'" + ") </script>");
+                    txtCo.Text = "";
+                }
+            }
+                
+            
+        }
     }
 }
