@@ -97,7 +97,7 @@
     <Content Include="Imagenes\sobresalir %282%29.png" />
     <Content Include="Imagenes\video.png" />
     <Content Include="inicio.aspx" />
-    <Content Include="Administrador.aspx" />
+    <Content Include="Vista\inicioAdministrador.aspx" />
     <Content Include="login\css\main.css" />
     <Content Include="login\css\util.css" />
     <Content Include="login\fonts\font-awesome-4.7.0\css\font-awesome.css" />
@@ -310,7 +310,7 @@
     <Content Include="Vista\editPerfil2.aspx" />
     <Content Include="Vista\general.html" />
     <Content Include="Vista\index.html" />
-    <Content Include="Vista\inicioEstu.aspx" />
+    <Content Include="Vista\inicioEstudiante.aspx" />
     <Content Include="Vista\css\animate.css" />
     <Content Include="Vista\css\animate.min.css" />
     <Content Include="Vista\css\bootstrap-touch-slider.css" />
@@ -2042,11 +2042,11 @@
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
     <Content Include="Vista\prueba.html" />
-    <Content Include="Vista\RegistrarAdministrador.aspx" />
-    <Content Include="Vista\RegistrarCurso.aspx" />
-    <Content Include="Vista\RegistrarEstudiante.aspx" />
-    <Content Include="Vista\RegistrarMateria.aspx" />
-    <Content Include="Vista\RegistrarProfesor.aspx" />
+    <Content Include="Vista\registrarAdministrador.aspx" />
+    <Content Include="Vista\registrarCurso.aspx" />
+    <Content Include="Vista\registrarEstudiante.aspx" />
+    <Content Include="Vista\registrarMateria.aspx" />
+    <Content Include="Vista\registrarProfesor.aspx" />
     <Content Include="Vista\style.css" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
@@ -2095,12 +2095,12 @@
     <Compile Include="inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Administrador.aspx.cs">
-      <DependentUpon>Administrador.aspx</DependentUpon>
+    <Compile Include="Vista\inicioAdministrador.aspx.cs">
+      <DependentUpon>inicioAdministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Administrador.aspx.designer.cs">
-      <DependentUpon>Administrador.aspx</DependentUpon>
+    <Compile Include="Vista\inicioAdministrador.aspx.designer.cs">
+      <DependentUpon>inicioAdministrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logica\clAdministradorL.cs" />
     <Compile Include="Logica\clCursoL.cs" />
@@ -2162,12 +2162,12 @@
     <Compile Include="Vista\editPerfil2.aspx.designer.cs">
       <DependentUpon>editPerfil2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\inicioEstu.aspx.cs">
-      <DependentUpon>inicioEstu.aspx</DependentUpon>
+    <Compile Include="Vista\inicioEstudiante.aspx.cs">
+      <DependentUpon>inicioEstudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\inicioEstu.aspx.designer.cs">
-      <DependentUpon>inicioEstu.aspx</DependentUpon>
+    <Compile Include="Vista\inicioEstudiante.aspx.designer.cs">
+      <DependentUpon>inicioEstudiante.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPageAdmin.Master.cs">
       <DependentUpon>MasterPageAdmin.Master</DependentUpon>
@@ -2205,40 +2205,40 @@
     <Compile Include="Vista\listadoProfesor.aspx.designer.cs">
       <DependentUpon>listadoProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\RegistrarAdministrador.aspx.cs">
-      <DependentUpon>RegistrarAdministrador.aspx</DependentUpon>
+    <Compile Include="Vista\registrarAdministrador.aspx.cs">
+      <DependentUpon>registrarAdministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\RegistrarAdministrador.aspx.designer.cs">
-      <DependentUpon>RegistrarAdministrador.aspx</DependentUpon>
+    <Compile Include="Vista\registrarAdministrador.aspx.designer.cs">
+      <DependentUpon>registrarAdministrador.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\RegistrarCurso.aspx.cs">
-      <DependentUpon>RegistrarCurso.aspx</DependentUpon>
+    <Compile Include="Vista\registrarCurso.aspx.cs">
+      <DependentUpon>registrarCurso.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\RegistrarCurso.aspx.designer.cs">
-      <DependentUpon>RegistrarCurso.aspx</DependentUpon>
+    <Compile Include="Vista\registrarCurso.aspx.designer.cs">
+      <DependentUpon>registrarCurso.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\RegistrarEstudiante.aspx.cs">
-      <DependentUpon>RegistrarEstudiante.aspx</DependentUpon>
+    <Compile Include="Vista\registrarEstudiante.aspx.cs">
+      <DependentUpon>registrarEstudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\RegistrarEstudiante.aspx.designer.cs">
-      <DependentUpon>RegistrarEstudiante.aspx</DependentUpon>
+    <Compile Include="Vista\registrarEstudiante.aspx.designer.cs">
+      <DependentUpon>registrarEstudiante.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\RegistrarMateria.aspx.cs">
-      <DependentUpon>RegistrarMateria.aspx</DependentUpon>
+    <Compile Include="Vista\registrarMateria.aspx.cs">
+      <DependentUpon>registrarMateria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\RegistrarMateria.aspx.designer.cs">
-      <DependentUpon>RegistrarMateria.aspx</DependentUpon>
+    <Compile Include="Vista\registrarMateria.aspx.designer.cs">
+      <DependentUpon>registrarMateria.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\RegistrarProfesor.aspx.cs">
-      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+    <Compile Include="Vista\registrarProfesor.aspx.cs">
+      <DependentUpon>registrarProfesor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\RegistrarProfesor.aspx.designer.cs">
-      <DependentUpon>RegistrarProfesor.aspx</DependentUpon>
+    <Compile Include="Vista\registrarProfesor.aspx.designer.cs">
+      <DependentUpon>registrarProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>
