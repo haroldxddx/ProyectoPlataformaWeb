@@ -45,8 +45,9 @@
 
 
     </head>
+      
     <body>
-
+      <form id="form1" runat="server">
           <div class="all-title-box">
 		<div class="container text-center">
 			<h1>Actividades<span class="m_1"></span></h1>
@@ -83,7 +84,8 @@
  </p>
 						</div>
 						<div class="blog-button">
-							<a class="hover-btn-new orange" href="#"><span>Realizar<span></a>
+                            <asp:Button class="hover-btn-new orange" ID="btnRealizar" runat="server" Text="Realizar" />
+							
 						</div>
 					</div>
                 </div><!-- end col -->
@@ -105,7 +107,8 @@
 							<p> Realizar actividad de acuerdo a sus capacidades de aprendizaje y con base a los implementos suministrados </p>
 						</div>
 						<div class="blog-button">
-							<a class="hover-btn-new orange" href="#"><span>Realizar</span></a>
+						 <asp:Button class="hover-btn-new orange" ID="btnreali" runat="server" Text="Realizar" />
+
 						</div>
 					</div>
                 </div><!-- end col -->
@@ -115,8 +118,9 @@
         </div><!-- end container -->
     </div><!-- end section -->
 	
-
+           </form>
     </body>
+   
     </html>
 </asp:Content>
 

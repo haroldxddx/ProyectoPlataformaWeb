@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW.Datos
     {
         public List<clEntidadProfesorE> mtdListarProf()
         {
-            string sql = "select Nombres,Apellidos,Documento,Email,Especialidad from Profesor";
+            string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email,Especialidad from Profesor";
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblprof = new DataTable();
             tblprof = objSql.mtdDesconectado(sql);
@@ -21,13 +21,13 @@ namespace ProyectoPlataformaW.Datos
             for (int i = 0; i < tblprof.Rows.Count; i++)
             {
                 clEntidadProfesorE objProf = new clEntidadProfesorE();
-               
-                
-                objProf.Nombres = tblprof.Rows[i][0].ToString();
-                objProf.Apellidos = tblprof.Rows[i][1].ToString();
-                objProf.Documento = int.Parse(tblprof.Rows[i][2].ToString());
-                objProf.Email = tblprof.Rows[i][3].ToString();
-                objProf.Especialidad = tblprof.Rows[i][4].ToString();
+
+                objProf.idProfesor = int.Parse(tblprof.Rows[i][0].ToString());
+                objProf.Nombres = tblprof.Rows[i][1].ToString();
+                objProf.Apellidos = tblprof.Rows[i][2].ToString();
+                objProf.Documento = int.Parse(tblprof.Rows[i][3].ToString());
+                objProf.Email = tblprof.Rows[i][4].ToString();
+                objProf.Especialidad = tblprof.Rows[i][5].ToString();
 
 
 
@@ -39,6 +39,33 @@ namespace ProyectoPlataformaW.Datos
 
 
         }
+        public List<clEntidadProfesorE> mtdListarProfe()
+        {
+            string sql = "select IdProfesor,Nombres,Apellidos,Especialidad from Profesor";
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblprof = new DataTable();
+            tblprof = objSql.mtdDesconectado(sql);
+
+            List<clEntidadProfesorE> listaProfe = new List<clEntidadProfesorE>();
+
+            for (int i = 0; i < tblprof.Rows.Count; i++)
+            {
+                clEntidadProfesorE objProf = new clEntidadProfesorE();
+
+                objProf.idProfesor = int.Parse(tblprof.Rows[i][0].ToString());
+                objProf.Nombres = tblprof.Rows[i][1].ToString();
+                objProf.Apellidos = tblprof.Rows[i][2].ToString();
+                objProf.Especialidad = tblprof.Rows[i][3].ToString();
+
+
+
+                listaProfe.Add(objProf);
+
+            }
+
+            return listaProfe;
+        }
+
 
         //login
         public List<clEntidadProfesorE> mtdListarlogin(clEntidadProfesorE objest)
