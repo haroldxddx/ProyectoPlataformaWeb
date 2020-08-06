@@ -88,7 +88,6 @@
                       <br />
                       <asp:Label ID="lblNom" runat="server"></asp:Label>
                       <br />
-                      <br />
                     <asp:TextBox ID="txtNom" runat="server" class="form-control" Width="437px" Enabled="False" ></asp:TextBox>
                       <br />
                       <asp:CheckBox ID="chbN" runat="server" AutoPostBack="True" CssClass="auto-style2" />

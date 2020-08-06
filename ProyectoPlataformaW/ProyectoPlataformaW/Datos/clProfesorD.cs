@@ -100,6 +100,76 @@ namespace ProyectoPlataformaW.Datos
             int result = objSQL.mtdConectado(sqlInsert);
             return result;
         }
+
+        //Actualizar Nombre
+
+        public int mtdEditarNomP(clEntidadProfesorE objPr)
+        {
+
+            string sql = "UPDATE Profesor SET Nombres = '" + objPr.Nombres + "' WHERE Email = '" + objPr.Email + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+        //EDITAR APELLIDO
+        public int mtdEditarApellidoP(clEntidadProfesorE objPr)
+        {
+
+            string sql = "UPDATE Profesor SET Apellidos = '" + objPr.Apellidos + "' WHERE Email = '" + objPr.Email + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+        //EDITAR DOCUMENTO
+        public int mtdEditarDocP(clEntidadProfesorE objPr)
+        {
+
+            string sql = "UPDATE Profesor SET Documento = '" + objPr.Documento + "' WHERE Email = '" + objPr.Email + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+        //Editar Email
+
+        public int mtdEditarEmaP(clEntidadProfesorE objPr)
+        {
+
+            string sql = "UPDATE Profesor SET Email = '" + objPr.Email + "' WHERE Documento = '" + objPr.Documento + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+        //Editar Especialidad
+        public int mtdEditarEspecialidadP(clEntidadProfesorE objPr)
+        {
+
+            string sql = "UPDATE Profesor SET Especialidad = '" + objPr.Especialidad + "' WHERE Email = '" + objPr.Email + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+
+
+        //Cambiar Contraseña
+        public int mtdEditarContP(clEntidadProfesorE objPr)
+        {
+
+            string sql = "UPDATE Profesor SET Contrasena = '" + objPr.Contrasena + "' WHERE Email = '" + objPr.Email + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
     }
 
 

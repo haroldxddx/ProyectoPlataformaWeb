@@ -25,6 +25,7 @@ namespace ProyectoPlataformaW.login
             string contraseña = txtContraseña.Text;
             string usuario = txtUsuario.Text;
 
+            //Desencriptar
             string pass = Encrypt.GetSHA256(contraseña);
 
 
