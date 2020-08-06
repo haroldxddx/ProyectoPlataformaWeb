@@ -119,7 +119,7 @@
 							&nbsp;<img alt="mathe" class="auto-style3" src="../Imagenes/math.jpg" /></div>
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="#" title="">M</a><a href="#"><span class="auto-style2">atematicas</span></a></h2>
+								<h2><a href="actividadesMatematicas.aspx" title="">M</a><a href="actividadesMatematicas.aspx"><span class="auto-style2">atematicas</span></a></h2>
 							</div>
 							<div class="course-desc">
 								<p>Decimo</p>
