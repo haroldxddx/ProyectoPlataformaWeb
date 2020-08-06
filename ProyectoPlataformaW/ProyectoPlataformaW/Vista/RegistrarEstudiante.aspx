@@ -30,7 +30,8 @@
         <br />
         <br />
         <p style="text-align: center" class="auto-style2"  >
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REGISTRAR ESTUDIANTE</strong></p>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REGISTRAR ESTUDIANTE<asp:Image ID="Image4" runat="server" Height="100px" ImageUrl="~/Imagenes/estudiante.png" Width="112px" />
+            </strong></p>
     <p style="text-align: center" class="auto-style2"  >
         
         <br />
@@ -69,7 +70,10 @@
             </tr>
         <tr>
             <td class="auto-style5 border-warning">&nbsp;CURSO</td>
-           <td class="border-warning"><asp:TextBox ID="txtCur" BorderColor="#4C5A7D" runat="server" Width="266px" ></asp:TextBox> </td>
+           <td class="border-warning">
+               <asp:DropDownList ID="dpdCurso" runat="server" Height="26px" OnSelectedIndexChanged="dpdCurso_SelectedIndexChanged" Width="115px">
+               </asp:DropDownList>
+            </td>
             
         </tr>
        </div>

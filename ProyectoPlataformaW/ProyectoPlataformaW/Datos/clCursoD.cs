@@ -9,31 +9,45 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clCursoD
     {
-        public List<clEntidadCursosE> mtdListarCurso()
-        {
-            string sql = "select * from Curso";
-            clAdminSQL objSql = new clAdminSQL();
-            DataTable tblcurso = new DataTable();
-            tblcurso = objSql.mtdDesconectado(sql);
-
-            List<clEntidadCursosE> listaCur = new List<clEntidadCursosE>();
-
-            for (int i = 0; i < tblcurso.Rows.Count; i++)
+            public int mtdRegistrarCurso(clEntidadCurso objECurso)
             {
-                clEntidadCursosE objCurs = new clEntidadCursosE();
+                string sqlInsert = "Insert into Curso (Grado,Curso)" +
+                     "values('" + objECurso.Grado + "' , '" + objECurso.Curso + "' )";
 
-                objCurs.IdCurso = int.Parse(tblcurso.Rows[i][0].ToString());
-                objCurs.Grado = tblcurso.Rows[i][1].ToString();
-                objCurs.Curso = tblcurso.Rows[i][2].ToString();
+                clAdminSQL objSQL = new clAdminSQL();
+                int result = objSQL.mtdConectado(sqlInsert);
+                return result;
 
 
-                listaCur.Add(objCurs);
 
             }
+            public List<clEntidadCursosE> mtdListarCurso()
+            {
+                string sql = "select * from Curso";
+                clAdminSQL objSql = new clAdminSQL();
+                DataTable tblcurso = new DataTable();
+                tblcurso = objSql.mtdDesconectado(sql);
 
-            return listaCur;
+                List<clEntidadCursosE> listaCur = new List<clEntidadCursosE>();
+
+                for (int i = 0; i < tblcurso.Rows.Count; i++)
+                {
+                    clEntidadCursosE objCurs = new clEntidadCursosE();
+
+                    objCurs.IdCurso = int.Parse(tblcurso.Rows[i][0].ToString());
+                    objCurs.Grado = tblcurso.Rows[i][1].ToString();
+                    objCurs.Curso = tblcurso.Rows[i][2].ToString();
+                listaCur.Add(objCurs);
 
 
+                }
+
+                return listaCur;
+
+
+
+
+            }
         }
+     
     }
-}

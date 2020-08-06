@@ -9,9 +9,18 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clEstudianteD
     {
+        public int mtdRegistrarEstudiante(clEntidadEstudianteT objEst)
+        {
+            string sqlInsert = "insert into Estudiante (Nombres,Apellidos,Documento,Email,Contrasena,IdCurso)" +
+                "values('" + objEst.Nombres + "' , '" + objEst.Apellidos + "' , " + objEst.Documento + " , '" + objEst.Email + "' , '" + objEst.Contrasena + "' , " + objEst.IdCurso + ")";
+
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
+            return result;
+        }
 
         //Recuperacion de contraseña
-       public List<clEntidadEstudiante> mtdListar()
+        public List<clEntidadEstudiante> mtdListar()
         {
             string sql = "select Email,Contrasena from Estudiante" ;
             clAdminSQL objSql = new clAdminSQL();

@@ -15,6 +15,15 @@ namespace ProyectoPlataformaW.Vista
     {
 
         /// <summary>
+        /// Control Image4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image4;
+
+        /// <summary>
         /// Control txtNom.
         /// </summary>
         /// <remarks>
@@ -60,13 +69,13 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.TextBox txtCon;
 
         /// <summary>
-        /// Control txtCur.
+        /// Control dpdCurso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCur;
+        protected global::System.Web.UI.WebControls.DropDownList dpdCurso;
 
         /// <summary>
         /// Control Image2.
