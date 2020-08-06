@@ -1,5 +1,6 @@
 ﻿using ProyectoPlataformaW.Datos;
 using ProyectoPlataformaW.Entidades;
+using ProyectoPlataformaW.Logica;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +14,22 @@ namespace ProyectoPlataformaW.Vista
 {
 	public partial class RegistrarEstudiante : System.Web.UI.Page
 	{
-		protected void Page_Load(object sender, EventArgs e)
-		{
+        protected void Page_Load(object sender, EventArgs e)
+        {
 
-		}
+            List<clEntidadCursosE> listaCurso = new List<clEntidadCursosE>();
+            clCursoD objCurso = new clCursoD();
+            listaCurso = objCurso.mtdListarCurso();
 
-        protected void btnRegistrarE_Click(object sender, EventArgs e)
+            dpdCurso.DataSource = listaCurso;
+            dpdCurso.DataTextField = "Curso";
+            dpdCurso.DataValueField = "IdCurso";
+            dpdCurso.DataBind();
+
+        }
+
+    protected void btnRegistrarE_Click(object sender, EventArgs e)
+
         {
             clEntidadEstudianteT objEEstu = new clEntidadEstudianteT();
             objEEstu.Nombres = txtNom.Text;
@@ -26,10 +37,15 @@ namespace ProyectoPlataformaW.Vista
             objEEstu.Documento = int.Parse(txtDoc.Text);
             objEEstu.Email = txtEma.Text;
             objEEstu.Contrasena = Encrypt.GetSHA256(txtCon.Text);
-            objEEstu.IdCurso = int.Parse(txtCur.Text);
+            objEEstu.IdCurso = int.Parse(dpdCurso.Text);
 
             clEstudianteR objEstu = new clEstudianteR();
             int resultsql = objEstu.mtdRegistrarEstudiante(objEEstu);
+
+        }
+
+        protected void dpdCurso_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

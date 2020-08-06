@@ -69,6 +69,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administrador.aspx" />
     <Content Include="App_Data\dbProyectoPlataforma.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -2051,6 +2052,13 @@
     <Content Include="WebService.asmx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
     <Compile Include="correoPrueba.aspx.cs">
       <DependentUpon>correoPrueba.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2063,7 +2071,6 @@
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clCursoD.cs" />
-    <Compile Include="Datos\clCursoR.cs" />
     <Compile Include="Datos\clEncrypt.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clEstudianteR.cs" />
