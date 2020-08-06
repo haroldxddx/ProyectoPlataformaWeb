@@ -16,6 +16,41 @@ namespace ProyectoPlataformaW
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            try
+            {
+                if (Session["general"].ToString() == null)
+                {
+                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                }
+
+                if (Session["general"].ToString() == "profesor")
+                {
+
+                    
+
+                }
+                else if (Session["general"].ToString() != "profesor")
+                {
+
+                    Response.Redirect("~/inicio.aspx");
+                }
+            }
+            catch (Exception)
+            {
+
+                Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
+
+                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
+                //redirigir a login //
+
+                Session.Clear();
+                Response.Redirect("~/inicio.aspx");
+
+            }
+
+
+
+
         }
 
 

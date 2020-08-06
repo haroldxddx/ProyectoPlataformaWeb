@@ -102,6 +102,8 @@
     <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
+    <Content Include="Vista\images\16.png" />
+    <Content Include="Vista\images\i.jpg" />
     <Content Include="Vista\inicioAdministrador.aspx" />
     <Content Include="login\css\main.css" />
     <Content Include="login\css\util.css" />

@@ -50,5 +50,10 @@ namespace ProyectoPlataformaW.Vista
 
 
         }
+
+        protected void btnRealizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
