@@ -19,7 +19,7 @@ namespace ProyectoPlataformaW
 
         protected void btnRegistrarP_Click(object sender, EventArgs e)
         {
-            clEntidadAdministrador objEAdmin = new clEntidadAdministrador();
+            clEntidadAdministradorE objEAdmin = new clEntidadAdministradorE();
             objEAdmin.Nombres = txtNom.Text;
             objEAdmin.Apellidos = txtApe.Text;
             objEAdmin.Documento = int.Parse(txtDoc.Text);
@@ -27,7 +27,7 @@ namespace ProyectoPlataformaW
             objEAdmin.Contrasena = Encrypt.GetSHA256( txtCon.Text);
             objEAdmin.Tipo = dpdTipo.Text;
 
-            clAdministradorR objAdmin = new clAdministradorR();
+            clAdministradorD objAdmin = new clAdministradorD();
             int result = objAdmin.mtdRegistrarAdministrador(objEAdmin);
 
             txtNom.Text = "";

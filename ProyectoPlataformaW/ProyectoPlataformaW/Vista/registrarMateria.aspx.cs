@@ -19,7 +19,7 @@ namespace ProyectoPlataformaW
         protected void btnRegistrarE_Click(object sender, EventArgs e)
         {
             
-                clEntidadMateria objEMateria = new clEntidadMateria();
+                clEntidadMateriaE objEMateria = new clEntidadMateriaE();
                 objEMateria.NombreMateria = txtNomM.Text;
                 objEMateria.NivelAcademico = dplNivel.SelectedValue;
 

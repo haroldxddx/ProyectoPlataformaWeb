@@ -9,7 +9,7 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clCursoD
     {
-            public int mtdRegistrarCurso(clEntidadCurso objECurso)
+            public int mtdRegistrarCurso(clEntidadCursosE objECurso)
             {
                 string sqlInsert = "Insert into Curso (Grado,Curso)" +
                      "values('" + objECurso.Grado + "' , '" + objECurso.Curso + "' )";

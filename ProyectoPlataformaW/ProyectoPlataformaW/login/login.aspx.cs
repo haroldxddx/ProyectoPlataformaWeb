@@ -13,7 +13,7 @@ namespace ProyectoPlataformaW.login
 {
     public partial class login : System.Web.UI.Page
     {
-        List<clEntidadEstudiante> listaPro = new List<clEntidadEstudiante>();
+        List<clEntidadEstudianteE> listaPro = new List<clEntidadEstudianteE>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -28,13 +28,13 @@ namespace ProyectoPlataformaW.login
             string pass = Encrypt.GetSHA256(contraseña);
 
 
-            List<clEntidadEstudiante> listaBus = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaBus = new List<clEntidadEstudianteE>();
             List<clEntidadProfesorE> listaBusp = new List<clEntidadProfesorE>();
             List<clEntidadAdministradorE> listaBusa = new List<clEntidadAdministradorE>();
 
             
 
-            clEntidadEstudiante objEstudiante = new clEntidadEstudiante();
+            clEntidadEstudianteE objEstudiante = new clEntidadEstudianteE();
             objEstudiante.Contrasena = pass;
             objEstudiante.Email = usuario;
 

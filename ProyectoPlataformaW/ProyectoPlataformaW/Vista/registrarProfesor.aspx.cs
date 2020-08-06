@@ -22,7 +22,7 @@ namespace ProyectoPlataformaW
 
         protected void btnRegistrarP_Click(object sender, EventArgs e)
         {
-            clEntidadProfesor objEProfe = new clEntidadProfesor();
+            clEntidadProfesorE objEProfe = new clEntidadProfesorE();
             objEProfe.Nombres = txtNom.Text;
             objEProfe.Apellidos = txtApe.Text;
             objEProfe.Documento = int.Parse(txtDoc.Text);
@@ -30,7 +30,7 @@ namespace ProyectoPlataformaW
             objEProfe.Contrasena = Encrypt.GetSHA256(txtCon.Text);
             objEProfe.Especialidad = txtEsp.Text;
 
-            clProfesorR objProfe = new clProfesorR();
+            clProfesorD objProfe = new clProfesorD();
             int result = objProfe.mtdRegistrarProfesor(objEProfe);
 
         }
