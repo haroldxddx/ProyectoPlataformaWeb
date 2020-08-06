@@ -82,7 +82,7 @@
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
 								            <a class="dropdown-item" href="/Vista/listadoProfesor.aspx">Listado de Profesores</a>
 								            <a class="dropdown-item" href="/Vista/registrarProfesor.aspx">Registro de profesores </a>
-								            <a class="dropdown-item" href="/Vista/asignarActividadesP.aspx">Asignacion de profesores </a>
+								            <a class="dropdown-item" href="#">Asignacion de profesores </a>
 							            </div>
 						            </li>
                                     <li class="nav-item dropdown">
