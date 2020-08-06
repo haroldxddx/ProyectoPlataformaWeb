@@ -36,12 +36,14 @@ namespace ProyectoPlataformaW.Vista
             catch (Exception)
             {
 
+
                 Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
 
                 //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
-                //redirigir a login //Response.Redirect("~/inicio.aspx");
+                //redirigir a login //
 
                 Session.Clear();
+                Response.Redirect("~/inicio.aspx");
 
             }
 
