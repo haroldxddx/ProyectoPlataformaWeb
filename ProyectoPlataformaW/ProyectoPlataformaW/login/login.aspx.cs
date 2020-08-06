@@ -25,12 +25,14 @@ namespace ProyectoPlataformaW.login
             string contraseña = txtContraseña.Text;
             string usuario = txtUsuario.Text;
 
+            string pass = Encrypt.GetSHA256(contraseña);
+
 
             List<clEntidadEstudiante> listaBus = new List<clEntidadEstudiante>();
             List<clEntidadProfesorE> listaBusp = new List<clEntidadProfesorE>();
             List<clEntidadAdministradorE> listaBusa = new List<clEntidadAdministradorE>();
 
-            string pass = Encrypt.GetSHA256(contraseña);
+            
 
             clEntidadEstudiante objEstudiante = new clEntidadEstudiante();
             objEstudiante.Contrasena = pass;
