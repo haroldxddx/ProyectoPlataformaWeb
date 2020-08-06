@@ -2071,12 +2071,14 @@
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clCursoD.cs" />
+    <Compile Include="Datos\clCursoMateriaD.cs" />
     <Compile Include="Datos\clEncrypt.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
-    <Compile Include="Datos\clMateriaR.cs" />
+    <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
+    <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />

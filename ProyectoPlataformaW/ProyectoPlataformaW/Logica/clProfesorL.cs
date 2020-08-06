@@ -19,15 +19,18 @@ namespace ProyectoPlataformaW.Logica
             return listaApb1;
         }
 
-
-
-
-
         public List<clEntidadProfesorE> mtdListProf()
         {
             clProfesorD objProf = new clProfesorD();
             List<clEntidadProfesorE> listP = new List<clEntidadProfesorE>();
             listP = objProf.mtdListarProf();
+            return listP;
+        }
+        public List<clEntidadProfesorE> mtdListProfe()
+        {
+            clProfesorD objProfe = new clProfesorD();
+            List<clEntidadProfesorE> listP = new List<clEntidadProfesorE>();
+            listP = objProfe.mtdListarProfe();
             return listP;
         }
 

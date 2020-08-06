@@ -31,7 +31,7 @@
 <br />
 <br />
 <br />
-<asp:GridView ID="gvProf" runat="server" CellPadding="4" CssClass="auto-style2" ForeColor="#333333" GridLines="None">
+<asp:GridView ID="gvProf" runat="server" CellPadding="4" CssClass="auto-style2" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvProf_SelectedIndexChanged">
     <AlternatingRowStyle BackColor="White" />
     <EditRowStyle BackColor="#2461BF" />
     <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

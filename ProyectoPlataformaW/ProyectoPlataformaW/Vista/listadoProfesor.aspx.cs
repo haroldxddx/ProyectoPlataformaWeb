@@ -69,11 +69,10 @@ namespace ProyectoPlataformaW.Vista
 
             
         }
-        
 
+        protected void gvProf_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-
-
-
+        }
     }
 }
