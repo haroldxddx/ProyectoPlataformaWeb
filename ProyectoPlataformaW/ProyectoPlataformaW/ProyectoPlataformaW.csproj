@@ -2063,7 +2063,6 @@
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clCursoD.cs" />
-    <Compile Include="Datos\clCursoR.cs" />
     <Compile Include="Datos\clEncrypt.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clEstudianteR.cs" />

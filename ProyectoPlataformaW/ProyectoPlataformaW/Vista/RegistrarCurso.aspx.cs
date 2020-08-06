@@ -23,7 +23,7 @@ namespace ProyectoPlataformaW.Vista
 			objECurso.Curso = txtCur.Text;
 			objECurso.Grado = dplGrado.SelectedValue;
 
-			clCursoR objCurso = new clCursoR();
+			clCursoD objCurso = new clCursoD();
 			int result = objCurso.mtdRegistrarCurso(objECurso);
         }
     }
