@@ -39,7 +39,7 @@ namespace ProyectoPlataformaW.Vista
             objEEstu.Contrasena = Encrypt.GetSHA256(txtCon.Text);
             objEEstu.IdCurso = int.Parse(dpdCurso.Text);
 
-            clEstudianteR objEstu = new clEstudianteR();
+            clEstudianteD objEstu = new clEstudianteD();
             int resultsql = objEstu.mtdRegistrarEstudiante(objEEstu);
 
         }
