@@ -23,7 +23,7 @@ namespace ProyectoPlataformaW
                 objEMateria.NombreMateria = txtNomM.Text;
                 objEMateria.NivelAcademico = dplNivel.SelectedValue;
 
-                clMateriaR objMateria = new clMateriaR();
+                clMateriaD objMateria = new clMateriaD();
                 int result = objMateria.mtdRegistrarMateria(objEMateria);
 
             txtNomM.Text = "";
