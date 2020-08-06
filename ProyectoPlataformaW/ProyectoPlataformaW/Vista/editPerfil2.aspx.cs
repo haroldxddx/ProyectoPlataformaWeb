@@ -14,6 +14,43 @@ namespace ProyectoPlataformaW.Vista
         List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            try
+            {
+                if (Session["general"].ToString() == null)
+                {
+                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                }
+
+                if (Session["general"].ToString() == "estudiante")
+                {
+
+
+
+                }
+                else if (Session["general"].ToString() != "estudiante")
+                {
+
+                    Response.Redirect("~/inicio.aspx");
+                }
+            }
+            catch (Exception)
+            {
+
+                Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
+
+                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
+                //redirigir a login //Response.Redirect("~/inicio.aspx");
+
+                Session.Clear();
+
+            }
+
+
+
+
+
+
             //Activar Cajas de texto
             if (chbN.Checked == true)
             {
