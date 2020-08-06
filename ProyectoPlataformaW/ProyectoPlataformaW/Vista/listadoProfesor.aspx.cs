@@ -24,9 +24,9 @@ namespace ProyectoPlataformaW.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            mtdCargarGrid();
 
-
-            try
+            /*try
             {
                 if (Session["general"].ToString() == null)
                 {
@@ -55,16 +55,8 @@ namespace ProyectoPlataformaW.Vista
                 //redirigir a login //Response.Redirect("~/inicio.aspx");
 
 
-               
 
-
-
-
-
-
-
-
-            }
+            }*/
 
 
             

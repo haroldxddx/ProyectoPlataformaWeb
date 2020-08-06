@@ -164,17 +164,53 @@ namespace ProyectoPlataformaW.Datos
 
         }
 
-        //Actualizar Informacion Personal
+        //Actualizar Nombre
 
-        public int mtdActualizarInfo(clEntidadEstudianteE objEst)
+        public int mtdEditarNom(clEntidadEstudianteE objEst)
         {
 
-            string sql = "UPDATE Estudiante SET Nombres = '" + objEst.Nombres + "', Apellidos = '"+ objEst.Apellidos +"', Documento = '"+ objEst.Documento +"', Email = '"+ objEst.Email +"' WHERE Email = '"+ objEst.Email +"'";
+            string sql = "UPDATE Estudiante SET Nombres = '" + objEst.Nombres + "' WHERE Email = '"+ objEst.Email +"'";
 
             clAdminSQL objConexion = new clAdminSQL();
             int xd = objConexion.mtdConectado(sql);
             return xd;
         }
+
+        //EDITAR APELLIDO
+        public int mtdEditarAp(clEntidadEstudianteE objEst)
+        {
+
+            string sql = "UPDATE Estudiante SET Apellidos = '" + objEst.Apellidos + "' WHERE Email = '" + objEst.Email + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+        //EDITAR DOCUMENTO
+        public int mtdEditarDoc(clEntidadEstudianteE objEst)
+        {
+
+            string sql = "UPDATE Estudiante SET Documento = '" + objEst.Documento + "' WHERE Email = '" + objEst.Email + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+        //Editar Email
+
+        public int mtdEditarEmail(clEntidadEstudianteE objEst)
+        {
+
+            string sql = "UPDATE Estudiante SET Email = '" + objEst.Email + "' WHERE Documento = '" + objEst.Documento + "'";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+        
 
         //Cambiar Contraseña
         public int mtdCambiarCo(clEntidadEstudianteE objEst)

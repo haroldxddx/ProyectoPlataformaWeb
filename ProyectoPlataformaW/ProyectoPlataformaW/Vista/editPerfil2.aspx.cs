@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static ProyectoPlataformaW.Datos.clEncrypt;
 
 namespace ProyectoPlataformaW.Vista
 {
@@ -49,12 +50,12 @@ namespace ProyectoPlataformaW.Vista
                 {
                     clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
-                    txtNom.Text = objEstu.Nombres = listEestu[i].Nombres;
-                    txtAp.Text = objEstu.Apellidos = listEestu[i].Apellidos;
+                    lblNom.Text = objEstu.Nombres = listEestu[i].Nombres;
+                    lblAp.Text = objEstu.Apellidos = listEestu[i].Apellidos;
                     int d = objEstu.Documento = int.Parse(listEestu[i].Documento.ToString());
-                    txtDoc.Text = (d).ToString();
+                    lblDoc.Text = (d).ToString();
 
-                    txtEmail.Text = objEstu.Email = listEestu[i].Email;
+                    lblEma.Text = objEstu.Email = listEestu[i].Email;
 
                 }
 
@@ -64,37 +65,76 @@ namespace ProyectoPlataformaW.Vista
         protected void btnEditar_Click(object sender, EventArgs e)
         {
             clEntidadEstudianteE objEs = new clEntidadEstudianteE();
-            clEntidadEstudianteE objEe = new clEntidadEstudianteE();
-            objEs.Nombres = txtNom.Text;
+            
+            /*objEs.Nombres = txtNom.Text;
             objEs.Apellidos = txtAp.Text;
-            objEs.Documento = int.Parse(txtDoc.Text);
-            objEs.Email = txtEmail.Text;
-            objEe.Contrasena = txtCo.Text;
-
-
+            objEs.Documento = int.Parse(txtDoc.Text);*/
+           
             clEstudianteL clE = new clEstudianteL();
                
 
-            if (txtCo.Text == "")
+            if (txtCo.Text != "")
             {
-                int result = clE.mtdEdit(objEs);
-                if (result > 0)
-                {
-
-                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
-                    Response.Redirect("~/Vista/inicioEstu.aspx");
-                }
-                
-            }
-            else
-            {
-                int r = clE.mtdCambiarC(objEe);
+                objEs.Email = lblEma.Text;
+                objEs.Contrasena = Encrypt.GetSHA256(txtCo.Text); ;
+                int r = clE.mtdCambiarC(objEs);
                 if (r > 0)
                 {
-                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente 1'" + ") </script>");
+                    Response.Redirect("~/Vista/inicioEstudiante.aspx");
+                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
                     txtCo.Text = "";
                 }
+
+            }else if (txtNom.Text != "")
+            {
+                objEs.Email = lblEma.Text;
+                objEs.Nombres = txtNom.Text;
+                int r = clE.mtdENom(objEs);
+                if (r > 0)
+                {
+                    Response.Redirect("~/Vista/inicioEstudiante.aspx");
+                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    txtNom.Text = "";
+                }
             }
+            else if (txtAp.Text != "")
+            {
+                objEs.Email = lblEma.Text;
+                objEs.Apellidos = txtAp.Text;
+                int r = clE.mtdEAp(objEs);
+                if (r > 0)
+                {
+                    Response.Redirect("~/Vista/inicioEstudiante.aspx");
+                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    txtAp.Text = "";
+                }
+            }
+            else if (txtDoc.Text != "")
+            {
+                objEs.Email = lblEma.Text;
+                objEs.Documento = int.Parse(txtDoc.Text);
+                int r = clE.mtdEDoc(objEs);
+                if (r > 0)
+                {
+                    Response.Redirect("~/Vista/inicioEstudiante.aspx");
+                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    txtDoc.Text = "";
+                }
+            }
+            else if (txtEmail.Text != "")
+            {
+                objEs.Documento = int.Parse(lblDoc.Text);
+                objEs.Email = txtEmail.Text;
+                int r = clE.mtdEemail(objEs);
+                if (r > 0)
+                {
+                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    Response.Redirect("~/Vista/login.aspx");
+                    
+                    txtEmail.Text = "";
+                }
+            }
+           
                 
             
         }

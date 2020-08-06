@@ -99,6 +99,7 @@
     <Content Include="Imagenes\video.png" />
     <Content Include="inicio.aspx" />
     <Content Include="Vista\actividadesMatematicas.aspx" />
+    <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\inicioAdministrador.aspx" />
     <Content Include="login\css\main.css" />
@@ -256,7 +257,6 @@
     <Content Include="Vista\build\npm\Plugins.js" />
     <Content Include="Vista\build\npm\Publish.js" />
     <Content Include="Vista\buscadorAprendices.aspx" />
-    <Content Include="Vista\buttons.html" />
     <Content Include="Vista\dist\css\adminlte.css" />
     <Content Include="Vista\dist\css\adminlte.min.css" />
     <Content Include="Vista\dist\css\alt\adminlte.components.css" />
@@ -309,7 +309,6 @@
     <Content Include="Vista\dist\js\pages\dashboard.js" />
     <Content Include="Vista\dist\js\pages\dashboard2.js" />
     <Content Include="Vista\dist\js\pages\dashboard3.js" />
-    <Content Include="Vista\editarPerfilE.aspx" />
     <Content Include="Vista\editPerfil2.aspx" />
     <Content Include="Vista\index.html" />
     <Content Include="Vista\inicioEstudiante.aspx" />
@@ -2043,7 +2042,6 @@
     <Content Include="Vista\plugins\toastr\toastr.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
-    <Content Include="Vista\prueba.html" />
     <Content Include="Vista\registrarAdministrador.aspx" />
     <Content Include="Vista\registrarCurso.aspx" />
     <Content Include="Vista\registrarEstudiante.aspx" />
@@ -2102,6 +2100,13 @@
     </Compile>
     <Compile Include="Vista\actividadesMatematicas.aspx.designer.cs">
       <DependentUpon>actividadesMatematicas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\asignarActividadesP.aspx.cs">
+      <DependentUpon>asignarActividadesP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\asignarActividadesP.aspx.designer.cs">
+      <DependentUpon>asignarActividadesP.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\asignarProfesorCursoMateria.aspx.cs">
       <DependentUpon>asignarProfesorCursoMateria.aspx</DependentUpon>
@@ -2162,13 +2167,6 @@
     </Compile>
     <Compile Include="Vista\buscadorAprendices.aspx.designer.cs">
       <DependentUpon>buscadorAprendices.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\editarPerfilE.aspx.cs">
-      <DependentUpon>editarPerfilE.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\editarPerfilE.aspx.designer.cs">
-      <DependentUpon>editarPerfilE.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\editPerfil2.aspx.cs">
       <DependentUpon>editPerfil2.aspx</DependentUpon>

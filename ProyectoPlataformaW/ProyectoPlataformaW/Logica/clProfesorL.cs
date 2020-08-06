@@ -31,5 +31,51 @@ namespace ProyectoPlataformaW.Logica
             return listP;
         }
 
+        public int mtdENomP(clEntidadProfesorE objPr)
+        {
+            clProfesorD p = new clProfesorD();
+            int pro = p.mtdEditarNomP(objPr);
+            return pro;
+
+        }
+
+        public int mtdEApellP(clEntidadProfesorE objPr)
+        {
+            clProfesorD p = new clProfesorD();
+            int pro = p.mtdEditarApellidoP(objPr);
+            return pro;
+
+        }
+
+        public int mtdEDocuP(clEntidadProfesorE objPr)
+        {
+            clProfesorD p = new clProfesorD();
+            int pro = p.mtdEditarDocP(objPr);
+            return pro;
+
+        }
+
+        public int mtdEemailP(clEntidadProfesorE objPr)
+        {
+            clProfesorD p = new clProfesorD();
+            int pro = p.mtdEditarEmaP(objPr);
+            return pro;
+
+        }
+        public int mtdEespeP(clEntidadProfesorE objPr)
+        {
+            clProfesorD p = new clProfesorD();
+            int pro = p.mtdEditarEspecialidadP(objPr);
+            return pro;
+
+        }
+
+        public int mtdEcoP(clEntidadProfesorE objPr)
+        {
+            clProfesorD p = new clProfesorD();
+            int pro = p.mtdEditarContP(objPr);
+            return pro;
+
+        }
     }
 }
