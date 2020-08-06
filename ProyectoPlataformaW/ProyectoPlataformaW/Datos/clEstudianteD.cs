@@ -9,20 +9,29 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clEstudianteD
     {
+        public int mtdRegistrarEstudiante(clEntidadEstudianteE objEst)
+        {
+            string sqlInsert = "insert into Estudiante (Nombres,Apellidos,Documento,Email,Contrasena,IdCurso)" +
+                "values('" + objEst.Nombres + "' , '" + objEst.Apellidos + "' , " + objEst.Documento + " , '" + objEst.Email + "' , '" + objEst.Contrasena + "' , " + objEst.IdCurso + ")";
+
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
+            return result;
+        }
 
         //Recuperacion de contraseña
-       public List<clEntidadEstudiante> mtdListar()
+        public List<clEntidadEstudianteE> mtdListar()
         {
             string sql = "select Email,Contrasena from Estudiante" ;
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblEstud = new DataTable();
             tblEstud = objSql.mtdDesconectado(sql);
 
-            List<clEntidadEstudiante> listaEstud = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
 
             for (int i = 0; i < tblEstud.Rows.Count; i++)
             {
-                clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
                 objEstu.Email = tblEstud.Rows[i][0].ToString();
                 objEstu.Contrasena = tblEstud.Rows[i][1].ToString();
 
@@ -36,7 +45,7 @@ namespace ProyectoPlataformaW.Datos
         }
 
         // login
-        public List<clEntidadEstudiante> mtdListarlogin(clEntidadEstudiante objest)
+        public List<clEntidadEstudianteE> mtdListarlogin(clEntidadEstudianteE objest)
         {
             string consulta = "SELECT Estudiante.idEstudiante, Estudiante.Contrasena, Estudiante.Email FROM Estudiante WHERE (Estudiante.Contrasena = '" + objest.Contrasena + "') AND (Estudiante.Email = '" + objest.Email + "')";
             
@@ -45,10 +54,10 @@ namespace ProyectoPlataformaW.Datos
             DataTable tblDatos = new DataTable();
             tblDatos = objAdmin.mtdDesconectado(consulta);
 
-            List<clEntidadEstudiante> listaEstudiante = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEstudiante = new List<clEntidadEstudianteE>();
             for (int i = 0; i < tblDatos.Rows.Count; i++)
             {
-                clEntidadEstudiante objPasDatos = new clEntidadEstudiante();
+                clEntidadEstudianteE objPasDatos = new clEntidadEstudianteE();
                 objPasDatos.IdEstudiante = int.Parse(tblDatos.Rows[i][0].ToString());
                 objPasDatos.Contrasena = tblDatos.Rows[i][1].ToString();
                 objPasDatos.Email = tblDatos.Rows[i][2].ToString();
@@ -62,7 +71,7 @@ namespace ProyectoPlataformaW.Datos
 
         //Listado Completo de estudiantes
 
-        public List<clEntidadEstudiante> mtdListadoCompletoE()
+        public List<clEntidadEstudianteE> mtdListadoCompletoE()
         {
             string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso";
 
@@ -70,11 +79,11 @@ namespace ProyectoPlataformaW.Datos
             DataTable tblEstud = new DataTable();
             tblEstud = objSql.mtdDesconectado(sql);
 
-            List<clEntidadEstudiante> listaEstud = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
 
             for (int i = 0; i < tblEstud.Rows.Count; i++)
             {
-                clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                 objEstu.Nombres = tblEstud.Rows[i][0].ToString();
                 objEstu.Apellidos = tblEstud.Rows[i][1].ToString();
@@ -93,7 +102,7 @@ namespace ProyectoPlataformaW.Datos
         }
 
         //Busqueda de estudiante por nombre
-        public List<clEntidadEstudiante> mtdBuscarPorNom(clEntidadEstudiante objEstud)
+        public List<clEntidadEstudianteE> mtdBuscarPorNom(clEntidadEstudianteE objEstud)
         {
             string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso WHERE (Estudiante.Nombres LIKE '%" + objEstud.Nombres + "%')";
 
@@ -101,11 +110,11 @@ namespace ProyectoPlataformaW.Datos
             DataTable tblEstud = new DataTable();
             tblEstud = objSql.mtdDesconectado(sql);
 
-            List<clEntidadEstudiante> listaEstud = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
 
             for (int i = 0; i < tblEstud.Rows.Count; i++)
             {
-                clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                 objEstu.Nombres = tblEstud.Rows[i][0].ToString();
                 objEstu.Apellidos = tblEstud.Rows[i][1].ToString();
@@ -125,7 +134,7 @@ namespace ProyectoPlataformaW.Datos
 
 
         //Filtro de estudiantes por curso
-        public List<clEntidadEstudiante> mtdFiltroCurso(clEntidadEstudiante objEstud)
+        public List<clEntidadEstudianteE> mtdFiltroCurso(clEntidadEstudianteE objEstud)
         {
             string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso WHERE Curso.Curso = '"+ objEstud.Curso +"'";
 
@@ -133,11 +142,11 @@ namespace ProyectoPlataformaW.Datos
             DataTable tblEstud = new DataTable();
             tblEstud = objSql.mtdDesconectado(sql);
 
-            List<clEntidadEstudiante> listaEstud = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
 
             for (int i = 0; i < tblEstud.Rows.Count; i++)
             {
-                clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                 objEstu.Nombres = tblEstud.Rows[i][0].ToString();
                 objEstu.Apellidos = tblEstud.Rows[i][1].ToString();
@@ -157,7 +166,7 @@ namespace ProyectoPlataformaW.Datos
 
         //Actualizar Informacion Personal
 
-        public int mtdActualizarInfo(clEntidadEstudiante objEst)
+        public int mtdActualizarInfo(clEntidadEstudianteE objEst)
         {
 
             string sql = "UPDATE Estudiante SET Nombres = '" + objEst.Nombres + "', Apellidos = '"+ objEst.Apellidos +"', Documento = '"+ objEst.Documento +"', Email = '"+ objEst.Email +"' WHERE Email = '"+ objEst.Email +"'";
@@ -168,7 +177,7 @@ namespace ProyectoPlataformaW.Datos
         }
 
         //Cambiar Contraseña
-        public int mtdCambiarCo(clEntidadEstudiante objEst)
+        public int mtdCambiarCo(clEntidadEstudianteE objEst)
         {
 
             string sql = "UPDATE Estudiante SET Contrasena = '"+ objEst.Contrasena +"' WHERE Email = '" + objEst.Email + "'";

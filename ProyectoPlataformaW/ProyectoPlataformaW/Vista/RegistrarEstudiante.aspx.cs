@@ -31,7 +31,7 @@ namespace ProyectoPlataformaW.Vista
     protected void btnRegistrarE_Click(object sender, EventArgs e)
 
         {
-            clEntidadEstudianteT objEEstu = new clEntidadEstudianteT();
+            clEntidadEstudianteE objEEstu = new clEntidadEstudianteE();
             objEEstu.Nombres = txtNom.Text;
             objEEstu.Apellidos = txtApe.Text;
             objEEstu.Documento = int.Parse(txtDoc.Text);
@@ -39,7 +39,7 @@ namespace ProyectoPlataformaW.Vista
             objEEstu.Contrasena = Encrypt.GetSHA256(txtCon.Text);
             objEEstu.IdCurso = int.Parse(dpdCurso.Text);
 
-            clEstudianteR objEstu = new clEstudianteR();
+            clEstudianteD objEstu = new clEstudianteD();
             int resultsql = objEstu.mtdRegistrarEstudiante(objEEstu);
 
         }

@@ -13,7 +13,7 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class editarPerfilE : System.Web.UI.Page
     {
-        List<clEntidadEstudiante> listEestu = new List<clEntidadEstudiante>();
+        List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
         
         
         
@@ -52,7 +52,7 @@ namespace ProyectoPlataformaW.Vista
             {
                 if (listEestu[i].Email == user)
                 {
-                    clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                    clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                     txtNom.Text = objEstu.Nombres = listEestu[i].Nombres;
                     txtAp.Text = objEstu.Apellidos = listEestu[i].Apellidos;
@@ -68,7 +68,7 @@ namespace ProyectoPlataformaW.Vista
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-            clEntidadEstudiante objEs = new clEntidadEstudiante();
+            clEntidadEstudianteE objEs = new clEntidadEstudianteE();
             objEs.Nombres = txtNom.Text;
             objEs.Apellidos = txtAp.Text;
             objEs.Documento = int.Parse(txtDoc.Text);

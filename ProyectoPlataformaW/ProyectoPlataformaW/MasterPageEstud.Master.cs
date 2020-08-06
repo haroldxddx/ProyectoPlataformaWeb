@@ -11,8 +11,17 @@ namespace ProyectoPlataformaW
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblUser.Text = Session["usuario"].ToString();
-
+            
+            if (Session["usuario"]==null)
+            {
+                //PARA LOGIN 
+               // Response.Redirect("~/inicio.aspx");
+            }
+            else
+            {
+               
+                lblUser.Text = Session["usuario"].ToString();
+            }
 
         }
         protected void lblcerrarsesion_Click(object sender, EventArgs e)

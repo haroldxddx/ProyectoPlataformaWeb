@@ -30,7 +30,8 @@
         <br />
         <br />
         <p style="text-align: center" class="auto-style2"  >
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REGISTRAR CURSO</strong></p>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REGISTRAR CURSO<asp:Image ID="Image3" runat="server" Height="100px" ImageUrl="~/Imagenes/video.png" Width="112px" />
+            </strong></p>
     <p style="text-align: center" class="auto-style2"  >
         
         <br />

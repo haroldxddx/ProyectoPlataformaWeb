@@ -9,7 +9,7 @@ namespace ProyectoPlataformaW.Datos
     public class clMateriaR
     {
      
-            public int mtdRegistrarMateria(clEntidadMateria objEMateria)
+            public int mtdRegistrarMateria(clEntidadMateriaE objEMateria)
             {
                 string sqlInsert = "Insert into Materia (NombreMateria,NivelAcademico)" +
                      "values('" + objEMateria.NombreMateria + "' , '" + objEMateria.NivelAcademico + "' )";

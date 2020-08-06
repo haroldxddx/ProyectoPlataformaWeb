@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class editPerfil2 : System.Web.UI.Page
     {
-        List<clEntidadEstudiante> listEestu = new List<clEntidadEstudiante>();
+        List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
         protected void Page_Load(object sender, EventArgs e)
         {
             //Activar Cajas de texto
@@ -47,14 +47,14 @@ namespace ProyectoPlataformaW.Vista
             {
                 if (listEestu[i].Email == user)
                 {
-                    clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                    clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
-                    lblNom.Text = objEstu.Nombres = listEestu[i].Nombres;
-                    lblAp.Text = objEstu.Apellidos = listEestu[i].Apellidos;
+                    txtNom.Text = objEstu.Nombres = listEestu[i].Nombres;
+                    txtAp.Text = objEstu.Apellidos = listEestu[i].Apellidos;
                     int d = objEstu.Documento = int.Parse(listEestu[i].Documento.ToString());
-                    lblDoc.Text = (d).ToString();
+                    txtDoc.Text = (d).ToString();
 
-                    lblEma.Text = objEstu.Email = listEestu[i].Email;
+                    txtEmail.Text = objEstu.Email = listEestu[i].Email;
 
                 }
 
@@ -63,32 +63,38 @@ namespace ProyectoPlataformaW.Vista
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-            clEntidadEstudiante objEs = new clEntidadEstudiante();
-            
-            /*objEs.Nombres = txtNom.Text;
+            clEntidadEstudianteE objEs = new clEntidadEstudianteE();
+            clEntidadEstudianteE objEe = new clEntidadEstudianteE();
+            objEs.Nombres = txtNom.Text;
             objEs.Apellidos = txtAp.Text;
             objEs.Documento = int.Parse(txtDoc.Text);
-            objEs.Email = txtEmail.Text;*/
-            
+            objEs.Email = txtEmail.Text;
+            objEe.Contrasena = txtCo.Text;
 
 
             clEstudianteL clE = new clEstudianteL();
+               
 
-            if (txtCo.Text != "")
+            if (txtCo.Text == "")
             {
-                objEs.Email = lblEma.Text;
-                objEs.Contrasena = txtCo.Text;
+                int result = clE.mtdEdit(objEs);
+                if (result > 0)
+                {
 
-                int r = clE.mtdCambiarC(objEs);
+                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    Response.Redirect("~/Vista/inicioEstu.aspx");
+                }
+                
+            }
+            else
+            {
+                int r = clE.mtdCambiarC(objEe);
                 if (r > 0)
                 {
                     Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente 1'" + ") </script>");
                     txtCo.Text = "";
                 }
             }
-           
-
-           
                 
             
         }

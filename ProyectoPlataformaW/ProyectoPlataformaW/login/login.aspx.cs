@@ -13,7 +13,7 @@ namespace ProyectoPlataformaW.login
 {
     public partial class login : System.Web.UI.Page
     {
-        List<clEntidadEstudiante> listaPro = new List<clEntidadEstudiante>();
+        List<clEntidadEstudianteE> listaPro = new List<clEntidadEstudianteE>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,14 +25,16 @@ namespace ProyectoPlataformaW.login
             string contraseña = txtContraseña.Text;
             string usuario = txtUsuario.Text;
 
+            string pass = Encrypt.GetSHA256(contraseña);
 
-            List<clEntidadEstudiante> listaBus = new List<clEntidadEstudiante>();
+
+            List<clEntidadEstudianteE> listaBus = new List<clEntidadEstudianteE>();
             List<clEntidadProfesorE> listaBusp = new List<clEntidadProfesorE>();
             List<clEntidadAdministradorE> listaBusa = new List<clEntidadAdministradorE>();
 
-            string pass = Encrypt.GetSHA256(contraseña);
+            
 
-            clEntidadEstudiante objEstudiante = new clEntidadEstudiante();
+            clEntidadEstudianteE objEstudiante = new clEntidadEstudianteE();
             objEstudiante.Contrasena = pass;
             objEstudiante.Email = usuario;
 
@@ -109,7 +111,7 @@ namespace ProyectoPlataformaW.login
                         Session["usuario"] = txtUsuario.Text;
                         Session["general"] = "administrador";
                         // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                        Response.Redirect("~/Administrador.aspx");
+                        Response.Redirect("~/Vista/inicioAdministrador.aspx");
 
 
                     }

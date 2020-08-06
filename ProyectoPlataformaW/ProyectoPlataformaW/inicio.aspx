@@ -286,6 +286,15 @@
       </div><!-- end container -->
   </footer><!-- end footer -->
 
+          <!-- LOADER -->
+	<div id="preloader">
+		<div class="loader-container">
+			<div class="progress-br float shadow">
+				<div class="progress__item"></div>
+			</div>
+		</div>
+	</div>
+	<!-- END LOADER -->	
 
 
   <div class="copyrights">
@@ -297,6 +306,20 @@
           </div>
       </div><!-- end container -->
   </div><!-- end copyrights -->
+
+            <!-- ALL JS FILES -->
+    <script src="Visata/js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="Vista/js/custom.js"></script>
+	<script src="Vista/js/timeline.min.js"></script>
+	<script>
+		timeline(document.querySelectorAll('.timeline'), {
+			forceVerticalMode: 700,
+			mode: 'horizontal',
+			verticalStartPosition: 'left',
+			visibleItems: 4
+		});
+	</script>
 
 
   </body>

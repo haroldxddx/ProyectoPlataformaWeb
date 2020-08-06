@@ -13,7 +13,7 @@ namespace ProyectoPlataformaW.login
     public partial class recuperarContra : System.Web.UI.Page
     {
 
-        List<clEntidadEstudiante> listEestu = new List<clEntidadEstudiante>();
+        List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
         clRecuperarContra c = new clRecuperarContra();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -32,14 +32,14 @@ namespace ProyectoPlataformaW.login
 
             //string email = (objEstu.Email = txtCorreo.Text);
             string email = txtEmail.Text;
-            List<clEntidadEstudiante> listaEstuDos = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEstuDos = new List<clEntidadEstudianteE>();
             clEstudianteD objEstuD = new clEstudianteD();
 
             for (int i = 0; i < listEestu.Count; i++)
             {
                 if (listEestu[i].Email == email)
                 {
-                    clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                    clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                     objEstu.Email = listEestu[i].Email;
                     string contra = objEstu.Contrasena = listEestu[i].Contrasena;
