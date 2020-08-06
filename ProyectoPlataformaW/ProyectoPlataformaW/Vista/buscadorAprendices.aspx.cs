@@ -12,7 +12,7 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class buscadorAprendices : System.Web.UI.Page
     {
-        List<clEntidadEstudiante> listEestu = new List<clEntidadEstudiante>();
+        List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -30,7 +30,7 @@ namespace ProyectoPlataformaW.Vista
                 if (Session["general"].ToString() == "administrador")
                 {
                     List<clEntidadCursosE> listC = new List<clEntidadCursosE>();
-                    List<clEntidadEstudiante> listE = new List<clEntidadEstudiante>();
+                    List<clEntidadEstudianteE> listE = new List<clEntidadEstudianteE>();
 
                     clCursoL objCurso = new clCursoL();
                     clEstudianteL objEstud = new clEstudianteL();
@@ -92,9 +92,9 @@ namespace ProyectoPlataformaW.Vista
         {
             string nomAP = txtNombreE.Text;
 
-            List<clEntidadEstudiante> listaBuscar = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaBuscar = new List<clEntidadEstudianteE>();
 
-            clEntidadEstudiante objEstudiante = new clEntidadEstudiante();
+            clEntidadEstudianteE objEstudiante = new clEntidadEstudianteE();
             objEstudiante.Nombres = nomAP;
             
             clEstudianteL objEstudianteL = new clEstudianteL();
@@ -133,7 +133,7 @@ namespace ProyectoPlataformaW.Vista
 
             //string email = (objEstu.Email = txtCorreo.Text);
             string cu = cmbCurso.SelectedIndex.ToString();
-            List<clEntidadEstudiante> listaEstuDos = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEstuDos = new List<clEntidadEstudianteE>();
             clEstudianteD objEstuD = new clEstudianteD();
             clEstudianteL objEstudianteL = new clEstudianteL();
             listEestu = objEstudianteL.mtdListadoComEs();
@@ -142,7 +142,7 @@ namespace ProyectoPlataformaW.Vista
             {
                 if (listEestu[i].Curso == cu)
                 {
-                    clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                    clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                     objEstu.Nombres = listEestu[i].Nombres;
                     objEstu.Apellidos = listEestu[i].Apellidos;

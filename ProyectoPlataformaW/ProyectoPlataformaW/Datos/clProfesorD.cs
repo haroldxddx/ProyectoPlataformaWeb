@@ -64,7 +64,16 @@ namespace ProyectoPlataformaW.Datos
             return listaProfesor;
 
         }
+        public int mtdRegistrarProfesor(clEntidadProfesorE objProfe)
+        {
+            string sqlInsert = "insert into Profesor (Nombres,Apellidos,Documento,Email,Contrasena,Especialidad)" +
+                "values('" + objProfe.Nombres + "' , '" + objProfe.Apellidos + "' , " + objProfe.Documento + " , '" + objProfe.Email + "' , '" + objProfe.Contrasena + "' , '" + objProfe.Especialidad + "')";
+
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
+            return result;
+        }
+    }
 
 
     }
-}

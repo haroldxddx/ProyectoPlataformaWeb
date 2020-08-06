@@ -98,6 +98,7 @@
     <Content Include="Imagenes\sobresalir %282%29.png" />
     <Content Include="Imagenes\video.png" />
     <Content Include="inicio.aspx" />
+    <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\inicioAdministrador.aspx" />
     <Content Include="login\css\main.css" />
     <Content Include="login\css\util.css" />
@@ -2067,7 +2068,6 @@
       <DependentUpon>correoPrueba.aspx</DependentUpon>
     </Compile>
     <Compile Include="Datos\clAdministradorD.cs" />
-    <Compile Include="Datos\clAdministradorR.cs" />
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clCursoD.cs" />
@@ -2075,16 +2075,11 @@
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clMateriaR.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
-    <Compile Include="Datos\clProfesorR.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
-    <Compile Include="Entidades\clEntidadAdministrador.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
-    <Compile Include="Entidades\clEntidadCurso.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
-    <Compile Include="Entidades\clEntidadEstudiante.cs" />
-    <Compile Include="Entidades\clEntidadEstudianteT.cs" />
-    <Compile Include="Entidades\clEntidadMateria.cs" />
-    <Compile Include="Entidades\clEntidadProfesor.cs" />
+    <Compile Include="Entidades\clEntidadEstudianteE.cs" />
+    <Compile Include="Entidades\clEntidadMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Estudiante.aspx.cs">
       <DependentUpon>Estudiante.aspx</DependentUpon>
@@ -2099,6 +2094,13 @@
     </Compile>
     <Compile Include="inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\asignarProfesorCursoMateria.aspx.cs">
+      <DependentUpon>asignarProfesorCursoMateria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\asignarProfesorCursoMateria.aspx.designer.cs">
+      <DependentUpon>asignarProfesorCursoMateria.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\inicioAdministrador.aspx.cs">
       <DependentUpon>inicioAdministrador.aspx</DependentUpon>

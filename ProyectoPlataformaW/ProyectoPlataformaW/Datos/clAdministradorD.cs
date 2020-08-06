@@ -9,6 +9,15 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clAdministradorD
     {
+        public int mtdRegistrarAdministrador(clEntidadAdministradorE objAdmin)
+        {
+            string sqlInsert = "insert into Administradores (Nombres,Apellidos,Documento,Email,Contrasena,Tipo)" +
+                "values('" + objAdmin.Nombres + "' , '" + objAdmin.Apellidos + "' , " + objAdmin.Documento + " , '" + objAdmin.Email + "' , '" + objAdmin.Contrasena + "' , '" + objAdmin.Tipo + "')";
+
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
+            return result;
+        }
 
         public List<clEntidadAdministradorE> mtdListarlogin(clEntidadAdministradorE objest)
         {

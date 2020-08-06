@@ -31,7 +31,7 @@ namespace ProyectoPlataformaW.Vista
     protected void btnRegistrarE_Click(object sender, EventArgs e)
 
         {
-            clEntidadEstudianteT objEEstu = new clEntidadEstudianteT();
+            clEntidadEstudianteE objEEstu = new clEntidadEstudianteE();
             objEEstu.Nombres = txtNom.Text;
             objEEstu.Apellidos = txtApe.Text;
             objEEstu.Documento = int.Parse(txtDoc.Text);

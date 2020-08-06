@@ -30,7 +30,8 @@
         <br />
         <br />
         <p style="text-align: center" class="auto-style2"  >
-        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REGISTRAR PROFESOR</strong></p>
+        <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; REGISTRAR PROFESOR</strong><asp:Image ID="Image3" runat="server" Height="100px" ImageUrl="~/Imagenes/profesor.png" Width="112px" />
+    </p>
     <p style="text-align: center" class="auto-style2"  >
         
         <br />

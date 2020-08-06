@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class editPerfil2 : System.Web.UI.Page
     {
-        List<clEntidadEstudiante> listEestu = new List<clEntidadEstudiante>();
+        List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
         protected void Page_Load(object sender, EventArgs e)
         {
             //Activar Cajas de texto
@@ -47,7 +47,7 @@ namespace ProyectoPlataformaW.Vista
             {
                 if (listEestu[i].Email == user)
                 {
-                    clEntidadEstudiante objEstu = new clEntidadEstudiante();
+                    clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                     txtNom.Text = objEstu.Nombres = listEestu[i].Nombres;
                     txtAp.Text = objEstu.Apellidos = listEestu[i].Apellidos;
@@ -63,8 +63,8 @@ namespace ProyectoPlataformaW.Vista
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-            clEntidadEstudiante objEs = new clEntidadEstudiante();
-            clEntidadEstudiante objEe = new clEntidadEstudiante();
+            clEntidadEstudianteE objEs = new clEntidadEstudianteE();
+            clEntidadEstudianteE objEe = new clEntidadEstudianteE();
             objEs.Nombres = txtNom.Text;
             objEs.Apellidos = txtAp.Text;
             objEs.Documento = int.Parse(txtDoc.Text);

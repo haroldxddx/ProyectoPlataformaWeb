@@ -12,49 +12,49 @@ namespace ProyectoPlataformaW.Logica
 
         //List<clEstudianteE> listaEstudiante = new List<clEstudianteE>();
 
-        public List<clEntidadEstudiante> mtdListarApb1(clEntidadEstudiante objDatos)
+        public List<clEntidadEstudianteE> mtdListarApb1(clEntidadEstudianteE objDatos)
         {
             clEstudianteD objAsA = new clEstudianteD();
-            List<clEntidadEstudiante> listaApb1 = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaApb1 = new List<clEntidadEstudianteE>();
             listaApb1 = objAsA.mtdListarlogin(objDatos);
             return listaApb1;
         }
 
-        public List<clEntidadEstudiante> mtdRecup()
+        public List<clEntidadEstudianteE> mtdRecup()
         {
             clEstudianteD objEstu = new clEstudianteD();
-            List<clEntidadEstudiante> listE = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listE = new List<clEntidadEstudianteE>();
             listE = objEstu.mtdListar();
             return listE;
         }
 
 
-        public List<clEntidadEstudiante> mtdListadoComEs()
+        public List<clEntidadEstudianteE> mtdListadoComEs()
         {
             clEstudianteD objEst = new clEstudianteD();
-            List<clEntidadEstudiante> listaE = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaE = new List<clEntidadEstudianteE>();
             listaE = objEst.mtdListadoCompletoE();
             return listaE;
 
         }
 
-        public List<clEntidadEstudiante> mtdBuscarEstu(clEntidadEstudiante objDatos)
+        public List<clEntidadEstudianteE> mtdBuscarEstu(clEntidadEstudianteE objDatos)
         {
             clEstudianteD objEs = new clEstudianteD();
-            List<clEntidadEstudiante> listaEst = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEst = new List<clEntidadEstudianteE>();
             listaEst = objEs.mtdBuscarPorNom(objDatos);
             return listaEst;
         }
 
-        public List<clEntidadEstudiante> mtdFiltroE(clEntidadEstudiante objDatos)
+        public List<clEntidadEstudianteE> mtdFiltroE(clEntidadEstudianteE objDatos)
         {
             clEstudianteD objE = new clEstudianteD();
-            List<clEntidadEstudiante> listaEs = new List<clEntidadEstudiante>();
+            List<clEntidadEstudianteE> listaEs = new List<clEntidadEstudianteE>();
             listaEs = objE.mtdFiltroCurso(objDatos);
             return listaEs;
         }
 
-        public int mtdEdit(clEntidadEstudiante objE)
+        public int mtdEdit(clEntidadEstudianteE objE)
         {
             clEstudianteD e = new clEstudianteD();
             int ed = e.mtdActualizarInfo(objE);
@@ -62,7 +62,7 @@ namespace ProyectoPlataformaW.Logica
 
         }
 
-        public int mtdCambiarC(clEntidadEstudiante objE)
+        public int mtdCambiarC(clEntidadEstudianteE objE)
         {
             clEstudianteD e = new clEstudianteD();
             int ed = e.mtdCambiarCo(objE);
