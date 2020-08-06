@@ -49,12 +49,12 @@ namespace ProyectoPlataformaW.Vista
                 {
                     clEntidadEstudiante objEstu = new clEntidadEstudiante();
 
-                    txtNom.Text = objEstu.Nombres = listEestu[i].Nombres;
-                    txtAp.Text = objEstu.Apellidos = listEestu[i].Apellidos;
+                    lblNom.Text = objEstu.Nombres = listEestu[i].Nombres;
+                    lblAp.Text = objEstu.Apellidos = listEestu[i].Apellidos;
                     int d = objEstu.Documento = int.Parse(listEestu[i].Documento.ToString());
-                    txtDoc.Text = (d).ToString();
+                    lblDoc.Text = (d).ToString();
 
-                    txtEmail.Text = objEstu.Email = listEestu[i].Email;
+                    lblEma.Text = objEstu.Email = listEestu[i].Email;
 
                 }
 
@@ -64,37 +64,31 @@ namespace ProyectoPlataformaW.Vista
         protected void btnEditar_Click(object sender, EventArgs e)
         {
             clEntidadEstudiante objEs = new clEntidadEstudiante();
-            clEntidadEstudiante objEe = new clEntidadEstudiante();
-            objEs.Nombres = txtNom.Text;
+            
+            /*objEs.Nombres = txtNom.Text;
             objEs.Apellidos = txtAp.Text;
             objEs.Documento = int.Parse(txtDoc.Text);
-            objEs.Email = txtEmail.Text;
-            objEe.Contrasena = txtCo.Text;
+            objEs.Email = txtEmail.Text;*/
+            
 
 
             clEstudianteL clE = new clEstudianteL();
-               
 
-            if (txtCo.Text == "")
+            if (txtCo.Text != "")
             {
-                int result = clE.mtdEdit(objEs);
-                if (result > 0)
-                {
+                objEs.Email = lblEma.Text;
+                objEs.Contrasena = txtCo.Text;
 
-                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
-                    Response.Redirect("~/Vista/inicioEstu.aspx");
-                }
-                
-            }
-            else
-            {
-                int r = clE.mtdCambiarC(objEe);
+                int r = clE.mtdCambiarC(objEs);
                 if (r > 0)
                 {
                     Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente 1'" + ") </script>");
                     txtCo.Text = "";
                 }
             }
+           
+
+           
                 
             
         }

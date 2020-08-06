@@ -15,6 +15,15 @@ namespace ProyectoPlataformaW.Vista
     {
 
         /// <summary>
+        /// Control lblNom.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblNom;
+
+        /// <summary>
         /// Control txtNom.
         /// </summary>
         /// <remarks>
@@ -31,6 +40,15 @@ namespace ProyectoPlataformaW.Vista
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chbN;
+
+        /// <summary>
+        /// Control lblAp.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblAp;
 
         /// <summary>
         /// Control txtAp.
@@ -51,6 +69,15 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.CheckBox chbA;
 
         /// <summary>
+        /// Control lblDoc.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDoc;
+
+        /// <summary>
         /// Control txtDoc.
         /// </summary>
         /// <remarks>
@@ -67,6 +94,15 @@ namespace ProyectoPlataformaW.Vista
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox chbD;
+
+        /// <summary>
+        /// Control lblEma.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblEma;
 
         /// <summary>
         /// Control txtEmail.
