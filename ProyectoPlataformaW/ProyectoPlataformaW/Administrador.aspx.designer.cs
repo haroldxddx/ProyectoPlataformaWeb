@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW
 {
 
 
-    public partial class inicioAdmin
+    public partial class Administrador
     {
     }
 }
