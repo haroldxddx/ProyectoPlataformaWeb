@@ -71,8 +71,10 @@
                             <div class="collapse navbar-collapse" id="navbars-host">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Materias</a></li>
-                                    <li class="nav-item dropdown" style="left: -204px; top: 23px; width: 37px"><a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown" 
+                                    <li class="nav-item" style="left: 132px; top: -5px"><a class="nav-link" href="#">Materias</a></li>
+                                    <li class="nav-item dropdown" style="left: -204px; top: 23px; width: 37px">
+                                        
+                                        <a class="nav-link dropdown-toggle" id="dropdown-a" data-toggle="dropdown" 
                                         <asp:Label ID="lblUser" runat="server" Text="Label"></asp:Label> </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
                                             <a class="dropdown-item" href="/Vista/editPerfil2.aspx">Editar Perfil</a>
