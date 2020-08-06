@@ -98,6 +98,7 @@
     <Content Include="Imagenes\sobresalir %282%29.png" />
     <Content Include="Imagenes\video.png" />
     <Content Include="inicio.aspx" />
+    <Content Include="Vista\actividadesMatematicas.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\inicioAdministrador.aspx" />
     <Content Include="login\css\main.css" />
@@ -2096,6 +2097,13 @@
     </Compile>
     <Compile Include="inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\actividadesMatematicas.aspx.cs">
+      <DependentUpon>actividadesMatematicas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\actividadesMatematicas.aspx.designer.cs">
+      <DependentUpon>actividadesMatematicas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\asignarProfesorCursoMateria.aspx.cs">
       <DependentUpon>asignarProfesorCursoMateria.aspx</DependentUpon>

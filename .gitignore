@@ -338,3 +338,5 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+*.mdf
+ProyectoPlataformaW/ProyectoPlataformaW/App_Data/dbProyectoPlataforma_log.ldf

@@ -14,6 +14,7 @@ namespace ProyectoPlataformaW.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
 
+
         }
     }
 }

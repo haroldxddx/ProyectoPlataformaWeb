@@ -84,28 +84,37 @@
               <form role="form">
                 <div class="card-body">
                   <div class="form-group">
-                      Nombres
+                      Nombres&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <br />
+                      <asp:Label ID="lblNom" runat="server"></asp:Label>
+                      <br />
                       <br />
                     <asp:TextBox ID="txtNom" runat="server" class="form-control" Width="437px" Enabled="False" ></asp:TextBox>
                       <br />
                       <asp:CheckBox ID="chbN" runat="server" AutoPostBack="True" CssClass="auto-style2" />
 &nbsp; Editar</div>
                     <div class="form-group">
-                      Apellidos
+                      Apellidos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+                        <asp:Label ID="lblAp" runat="server"></asp:Label>
                         <br />
                     <asp:TextBox ID="txtAp" runat="server"  class="form-control" Width="435px" Enabled="False" ></asp:TextBox>
                         <br />
                         <asp:CheckBox ID="chbA" runat="server" AutoPostBack="True" CssClass="auto-style5" />
 &nbsp; Editar</div>
                     <div class="form-group">
-                      Documento
+                      Documento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+                        <asp:Label ID="lblDoc" runat="server"></asp:Label>
                         <br />
                     <asp:TextBox ID="txtDoc" runat="server" class="form-control" Width="435px" Enabled="False" ></asp:TextBox>
                         <br />
                         <asp:CheckBox ID="chbD" runat="server" AutoPostBack="True" CssClass="auto-style3" />
 &nbsp; Editar</div>
                     <div class="form-group">
-                      Email
+                      Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+                        <asp:Label ID="lblEma" runat="server"></asp:Label>
                         <br />
                     <asp:TextBox ID="txtEmail" runat="server" type="email" class="form-control" Width="436px" Enabled="False" ></asp:TextBox>
                         <br />
