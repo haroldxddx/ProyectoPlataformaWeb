@@ -100,6 +100,7 @@
     <Content Include="inicio.aspx" />
     <Content Include="Vista\actividadesMatematicas.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
+    <Content Include="Vista\entregaActividad.aspx" />
     <Content Include="Vista\inicioAdministrador.aspx" />
     <Content Include="login\css\main.css" />
     <Content Include="login\css\util.css" />
@@ -2111,6 +2112,13 @@
     </Compile>
     <Compile Include="Vista\asignarProfesorCursoMateria.aspx.designer.cs">
       <DependentUpon>asignarProfesorCursoMateria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\entregaActividad.aspx.cs">
+      <DependentUpon>entregaActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\entregaActividad.aspx.designer.cs">
+      <DependentUpon>entregaActividad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\inicioAdministrador.aspx.cs">
       <DependentUpon>inicioAdministrador.aspx</DependentUpon>
