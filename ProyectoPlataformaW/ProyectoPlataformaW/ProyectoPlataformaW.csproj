@@ -2043,8 +2043,8 @@
     <Content Include="Vista\plugins\toastr\toastr.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
-    <Content Include="Vista\registrarAdministrador.aspx" />
-    <Content Include="Vista\registrarCurso.aspx" />
+    <Content Include="Vista\registrarAdministrador2.aspx" />
+    <Content Include="Vista\registrarCurso2.aspx" />
     <Content Include="Vista\registrarEstudiante.aspx" />
     <Content Include="Vista\registrarMateria.aspx" />
     <Content Include="Vista\registrarProfesor.aspx" />
@@ -2228,19 +2228,19 @@
     <Compile Include="Vista\listadoProfesor.aspx.designer.cs">
       <DependentUpon>listadoProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\registrarAdministrador.aspx.cs">
-      <DependentUpon>registrarAdministrador.aspx</DependentUpon>
+    <Compile Include="Vista\registrarAdministrador2.aspx.cs">
+      <DependentUpon>registrarAdministrador2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\registrarAdministrador.aspx.designer.cs">
-      <DependentUpon>registrarAdministrador.aspx</DependentUpon>
+    <Compile Include="Vista\registrarAdministrador2.aspx.designer.cs">
+      <DependentUpon>registrarAdministrador2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\registrarCurso.aspx.cs">
-      <DependentUpon>registrarCurso.aspx</DependentUpon>
+    <Compile Include="Vista\registrarCurso2.aspx.cs">
+      <DependentUpon>registrarCurso2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\registrarCurso.aspx.designer.cs">
-      <DependentUpon>registrarCurso.aspx</DependentUpon>
+    <Compile Include="Vista\registrarCurso2.aspx.designer.cs">
+      <DependentUpon>registrarCurso2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\registrarEstudiante.aspx.cs">
       <DependentUpon>registrarEstudiante.aspx</DependentUpon>
