@@ -47,7 +47,7 @@
     </head>
       
     <body>
-      <form id="form1" runat="server">
+   
           <div class="all-title-box">
 		<div class="container text-center">
 			<h1>Actividades<span class="m_1"></span></h1>
@@ -68,7 +68,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-item">
 						<div class="image-blog">
-							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+							<img src="images/i.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="meta-info-blog">
 							<span><i class="fa fa-calendar"></i> <a href="#"> plazo May 11, 2020</a> </span>
@@ -84,7 +84,7 @@
  </p>
 						</div>
 						<div class="blog-button">
-                            <asp:Button class="hover-btn-new orange" ID="btnRealizar" runat="server" Text="Realizar" />
+                            <asp:Button class="hover-btn-new orange" ID="btnRealizar" runat="server" Text="Realizar" OnClick="btnRealizar_Click" PostBackUrl="~/Vista/entregaActividad.aspx" />
 							
 						</div>
 					</div>
@@ -93,7 +93,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-item">
 						<div class="image-blog">
-							<img src="images/blog_2.jpg" alt="" class="img-fluid">
+							<img src="images/16.png" alt="" class="img-fluid">
 						</div>
 						<div class="meta-info-blog">
 							<span><i class="fa fa-calendar"></i> <a href="#"> plazo May 11, 2015</a> </span>
@@ -118,7 +118,7 @@
         </div><!-- end container -->
     </div><!-- end section -->
 	
-           </form>
+       
     </body>
    
     </html>
