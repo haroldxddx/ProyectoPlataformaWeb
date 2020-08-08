@@ -79,6 +79,7 @@
     </Content>
     <Content Include="correoPrueba.aspx" />
     <Content Include="Estudiante.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Imagenes\colegioestu.jpeg" />
     <Content Include="Imagenes\colegioporteria %282%29.jpg" />
     <Content Include="Imagenes\descarga-directa.png" />
@@ -2091,6 +2092,9 @@
     </Compile>
     <Compile Include="Estudiante.aspx.designer.cs">
       <DependentUpon>Estudiante.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="inicio.aspx.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
