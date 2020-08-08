@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ProyectoPlataformaW.Entidades
 {
-    public class clEntidadCursosE
+    public class clEntidadCursosE:clEntidadProfesorE
     {
         public int IdCurso { get; set; }
         public string Grado { get; set; }

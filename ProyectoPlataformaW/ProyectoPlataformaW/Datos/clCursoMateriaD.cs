@@ -18,5 +18,36 @@ namespace ProyectoPlataformaW.Datos
             return result;
         }
 
+
+        //Listado de cursos y materias asignadas a profesor
+        public List<clEntidadCursoMateriaE> mtdListCursoP()
+        {
+            string sql = "select Curso.Curso, Curso.Grado , Profesor.Nombres, Profesor.Apellidos from Curso inner join CursoMateria On Curso.IdCurso =CursoMateria.IdCurso inner join Profesor On Profesor.IdProfesor = CursoMateria.IdProfesor";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblProf = new DataTable();
+            tblProf = objSql.mtdDesconectado(sql);
+
+            List<clEntidadCursoMateriaE> listaEcM = new List<clEntidadCursoMateriaE>();
+
+            for (int i = 0; i < tblProf.Rows.Count; i++)
+            {
+                clEntidadCursoMateriaE objCursoM = new clEntidadCursoMateriaE();
+
+                objCursoM.Curso = tblProf.Rows[i][0].ToString();
+                objCursoM.Grado = tblProf.Rows[i][1].ToString();
+                objCursoM.Nombres = tblProf.Rows[i][2].ToString();
+                objCursoM.Apellidos = tblProf.Rows[i][3].ToString();
+
+
+                listaEcM.Add(objCursoM);
+
+            }
+
+            return listaEcM;
+
+
+        }
+
     }
 }

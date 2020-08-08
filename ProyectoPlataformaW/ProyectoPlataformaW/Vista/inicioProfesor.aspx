@@ -77,17 +77,26 @@
 
             <hr class="invis"> 
 
-            <div class="row"> 
+            
+
+            <asp:Repeater ID="repeaterPrueba" runat="server">
+
+                <ItemTemplate>
+                  
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
 							&nbsp;</div>
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="#" title="">Curso 806</a></h2>
+								<h2>
+                                    <asp:Label ID="lblCurso" runat="server" Text='<%# Eval("Curso") %>'></asp:Label>
+
+								</h2>
 							</div>
 							<div class="course-desc">
-								<p>Octavo</p>
+								<p>
+                                    <asp:Label ID="lblGrado" runat="server" Text='<%# Eval("Grado") %>'></asp:Label> </p>
 							</div>
 							<div class="course-rating">
 								<p>Seccion Basica Secundaria</p>
@@ -104,144 +113,12 @@
 					</div>
                 </div><!-- end col -->
 
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;</div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title="">Curso 702</a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Septimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Secundaria</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
-								<li><i class="fa fa-users" aria-hidden="true"></i> 35 Student</li>
-								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->	
-				
-				<div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;</div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title="">Curso 705</a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Septimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Secundaria</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
-								<li><i class="fa fa-users" aria-hidden="true"></i> 29 Estudiantes</li>
-								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->
-				
-				<div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;</div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title="">Curso 908</a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Noveno</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Secundaria</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
-								<li><i class="fa fa-users" aria-hidden="true"></i> 36 Estudiantes</li>
-								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->
-            </div><!-- end row -->			
-			
-			<hr class="hr3"> 
-			
-            <div class="row"> 
-				<div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;</div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title="">Curso 901</a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Noveno</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Secundaria</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
-								<li><i class="fa fa-users" aria-hidden="true"></i> 34 Estudiantes</li>
-								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->
-				
-				<div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;</div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title="">Curso 811</a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Octavo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Secundaria</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li><i class="fa fa-calendar" aria-hidden="true"></i> 9 Meses</li>
-								<li><i class="fa fa-users" aria-hidden="true"></i> 37 Estudiantes</li>
-								<li><i class="fa fa-book" aria-hidden="true"></i> 12 Materias</li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->
-				
-                <!-- end col -->
+          		
 
-               <!-- end col -->
-            </div><!-- end row -->
+                </ItemTemplate>
+            </asp:Repeater>
+            				
+		
         </div><!-- end container -->
     </div><!-- end section -->
 

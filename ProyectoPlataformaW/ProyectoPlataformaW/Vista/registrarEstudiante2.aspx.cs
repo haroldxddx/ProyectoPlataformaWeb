@@ -1,6 +1,5 @@
 ﻿using ProyectoPlataformaW.Datos;
 using ProyectoPlataformaW.Entidades;
-using ProyectoPlataformaW.Logica;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +8,12 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using static ProyectoPlataformaW.Datos.clEncrypt;
 
-
 namespace ProyectoPlataformaW.Vista
 {
-	public partial class RegistrarEstudiante : System.Web.UI.Page
-	{
+    public partial class registrarEstudiante2 : System.Web.UI.Page
+    {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
-
             List<clEntidadCursosE> listaCurso = new List<clEntidadCursosE>();
             clCursoD objCurso = new clCursoD();
             listaCurso = objCurso.mtdListarCurso();
@@ -26,11 +22,9 @@ namespace ProyectoPlataformaW.Vista
             dpdCurso.DataTextField = "Curso";
             dpdCurso.DataValueField = "IdCurso";
             dpdCurso.DataBind();
-
         }
 
-    protected void btnRegistrarE_Click(object sender, EventArgs e)
-
+        protected void btnRegistrarE_Click(object sender, EventArgs e)
         {
             clEntidadEstudianteE objEEstu = new clEntidadEstudianteE();
             objEEstu.Nombres = txtNom.Text;
@@ -43,11 +37,16 @@ namespace ProyectoPlataformaW.Vista
             clEstudianteD objEstu = new clEstudianteD();
             int resultsql = objEstu.mtdRegistrarEstudiante(objEEstu);
 
-        }
-
-        protected void dpdCurso_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            if (resultsql > 0)
+            {
+                Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+                txtNom.Text = "";
+                txtApe.Text = "";
+                txtDoc.Text = "";
+                txtEma.Text = "";
+                txtCon.Text = "";
+            }
+                
+            }
         }
     }
-}

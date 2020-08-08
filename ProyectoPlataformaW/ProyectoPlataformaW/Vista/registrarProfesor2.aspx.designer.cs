@@ -7,21 +7,12 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoPlataformaW
+namespace ProyectoPlataformaW.Vista
 {
 
 
-    public partial class RegistrarAdministrador
+    public partial class registrarProfesor2
     {
-
-        /// <summary>
-        /// Control Image3.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
 
         /// <summary>
         /// Control txtNom.
@@ -69,22 +60,13 @@ namespace ProyectoPlataformaW
         protected global::System.Web.UI.WebControls.TextBox txtCon;
 
         /// <summary>
-        /// Control dpdTipo.
+        /// Control txtEsp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpdTipo;
-
-        /// <summary>
-        /// Control Image2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.TextBox txtEsp;
 
         /// <summary>
         /// Control btnRegistrarP.

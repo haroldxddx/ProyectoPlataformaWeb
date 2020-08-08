@@ -73,7 +73,7 @@
                                     <li class="nav-item dropdown">
 							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Cursos </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
-								            <a class="dropdown-item" href="/Vista/registrarCurso.aspx">Registrar Cursos</a>
+								            <a class="dropdown-item" href="/Vista/registrarCurso2.aspx">Registrar Cursos</a>
 								            
 							            </div>
 						            </li>
@@ -81,7 +81,7 @@
 							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Profesores </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
 								            <a class="dropdown-item" href="/Vista/listadoProfesor.aspx">Listado de Profesores</a>
-								            <a class="dropdown-item" href="/Vista/registrarProfesor.aspx">Registro de profesores </a>
+								            <a class="dropdown-item" href="/Vista/registrarProfesor2.aspx">Registro de profesores </a>
 								            <a class="dropdown-item" href="/Vista/asignarProfesorCursoMateria.aspx">Asignacion de profesores </a>
 							            </div>
 						            </li>
@@ -89,10 +89,20 @@
 							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Estudiantes </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
 								            <a class="dropdown-item" href="/Vista/buscadorAprendices.aspx">Buscador de aprendices</a>
-                                            <a class="dropdown-item" href="/Vista/registrarEstudiante.aspx">Registrar Aprendices</a>
+                                            <a class="dropdown-item" href="/Vista/registrarEstudiante2.aspx">Registrar Aprendices</a>
 								            
 							            </div>
 						            </li>
+                                    <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">
+                                        <asp:Label ID="lblAdmin" runat="server" Text=""></asp:Label> </a>
+							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+								            <a class="dropdown-item" href="/Vista/buscadorAprendices.aspx">Buscador de aprendices</a>
+                                            
+								            
+							            </div>
+						            </li>
+                                  
                                     <li class="nav-item"><a class="nav-link" href="#">Anuncios</a></li>
                                      <li class="nav-item"> <asp:LinkButton ID="lbcerrarsesion" class="nav-link"  runat="server" OnClick="lblcerrarsesion_Click" >cerrar sesion</asp:LinkButton></li>
 

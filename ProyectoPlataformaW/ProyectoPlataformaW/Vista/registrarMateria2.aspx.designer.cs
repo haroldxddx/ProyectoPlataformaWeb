@@ -7,30 +7,12 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoPlataformaW
+namespace ProyectoPlataformaW.Vista
 {
 
 
-    public partial class RegistrarMateria
+    public partial class registrarMateria2
     {
-
-        /// <summary>
-        /// Control Image3.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
-
-        /// <summary>
-        /// Control txtNomM.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNomM;
 
         /// <summary>
         /// Control dplNivel.
@@ -42,13 +24,13 @@ namespace ProyectoPlataformaW
         protected global::System.Web.UI.WebControls.DropDownList dplNivel;
 
         /// <summary>
-        /// Control Image2.
+        /// Control txtNomM.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.TextBox txtNomM;
 
         /// <summary>
         /// Control btnRegistrarC.

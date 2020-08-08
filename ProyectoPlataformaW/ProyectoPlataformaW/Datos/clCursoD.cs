@@ -37,7 +37,7 @@ namespace ProyectoPlataformaW.Datos
                     objCurs.IdCurso = int.Parse(tblcurso.Rows[i][0].ToString());
                     objCurs.Grado = tblcurso.Rows[i][1].ToString();
                     objCurs.Curso = tblcurso.Rows[i][2].ToString();
-                listaCur.Add(objCurs);
+                    listaCur.Add(objCurs);
 
 
                 }

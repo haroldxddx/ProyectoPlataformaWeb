@@ -62,10 +62,6 @@ namespace ProyectoPlataformaW.login
             listaBusa = objAdministradorL.mtdListarApb1(objAdministrador);
 
           
-
-
-
-          
                     if (listaBus.Count != 0)
                     {
                         Session["usuario"] = txtUsuario.Text;
@@ -91,7 +87,7 @@ namespace ProyectoPlataformaW.login
                         Session["usuario"] = txtUsuario.Text;
                         Session["general"] = "profesor";
                         // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                        Response.Redirect("~/Profesor.aspx");
+                        Response.Redirect("~/Vista/inicioProfesor.aspx");
 
 
                     }
