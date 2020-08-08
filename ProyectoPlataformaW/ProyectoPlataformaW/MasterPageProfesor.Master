@@ -81,7 +81,7 @@
 						            </li>
                                     <!--<li class="nav-item"><a class="nav-link" href="#">Anuncios</a></li>-->
                                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-e" data-toggle="dropdown">
-                                        <asp:Label ID="lblUser" runat="server" Text="Label"></asp:Label>
+                                        <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown-e">
                                             <a class="dropdown-item" href="/Vista/EditPerfil2.aspx">Editar Perfil</a>
