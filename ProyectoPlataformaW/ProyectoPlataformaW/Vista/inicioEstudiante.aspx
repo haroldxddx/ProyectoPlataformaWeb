@@ -126,6 +126,7 @@
 							</div>
 							<div class="course-rating">
 								<p>Seccion Basica Media</p>
+                                <p>&nbsp;</p>
 															
 							</div>
 						</div>

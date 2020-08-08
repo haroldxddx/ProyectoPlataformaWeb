@@ -170,6 +170,9 @@ namespace ProyectoPlataformaW.Datos
             int xd = objConexion.mtdConectado(sql);
             return xd;
         }
+
+    
+
     }
 
 

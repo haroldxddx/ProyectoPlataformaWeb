@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ProyectoPlataformaW.Entidades;
+using ProyectoPlataformaW.Logica;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,40 +13,27 @@ namespace ProyectoPlataformaW.Vista
     public partial class inicioProfesor : System.Web.UI.Page
 
     {
+        
+        //List<clEntidadCursoMateriaE> listP = new List<clEntidadCursoMateriaE>();
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
+
+            /*clCursoMateriaL objCmL = new clCursoMateriaL();
+            listP = objCmL.mtdCursosP();
+            string user = Session["usuario"].ToString();
+
+            for (int i = 0; i < listP.Count; i++)
             {
-                if (Session["general"].ToString() == null)
+                if (listP[i].Email == user)
                 {
-                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                    repeaterPrueba.DataSource = listP;
+                    repeaterPrueba.DataBind();
                 }
 
-                if (Session["general"].ToString() == "profesor")
-                {
+            }*/
 
-                    // Response.Redirect("~/inicio.aspx");
-
-                }
-                else if (Session["general"].ToString() != "profesor")
-                {
-
-                    Response.Redirect("~/inicio.aspx");
-                }
-            }
-            catch (Exception)
-            {
-
-
-                Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
-
-                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
-                //redirigir a login //
-
-                Session.Clear();
-                Response.Redirect("~/inicio.aspx");
-
-            }
 
         }
     }

@@ -48,8 +48,8 @@
     <body>
 
 
-
-        <p>hello admin</p>
+        
+        <p><asp:Label ID="lbluser" runat="server" Text="Label"></asp:Label></p>
         <!-- LOADER -->
 	<div id="preloader">
 		<div class="loader-container">
