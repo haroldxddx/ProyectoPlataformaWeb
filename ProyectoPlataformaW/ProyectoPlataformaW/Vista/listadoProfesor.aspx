@@ -49,6 +49,7 @@
                         <br />
                         Listado de Profesores</h3>
                     <br />
+                    <asp:Label ID="lblUsera" runat="server" Text="Label"></asp:Label>
                     <br />
                     <br />
                 </div>

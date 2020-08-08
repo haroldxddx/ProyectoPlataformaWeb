@@ -67,6 +67,7 @@
     </p>
     <p>
         <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Buscar por nombre"></asp:Label>
+        <asp:Label ID="lblCurso" runat="server" Text="Label"></asp:Label>
     </p>
     <p>
         &nbsp;</p>
