@@ -466,7 +466,7 @@ a img.aligncenter {
 
 
 .top-navbar .bg-light {
-    background: #007bff !important;
+    background: #001f3f !important;
 }
 
 .top-navbar .navbar-light .navbar-nav .nav-link{
@@ -2483,7 +2483,7 @@ select.mobile-device {
 .footer {
     padding: 90px 0 80px !important;
     color: #cccccc;
-    background:#007bff url('images/world-map.png') no-repeat center;
+    background:#001f3f url('images/world-map.png') no-repeat center;
 }
 
 .footer .widget-title {

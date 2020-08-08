@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.Master" AutoEventWireup="true" CodeBehind="asignarActividadesP.aspx.cs" Inherits="ProyectoPlataformaW.Vista.asignarActividadesP" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="asignarActividadesP.aspx.cs" Inherits="ProyectoPlataformaW.Vista.asignarActividadesP" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-      <br />
+   <br />
     <!DOCTYPE html>
 <html>
 <head>
