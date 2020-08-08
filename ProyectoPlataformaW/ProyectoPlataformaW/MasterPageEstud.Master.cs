@@ -18,8 +18,7 @@ namespace ProyectoPlataformaW
                // Response.Redirect("~/inicio.aspx");
             }
             else
-            {
-               
+            {   
                 lblUser.Text = Session["usuario"].ToString();
             }
 

@@ -110,13 +110,14 @@
                 </div>
             </div><!-- end title -->
 
-            <hr class="invis"> 
+           
 
-            <div class="row"> 
+            <asp:Repeater ID="repeaterMateria" runat="server">
+                <ItemTemplate>
+                    <div class="row"> 
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
-						<div class="image-blog">
-							&nbsp;<img alt="mathe" class="auto-style3" src="../Imagenes/math.jpg" /></div>
+						
 						<div class="course-br">
 							<div class="course-title">
 								<h2><a href="actividadesMatematicas.aspx"><span class="auto-style2">Matematicas</span></a></h2>
@@ -138,159 +139,12 @@
 					</div>
                 </div><!-- end col -->
 
-                 <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;<img alt="espa" class="auto-style4" src="../Imagenes/esp.jpg" /></div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title=""></a><a href="actividadesMatemaicas.aspx"><span class="auto-style2">Español</span></a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Decimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : Aurora Vargas</li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->	
-				
-				 <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;<img alt="qui" class="auto-style5" src="../Imagenes/quimica.jpg" /></div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title=""></a><a href="#"><span class="auto-style2">Quimica</span></a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Decimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : William Pita</li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->
-				
-				<div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;<img alt="fisk" class="auto-style11" src="../Imagenes/fisica.jpg" /></div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title="">F</a><a href="#"><span class="auto-style2">isica</span></a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Decimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : Henry </li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->
-            </div><!-- end row -->			
-			
-			<hr class="hr3"> 
-			
-            <div class="row"> 
-				 <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;<img alt="rel" class="auto-style10" src="../Imagenes/rel.jpg" /></div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title=""></a><a href="#"><span class="auto-style2">Religion</span></a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Decimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : Edward </li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->
-				
-				<div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;<img alt="ingles" class="auto-style8" src="../Imagenes/ing.jpg" /></div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title="">I</a><a href="#"><span class="auto-style2">ngles </span></a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Decimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : Adriana Saenz</li>
-							</ul>
-						</div>
-					</div>
-                </div><!-- end col -->
-				
-				
-				 <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						<div class="image-blog">
-							&nbsp;<img alt="est" class="auto-style9" src="../Imagenes/estadistica.jpg" /></div>
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#" title=""></a><a href="#"><span class="auto-style2">Estadistica</span></a></h2>
-							</div>
-							<div class="course-desc">
-								<p>Decimo</p>
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-															
-							</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : Dario Mesa</li>
-							</ul>
-						</div>
-					</div>
-                </div>
-                <!-- end col -->
+            </div><!-- end row -->	
+                </ItemTemplate>
 
-               <!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
+            </asp:Repeater>
+            		
+			</div><!-- end container -->
     </div><!-- end section -->
 
    <!-- end section -->

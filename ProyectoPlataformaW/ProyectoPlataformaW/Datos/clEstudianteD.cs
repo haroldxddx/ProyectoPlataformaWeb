@@ -132,6 +132,11 @@ namespace ProyectoPlataformaW.Datos
 
         }
 
+       /* select Curso.Curso
+from Curso
+inner join Estudiante
+on Curso.IdCurso = Estudiante.IdCurso
+where Email = 'haroldzabala5@gmail.com'*/
 
         //Filtro de estudiantes por curso
         public List<clEntidadEstudianteE> mtdFiltroCurso(clEntidadEstudianteE objEstud)
