@@ -4,6 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <!DOCTYPE html>
 <html lang="en">
+    <head>
 
     <!-- Basic -->
     <meta charset="utf-8">
@@ -42,7 +43,7 @@
     <![endif]-->
 
 </head>
-<body class="host_version"> 
+<body > 
 
 	
 
@@ -57,7 +58,7 @@
 	<!-- END LOADER -->	
 
     
-	<
+	
 	
 	<div class="all-title-box">
 		<div class="container text-center">
