@@ -18,7 +18,7 @@ namespace ProyectoPlataformaW.Vista
 
         protected void btnRegistrarP_Click(object sender, EventArgs e)
         {
-            clEntidadCursosE objECurso = new clEntidadCursosE();
+            ClEntidadCursosE objECurso = new ClEntidadCursosE();
             objECurso.Curso = txtCur.Text;
             objECurso.Grado = dplGrado.SelectedValue;
 

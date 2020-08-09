@@ -16,7 +16,7 @@ namespace ProyectoPlataformaW.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            List<clEntidadCursosE> listaCurso = new List<clEntidadCursosE>();
+            List<ClEntidadCursosE> listaCurso = new List<ClEntidadCursosE>();
             clCursoD objCurso = new clCursoD();
             listaCurso = objCurso.mtdListarCurso();
 

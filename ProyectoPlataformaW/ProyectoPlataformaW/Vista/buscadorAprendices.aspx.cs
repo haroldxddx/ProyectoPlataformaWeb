@@ -29,7 +29,7 @@ namespace ProyectoPlataformaW.Vista
 
                 if (Session["general"].ToString() == "administrador")
                 {
-                    List<clEntidadCursosE> listC = new List<clEntidadCursosE>();
+                    List<ClEntidadCursosE> listC = new List<ClEntidadCursosE>();
                     List<clEntidadEstudianteE> listE = new List<clEntidadEstudianteE>();
 
                     clCursoL objCurso = new clCursoL();
@@ -68,24 +68,10 @@ namespace ProyectoPlataformaW.Vista
 
 
 
-
-
-
-
-
-
             }
 
 
-
-
-
-
-
-
-
-
-            
+    
 
         }
 

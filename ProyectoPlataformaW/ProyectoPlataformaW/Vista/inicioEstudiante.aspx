@@ -120,10 +120,10 @@
 						
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="actividadesMatematicas.aspx"><span class="auto-style2">Matematicas</span></a></h2>
+								<h2><a href="actividadesMatematicas.aspx"><span class="auto-style2">'<%# Eval("NombreMateria") %>'</span></a></h2>
 							</div>
 							<div class="course-desc">
-								<p>Decimo</p>
+								<p><%# Eval("NivelAcademico") %></p>
 							</div>
 							<div class="course-rating">
 								<p>Seccion Basica Media</p>
@@ -133,7 +133,7 @@
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li>Profesor : Martin Rojas</li>
+								<li>Profesor : <%# Eval("Nombres") + " " + Eval("Apellidos") %></li>
 							</ul>
 						</div>
 					</div>
