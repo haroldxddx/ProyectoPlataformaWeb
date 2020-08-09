@@ -301,3 +301,5 @@ C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataforma
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csprojAssemblyReference.cache
+C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.dll
+C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.xml

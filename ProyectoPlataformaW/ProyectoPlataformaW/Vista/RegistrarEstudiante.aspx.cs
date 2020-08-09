@@ -1,8 +1,12 @@
 ﻿using ProyectoPlataformaW.Datos;
 using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
+using SpreadsheetLight;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.OleDb;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,6 +18,7 @@ namespace ProyectoPlataformaW.Vista
 {
 	public partial class RegistrarEstudiante : System.Web.UI.Page
 	{
+        private string path = @"C:\Users\USUARIO\source\repos\ProyectoPlataformaWeb\ProyectoPlataformaW\Excel_BD.xlsx";
         protected void Page_Load(object sender, EventArgs e)
         {
         
@@ -26,6 +31,31 @@ namespace ProyectoPlataformaW.Vista
             dpdCurso.DataTextField = "Curso";
             dpdCurso.DataValueField = "IdCurso";
             dpdCurso.DataBind();
+
+            
+            
+            SLDocument sl = new SLDocument(path);
+
+            int iRow = 2;
+            List<estudiantesViewModel> listaEs = new List<estudiantesViewModel>();
+            while (!string.IsNullOrEmpty(sl.GetCellValueAsString(iRow,1))) ;
+            {
+                estudiantesViewModel objEVM = new estudiantesViewModel();
+                objEVM.Nombres = sl.GetCellValueAsString(iRow, 1);
+                objEVM.Apellidos = sl.GetCellValueAsString(iRow, 2);
+                objEVM.Documento = sl.GetCellValueAsInt32(iRow, 3);
+                objEVM.Email = sl.GetCellValueAsString(iRow, 4);
+                objEVM.Contrasena = sl.GetCellValueAsString(iRow, 5);
+                objEVM.IdCurso = sl.GetCellValueAsInt32(iRow, 6);
+
+                listaEs.Add(objEVM);
+
+
+
+                iRow++;
+            }
+            dtgExcel.DataSource = listaEs;
+                
 
         }
 
@@ -48,6 +78,11 @@ namespace ProyectoPlataformaW.Vista
         protected void dpdCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void btnSubirAr_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

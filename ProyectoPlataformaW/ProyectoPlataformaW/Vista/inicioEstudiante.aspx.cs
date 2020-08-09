@@ -14,7 +14,7 @@ namespace ProyectoPlataformaW
 
            // Session["general"] = "estudiante";
 
-            try
+          /*  try
             {
                 if (Session["general"].ToString() == null)
                 {
@@ -45,7 +45,7 @@ namespace ProyectoPlataformaW
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 
-            }
+            }*/
 
 
 

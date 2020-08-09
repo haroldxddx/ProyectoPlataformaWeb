@@ -94,9 +94,16 @@
            <br />
            &nbsp;
            &nbsp;<asp:Image ID="Image1" runat="server" Height="24px" ImageUrl="~/Imagenes/sobresalir (2).png" Width="27px" />
-           <asp:Button ID="btnSubirAr" btn=hover runat="server" Class="btn btn-outline-auto auto-style6" Text="SUBIR ARCHIVO" Height="36px" Width="191px" BorderColor="White" ForeColor="White" />
+           <asp:Button ID="btnSubirAr" btn=hover runat="server" Class="btn btn-outline-auto auto-style6" Text="SUBIR ARCHIVO" Height="36px" Width="191px" BorderColor="White" ForeColor="White" OnClick="btnSubirAr_Click" />
            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Image ID="Image3" runat="server" Height="29px" ImageUrl="~/Imagenes/descarga-directa (2).png" Width="33px" />
            &nbsp;<asp:Button ID="btnDescargarF" btn=hover runat="server" Class="btn btn-outline-auto auto-style6" Text="DESCARGAR FORMATO" Height="36px" Width="191px" BorderColor="White" ForeColor="White" />
+           <br />
+           <br />
+           <br />
+           <asp:GridView ID="dtgExcel" runat="server">
+           </asp:GridView>
+           <br />
+           <br />
            <br />
            <br />
            <br />
