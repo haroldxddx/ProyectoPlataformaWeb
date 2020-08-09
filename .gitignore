@@ -340,3 +340,4 @@ ASALocalRun/
 healthchecksdb
 *.mdf
 ProyectoPlataformaW/ProyectoPlataformaW/App_Data/dbProyectoPlataforma_log.ldf
+ProyectoPlataformaW/ProyectoPlataformaW/App_Data/dbProyectoPlataforma.mdf

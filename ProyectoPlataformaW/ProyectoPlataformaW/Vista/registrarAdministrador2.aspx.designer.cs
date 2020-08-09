@@ -11,52 +11,70 @@ namespace ProyectoPlataformaW.Vista
 {
 
 
-    public partial class RegistrarCurso
+    public partial class registrarAdministrador2
     {
 
         /// <summary>
-        /// Control Image3.
+        /// Control txtNom.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image3;
+        protected global::System.Web.UI.WebControls.TextBox txtNom;
 
         /// <summary>
-        /// Control dplGrado.
+        /// Control txtApe.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dplGrado;
+        protected global::System.Web.UI.WebControls.TextBox txtApe;
 
         /// <summary>
-        /// Control txtCur.
+        /// Control txtDoc.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCur;
+        protected global::System.Web.UI.WebControls.TextBox txtDoc;
 
         /// <summary>
-        /// Control Image2.
+        /// Control txtEma.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image2;
+        protected global::System.Web.UI.WebControls.TextBox txtEma;
 
         /// <summary>
-        /// Control btnRegistrarC.
+        /// Control txtCon.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRegistrarC;
+        protected global::System.Web.UI.WebControls.TextBox txtCon;
+
+        /// <summary>
+        /// Control dpdTipo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList dpdTipo;
+
+        /// <summary>
+        /// Control btnRegistrarP.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnRegistrarP;
     }
 }

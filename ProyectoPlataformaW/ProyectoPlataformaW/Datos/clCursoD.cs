@@ -9,7 +9,7 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clCursoD
     {
-            public int mtdRegistrarCurso(clEntidadCursosE objECurso)
+            public int mtdRegistrarCurso(ClEntidadCursosE objECurso)
             {
                 string sqlInsert = "Insert into Curso (Grado,Curso)" +
                      "values('" + objECurso.Grado + "' , '" + objECurso.Curso + "' )";
@@ -21,23 +21,23 @@ namespace ProyectoPlataformaW.Datos
 
 
             }
-            public List<clEntidadCursosE> mtdListarCurso()
+            public List<ClEntidadCursosE> mtdListarCurso()
             {
                 string sql = "select * from Curso";
                 clAdminSQL objSql = new clAdminSQL();
                 DataTable tblcurso = new DataTable();
                 tblcurso = objSql.mtdDesconectado(sql);
 
-                List<clEntidadCursosE> listaCur = new List<clEntidadCursosE>();
+                List<ClEntidadCursosE> listaCur = new List<ClEntidadCursosE>();
 
                 for (int i = 0; i < tblcurso.Rows.Count; i++)
                 {
-                    clEntidadCursosE objCurs = new clEntidadCursosE();
+                    ClEntidadCursosE objCurs = new ClEntidadCursosE();
 
                     objCurs.IdCurso = int.Parse(tblcurso.Rows[i][0].ToString());
                     objCurs.Grado = tblcurso.Rows[i][1].ToString();
                     objCurs.Curso = tblcurso.Rows[i][2].ToString();
-                listaCur.Add(objCurs);
+                    listaCur.Add(objCurs);
 
 
                 }

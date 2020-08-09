@@ -9,18 +9,18 @@ namespace ProyectoPlataformaW.Logica
 {
     public class clCursoL
     {
-        public List<clEntidadCursosE> mtdComboCur()
+        public List<ClEntidadCursosE> mtdComboCur()
         {
             clCursoD objCur = new clCursoD();
-            List<clEntidadCursosE> listC = new List<clEntidadCursosE>();
+            List<ClEntidadCursosE> listC = new List<ClEntidadCursosE>();
             listC = objCur.mtdListarCurso();
             return listC;
         }
 
-        public List<clEntidadCursosE> mtdListarCur()
+        public List<ClEntidadCursosE> mtdListarCur()
         {
             clCursoD objCurs = new clCursoD();
-            List<clEntidadCursosE> listCu = new List<clEntidadCursosE>();
+            List<ClEntidadCursosE> listCu = new List<ClEntidadCursosE>();
             listCu = objCurs.mtdListarCurso();
             return listCu;
         }

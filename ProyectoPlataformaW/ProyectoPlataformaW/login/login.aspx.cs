@@ -25,6 +25,7 @@ namespace ProyectoPlataformaW.login
             string contraseña = txtContraseña.Text;
             string usuario = txtUsuario.Text;
 
+            //Desencriptar
             string pass = Encrypt.GetSHA256(contraseña);
 
 
@@ -61,27 +62,6 @@ namespace ProyectoPlataformaW.login
             listaBusa = objAdministradorL.mtdListarApb1(objAdministrador);
 
           
-
-
-
-          
-                    if (listaBus.Count != 0)
-                    {
-                        Session["usuario"] = txtUsuario.Text;
-                        Session["general"] = "estudiante";
-                        // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                        Response.Redirect("~/Vista/inicioEstudiante.aspx");
-
-
-                    }
-                    else
-                    {
-                        Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
-                        txtContraseña.Text = "";
-                        txtUsuario.Text = "";
-
-
-                    }
                    
 
                 
@@ -90,61 +70,34 @@ namespace ProyectoPlataformaW.login
                         Session["usuario"] = txtUsuario.Text;
                         Session["general"] = "profesor";
                         // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                        Response.Redirect("~/Profesor.aspx");
+                        Response.Redirect("~/Vista/inicioProfesor.aspx");
 
 
                     }
-                    else
+                    else if(listaBusa.Count != 0)
                     {
-                        Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
-                        txtContraseña.Text = "";
-                        txtUsuario.Text = "";
+                Session["usuario"] = txtUsuario.Text;
+                Session["general"] = "administrador";
+                // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
+                Response.Redirect("~/Vista/inicioAdministrador.aspx");
 
 
-                    }
+            } else if (listaBus.Count != 0)
+            {
+                Session["usuario"] = txtUsuario.Text;
+                Session["general"] = "estudiante";
+                // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
+                Response.Redirect("~/Vista/inicioEstudiante.aspx");
+
+            }
+            else {
+                Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
+                txtContraseña.Text = "";
+                txtUsuario.Text = "";
+            }
                     
 
                 
-
-                    if (listaBusa.Count != 0)
-                    {
-                        Session["usuario"] = txtUsuario.Text;
-                        Session["general"] = "administrador";
-                        // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                        Response.Redirect("~/Vista/inicioAdministrador.aspx");
-
-
-                    }
-                    else 
-                    {
-                        Response.Write("<script> alert(" + "'Datos Incorrectos'" + ") </script>");
-                        txtContraseña.Text = "";
-                        txtUsuario.Text = "";
-
-
-                    }
-                  
-
-                
-
-                    
-
-            
-
-
-
-            // dataGridView1.DataSource = listaVt;
-           
-
-
-
-            
-
-
-
-
-
-
 
 
 

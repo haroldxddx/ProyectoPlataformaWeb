@@ -10,11 +10,23 @@ namespace ProyectoPlataformaW
     public partial class MasterPageAdmin : System.Web.UI.MasterPage
     {
 
-        public string val;
+      
         protected void Page_Load(object sender, EventArgs e)
+
+
         {
 
-            //val = Session["usuario"].ToString();
+            lblAdmin.Text = Session["usuario"].ToString();
+            if (Session["usuario"] == null)
+            {
+                //PARA LOGIN 
+                // Response.Redirect("~/inicio.aspx");
+            }
+            else
+            {
+
+              
+            }
         }
         protected void lblcerrarsesion_Click(object sender, EventArgs e)
         {

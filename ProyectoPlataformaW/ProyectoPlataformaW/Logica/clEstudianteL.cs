@@ -54,10 +54,34 @@ namespace ProyectoPlataformaW.Logica
             return listaEs;
         }
 
-        public int mtdEdit(clEntidadEstudianteE objE)
+        public int mtdENom(clEntidadEstudianteE objE)
         {
             clEstudianteD e = new clEstudianteD();
-            int ed = e.mtdActualizarInfo(objE);
+            int ed = e.mtdEditarNom(objE);
+            return ed;
+
+        }
+
+        public int mtdEAp(clEntidadEstudianteE objE)
+        {
+            clEstudianteD e = new clEstudianteD();
+            int ed = e.mtdEditarAp(objE);
+            return ed;
+
+        }
+
+        public int mtdEDoc(clEntidadEstudianteE objE)
+        {
+            clEstudianteD e = new clEstudianteD();
+            int ed = e.mtdEditarDoc(objE);
+            return ed;
+
+        }
+
+        public int mtdEemail(clEntidadEstudianteE objE)
+        {
+            clEstudianteD e = new clEstudianteD();
+            int ed = e.mtdEditarEmail(objE);
             return ed;
 
         }

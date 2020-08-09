@@ -8,9 +8,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using static ProyectoPlataformaW.Datos.clEncrypt;
 
-namespace ProyectoPlataformaW
+namespace ProyectoPlataformaW.Vista
 {
-    public partial class RegistrarAdministrador : System.Web.UI.Page
+    public partial class registrarAdministrador2 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,19 +24,23 @@ namespace ProyectoPlataformaW
             objEAdmin.Apellidos = txtApe.Text;
             objEAdmin.Documento = int.Parse(txtDoc.Text);
             objEAdmin.Email = txtEma.Text;
-            objEAdmin.Contrasena = Encrypt.GetSHA256( txtCon.Text);
+            objEAdmin.Contrasena = Encrypt.GetSHA256(txtCon.Text);
             objEAdmin.Tipo = dpdTipo.Text;
 
             clAdministradorD objAdmin = new clAdministradorD();
             int result = objAdmin.mtdRegistrarAdministrador(objEAdmin);
 
-            txtNom.Text = "";
-            txtApe.Text = "";
-            txtDoc.Text = "";
-            txtEma.Text = "";
-            txtCon.Text = "";
-           
+            if (result>0)
+            {
+                Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+                txtNom.Text = "";
+                txtApe.Text = "";
+                txtDoc.Text = "";
+                txtEma.Text = "";
+                txtCon.Text = "";
+            }
 
+           
         }
     }
 }
