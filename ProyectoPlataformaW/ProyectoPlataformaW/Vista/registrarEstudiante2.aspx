@@ -87,8 +87,20 @@
             <div class="col-12">
           
            <asp:Button ID="btnRegistrarE" type="submit" runat="server" class="btn btn-success float-right" Text="Registrar" OnClick="btnRegistrarE_Click"/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:GridView ID="dtgExec" runat="server">
+                </asp:GridView>
+                <asp:GridView ID="dtgExc" runat="server" AutoGenerateColumns="False"  EmptyDataText="No hay registros de datos para mostrar.">
+                    <Columns>
+                        <asp:BoundField DataField="IdEstudiante" HeaderText="IdEstudiante" ReadOnly="True" SortExpression="IdEstudiante" />
+                        <asp:BoundField DataField="Nombres" HeaderText="Nombres" SortExpression="Nombres" />
+                        <asp:BoundField DataField="Apellidos" HeaderText="Apellidos" SortExpression="Apellidos" />
+                        <asp:BoundField DataField="Documento" HeaderText="Documento" SortExpression="Documento" />
+                        <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
+                        <asp:BoundField DataField="Contrasena" HeaderText="Contrasena" SortExpression="Contrasena" />
+                        <asp:BoundField DataField="IdCurso" HeaderText="IdCurso" SortExpression="IdCurso" />
+                    </Columns>
+                </asp:GridView>
+&nbsp;<br />
                 <br />
         </div>
       </div>
@@ -97,7 +109,7 @@
 
             <div class="col-12">
           
-           <asp:Button ID="Button1" type="submit" runat="server" class="btn btn-success float-right" Text="Subir Archivo Excel"/>
+           <asp:Button ID="Button1" type="submit" runat="server" class="btn btn-success float-right" Text="Subir Archivo Excel" OnClick="Button1_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
