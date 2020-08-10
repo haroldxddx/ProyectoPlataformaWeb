@@ -43,13 +43,6 @@
         top: 251px;
         left: 535px;
     }
-    .auto-style8 {
-        width: 61px;
-        height: 28px;
-        position: absolute;
-        top: 251px;
-        left: 725px;
-    }
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -62,13 +55,13 @@
         <asp:Label ID="Label2" runat="server" CssClass="auto-style3" Text="Flitrar Por Cursos"></asp:Label>
         <asp:DropDownList ID="cmbCurso" runat="server" AutoPostBack="True" CssClass="auto-style4" OnSelectedIndexChanged="cmbCurso_SelectedIndexChanged">
         </asp:DropDownList>
-        <asp:TextBox ID="txtNombreE" runat="server" CssClass="auto-style7"></asp:TextBox>
-        <asp:Button ID="btnBuscar" runat="server" CssClass="auto-style8" Text="Buscar" OnClick="btnBuscar_Click" />
+        <asp:TextBox ID="txtNombreE" runat="server" CssClass="auto-style7" AutoCompleteType="Search" AutoPostBack="True" OnTextChanged="txtNombreE_TextChanged"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Buscar por nombre"></asp:Label>
         <asp:Label ID="lblCurso" runat="server" Text="Label"></asp:Label>
     </p>
+    <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
     <p>
         &nbsp;</p>
 <p>
