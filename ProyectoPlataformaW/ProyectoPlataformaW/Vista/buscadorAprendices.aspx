@@ -61,11 +61,11 @@
         <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Buscar por nombre"></asp:Label>
         <asp:Label ID="lblCurso" runat="server" Text="Label"></asp:Label>
     </p>
-    <asp:HyperLink ID="HyperLink1" runat="server">HyperLink</asp:HyperLink>
     <p>
         &nbsp;</p>
 <p>
-        &nbsp;</p>
+        <asp:LinkButton ID="lbtCurso" runat="server" OnClick="lbtCurso_Click">LinkButton</asp:LinkButton>
+    </p>
 <p>
         <asp:GridView ID="gvEstu" runat="server" CellPadding="4" CssClass="auto-style6" ForeColor="#333333" GridLines="None">
             <AlternatingRowStyle BackColor="White" />

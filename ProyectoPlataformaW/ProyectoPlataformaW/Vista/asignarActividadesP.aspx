@@ -2,8 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-   <br />
-    <!DOCTYPE html>
+    <br />
+ <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -24,10 +24,23 @@
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
+    
  
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
+     <div class="card-body">
+            
+            <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="custom-content-below-home-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Asignacion de Actividades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="custom-content-below-profile-tab" data-toggle="pill" href="#custom-content-below-profile" role="tab" aria-controls="custom-content-below-profile" aria-selected="false">Calificacion de Actividades</a>
+              </li>
+              
+            </ul>
+         </div>
     <section class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
@@ -40,39 +53,43 @@
     </section>
 
     <!-- Main content -->
+
     <section class="content">
       <div class="row">
+          
+                
         <div class="col-md-6">
           <div class="card card-primary">
             <div class="card-header">
               <h3 class="card-title">Trabajo a realizar</h3>
 
              
+                <asp:Label ID="lblCursoM" runat="server" Text="1"></asp:Label>
+
+             
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="inputName">Actividad</label>
+                <label for="inputName">Nombre de la Actividad</label>
                 
-                  <asp:TextBox ID="TextBox1" runat="server" class="form-control"></asp:TextBox>
+                  <asp:TextBox ID="txtNomAc" runat="server" class="form-control"></asp:TextBox>
               </div>
-              <div class="form-group">
-                <label for="inputDescription">Descripcion</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-              </div>
+             
             
               <div class="form-group">
                 <label for="inputClientCompany">Adjunte sus archivos </label>
-                <asp:TextBox ID="TextBox2" runat="server" class="form-control"></asp:TextBox>
+                  <asp:FileUpload ID="fluArchivo" runat="server"/>
               </div>
               <div class="form-group">
-                <label for="inputProjectLeader">Curso Materia</label>
-                <asp:TextBox ID="TextBox3" runat="server" class="form-control"></asp:TextBox>
+                <label for="inputProjectLeader">Descripcion</label>
+                  <asp:TextBox ID="txtDesc" runat="server" class="form-control" Height="150px"></asp:TextBox>
               </div>
             </div>
             <!-- /.card-body -->
           </div>
           <!-- /.card -->
         </div>
+                
         <div class="col-md-6">
           <div class="card card-secondary">
             <div class="card-header">
@@ -83,18 +100,18 @@
             <div class="card-body">
               <div class="form-group">
                 <label for="inputEstimatedBudget">Fecha de inicio</label>
-                <asp:TextBox ID="TextBox4" runat="server" class="form-control"></asp:TextBox>
+                <asp:TextBox ID="txtFechaIni" runat="server" TextMode="Date" class="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="inputSpentBudget">Fecha Final</label>
-                <asp:TextBox ID="TextBox5" runat="server" class="form-control"></asp:TextBox>
+                  <asp:TextBox ID="txtFechaFn" runat="server" TextMode="Date" class="form-control"></asp:TextBox>
               </div>
                 <div class="row">
        
 
             <div class="col-12">
           
-           <asp:Button ID="btnEnviar" type="submit" runat="server" class="btn btn-success float-right" Text="Enviar"/>
+           <asp:Button ID="btnEnviar" type="submit" runat="server" class="btn btn-success float-right" Text="Enviar" OnClick="btnEnviar_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
@@ -106,6 +123,7 @@
         </div>
           
       </div>
+             
       
     </section>
 </div>

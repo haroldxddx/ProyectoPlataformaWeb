@@ -90,8 +90,9 @@
 						<div class="course-br">
 							<div class="course-title">
 								<h2>
-                                    <asp:Label ID="lblCurso" runat="server" Text='<%# Eval("Curso") %>'></asp:Label>
-
+                                    <asp:LinkButton ID="lbtCurso" runat="server" OnClick="lbtCurso_Click" Text='<%# Eval("Curso") %>'></asp:LinkButton>
+                                    <asp:Label ID="lblIdCursoMateria" runat="server" Text='<%# Eval("IdCursoMateria") %>'></asp:Label>
+                                   
 								</h2>
 							</div>
 							<div class="course-desc">
