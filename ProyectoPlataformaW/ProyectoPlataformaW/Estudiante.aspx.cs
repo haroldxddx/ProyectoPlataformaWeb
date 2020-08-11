@@ -41,10 +41,11 @@ namespace ProyectoPlataformaW
                 //redirigir a login //Response.Redirect("~/inicio.aspx");
 
                 Session.Clear();
-
-            }
+         
+            
           
             
        }
     }
+}
 }

@@ -1,9 +1,13 @@
-﻿using System;
+﻿using ProyectoPlataformaW.Datos;
+using ProyectoPlataformaW.Entidades;
+using ProyectoPlataformaW.Logica;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.WebSockets;
 
 namespace ProyectoPlataformaW
 {
@@ -11,11 +15,11 @@ namespace ProyectoPlataformaW
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         
 
-           // Session["general"] = "estudiante";
 
-            try
+            // Session["general"] = "estudiante";
+
+            /*try
             {
                 if (Session["general"].ToString() == null)
                 {
@@ -46,8 +50,24 @@ namespace ProyectoPlataformaW
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 
-            }
+            }*/
 
+            string user = Session["usuario"].ToString();
+
+            List<clEntidadCursoMateriaE> listaCm = new List<clEntidadCursoMateriaE>();
+
+            clEntidadEstudianteE objEs = new clEntidadEstudianteE();
+            objEs.Email = user;
+
+            clCursoMateriaL objCursoM = new clCursoMateriaL();
+            listaCm = objCursoM.mtdMateriasP(objEs);
+
+            if (listaCm.Count != 0)
+            {
+                repeaterMateria.DataSource = listaCm;
+                repeaterMateria.DataBind();
+
+            }
 
 
 

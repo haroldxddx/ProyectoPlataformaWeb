@@ -75,7 +75,31 @@
         &nbsp;
     </p>
     <p class="auto-style3">
-        &nbsp;</p>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdCursoMateria" DataSourceID="SqlDataSource1" EmptyDataText="No hay registros de datos para mostrar.">
+            <Columns>
+                <asp:BoundField DataField="IdCursoMateria" HeaderText="IdCursoMateria" ReadOnly="True" SortExpression="IdCursoMateria" />
+                <asp:BoundField DataField="IdCurso" HeaderText="IdCurso" SortExpression="IdCurso" />
+                <asp:BoundField DataField="IdMateria" HeaderText="IdMateria" SortExpression="IdMateria" />
+                <asp:BoundField DataField="IdProfesor" HeaderText="IdProfesor" SortExpression="IdProfesor" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1 %>" DeleteCommand="DELETE FROM [CursoMateria] WHERE [IdCursoMateria] = @IdCursoMateria" InsertCommand="INSERT INTO [CursoMateria] ([IdCurso], [IdMateria], [IdProfesor]) VALUES (@IdCurso, @IdMateria, @IdProfesor)" OnSelecting="SqlDataSource1_Selecting" ProviderName="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1.ProviderName %>" SelectCommand="SELECT [IdCursoMateria], [IdCurso], [IdMateria], [IdProfesor] FROM [CursoMateria]" UpdateCommand="UPDATE [CursoMateria] SET [IdCurso] = @IdCurso, [IdMateria] = @IdMateria, [IdProfesor] = @IdProfesor WHERE [IdCursoMateria] = @IdCursoMateria">
+            <DeleteParameters>
+                <asp:Parameter Name="IdCursoMateria" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="IdCurso" Type="Int32" />
+                <asp:Parameter Name="IdMateria" Type="Int32" />
+                <asp:Parameter Name="IdProfesor" Type="Int32" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="IdCurso" Type="Int32" />
+                <asp:Parameter Name="IdMateria" Type="Int32" />
+                <asp:Parameter Name="IdProfesor" Type="Int32" />
+                <asp:Parameter Name="IdCursoMateria" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
+    </p>
     <p class="auto-style3">
         &nbsp;</p>
     <p class="auto-style3">

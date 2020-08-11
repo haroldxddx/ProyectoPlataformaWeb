@@ -29,7 +29,7 @@ namespace ProyectoPlataformaW.Vista
 
                 if (Session["general"].ToString() == "administrador")
                 {
-                    List<clEntidadCursosE> listC = new List<clEntidadCursosE>();
+                    List<ClEntidadCursosE> listC = new List<ClEntidadCursosE>();
                     List<clEntidadEstudianteE> listE = new List<clEntidadEstudianteE>();
 
                     clCursoL objCurso = new clCursoL();
@@ -68,24 +68,10 @@ namespace ProyectoPlataformaW.Vista
 
 
 
-
-
-
-
-
-
             }
 
 
-
-
-
-
-
-
-
-
-            
+    
 
         }
 
@@ -160,6 +146,26 @@ namespace ProyectoPlataformaW.Vista
 
                 }
                
+            }
+        }
+
+        protected void txtNombreE_TextChanged(object sender, EventArgs e)
+        {
+            string nomAP = txtNombreE.Text;
+
+            List<clEntidadEstudianteE> listaBuscar = new List<clEntidadEstudianteE>();
+
+            clEntidadEstudianteE objEstudiante = new clEntidadEstudianteE();
+            objEstudiante.Nombres = nomAP;
+
+            clEstudianteL objEstudianteL = new clEstudianteL();
+            listaBuscar = objEstudianteL.mtdBuscarEstu(objEstudiante);
+
+            if (listaBuscar.Count != 0)
+            {
+                gvEstu.DataSource = listaBuscar;
+                gvEstu.DataBind();
+
             }
         }
     }

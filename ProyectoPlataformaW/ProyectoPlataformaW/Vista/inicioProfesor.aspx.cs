@@ -14,13 +14,13 @@ namespace ProyectoPlataformaW.Vista
 
     {
         
-        //List<clEntidadCursoMateriaE> listP = new List<clEntidadCursoMateriaE>();
+        List<clEntidadCursoMateriaE> listP = new List<clEntidadCursoMateriaE>();
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            /*clCursoMateriaL objCmL = new clCursoMateriaL();
+            clCursoMateriaL objCmL = new clCursoMateriaL();
             listP = objCmL.mtdCursosP();
             string user = Session["usuario"].ToString();
 
@@ -28,11 +28,12 @@ namespace ProyectoPlataformaW.Vista
             {
                 if (listP[i].Email == user)
                 {
+                    
                     repeaterPrueba.DataSource = listP;
                     repeaterPrueba.DataBind();
                 }
 
-            }*/
+            }
 
 
         }

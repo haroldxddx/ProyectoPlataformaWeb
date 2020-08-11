@@ -45,7 +45,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Esent.Interop, Version=1.9.4.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Database.ManagedEsent.2.0.1\lib\netstandard2.0\Esent.Interop.dll</HintPath>
+    </Reference>
+    <Reference Include="Esent.Isam, Version=1.9.4.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Database.Isam.2.0.1\lib\netstandard2.0\Esent.Isam.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SpreadsheetLight, Version=3.4.4.0, Culture=neutral, PublicKeyToken=32fbb46dc1730c57, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpreadsheetLight.3.4.4\lib\SpreadsheetLight.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -2046,6 +2058,7 @@
     <Content Include="Vista\plugins\toastr\toastr.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
+    <Content Include="Vista\pruebaxd.aspx" />
     <Content Include="Vista\registrarAdministrador2.aspx" />
     <Content Include="Vista\registrarCurso2.aspx" />
     <Content Include="Vista\registrarEstudiante2.aspx" />
@@ -2086,6 +2099,7 @@
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
+    <Compile Include="Entidades\estudiantesViewModel.cs" />
     <Compile Include="Estudiante.aspx.cs">
       <DependentUpon>Estudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2234,6 +2248,13 @@
     </Compile>
     <Compile Include="Vista\listadoProfesor.aspx.designer.cs">
       <DependentUpon>listadoProfesor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\pruebaxd.aspx.cs">
+      <DependentUpon>pruebaxd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\pruebaxd.aspx.designer.cs">
+      <DependentUpon>pruebaxd.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\registrarAdministrador2.aspx.cs">
       <DependentUpon>registrarAdministrador2.aspx</DependentUpon>
