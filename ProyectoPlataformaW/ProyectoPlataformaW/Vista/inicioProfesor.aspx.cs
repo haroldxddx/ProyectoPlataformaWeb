@@ -2,6 +2,7 @@
 using ProyectoPlataformaW.Logica;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -37,5 +38,13 @@ namespace ProyectoPlataformaW.Vista
 
 
         }
+
+        protected void lbtCurso_Click(object sender, EventArgs e)
+        {
+            //string xd = ((Label)repeaterPrueba.Items[1].FindControl("lblIdCursoMateria")).Text;
+            Response.Redirect("/Vista/asignarActividadesP.aspx");
+        }
+
+      
     }
 }

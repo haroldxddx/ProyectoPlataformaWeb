@@ -310,3 +310,12 @@ C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\Proyecto
 C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.xml
 C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.pdb
 C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\DocumentFormat.OpenXml.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.pdb
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.pdb
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.xml

@@ -20,6 +20,7 @@ namespace ProyectoPlataformaW
 
             Session["usuario"] = "nn";
             Session["general"] = "";
+            Session["Archivos"] = "";
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

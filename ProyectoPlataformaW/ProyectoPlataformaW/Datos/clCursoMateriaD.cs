@@ -22,7 +22,7 @@ namespace ProyectoPlataformaW.Datos
         //Listado de cursos asignadas a profesor
         public List<clEntidadCursoMateriaE> mtdListCursoP()
         {
-            string sql = "select Curso.Curso, Curso.Grado , Profesor.Nombres, Profesor.Apellidos,Profesor.Email from Curso inner join CursoMateria On Curso.IdCurso =CursoMateria.IdCurso inner join Profesor On Profesor.IdProfesor = CursoMateria.IdProfesor";
+            string sql = "select CursoMateria.IdCursoMateria, Curso.Curso, Curso.Grado , Profesor.Nombres, Profesor.Apellidos,Profesor.Email from Curso inner join CursoMateria On Curso.IdCurso =CursoMateria.IdCurso inner join Profesor On Profesor.IdProfesor = CursoMateria.IdProfesor";
 
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblProf = new DataTable();
@@ -34,11 +34,12 @@ namespace ProyectoPlataformaW.Datos
             {
                 clEntidadCursoMateriaE objCursoM = new clEntidadCursoMateriaE();
 
-                objCursoM.Curso = tblProf.Rows[i][0].ToString();
-                objCursoM.Grado = tblProf.Rows[i][1].ToString();
-                objCursoM.Nombres = tblProf.Rows[i][2].ToString();
-                objCursoM.Apellidos = tblProf.Rows[i][3].ToString();
-                objCursoM.Email = tblProf.Rows[i][4].ToString();
+                objCursoM.IdCursoMateria = int.Parse(tblProf.Rows[i][0].ToString());
+                objCursoM.Curso = tblProf.Rows[i][1].ToString();
+                objCursoM.Grado = tblProf.Rows[i][2].ToString();
+                objCursoM.Nombres = tblProf.Rows[i][3].ToString();
+                objCursoM.Apellidos = tblProf.Rows[i][4].ToString();
+                objCursoM.Email = tblProf.Rows[i][5].ToString();
 
 
                 listaEcM.Add(objCursoM);

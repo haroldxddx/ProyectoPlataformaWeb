@@ -64,7 +64,7 @@
                 <header class="top-navbar">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <div class="container-fluid">
-                            <a class="navbar-brand">&nbsp;<img alt="logo2" class="auto-style1" src="/Imagenes/logo-email-2-g-suite.png" /></a>
+                            <a class="navbar-brand">&nbsp;<img alt="logo2" class="auto-style1" src="/logo-email-2-g-suite.png" /></a>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
                             </button>
@@ -75,7 +75,7 @@
                                      <li class="nav-item dropdown">
 							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Estudiantes </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
-								            <a class="dropdown-item" href="/Vista/asignarActividadesP.aspx">Asignacion de actividades</a>
+								            <a class="dropdown-item" href="/Vista/buscadorAprendices.aspx">Buscador de Aprendices</a>
 								            
 							            </div>
 						            </li>
@@ -84,7 +84,7 @@
                                         <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown-e">
-                                            <a class="dropdown-item" href="/Vista/EditPerfil2.aspx">Editar Perfil</a>
+                                            <a class="dropdown-item" href="/Vista/asignarActividadesP.aspx">Asignar Actividad</a>
                                         </div>
                                     </li>
                                     <li class="nav-item"> <asp:LinkButton ID="lbcerrarsesion" class="nav-link"  runat="server" OnClick="lblcerrarsesion_Click" >cerrar sesion</asp:LinkButton></li>
