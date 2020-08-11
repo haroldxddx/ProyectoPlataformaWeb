@@ -7,7 +7,7 @@
     <form id="form1" runat="server">
        
         <div>
-            <asp:GridView ID="dtgExc" runat="server"  EmptyDataText="No hay registros de datos para mostrar.">
+            <asp:GridView ID="dtgExc" runat="server"  EmptyDataText="No hay registros de datos para mostrar." OnSelectedIndexChanged="dtgExc_SelectedIndexChanged">
         </asp:GridView>
             
         </div>
