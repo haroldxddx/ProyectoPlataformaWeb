@@ -436,6 +436,7 @@
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
     <Content Include="Vista\listadoProfesor.aspx" />
+    <Content Include="Vista\navbar.html" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\js\bootstrap-colorpicker.js" />
@@ -2067,6 +2068,7 @@
     <Content Include="Vista\style.css" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
+    <Content Include="xd.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrador.aspx.cs">
@@ -2083,6 +2085,7 @@
     <Compile Include="correoPrueba.aspx.designer.cs">
       <DependentUpon>correoPrueba.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Datos\clActividadD.cs" />
     <Compile Include="Datos\clAdministradorD.cs" />
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clConexion.cs" />
@@ -2093,6 +2096,7 @@
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
+    <Compile Include="Entidades\clEntidadActividadE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
@@ -2117,6 +2121,7 @@
     <Compile Include="inicio.aspx.designer.cs">
       <DependentUpon>inicio.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logica\clActividadL.cs" />
     <Compile Include="Logica\clCursoMateriaL.cs" />
     <Compile Include="Vista\actividadesMatematicas.aspx.cs">
       <DependentUpon>actividadesMatematicas.aspx</DependentUpon>
@@ -2294,6 +2299,13 @@
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xd.aspx.cs">
+      <DependentUpon>xd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xd.aspx.designer.cs">
+      <DependentUpon>xd.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -2715,6 +2727,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Archivo\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

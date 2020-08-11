@@ -168,5 +168,11 @@ namespace ProyectoPlataformaW.Vista
 
             }
         }
+
+        protected void lbtCurso_Click(object sender, EventArgs e)
+        {
+
+
+        }
     }
 }
