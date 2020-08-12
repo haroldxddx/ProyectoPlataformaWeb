@@ -52,6 +52,10 @@ namespace ProyectoPlataformaW
 
             }*/
 
+         
+
+
+
             string user = Session["usuario"].ToString();
 
             List<clEntidadCursoMateriaE> listaCm = new List<clEntidadCursoMateriaE>();
@@ -67,9 +71,9 @@ namespace ProyectoPlataformaW
                 repeaterMateria.DataSource = listaCm;
                 repeaterMateria.DataBind();
 
+                
+
             }
-
-
 
         }
     }

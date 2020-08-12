@@ -17,7 +17,7 @@ namespace ProyectoPlataformaW.login
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void btnIngrear_Click(object sender, EventArgs e)
