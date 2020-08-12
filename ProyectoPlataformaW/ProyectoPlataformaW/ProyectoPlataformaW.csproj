@@ -108,7 +108,7 @@
     <Content Include="Imagenes\sobresalir %282%29.png" />
     <Content Include="Imagenes\video.png" />
     <Content Include="inicio.aspx" />
-    <Content Include="Vista\actividadesMatematicas.aspx" />
+    <Content Include="Vista\actividades.aspx" />
     <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
@@ -2099,12 +2099,12 @@
     </Compile>
     <Compile Include="Logica\clActividadL.cs" />
     <Compile Include="Logica\clCursoMateriaL.cs" />
-    <Compile Include="Vista\actividadesMatematicas.aspx.cs">
-      <DependentUpon>actividadesMatematicas.aspx</DependentUpon>
+    <Compile Include="Vista\actividades.aspx.cs">
+      <DependentUpon>actividades.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\actividadesMatematicas.aspx.designer.cs">
-      <DependentUpon>actividadesMatematicas.aspx</DependentUpon>
+    <Compile Include="Vista\actividades.aspx.designer.cs">
+      <DependentUpon>actividades.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\asignarActividadesP.aspx.cs">
       <DependentUpon>asignarActividadesP.aspx</DependentUpon>

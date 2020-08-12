@@ -9,6 +9,9 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clCursoMateriaD
     {
+
+         public static int datoDT;
+
         public int mtdAsignarCursoMateria(clEntidadCursoMateriaE objCurMat)
         {
             string sqlInsert = "insert into CursoMateria values(" + objCurMat.IdCurso + " , " + objCurMat.IdMateria + " , " + objCurMat.IdProfesor + " )";
@@ -54,7 +57,7 @@ namespace ProyectoPlataformaW.Datos
         //Listado de materias a cursos
         public List<clEntidadCursoMateriaE> mtdListMateriasE(clEntidadEstudianteE objE)
         {
-            string sql = "select Materia.NombreMateria, Materia.NivelAcademico , Profesor.Nombres,Profesor.Apellidos from Materia inner join CursoMateria ON Materia.IdMateria = CursoMateria.IdMateria inner join Profesor on Profesor.IdProfesor = CursoMateria.IdProfesor inner join Curso on Curso.IdCurso = CursoMateria.IdCurso inner join Estudiante On Curso.IdCurso = Estudiante.IdCurso where Estudiante.Email = '"+ objE.Email +"' ";
+            string sql = "select Materia.NombreMateria, Materia.NivelAcademico , Profesor.Nombres,Profesor.Apellidos,Materia.IdMateria from Materia inner join CursoMateria ON Materia.IdMateria = CursoMateria.IdMateria inner join Profesor on Profesor.IdProfesor = CursoMateria.IdProfesor inner join Curso on Curso.IdCurso = CursoMateria.IdCurso inner join Estudiante On Curso.IdCurso = Estudiante.IdCurso where Estudiante.Email = '"+ objE.Email +"' ";
 
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblCur = new DataTable();
@@ -70,7 +73,11 @@ namespace ProyectoPlataformaW.Datos
                 objCursoM.NivelAcademico = tblCur.Rows[i][1].ToString();
                 objCursoM.Nombres = tblCur.Rows[i][2].ToString();
                 objCursoM.Apellidos = tblCur.Rows[i][3].ToString();
-               
+                 objCursoM.IdMateria = int.Parse(tblCur.Rows[i][4].ToString());
+
+                   
+
+                   datoDT =  int.Parse(tblCur.Rows[i][4].ToString());
 
 
 

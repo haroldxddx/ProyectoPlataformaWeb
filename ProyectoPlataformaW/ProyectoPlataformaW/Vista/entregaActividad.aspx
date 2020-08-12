@@ -66,67 +66,91 @@
 		</div>
 	</div>
 	
-    <div id="contact" class="section wb">
+   
+
+
+
+
+
+      <div id="contact" class="section wb">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Haz entrega de la actividad  </h3>
+                <h3>Entrega tu actividad ya !</h3>
+                <p class="lead">entrega la actividad propuesta<br>:V!</p>
             </div><!-- end title -->
 
             <div class="row">
                 <div class="col-xl-6 col-md-12 col-sm-12">
                     <div class="contact_form">
                         <div id="message"></div>
-                        <div id="contactform" class="" action="contact.php" name="contactform" method="post">
+                        <form id="contactform" class="" action="contact.php" name="contactform" method="post">
                             <div class="row row-fluid">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Nombre">
+                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="user">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Apellido">
+                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="comentario">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="adjunta vinculo">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Adjuntar vinculo">
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="adjunta archivo">
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Adjuntar archivo">
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Escribe aquí la evidencia..."></textarea>
+                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Escribe tu evidencia aqui ...."></textarea>
                                 </div>
                                 <div class="text-center pd">
                                     <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Entregar</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div><!-- end col -->
 				<div class="col-xl-6 col-md-12 col-sm-12">
-					<div class="map-box">
-						<!--<div id="custom-places" class="small-map"></div>-->
-                            <div class="blog-item">
+                    <div class="map-box">
+					<asp:Repeater ID="repeaterActividad" runat="server" >
+                <ItemTemplate>
+                    <div class="blog-item"> 
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
 						<div class="image-blog">
 							<img src="images/i.jpg" alt="" class="img-fluid">
 						</div>
 						<div class="meta-info-blog">
-							<span><i class="fa fa-calendar"></i> <a href="#"> plazo May 11, 2020</a> </span>
+							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha inicio actividad: '<%# Eval("FechaInicio") %>'</a> </span>
+							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha fin actividad : '<%# Eval("FechaFinal") %>'</a> </span>
                             <span><i class="fa fa-tag"></i>  <a href="#">por realizar</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
 						</div>
 						<div class="blog-title">
-							<h2><a href="#" title="">Estadística descriptiva datos no agrupados..</a></h2>
+							<h2><a href="#" title="">'<%# Eval("NombreActividad") %>'</a></h2>
 						</div>
 						<div class="blog-desc">
-							<p>
-	Realizar consulta ,investigación sobre el tema tratado según la guía suministrada ,mucha suerte y espero un trabajo de calidad .
- </p>
+							<p>'<%# Eval("Descripcion") %>' </p>
 						</div>
 						
 					</div>
-					</div>
+                </div><!-- end col -->
+                </ItemTemplate>
+
+            </asp:Repeater>
 				</div>
+
+
+
+                    </div>
             </div><!-- end row -->
         </div><!-- end container -->
-    </div><!-- end section -->
+    </div>
+  <!-- end section -->
+
+
+
+
+
+
+
 	
 	<div class="parallax section dbcolor">
         <div class="container">

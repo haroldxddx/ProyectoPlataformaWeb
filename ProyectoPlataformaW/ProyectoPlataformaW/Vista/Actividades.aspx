@@ -1,46 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageEstud.Master" AutoEventWireup="true" CodeBehind="inicioEstudiante.aspx.cs" Inherits="ProyectoPlataformaW.inicioEstu" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageEstud.Master" AutoEventWireup="true" CodeBehind="actividades.aspx.cs" Inherits="ProyectoPlataformaW.Vista.Actividades" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <style type="text/css">
-        .auto-style2 {
-            font-weight: 500;
-            font-size: 18px;
-            text-transform: capitalize;
-        }
-    .auto-style3 {
-        width: 338px;
-        height: 239px;
-    }
-    .auto-style4 {
-        width: 1140px;
-        height: 239px;
-    }
-    .auto-style5 {
-        width: 600px;
-        height: 238px;
-    }
-    .auto-style8 {
-        width: 900px;
-        height: 239px;
-    }
-    .auto-style9 {
-        width: 800px;
-        height: 239px;
-    }
-    .auto-style10 {
-        width: 1600px;
-        height: 239px;
-    }
-    .auto-style11 {
-        width: 626px;
-        height: 239px;
-    }
-    </style>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-<!DOCTYPE html>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+       <!DOCTYPE html>
 <html lang="en">
     <head>
-    <!-- Basic -->
+         <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
    
@@ -76,8 +41,11 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head>
-<body class="host_version"> 
+
+
+    </head>
+      
+   <body class="host_version"> 
 
 	
 	
@@ -98,7 +66,7 @@
 	
 	<div class="all-title-box">
 		<div class="container text-center">
-			<h1>Materias<span class="m_1"></span></h1>
+			<h1>Actividades<span class="m_1"></span></h1>
 		</div>
 	</div>
 	
@@ -106,45 +74,41 @@
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
-                    <p class="lead">Seleccione la materia</p>
+                    <p class="lead">Actividades propuestas por instructor  de area!</p>
                 </div>
             </div><!-- end title -->
 
            
 
-            <asp:Repeater ID="repeaterMateria" runat="server">
+            <asp:Repeater ID="repeaterActividad" runat="server" OnItemCommand="repeaterActividad_ItemCommand">
                 <ItemTemplate>
                     <div class="row"> 
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="actividades.aspx"><span class="auto-style2">'<%# Eval("NombreMateria") %>'</span></a></h2>
-							</div>
-							<div class="course-desc">
-								<p><%# Eval("NivelAcademico") %></p>
-                                
-                               
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-                                <p>&nbsp;</p>
-															
-							</div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="blog-item">
+						<div class="image-blog">
+							<img src="images/i.jpg" alt="" class="img-fluid">
 						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : <%# Eval("Nombres") + " " + Eval("Apellidos") %></li>
-							</ul>
+						<div class="meta-info-blog">
+							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha inicio actividad: '<%# Eval("FechaInicio") %>'</a> </span>
+							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha fin actividad : '<%# Eval("FechaFinal") %>'</a> </span>
+                            <span><i class="fa fa-tag"></i>  <a href="#">por realizar</a> </span>
+                            <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+						</div>
+						<div class="blog-title">
+							<h2><a href="#" title="">'<%# Eval("NombreActividad") %>'</a></h2>
+						</div>
+						<div class="blog-desc">
+							<p>'<%# Eval("Descripcion") %>' </p>
+						</div>
+						<div class="blog-button">
+                            	<a class="hover-btn-new orange" href="entregaActividad.aspx"><span>Realizar<span></a>
+                          
+							
 						</div>
 					</div>
                 </div><!-- end col -->
-
-            </div><!-- end row -->	
-                    
                 </ItemTemplate>
-              
+
             </asp:Repeater>
             		
 			</div><!-- end container -->
@@ -225,5 +189,6 @@
     <script src="js/custom.js"></script>
 
 </body>
-</html>
+    </html>
 </asp:Content>
+
