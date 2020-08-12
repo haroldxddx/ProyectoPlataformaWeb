@@ -101,7 +101,8 @@
 							<p>'<%# Eval("Descripcion") %>' </p>
 						</div>
 						<div class="blog-button">
-                            <asp:Button class="hover-btn-new orange" ID="btnRealizar" runat="server" Text="Realizar" OnClick="btnRealizar_Click" PostBackUrl="~/Vista/entregaActividad.aspx" />
+                            	<a class="hover-btn-new orange" href="entregaActividad.aspx"><span>Realizar<span></a>
+                          
 							
 						</div>
 					</div>

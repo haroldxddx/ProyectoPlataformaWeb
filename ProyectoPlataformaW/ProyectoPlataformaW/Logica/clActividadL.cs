@@ -18,5 +18,15 @@ namespace ProyectoPlataformaW.Logica
         }
 
 
+
+        public List<clEntidadActividadE> mtdActividad(clEntidadActividadE objE)
+        {
+            clActividadD objAc = new clActividadD();
+            List<clEntidadActividadE> listaActi = new List<clEntidadActividadE>();
+            listaActi = objAc.mtdListActividadP(objE);
+            return listaActi;
+        }
+
+
     }
 }

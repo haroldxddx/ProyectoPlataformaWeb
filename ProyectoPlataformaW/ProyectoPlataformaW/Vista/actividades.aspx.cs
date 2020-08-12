@@ -13,6 +13,7 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class Actividades : System.Web.UI.Page
     {
+        public static int idAct;
         protected void Page_Load(object sender, EventArgs e)
 
         {
@@ -20,9 +21,11 @@ namespace ProyectoPlataformaW.Vista
             clCursoMateriaD objcmd = new clCursoMateriaD();
             int var = clCursoMateriaD.datoDT;
 
-        
             
-           
+
+
+
+
 
             string user = Session["usuario"].ToString();
 
@@ -39,6 +42,10 @@ namespace ProyectoPlataformaW.Vista
                 repeaterActividad.DataSource = listaActividad;
                 repeaterActividad.DataBind();
 
+                clActividadD objact = new clActividadD();
+                int var2 = clActividadD.idActividad;
+                idAct = var2;
+
             }
        
 
@@ -50,8 +57,14 @@ namespace ProyectoPlataformaW.Vista
 
        
         }
+       
         protected void btnRealizar_Click(object sender, EventArgs e)
         {
+
+            clActividadD objact = new clActividadD();
+           int var2 = clActividadD.idActividad;
+            idAct = var2;
+            Response.Redirect("~/entregaActividad.aspx");
 
         }
     }
