@@ -17,5 +17,17 @@ namespace ProyectoPlataformaW.Datos
             int result = objSQL.mtdConectado(sqlInsert);
             return result;
         }
+
+        /*select Estudiante.Nombres , Estudiante.Apellidos, Actividad.Descripcion , Materia.NombreMateria , Curso.Curso
+from Estudiante
+inner join CursoMateria
+on Estudiante.IdCurso= CursoMateria.IdCurso
+inner join Actividad
+on Actividad.IdCursoMateria = CursoMateria.IdCursoMateria
+inner join Materia
+on Materia.IdMateria= CursoMateria.IdMateria
+inner join Curso
+on Curso.IdCurso = CursoMateria.IdCurso
+where CursoMateria.IdCursoMateria = '1' and Actividad.NombreActividad = 'Proyecto'*/
     }
 }

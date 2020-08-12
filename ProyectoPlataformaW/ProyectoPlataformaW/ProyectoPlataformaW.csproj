@@ -81,7 +81,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Administrador.aspx" />
     <Content Include="App_Data\dbProyectoPlataforma.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -89,8 +88,6 @@
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="correoPrueba.aspx" />
-    <Content Include="Estudiante.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Imagenes\colegioestu.jpeg" />
     <Content Include="Imagenes\colegioporteria %282%29.jpg" />
@@ -326,7 +323,6 @@
     <Content Include="Vista\dist\js\pages\dashboard2.js" />
     <Content Include="Vista\dist\js\pages\dashboard3.js" />
     <Content Include="Vista\editPerfil2.aspx" />
-    <Content Include="Vista\index.html" />
     <Content Include="Vista\inicioEstudiante.aspx" />
     <Content Include="Vista\css\animate.css" />
     <Content Include="Vista\css\animate.min.css" />
@@ -436,7 +432,6 @@
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
     <Content Include="Vista\listadoProfesor.aspx" />
-    <Content Include="Vista\navbar.html" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\js\bootstrap-colorpicker.js" />
@@ -2059,6 +2054,7 @@
     <Content Include="Vista\plugins\toastr\toastr.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
+    <Content Include="Vista\projects.html" />
     <Content Include="Vista\pruebaxd.aspx" />
     <Content Include="Vista\registrarAdministrador2.aspx" />
     <Content Include="Vista\registrarCurso2.aspx" />
@@ -2066,25 +2062,12 @@
     <Content Include="Vista\registrarMateria2.aspx" />
     <Content Include="Vista\registrarProfesor2.aspx" />
     <Content Include="Vista\style.css" />
+    <Content Include="Vista\verEntregasEstudiantes.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
     <Content Include="xd.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Administrador.aspx.cs">
-      <DependentUpon>Administrador.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Administrador.aspx.designer.cs">
-      <DependentUpon>Administrador.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="correoPrueba.aspx.cs">
-      <DependentUpon>correoPrueba.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="correoPrueba.aspx.designer.cs">
-      <DependentUpon>correoPrueba.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Datos\clActividadD.cs" />
     <Compile Include="Datos\clAdministradorD.cs" />
     <Compile Include="Datos\clAdminSQL.cs" />
@@ -2104,13 +2087,6 @@
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\estudiantesViewModel.cs" />
-    <Compile Include="Estudiante.aspx.cs">
-      <DependentUpon>Estudiante.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Estudiante.aspx.designer.cs">
-      <DependentUpon>Estudiante.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2295,6 +2271,13 @@
     </Compile>
     <Compile Include="Vista\registrarProfesor2.aspx.designer.cs">
       <DependentUpon>registrarProfesor2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\verEntregasEstudiantes.aspx.cs">
+      <DependentUpon>verEntregasEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\verEntregasEstudiantes.aspx.designer.cs">
+      <DependentUpon>verEntregasEstudiantes.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>

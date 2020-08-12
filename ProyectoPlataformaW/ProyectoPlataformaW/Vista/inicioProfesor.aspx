@@ -2,9 +2,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
+<head>  
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -79,7 +79,7 @@
 
             
 
-            <asp:Repeater ID="repeaterPrueba" runat="server">
+            <asp:Repeater ID="repeaterPrueba" runat="server" OnItemDataBound="repeaterPrueba_ItemDataBound">
 
                 <ItemTemplate>
                   
@@ -97,7 +97,7 @@
 							</div>
 							<div class="course-desc">
 								<p>
-                                    <asp:Label ID="lblGrado" runat="server" Text='<%# Eval("Grado") %>'></asp:Label> </p>
+                                    <asp:Label ID="lblGrado" runat="server" Text=<%# Eval("Grado") %>></asp:Label></p>
 							</div>
 							<div class="course-rating">
 								<p>Seccion Basica Secundaria</p>

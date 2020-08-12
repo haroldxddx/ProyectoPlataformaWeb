@@ -28,12 +28,13 @@ namespace ProyectoPlataformaW
 
             clActividadD objActividadD = new clActividadD();
             int result = objActividadD.mtdAsignarActividad(objAct);
-            fluArchivo.SaveAs(Server.MapPath("/Archivo/") + fluArchivo.FileName);
+            
 
             if (result > 0)
             {
-                Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
-
+               // Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+                fluArchivo.SaveAs(Server.MapPath("/Archivo/") + fluArchivo.FileName);
+                imgFoto.ImageUrl = "~/Archivo/" + fluArchivo.FileName;
             }
         }
     }
