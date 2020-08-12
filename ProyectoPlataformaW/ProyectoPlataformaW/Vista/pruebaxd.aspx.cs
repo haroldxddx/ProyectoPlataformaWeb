@@ -54,7 +54,11 @@ namespace ProyectoPlataformaW.Vista
 
 
         }
-   
+
+        protected void dtgExc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
