@@ -21,9 +21,9 @@ namespace ProyectoPlataformaW.Vista
         clEntidadCursoMateriaE objECM = new clEntidadCursoMateriaE();
         clCursoMateriaD objCM = new clCursoMateriaD();
 
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e) 
         {
-            if (!Page.IsPostBack)
+            if (!Page.IsPostBack) //CargarGrids
             {
                 mtdCargarGridC();
 
@@ -70,10 +70,7 @@ namespace ProyectoPlataformaW.Vista
 
         }
 
-
-
-
-        protected void lnkGuardar_Click(object sender, EventArgs e)
+        protected void lnkGuardar_Click(object sender, EventArgs e) //Recorer grids y guardar los id si encuentra checkeado guardarlod
         {
             CheckBox chbIdC;
             CheckBox chbIdM;
@@ -121,21 +118,18 @@ namespace ProyectoPlataformaW.Vista
 
                 }
             }
-        
-                    //    objECM.IdCurso = int.Parse(idC.ToString());
-                     //   objECM.IdProfesor = int.Parse(idP.ToString());
-                       // objECM.IdMateria = int.Parse(idM.ToString());
+
             int resultsql = objCM.mtdAsignarCursoMateria(objECM);
             lblMensajeC.Text = idC;
             lblMensaje.Text = idP;
             lblMensajeM.Text = idM;
         }
 
-                        }
-               
+    }
 
-                    }
-         
+
+}
+
 
 
 
