@@ -2103,6 +2103,7 @@
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
+    <Compile Include="Entidades\clEntidadProfesorEE.cs" />
     <Compile Include="Entidades\estudiantesViewModel.cs" />
     <Compile Include="Estudiante.aspx.cs">
       <DependentUpon>Estudiante.aspx</DependentUpon>

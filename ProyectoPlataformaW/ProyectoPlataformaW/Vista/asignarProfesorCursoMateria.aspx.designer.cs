@@ -15,15 +15,6 @@ namespace ProyectoPlataformaW.Vista
     {
 
         /// <summary>
-        /// Control gvProf.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProf;
-
-        /// <summary>
         /// Control dpdIdCurso.
         /// </summary>
         /// <remarks>
@@ -33,13 +24,13 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.DropDownList dpdIdCurso;
 
         /// <summary>
-        /// Control dpdIdProfe.
+        /// Control TextBox1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpdIdProfe;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
         /// Control dpdIdMateria.
@@ -51,30 +42,30 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.DropDownList dpdIdMateria;
 
         /// <summary>
-        /// Control GridView1.
+        /// Control gvProfe.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView gvProfe;
 
         /// <summary>
-        /// Control SqlDataSource1.
+        /// Control lblMensaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Label lblMensaje;
 
         /// <summary>
-        /// Control btnAsignar.
+        /// Control lnkContar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAsignar;
+        protected global::System.Web.UI.WebControls.LinkButton lnkContar;
     }
 }
