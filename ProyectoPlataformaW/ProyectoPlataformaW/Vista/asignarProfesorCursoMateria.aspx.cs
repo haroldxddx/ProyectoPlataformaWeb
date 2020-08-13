@@ -165,7 +165,7 @@ namespace ProyectoPlataformaW.Vista
 
                      objECM.IdCurso = int.Parse(dpdIdCurso.Text);
                      objECM.IdMateria = int.Parse(dpdIdMateria.Text);
-                     objECM.IdProfesor = val.Length;
+                     objECM.IdProfesor = int.Parse(lblMensaje.Text);
                      int resultsql = objCM.mtdAsignarCursoMateria(objECM);
 
                 }
