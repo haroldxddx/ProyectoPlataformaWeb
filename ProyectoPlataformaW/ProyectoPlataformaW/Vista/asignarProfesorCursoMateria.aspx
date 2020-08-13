@@ -3,7 +3,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        
         .auto-style3 {
             line-height: 150%;
             text-align: center;
@@ -31,24 +30,64 @@
     
     </p>
     <p class="auto-style3">
-        &nbsp;</p>
+        &nbsp;
+    </p>
     <table style="width: 100%;">
         <tr>
-            <td>&nbsp; CURSO<td>&nbsp;<asp:DropDownList ID="dpdIdCurso" runat="server"></asp:DropDownList>&nbsp;</td>
+            <td>&nbsp; CURSO<td>&nbsp;&nbsp;<asp:GridView ID="gvCurso" runat="server" ClientIDMode="Static" Width="432px">
+        <Columns>
+            <asp:TemplateField>
+                <ItemTemplate>
+                    <asp:CheckBox ID="chbItemC" runat="server" />
+                </ItemTemplate>
+            </asp:TemplateField>
+
+        </Columns>
+    </asp:GridView>
+
+        <asp:Label ID="lblMensajeC" runat="server" Visible="False"></asp:Label>
+
+            <br />
+
+            </td>
             </td>
         </tr>
         <tr>
             <td>&nbsp; PROFESOR</td>
             <td>
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+
+                <asp:GridView ID="gvProfe" runat="server" ClientIDMode="Static" Width="432px">
+        <Columns>
+            <asp:TemplateField>
+                <ItemTemplate>
+                    <asp:CheckBox ID="chbItem" runat="server" />
+                </ItemTemplate>
+            </asp:TemplateField>
+
+        </Columns>
+    </asp:GridView>
+
+        <asp:Label ID="lblMensaje" runat="server" Visible="False"></asp:Label>
+
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td>&nbsp; MATERIA</td>
-            <td>&nbsp;<asp:DropDownList ID="dpdIdMateria" runat="server"></asp:DropDownList>
+            <td>&nbsp;<asp:GridView ID="gvMateria" runat="server" ClientIDMode="Static" Width="427px">
+        <Columns>
+            <asp:TemplateField>
+                <ItemTemplate>
+                    <asp:CheckBox ID="chbItemM" runat="server" />
+                </ItemTemplate>
+            </asp:TemplateField>
 
-                </td>
+        </Columns>
+    </asp:GridView>
+
+        <asp:Label ID="lblMensajeM" runat="server" Visible="False"></asp:Label>
+
+            </td>
 
         </tr>
     </table>
@@ -56,24 +95,14 @@
         &nbsp;
     </p>
     <p class="auto-style3">
-        &nbsp;</p>
-        <asp:GridView ID="gvProfe" runat="server"   ClientIDMode="Static"  >
-           <Columns>
-        <asp:TemplateField>
-            <ItemTemplate>
-                <asp:CheckBox ID="chbItem" runat="server" />
-            </ItemTemplate>
-        </asp:TemplateField>
-        <asp:BoundField DataField="IdProfesor" HeaderText="IdProfesor" />
-        
-    </Columns>
-</asp:GridView>
+        &nbsp;
+    </p>
 
     <p class="auto-style3">
-        &nbsp;<asp:Label ID="lblMensaje" runat="server"></asp:Label></p>
+        &nbsp;</p>
     <p class="auto-style3">
-<asp:LinkButton ID="lnkContar" runat="server" OnClick="lnkMostrar_Click">Contar</asp:LinkButton>
-      &nbsp;
+        <asp:LinkButton ID="lnkGuardar" runat="server" OnClick="lnkGuardar_Click">GUARDAR</asp:LinkButton>
+        &nbsp;
     </p>
 
 </asp:Content>

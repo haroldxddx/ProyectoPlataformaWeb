@@ -21,30 +21,51 @@ namespace ProyectoPlataformaW.Datos
 
 
             }
-            public List<ClEntidadCursosE> mtdListarCurso()
+        public List<ClEntidadCursosE> mtdListarCurso()
+        {
+            string sql = "select * from Curso";
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblcurso = new DataTable();
+            tblcurso = objSql.mtdDesconectado(sql);
+
+            List<ClEntidadCursosE> listaCur = new List<ClEntidadCursosE>();
+
+            for (int i = 0; i < tblcurso.Rows.Count; i++)
+            {
+                ClEntidadCursosE objCurs = new ClEntidadCursosE();
+
+                objCurs.IdCurso = int.Parse(tblcurso.Rows[i][0].ToString());
+                objCurs.Grado = tblcurso.Rows[i][1].ToString();
+                objCurs.Curso = tblcurso.Rows[i][2].ToString();
+                listaCur.Add(objCurs);
+
+
+            }
+
+            return listaCur;
+        }
+            public List<clEntidadCursoEE> mtdListarCursos()
             {
                 string sql = "select * from Curso";
                 clAdminSQL objSql = new clAdminSQL();
                 DataTable tblcurso = new DataTable();
                 tblcurso = objSql.mtdDesconectado(sql);
 
-                List<ClEntidadCursosE> listaCur = new List<ClEntidadCursosE>();
+                List<clEntidadCursoEE> listaCurs = new List<clEntidadCursoEE>();
 
                 for (int i = 0; i < tblcurso.Rows.Count; i++)
                 {
-                    ClEntidadCursosE objCurs = new ClEntidadCursosE();
+                clEntidadCursoEE objCurs = new clEntidadCursoEE();
 
                     objCurs.IdCurso = int.Parse(tblcurso.Rows[i][0].ToString());
                     objCurs.Grado = tblcurso.Rows[i][1].ToString();
                     objCurs.Curso = tblcurso.Rows[i][2].ToString();
-                    listaCur.Add(objCurs);
+                    listaCurs.Add(objCurs);
 
 
                 }
 
-                return listaCur;
-
-
+                return listaCurs;
 
 
             }

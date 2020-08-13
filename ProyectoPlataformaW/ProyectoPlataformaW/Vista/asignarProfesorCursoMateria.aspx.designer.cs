@@ -15,31 +15,22 @@ namespace ProyectoPlataformaW.Vista
     {
 
         /// <summary>
-        /// Control dpdIdCurso.
+        /// Control gvCurso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpdIdCurso;
+        protected global::System.Web.UI.WebControls.GridView gvCurso;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control lblMensajeC.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
-
-        /// <summary>
-        /// Control dpdIdMateria.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpdIdMateria;
+        protected global::System.Web.UI.WebControls.Label lblMensajeC;
 
         /// <summary>
         /// Control gvProfe.
@@ -60,12 +51,30 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.Label lblMensaje;
 
         /// <summary>
-        /// Control lnkContar.
+        /// Control gvMateria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lnkContar;
+        protected global::System.Web.UI.WebControls.GridView gvMateria;
+
+        /// <summary>
+        /// Control lblMensajeM.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMensajeM;
+
+        /// <summary>
+        /// Control lnkGuardar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkGuardar;
     }
 }

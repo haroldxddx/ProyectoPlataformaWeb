@@ -2081,6 +2081,7 @@
     <Compile Include="Datos\clRecuperarContra.cs" />
     <Compile Include="Entidades\clEntidadActividadE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
+    <Compile Include="Entidades\clEntidadCursoEE.cs" />
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />

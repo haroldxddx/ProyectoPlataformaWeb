@@ -15,6 +15,9 @@ namespace ProyectoPlataformaW.Vista
     public partial class asignarProfesorCursoMateria : System.Web.UI.Page
     {
         List<clEntidadProfesorEE> listaProfesor = new List<clEntidadProfesorEE>();
+        List<clEntidadCursoEE> listaCurso = new List<clEntidadCursoEE>();
+        List<clEntidadMateriaE> listaMateria = new List<clEntidadMateriaE>();
+
         clEntidadCursoMateriaE objECM = new clEntidadCursoMateriaE();
         clCursoMateriaD objCM = new clCursoMateriaD();
 
@@ -22,39 +25,28 @@ namespace ProyectoPlataformaW.Vista
         {
             if (!Page.IsPostBack)
             {
+                mtdCargarGridC();
+
                 mtdCargarGrid();
 
-            
+                mtdCargarGridM();
 
-
-
-                List<ClEntidadCursosE> listaCurso = new List<ClEntidadCursosE>();
-            clCursoD objCurso = new clCursoD();
-            listaCurso = objCurso.mtdListarCurso();
-
-            dpdIdCurso.DataSource = listaCurso;
-            dpdIdCurso.DataTextField = "Curso";
-            dpdIdCurso.DataValueField = "IdCurso";
-            dpdIdCurso.DataBind();
-
-
-            List<clEntidadMateriaE> listaMateria = new List<clEntidadMateriaE>();
-            clMateriaD objMat = new clMateriaD();
-            listaMateria = objMat.mtdListarMateria();
-
-            dpdIdMateria.DataSource = listaMateria;
-            dpdIdMateria.DataTextField = "NombreMateria";
-            dpdIdMateria.DataValueField = "IdMateria";
-            dpdIdMateria.DataBind();
-
-            clProfesorD objPrfe = new clProfesorD();
-           listaProfesor = objPrfe.mtdListarProfesor(Request.QueryString["IdProfesor"]);
 
 
             }
-            
-        }
 
+        }
+        private void mtdCargarGridC()
+        {
+            clCursoD objCurso = new clCursoD();
+            listaCurso = objCurso.mtdListarCursos();
+
+            gvCurso.DataSource = listaCurso;
+
+            gvCurso.DataBind();
+
+
+        }
         private void mtdCargarGrid()
         {
             clProfesorD objPrf = new clProfesorD();
@@ -66,119 +58,85 @@ namespace ProyectoPlataformaW.Vista
 
 
         }
-
-        protected void btnSeleccionar_Click(object sender, EventArgs e)
+        private void mtdCargarGridM()
         {
-            // if (!Page.IsPostBack)
-            {
-                //    var datosFila = e.ToString().Split(',');
+            clMateriaD objMat = new clMateriaD();
+            listaMateria = objMat.mtdListarMateria();
 
-                //La pocisión va de acuerdo a como construiste el Command Argument en nuestro caso es:
+            gvMateria.DataSource = listaMateria;
 
+            gvMateria.DataBind();
 
-
-
-                //Asignas cada variable con tu control de texto respectivamente
-
-                //   TextBox1.Text = campoColumnaUno;
-
-
-                // y Listo!!! la información de la fila seleccionada ya está en tus controles
-            }
-        }
-
-    //    protected void lnkContar_Click(object sender, EventArgs e)
-
-   //     {
-            // foreach (GridViewRow gvrow in gvProfe.Rows)
-
-            // {
-            //     string id = gvrow.Cells[1].Text;
-            //   var checkbox = gvrow.FindControl("CheckBox1") as CheckBox;
-            //  if (checkbox.Checked)
-            // {
-
-            //       var lblID = gvrow.FindControl("Label1") as Label;
-
-            // foreach (GridViewRow gr in gvProfe.Rows)
-            //{
-            //    CheckBox check = (CheckBox)gr.FindControl("CheckBox1");
-
-            //  check.Checked= "IdProfesor";
-            //  check. = "IdCurso";
-            //         if (check.Checked == true)
-            //     {
-            //   }
-            // string cell_2_Value = gvProfe.Rows[gr.RowIndex].Cells[1].Text;
-            //do what you want with the value
-
-            // CheckBox chkId;
-            // int contador = 0;
-            // string val = string.Empty;
-            // foreach (GridViewRow grvRow in gvProfe.Rows)
-          //  {
-                //  chkId = (CheckBox)grvRow.FindControl("chbItem");
-                //    if (chkId.Checked)
-                //   {
-                //     val = grvRow.Cells[0].Text;
-                //     contador++;
-              
-
-                // objECM.IdCurso = int.Parse(dpdIdCurso.Text);
-                // objECM.IdMateria = int.Parse(dpdIdMateria.Text);
-                //  objECM.IdProfesor = int.Parse(TextBox1.Text);
-
-
-
-                // int resultsql = objCM.mtdAsignarCursoMateria(objECM);
-
-
-                //  if (resultsql > 0)
-                //  {
-                //      Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
-
-                //  }
-
-                //   Response.Write("<script> alert(" + "'ptos'" + ") </script>");
-
-           // }
-
-
-        protected void gvProfe_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
         }
 
-        protected void lnkMostrar_Click(object sender, EventArgs e)
+
+
+
+        protected void lnkGuardar_Click(object sender, EventArgs e)
         {
-           CheckBox chbId;
-            int contador = 0;
-            string val = string.Empty;
-            foreach (GridViewRow grvRow in gvProfe.Rows)
+            CheckBox chbIdC;
+            CheckBox chbIdM;
+            CheckBox chbIdP;
+            string idC = string.Empty;
+            string idP = string.Empty;
+            string idM = string.Empty;
+
+            foreach (GridViewRow grvRowC in gvCurso.Rows)
             {
-                chbId = (CheckBox)grvRow.FindControl("chbItem");
-                if (chbId.Checked)
+                chbIdC = (CheckBox)grvRowC.FindControl("chbItemC");
+                if (chbIdC.Checked)
                 {
 
-                     val = grvRow.Cells[2].Text;
-                    //    contador++;
+                    idC = grvRowC.Cells[1].Text;
 
-                     objECM.IdCurso = int.Parse(dpdIdCurso.Text);
-                     objECM.IdMateria = int.Parse(dpdIdMateria.Text);
-                     objECM.IdProfesor = int.Parse(lblMensaje.Text);
-                     int resultsql = objCM.mtdAsignarCursoMateria(objECM);
+
+                    objECM.IdCurso = int.Parse(idC.ToString());
 
                 }
-
             }
-             lblMensaje.Text = "xd " + val.ToString();
+            foreach (GridViewRow grvRowP in gvProfe.Rows)
+            {
+                chbIdP = (CheckBox)grvRowP.FindControl("chbItem");
+                if (chbIdP.Checked)
+                {
 
+                    idP = grvRowP.Cells[1].Text;
+
+
+                    objECM.IdProfesor = int.Parse(idP.ToString());
+                }
             }
+            foreach (GridViewRow grvRowM in gvMateria.Rows)
+            {
+                chbIdM = (CheckBox)grvRowM.FindControl("chbItemM");
+                if (chbIdM.Checked)
+                {
+
+                    idM = grvRowM.Cells[1].Text;
+
+
+                    objECM.IdMateria = int.Parse(idM.ToString());
+
+
+                }
+            }
+        
+                    //    objECM.IdCurso = int.Parse(idC.ToString());
+                     //   objECM.IdProfesor = int.Parse(idP.ToString());
+                       // objECM.IdMateria = int.Parse(idM.ToString());
+            int resultsql = objCM.mtdAsignarCursoMateria(objECM);
+            lblMensajeC.Text = idC;
+            lblMensaje.Text = idP;
+            lblMensajeM.Text = idM;
         }
 
-        }
-  //  }
-   // }
+                        }
+               
+
+                    }
+         
+
 
 
 
