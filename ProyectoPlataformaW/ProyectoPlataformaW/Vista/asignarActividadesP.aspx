@@ -33,10 +33,11 @@
             
             <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="custom-content-below-home-tab" data-toggle="pill" href="#custom-content-below-home" role="tab" aria-controls="custom-content-below-home" aria-selected="true">Asignacion de Actividades</a>
+                <asp:LinkButton ID="lkbAsig" runat="server" class="nav-link active" href="/Vista/asignarActividadesP.aspx">Asignacion de Actividades</asp:LinkButton>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="custom-content-below-profile-tab" data-toggle="pill" href="#custom-content-below-profile" role="tab" aria-controls="custom-content-below-profile" aria-selected="false">Calificacion de Actividades</a>
+                
+                  <asp:LinkButton ID="lkbCalifi" runat="server" class="nav-link" href="/Vista/verEntregasEstudiantes.aspx">Calificacion de Actividades</asp:LinkButton>
               </li>
               
             </ul>
@@ -64,7 +65,7 @@
               <h3 class="card-title">Trabajo a realizar</h3>
 
              
-                <asp:Label ID="lblCursoM" runat="server" Text="1"></asp:Label>
+                <asp:Label ID="lblCursoM" runat="server"></asp:Label>
 
              
             </div>
@@ -78,7 +79,7 @@
             
               <div class="form-group">
                 <label for="inputClientCompany">Adjunte sus archivos </label>
-                  <asp:FileUpload ID="fluArchivo" runat="server"/>
+                  <asp:FileUpload ID="fluArchivo" runat="server" class="form-control"/>
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Descripcion</label>

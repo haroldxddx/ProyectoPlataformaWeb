@@ -12,6 +12,7 @@
         <div>
         </div>
         <asp:TextBox ID="txtNomAc" runat="server"></asp:TextBox>
+        <asp:Image ID="imgFoto" runat="server" />
         <br />
         <br />
         <asp:TextBox ID="txtDesc" runat="server"></asp:TextBox>

@@ -39,12 +39,26 @@ namespace ProyectoPlataformaW.Vista
 
         }
 
-        protected void lbtCurso_Click(object sender, EventArgs e)
+        protected void repeaterPrueba_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {
-            //string xd = ((Label)repeaterPrueba.Items[1].FindControl("lblIdCursoMateria")).Text;
-            Response.Redirect("/Vista/asignarActividadesP.aspx");
+
+            Label labelgra = (Label)e.Item.FindControl("lblGrado");
+            // Response.Redirect("/Vista/asignarActividadesP.aspx?id=" + labelgra);
+           
         }
 
-      
+        protected void lbtCurso_Click(object sender, EventArgs e)
+        {
+            //string xd = ((Label)repeaterPrueba.Items[0].FindControl("lblIdCursoMateria")).Text;
+            
+            
+
+            //Response.Redirect("/Vista/asignarActividadesP.aspx?id="+curm);
+
+
+
+        }
+
+       
     }
 }

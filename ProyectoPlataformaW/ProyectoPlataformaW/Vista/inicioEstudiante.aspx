@@ -37,9 +37,9 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
+    <head>
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -79,7 +79,7 @@
 </head>
 <body class="host_version"> 
 
-	<!-- Modal -->
+	
 	
 
     <!-- LOADER -->
@@ -120,10 +120,12 @@
 						
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="actividadesMatematicas.aspx"><span class="auto-style2">'<%# Eval("NombreMateria") %>'</span></a></h2>
+								<h2><a href="actividades.aspx"><span class="auto-style2">'<%# Eval("NombreMateria") %>'</span></a></h2>
 							</div>
 							<div class="course-desc">
 								<p><%# Eval("NivelAcademico") %></p>
+                                
+                               
 							</div>
 							<div class="course-rating">
 								<p>Seccion Basica Media</p>
@@ -140,8 +142,9 @@
                 </div><!-- end col -->
 
             </div><!-- end row -->	
+                    
                 </ItemTemplate>
-
+              
             </asp:Repeater>
             		
 			</div><!-- end container -->

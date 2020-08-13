@@ -13,12 +13,10 @@ namespace ProyectoPlataformaW.Vista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*if (!IsPostBack)
+            /*if (Request.Params["id"]!=null)
             {
-                lblCursoM.Text = Request.QueryString["idCm"].ToString();
+                lblCursoM.Text = Request.Params["id"];
             }*/
-            
-
         }
 
         protected void btnEnviar_Click(object sender, EventArgs e)
@@ -34,12 +32,17 @@ namespace ProyectoPlataformaW.Vista
 
             clActividadD objActividadD = new clActividadD();
             int result = objActividadD.mtdAsignarActividad(objAct);
-            fluArchivo.SaveAs(Server.MapPath("~/Archivo/") + fluArchivo.FileName);
+           
 
             if (result>0)
             {
                 Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
-                
+                fluArchivo.SaveAs(Server.MapPath("~/Archivo/") + fluArchivo.FileName);
+                txtNomAc.Text = "";
+                txtDesc.Text = "";
+                txtFechaIni.Text = "";
+                txtFechaFn.Text = "";
+
             }
 
 

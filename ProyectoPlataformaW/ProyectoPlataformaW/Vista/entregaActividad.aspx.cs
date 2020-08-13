@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ProyectoPlataformaW.Logica;
+using ProyectoPlataformaW.Entidades;
+using ProyectoPlataformaW.Datos;
+
 
 namespace ProyectoPlataformaW.Vista
 {
@@ -43,6 +47,37 @@ namespace ProyectoPlataformaW.Vista
                 Response.Redirect("~/inicio.aspx");
 
             }
+
+          
+
+            Actividades objAct = new Actividades();
+
+            int var = Actividades.idAct;
+
+            string user = Session["usuario"].ToString();
+
+            List<clEntidadActividadE> listaActividad = new List<clEntidadActividadE>();
+
+            clEntidadActividadE objEs = new clEntidadActividadE();
+            objEs.IdActividad = var;
+            
+
+            clActividadL objActividad = new clActividadL();
+            listaActividad = objActividad.mtdActividad(objEs);
+
+            if (listaActividad.Count != 0)
+            {
+
+                repeaterActividad.DataSource = listaActividad;
+                repeaterActividad.DataBind();
+
+
+            }
+
+           
+
+
+
         }
     }
 }
