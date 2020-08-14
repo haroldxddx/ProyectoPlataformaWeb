@@ -15,14 +15,10 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class Actividades : System.Web.UI.Page
     {
-        public static int idAct;
-        public static Label idA;
-        public static Label w;
-        public static string q;
-        public static int e;
-
-        public static string z;
-
+        
+        public static int id;
+      
+        public string o;
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -56,7 +52,7 @@ namespace ProyectoPlataformaW.Vista
 
                 clActividadD objact = new clActividadD();
                 int var2 = clActividadD.idActividad;
-                idAct = var2;
+               
 
 
 
@@ -69,57 +65,21 @@ namespace ProyectoPlataformaW.Vista
         protected void repeaterActividad_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
            
-           idA = (Label)e.Item.FindControl("lblidActi");
-            int x = 1;
+          
+            o = repeaterActividad.Items[e.Item.ItemIndex].ItemIndex.ToString();
 
+           id = int.Parse(((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblidActi")).Text);
 
+            Response.Write("<script> alert(" + id + ") </script>");
 
+            Response.Redirect("~/Vista/entregaActividad.aspx");
 
-
-            foreach (RepeaterItem item in repeaterActividad.Items)
-            {
-
-
-                TextBox CountryLabel = (TextBox)item.FindControl("txt");
-
-                //TextBox CountryCommentTB = (TextBox)item.FindControl("CountryCommentTB");
-
-
-                q = CountryLabel.Text;
-
-                
-                //string countryComment = CountryCommentTB.Text;
-                //Response.Write("<script> alert(" + NombreFantasia + ") </script>");
-                // Response.Redirect("~/Vista/entregaActividad.aspx");
-                // Do something with the data...
-            }
-
-
+         
 
         }
 
         protected void btnRealizar_Click(object sender, EventArgs e)
         {
-            Response.Write("<script> alert(" + q + ") </script>");
-
-
-
-            //  Response.Redirect("~/Vista/entregaActividad.aspx");
-            /*  foreach (RepeaterItem item in repeaterActividad.Items)
-              {
-
-
-                  Label CountryLabel = (Label)item.FindControl("lblidActi");
-                 //TextBox CountryCommentTB = (TextBox)item.FindControl("CountryCommentTB");
-
-
-                  q = CountryLabel.Text;
-                  //string countryComment = CountryCommentTB.Text;
-
-                 // Response.Redirect("~/Vista/entregaActividad.aspx");
-                  // Do something with the data...
-              }*/
-
 
         }
 

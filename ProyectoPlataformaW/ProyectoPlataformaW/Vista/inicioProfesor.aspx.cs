@@ -21,7 +21,7 @@ namespace ProyectoPlataformaW.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            clCursoMateriaL objCmL = new clCursoMateriaL();
+            /*clCursoMateriaL objCmL = new clCursoMateriaL();
             listP = objCmL.mtdCursosP();
             string user = Session["usuario"].ToString();
 
@@ -35,7 +35,7 @@ namespace ProyectoPlataformaW.Vista
                 }
 
             }
-
+            */
 
         }
 

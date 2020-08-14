@@ -93,7 +93,7 @@
 							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha fin actividad : '<%# Eval("FechaFinal") %>'</a> </span>
                             <span><i class="fa fa-tag"></i>  <a href="#">por realizar</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                            <asp:Label ID="lblidActi" runat="server" Text=""><%# Eval("IdActividad") %> </asp:Label>
+                            <asp:Label ID="lblidActi" runat="server" Text='<%# Eval("IdActividad") %>'> </asp:Label>
                             <asp:TextBox ID="txt" runat="server" Text='<%# Eval("IdActividad") %> '></asp:TextBox>
 						</div>
 						<div class="blog-title">
@@ -103,8 +103,8 @@
 							<p>'<%# Eval("Descripcion") %>' </p>
 						</div>
 						<div class="blog-button">
-                            	<a class="hover-btn-new orange" href="entregaActividad.aspx"><span>Realizar<span></a>
-                            <asp:LinkButton ID="lbtCurso" runat="server" OnClick="btnRealizar_Click" Text="Perent"></asp:LinkButton>
+                            	
+                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server" OnClick="btnRealizar_Click" Text=""><span>Realizar<span></span></asp:LinkButton>
                            <!-- <asp:Button ID="Button1" runat="server" Text="Button" OnClick="btnRealizar_Click"  />-->
 							
 						</div>
