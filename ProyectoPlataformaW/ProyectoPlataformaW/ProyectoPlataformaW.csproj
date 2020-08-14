@@ -2055,7 +2055,6 @@
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
     <Content Include="Vista\projects.html" />
-    <Content Include="Vista\pruebaxd.aspx" />
     <Content Include="Vista\registrarAdministrador2.aspx" />
     <Content Include="Vista\registrarCurso2.aspx" />
     <Content Include="Vista\registrarEstudiante2.aspx" />
@@ -2063,6 +2062,7 @@
     <Content Include="Vista\registrarProfesor2.aspx" />
     <Content Include="Vista\style.css" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
+    <Content Include="Vista\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
     <Content Include="xd.aspx" />
@@ -2232,13 +2232,6 @@
     <Compile Include="Vista\listadoProfesor.aspx.designer.cs">
       <DependentUpon>listadoProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\pruebaxd.aspx.cs">
-      <DependentUpon>pruebaxd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\pruebaxd.aspx.designer.cs">
-      <DependentUpon>pruebaxd.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Vista\registrarAdministrador2.aspx.cs">
       <DependentUpon>registrarAdministrador2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2280,6 +2273,13 @@
     </Compile>
     <Compile Include="Vista\verEntregasEstudiantes.aspx.designer.cs">
       <DependentUpon>verEntregasEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>
