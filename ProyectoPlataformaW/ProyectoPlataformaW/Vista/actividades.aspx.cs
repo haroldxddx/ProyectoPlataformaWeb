@@ -14,12 +14,18 @@ namespace ProyectoPlataformaW.Vista
     public partial class Actividades : System.Web.UI.Page
     {
         public static int idAct;
+        public static Label idA;
+        public static Label w;
+        public static string q;
+       
+
         protected void Page_Load(object sender, EventArgs e)
 
         {
 
             clCursoMateriaD objcmd = new clCursoMateriaD();
             int var = clCursoMateriaD.datoDT;
+
 
             
 
@@ -37,6 +43,7 @@ namespace ProyectoPlataformaW.Vista
             clActividadL objActividad = new clActividadL();
             listaActividad = objActividad.mtdActividades(objEs);
 
+
             if (listaActividad.Count != 0)
             {
                 repeaterActividad.DataSource = listaActividad;
@@ -46,6 +53,8 @@ namespace ProyectoPlataformaW.Vista
                 int var2 = clActividadD.idActividad;
                 idAct = var2;
 
+
+
             }
        
 
@@ -54,18 +63,46 @@ namespace ProyectoPlataformaW.Vista
 
         protected void repeaterActividad_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
+           
+           idA = (Label)e.Item.FindControl("lblidActi");
+            int x = 1;
 
-       
+            
+
+
         }
-       
+
         protected void btnRealizar_Click(object sender, EventArgs e)
         {
 
-            clActividadD objact = new clActividadD();
-           int var2 = clActividadD.idActividad;
-            idAct = var2;
-            Response.Redirect("~/entregaActividad.aspx");
+
+            Label Label1 = (Label)item.FindControl("Label ID");
+
+
+            //  Response.Redirect("~/Vista/entregaActividad.aspx");
+            foreach (RepeaterItem item in repeaterActividad.Items)
+            {
+                Label CountryLabel = (Label)item.FindControl("lblidActi");
+               //TextBox CountryCommentTB = (TextBox)item.FindControl("CountryCommentTB");
+
+
+                string countryName = CountryLabel.Text;
+                //string countryComment = CountryCommentTB.Text;
+                Response.Write("<script> alert(" + countryName + ") </script>");
+
+                // Do something with the data...
+            }
 
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            TextBox TextBox1 = (TextBox)sender;
+            RepeaterItem item = (RepeaterItem)TextBox1.NamingContainer;
+            Label Label1 = (Label)item.FindControl("Label ID");
+            //get value here
+            string strValue = Label1.Text;
+        }
+
     }
 }
