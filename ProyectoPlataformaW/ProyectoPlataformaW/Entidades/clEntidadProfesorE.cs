@@ -9,7 +9,7 @@ namespace ProyectoPlataformaW.Entidades
     public class clEntidadProfesorE:clEntidadMateriaE
     {
       
-        public int idProfesor { get; set; }
+        public int IdProfesor { get; set; }
         public string Nombres { get; set; }
         public string Apellidos { get; set; }
         public int Documento { get; set; }

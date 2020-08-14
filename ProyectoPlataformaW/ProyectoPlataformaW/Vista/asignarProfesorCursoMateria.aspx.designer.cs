@@ -15,66 +15,66 @@ namespace ProyectoPlataformaW.Vista
     {
 
         /// <summary>
-        /// Control gvProf.
+        /// Control gvCurso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvProf;
+        protected global::System.Web.UI.WebControls.GridView gvCurso;
 
         /// <summary>
-        /// Control dpdIdCurso.
+        /// Control lblMensajeC.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpdIdCurso;
+        protected global::System.Web.UI.WebControls.Label lblMensajeC;
 
         /// <summary>
-        /// Control dpdIdProfe.
+        /// Control gvProfe.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpdIdProfe;
+        protected global::System.Web.UI.WebControls.GridView gvProfe;
 
         /// <summary>
-        /// Control dpdIdMateria.
+        /// Control lblMensaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dpdIdMateria;
+        protected global::System.Web.UI.WebControls.Label lblMensaje;
 
         /// <summary>
-        /// Control GridView1.
+        /// Control gvMateria.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView gvMateria;
 
         /// <summary>
-        /// Control SqlDataSource1.
+        /// Control lblMensajeM.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
+        protected global::System.Web.UI.WebControls.Label lblMensajeM;
 
         /// <summary>
-        /// Control btnAsignar.
+        /// Control lnkGuardar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAsignar;
+        protected global::System.Web.UI.WebControls.LinkButton lnkGuardar;
     }
 }
