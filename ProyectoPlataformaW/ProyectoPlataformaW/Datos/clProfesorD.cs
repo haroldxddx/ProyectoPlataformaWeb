@@ -36,9 +36,40 @@ namespace ProyectoPlataformaW.Datos
             }
 
             return listaProf;
-
-
         }
+            public List<clEntidadProfesorE> mtdBuscarProf(clEntidadProfesorE objProfe)
+            {
+                string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email,Especialidad from Profesor WHERE (Estudiante.Nombres LIKE '%" + objProfe.Nombres + "%')";
+            clAdminSQL objSql = new clAdminSQL();
+                DataTable tblprof = new DataTable();
+                tblprof = objSql.mtdDesconectado(sql);
+
+                List<clEntidadProfesorE> listaProf = new List<clEntidadProfesorE>();
+
+                for (int i = 0; i < tblprof.Rows.Count; i++)
+                {
+                    clEntidadProfesorE objProfee = new clEntidadProfesorE();
+
+                    objProfee.IdProfesor = int.Parse(tblprof.Rows[i][0].ToString());
+                    objProfee.Nombres = tblprof.Rows[i][1].ToString();
+                    objProfee.Apellidos = tblprof.Rows[i][2].ToString();
+                    objProfee.Documento = int.Parse(tblprof.Rows[i][3].ToString());
+                    objProfee.Email = tblprof.Rows[i][4].ToString();
+                    objProfee.Especialidad = tblprof.Rows[i][5].ToString();
+
+
+
+                    listaProf.Add(objProfee);
+
+                }
+
+                return listaProf;
+
+
+            }
+        
+
+            
         //listar profesor Asignacion
         public List<clEntidadProfesorEE> mtdListarProfe()
         {

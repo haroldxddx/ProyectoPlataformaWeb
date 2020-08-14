@@ -5,4 +5,5 @@
     <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
     <asp:GridView ID="gvlistEstudiante" runat="server"></asp:GridView>
+    <asp:Button ID="btnDescargar" runat="server" Text="Button" OnClick="btnDescargar_Click" />
 </asp:Content>

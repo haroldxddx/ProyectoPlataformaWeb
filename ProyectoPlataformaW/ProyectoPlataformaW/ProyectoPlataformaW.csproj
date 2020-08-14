@@ -2086,6 +2086,7 @@
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
+    <Compile Include="Entidades\clEntidadEstudianteEE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />

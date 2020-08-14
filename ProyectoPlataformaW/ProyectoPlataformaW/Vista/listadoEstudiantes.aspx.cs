@@ -20,9 +20,9 @@ namespace ProyectoPlataformaW.Vista
 
         private void mtdCargarGrid()
         {
-            List<clEntidadEstudianteE> list = new List<clEntidadEstudianteE>();
+            List<clEntidadEstudianteEE> list = new List<clEntidadEstudianteEE>();
             clEstudianteD objEst = new clEstudianteD();
-            list = objEst.mtdListadoCompletoE();
+            list = objEst.mtdListadoCompletoEE();
 
             gvlistEstudiante.DataSource = list;
 
@@ -33,13 +33,14 @@ namespace ProyectoPlataformaW.Vista
         {
             string nombre = txtNombre.Text;
 
-            List<clEntidadEstudianteE> listaBuscar = new List<clEntidadEstudianteE>();
 
-            clEntidadEstudianteE objEst = new clEntidadEstudianteE();
+            List<clEntidadEstudianteEE> listaBuscar = new List<clEntidadEstudianteEE>();
+
+            clEntidadEstudianteEE objEst = new clEntidadEstudianteEE();
             objEst.Nombres = nombre;
 
             clEstudianteL objEstudianteL = new clEstudianteL();
-            listaBuscar = objEstudianteL.mtdBuscarEstu(objEst);
+            listaBuscar = objEstudianteL.mtdBuscarEst(objEst);
 
             if (listaBuscar.Count != 0)
             {
@@ -48,5 +49,15 @@ namespace ProyectoPlataformaW.Vista
 
             }
         }
+
+        protected void btnDescargar_Click(object sender, EventArgs e)
+        {
+           /* {
+                Response.ContentType = "text/xlsx";
+                Response.ContentEncoding = System.Text.Encoding.UTF8;
+                Response.AppendHeader("NombreCabecera", "MensajeCabecera");
+                Response.TransmitFile(Server.MapPath("'https://docs.google.com/spreadsheets/d/1Hdp3Y42cWDF_4RZdFDgJKPCwNOFwu4m5/edit#gid=528470768);
+                Response.End();
+           */ }
+        }
     }
-}
