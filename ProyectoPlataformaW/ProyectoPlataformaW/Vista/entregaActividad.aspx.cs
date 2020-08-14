@@ -64,7 +64,7 @@ namespace ProyectoPlataformaW.Vista
             List<clEntidadActividadE> listaActividad = new List<clEntidadActividadE>();
 
             clEntidadActividadE objEs = new clEntidadActividadE();
-            objEs.IdActividad = 0;
+            objEs.IdActividad = int.Parse(Actividades.q);
 
           // Response.Write("<script> alert(" + Actividades.q + ") </script>");
 

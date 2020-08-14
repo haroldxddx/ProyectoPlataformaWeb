@@ -43,6 +43,7 @@ namespace ProyectoPlataformaW.Vista
         {
 
             Label labelgra = (Label)e.Item.FindControl("lblGrado");
+
             // Response.Redirect("/Vista/asignarActividadesP.aspx?id=" + labelgra);
            
         }

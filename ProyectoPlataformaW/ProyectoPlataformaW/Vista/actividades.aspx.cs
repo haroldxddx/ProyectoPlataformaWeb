@@ -9,6 +9,8 @@ using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Datos;
 
 
+
+
 namespace ProyectoPlataformaW.Vista
 {
     public partial class Actividades : System.Web.UI.Page
@@ -17,7 +19,10 @@ namespace ProyectoPlataformaW.Vista
         public static Label idA;
         public static Label w;
         public static string q;
-       
+        public static int e;
+
+        public static string z;
+
 
         protected void Page_Load(object sender, EventArgs e)
 
@@ -67,31 +72,54 @@ namespace ProyectoPlataformaW.Vista
            idA = (Label)e.Item.FindControl("lblidActi");
             int x = 1;
 
-            
+
+
+
+
+            foreach (RepeaterItem item in repeaterActividad.Items)
+            {
+
+
+                TextBox CountryLabel = (TextBox)item.FindControl("txt");
+
+                //TextBox CountryCommentTB = (TextBox)item.FindControl("CountryCommentTB");
+
+
+                q = CountryLabel.Text;
+
+                
+                //string countryComment = CountryCommentTB.Text;
+                //Response.Write("<script> alert(" + NombreFantasia + ") </script>");
+                // Response.Redirect("~/Vista/entregaActividad.aspx");
+                // Do something with the data...
+            }
+
 
 
         }
 
         protected void btnRealizar_Click(object sender, EventArgs e)
         {
+            Response.Write("<script> alert(" + q + ") </script>");
 
-
-            Label Label1 = (Label)item.FindControl("Label ID");
 
 
             //  Response.Redirect("~/Vista/entregaActividad.aspx");
-            foreach (RepeaterItem item in repeaterActividad.Items)
-            {
-                Label CountryLabel = (Label)item.FindControl("lblidActi");
-               //TextBox CountryCommentTB = (TextBox)item.FindControl("CountryCommentTB");
+            /*  foreach (RepeaterItem item in repeaterActividad.Items)
+              {
 
 
-                string countryName = CountryLabel.Text;
-                //string countryComment = CountryCommentTB.Text;
-                Response.Write("<script> alert(" + countryName + ") </script>");
+                  Label CountryLabel = (Label)item.FindControl("lblidActi");
+                 //TextBox CountryCommentTB = (TextBox)item.FindControl("CountryCommentTB");
 
-                // Do something with the data...
-            }
+
+                  q = CountryLabel.Text;
+                  //string countryComment = CountryCommentTB.Text;
+
+                 // Response.Redirect("~/Vista/entregaActividad.aspx");
+                  // Do something with the data...
+              }*/
+
 
         }
 
