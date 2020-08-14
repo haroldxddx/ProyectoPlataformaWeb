@@ -79,7 +79,7 @@
 
             
 
-            <asp:Repeater ID="repeaterPrueba" runat="server" OnItemDataBound="repeaterPrueba_ItemDataBound">
+            <asp:Repeater ID="repeaterPrueba" runat="server" OnItemCommand="repeaterPrueba_ItemCommand">
 
                 <ItemTemplate>
                   

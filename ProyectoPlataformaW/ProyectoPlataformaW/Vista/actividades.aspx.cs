@@ -21,12 +21,6 @@ namespace ProyectoPlataformaW.Vista
             clCursoMateriaD objcmd = new clCursoMateriaD();
             int var = clCursoMateriaD.datoDT;
 
-            
-
-
-
-
-
             string user = Session["usuario"].ToString();
 
             List<clEntidadActividadE> listaActividad = new List<clEntidadActividadE>();
@@ -62,7 +56,7 @@ namespace ProyectoPlataformaW.Vista
         {
 
             clActividadD objact = new clActividadD();
-           int var2 = clActividadD.idActividad;
+            int var2 = clActividadD.idActividad;
             idAct = var2;
             Response.Redirect("~/entregaActividad.aspx");
 

@@ -83,7 +83,7 @@
               </div>
               <div class="form-group">
                 <label for="inputProjectLeader">Descripcion</label>
-                  <asp:TextBox ID="txtDesc" runat="server" class="form-control" Height="150px"></asp:TextBox>
+                  <asp:TextBox ID="txtDesc" runat="server" class="form-control" Height="150px" TextMode="MultiLine"></asp:TextBox>
               </div>
             </div>
             <!-- /.card-body -->

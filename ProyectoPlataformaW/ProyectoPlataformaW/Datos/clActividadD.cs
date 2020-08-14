@@ -97,6 +97,35 @@ namespace ProyectoPlataformaW.Datos
 
         }
 
+        //Cargar Combo Con actividades de profesor
+        public List<clEntidadActividadE> mtdCargarAct(clEntidadActividadE objE)
+        {
+
+           string sql="select Actividad.NombreActividad, Actividad.IdActividad from Actividad inner join CursoMateria on Actividad.IdCursoMateria = CursoMateria.IdCursoMateria inner join Profesor on Profesor.IdProfesor = CursoMateria.IdProfesor where Profesor.Email = '" + objE.Email + "' and CursoMateria.IdCursoMateria = '" + objE.IdCursoMateria + "'";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblCur = new DataTable();
+            tblCur = objSql.mtdDesconectado(sql);
+
+            List<clEntidadActividadE> listaAct = new List<clEntidadActividadE>();
+
+            for (int i = 0; i < tblCur.Rows.Count; i++)
+            {
+                clEntidadActividadE objActivi = new clEntidadActividadE();
+
+               
+                objActivi.NombreActividad = tblCur.Rows[i][0].ToString();
+                objActivi.IdActividad = int.Parse(tblCur.Rows[i][1].ToString());
+
+                listaAct.Add(objActivi);
+
+            }
+
+            return listaAct;
+
+
+        }
+
 
 
     }
