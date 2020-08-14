@@ -81,12 +81,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\dbProyectoPlataforma.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Data\dbProyectoPlataforma.mdf" />
     <Content Include="App_Data\dbProyectoPlataforma_log.ldf">
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Global.asax" />
     <Content Include="Imagenes\colegioestu.jpeg" />
