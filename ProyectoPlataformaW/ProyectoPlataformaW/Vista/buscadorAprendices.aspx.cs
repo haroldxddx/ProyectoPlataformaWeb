@@ -142,6 +142,7 @@ namespace ProyectoPlataformaW.Vista
             {
                 if (listEestu[i].Curso == cu)
                 {
+
                     clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                     objEstu.Nombres = listEestu[i].Nombres;
@@ -185,6 +186,11 @@ namespace ProyectoPlataformaW.Vista
         protected void lbtCurso_Click(object sender, EventArgs e)
         {
 
+
+        }
+
+        protected void gvEstu_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }

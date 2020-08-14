@@ -10,10 +10,13 @@ namespace ProyectoPlataformaW.Logica
     public class clCursoMateriaL
     {
         public List<clEntidadCursoMateriaE> mtdCursosP(clEntidadCursoMateriaE objprofe)
+        
         {
             clCursoMateriaD objCm = new clCursoMateriaD();
+            clCursoMateriaD objCum = new clCursoMateriaD();
             List<clEntidadCursoMateriaE> listaCurM = new List<clEntidadCursoMateriaE>();
             listaCurM = objCm.mtdListCursoP(objprofe);
+            
             return listaCurM;
         }
 
@@ -32,5 +35,6 @@ namespace ProyectoPlataformaW.Logica
             listaEstAc = objCm.mtdMostrarEst(objE);
             return listaEstAc;
         }
+
     }
 }

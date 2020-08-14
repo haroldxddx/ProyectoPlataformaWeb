@@ -67,7 +67,7 @@
         <asp:LinkButton ID="lbtCurso" runat="server" OnClick="lbtCurso_Click">LinkButton</asp:LinkButton>
     </p>
 <p>
-        <asp:GridView ID="gvEstu" runat="server" CellPadding="4" CssClass="auto-style6" ForeColor="#333333" GridLines="None">
+        <asp:GridView ID="gvEstu" runat="server" CellPadding="4" CssClass="auto-style6" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvEstu_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="White" />
             <EditRowStyle BackColor="#2461BF" />
             <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
