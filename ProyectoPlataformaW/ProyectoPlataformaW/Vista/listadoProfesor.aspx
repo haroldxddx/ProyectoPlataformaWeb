@@ -8,6 +8,15 @@
             left: -1px;
             top: 2px;
         }
+        .auto-style5 {
+            float: left;
+            font-size: 1.1rem;
+            font-weight: 400;
+            left: 0px;
+            top: 0px;
+            width: 410px;
+            margin: 0;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -50,6 +59,19 @@
                         Listado de Profesores</h3>
                     <br />
                     <asp:Label ID="lblUsera" runat="server" Text="Label"></asp:Label>
+                   
+                    <br />
+                    <br />
+                </div>
+                <section class="content">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="auto-style5">
+                        <br />
+                        Ingrese el nombre de profesor que desee buscar : </h3>
+                    <br />
+                    <asp:TextBox ID="txtBuscar" runat="server" Width="217px"></asp:TextBox>
+                    <asp:Button ID="btnBuscar" runat="server" Text="BUSCAR" OnClick="btnBuscar_Click" />
                     <br />
                     <br />
                 </div>

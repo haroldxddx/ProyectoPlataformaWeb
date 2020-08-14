@@ -45,6 +45,13 @@ namespace ProyectoPlataformaW.Logica
             listaEst = objEs.mtdBuscarPorNom(objDatos);
             return listaEst;
         }
+        public List<clEntidadEstudianteEE> mtdBuscarEst(clEntidadEstudianteEE objDatos)
+        {
+            clEstudianteD objEs = new clEstudianteD();
+            List<clEntidadEstudianteEE> listaEst = new List<clEntidadEstudianteEE>();
+            listaEst = objEs.mtdBuscarEst(objDatos);
+            return listaEst;
+        }
 
         public List<clEntidadEstudianteE> mtdFiltroE(clEntidadEstudianteE objDatos)
         {

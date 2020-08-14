@@ -11,11 +11,11 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class listadoProfesor : System.Web.UI.Page
     {
-        List<clEntidadProfesorE> listaProf = new List<clEntidadProfesorE>();
+        List<clEntidadProfesorEE> listaProf = new List<clEntidadProfesorEE>();
         private void mtdCargarGrid()
         {
             clProfesorL objPrf = new clProfesorL();
-            listaProf = objPrf.mtdListProf();
+            listaProf = objPrf.mtdListProfe();
 
             gvProf.DataSource = listaProf;
             gvProf.DataBind();
@@ -62,11 +62,26 @@ namespace ProyectoPlataformaW.Vista
 
             
         }
-        
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string nombre = txtBuscar.Text;
 
 
+            List<clEntidadProfesorE> listaBuscar = new List<clEntidadProfesorE>();
 
+            clEntidadProfesorE objProf = new clEntidadProfesorE();
+            objProf.Nombres = nombre;
 
+            clProfesorL objProfL = new clProfesorL();
+            listaBuscar = objProfL.mtdBuscarProf(objProf);
 
+            if (listaBuscar.Count != 0)
+            {
+                gvProf.DataSource = listaBuscar;
+                gvProf.DataBind();
+
+            }
+        }
     }
-}
+    }
