@@ -55,7 +55,7 @@
         <asp:Label ID="Label2" runat="server" CssClass="auto-style3" Text="Flitrar Por Cursos"></asp:Label>
         <asp:DropDownList ID="cmbCurso" runat="server" AutoPostBack="True" CssClass="auto-style4" OnSelectedIndexChanged="cmbCurso_SelectedIndexChanged">
         </asp:DropDownList>
-        <asp:TextBox ID="txtNombreE" runat="server" CssClass="auto-style7" AutoCompleteType="Search" AutoPostBack="True" OnTextChanged="txtNombreE_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="txtNombreE" runat="server" CssClass="auto-style7" AutoCompleteType="Search" AutoPostBack="True" OnTextChanged="txtNombreE_TextChanged" TextMode="Search"></asp:TextBox>
     </p>
     <p>
         <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Buscar por nombre"></asp:Label>

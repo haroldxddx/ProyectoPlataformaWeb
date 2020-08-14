@@ -13,14 +13,21 @@ namespace ProyectoPlataformaW.Vista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*if (Request.Params["id"]!=null)
+
+            if (Request.Params["id"] != null)
             {
                 lblCursoM.Text = Request.Params["id"];
-            }*/
+            }
+            /*inicioProfesor objPR = new inicioProfesor();
+            int vari = inicioProfesor.idCursoM;
+            lblCursoM.Text = Convert.ToString(vari);*/
+
+
         }
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
+           
 
             clEntidadActividadE objAct = new clEntidadActividadE();
             objAct.NombreActividad = txtNomAc.Text;

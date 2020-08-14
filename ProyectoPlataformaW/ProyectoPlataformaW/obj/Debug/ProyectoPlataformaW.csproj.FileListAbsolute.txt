@@ -319,3 +319,12 @@ D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\Pr
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.pdb
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.xml
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.xml
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\DocumentFormat.OpenXml.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.pdb
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.xml
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.pdb
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.xml
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.xml

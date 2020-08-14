@@ -20,6 +20,19 @@ namespace ProyectoPlataformaW.Vista
            // Session["general"] = "administrador";
 
 
+
+
+    
+
+        }
+
+        protected void Page_Init(object sender, EventArgs e)
+        {
+
+            //para editar esta pagina descomentarear esta linea by mao
+            // Session["general"] = "administrador";
+
+
             try
             {
                 if (Session["general"].ToString() == null)
@@ -71,7 +84,7 @@ namespace ProyectoPlataformaW.Vista
             }
 
 
-    
+
 
         }
 
@@ -119,7 +132,7 @@ namespace ProyectoPlataformaW.Vista
            
 
             //string email = (objEstu.Email = txtCorreo.Text);
-            string cu = cmbCurso.SelectedIndex.ToString();
+            string cu = cmbCurso.Text;
             List<clEntidadEstudianteE> listaEstuDos = new List<clEntidadEstudianteE>();
             clEstudianteD objEstuD = new clEstudianteD();
             clEstudianteL objEstudianteL = new clEstudianteL();
@@ -138,7 +151,7 @@ namespace ProyectoPlataformaW.Vista
                     objEstu.Grado = listEestu[i].Grado;
                     objEstu.Curso = listEestu[i].Curso;
                     
-                    gvEstu.DataSource = listEestu;
+                    gvEstu.DataSource = listaEstuDos;
                     gvEstu.DataBind();
 
                     listaEstuDos.Add(objEstu);

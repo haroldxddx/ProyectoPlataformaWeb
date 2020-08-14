@@ -111,6 +111,7 @@
     <Content Include="Vista\actividades.aspx" />
     <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
+    <Content Include="Vista\calificarActividad.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
     <Content Include="Vista\images\16.png" />
     <Content Include="Vista\images\i.jpg" />
@@ -432,6 +433,7 @@
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
     <Content Include="Vista\listadoProfesor.aspx" />
+    <Content Include="Vista\modals.html" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\js\bootstrap-colorpicker.js" />
@@ -2080,6 +2082,7 @@
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
     <Compile Include="Entidades\clEntidadActividadE.cs" />
+    <Compile Include="Entidades\clEntidadActividadEstuE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
@@ -2119,6 +2122,13 @@
     </Compile>
     <Compile Include="Vista\asignarProfesorCursoMateria.aspx.designer.cs">
       <DependentUpon>asignarProfesorCursoMateria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\calificarActividad.aspx.cs">
+      <DependentUpon>calificarActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\calificarActividad.aspx.designer.cs">
+      <DependentUpon>calificarActividad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\entregaActividad.aspx.cs">
       <DependentUpon>entregaActividad.aspx</DependentUpon>
