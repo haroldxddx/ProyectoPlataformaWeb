@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
        <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head >
          <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -45,7 +45,7 @@
 
     </head>
       
-   <body class="host_version"> 
+   <body    > 
 
 	
 	
@@ -93,6 +93,8 @@
 							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha fin actividad : '<%# Eval("FechaFinal") %>'</a> </span>
                             <span><i class="fa fa-tag"></i>  <a href="#">por realizar</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+                            <asp:Label ID="lblidActi" runat="server" Text='<%# Eval("IdActividad") %>'> </asp:Label>
+                            <asp:TextBox ID="txt" runat="server" Text='<%# Eval("IdActividad") %> '></asp:TextBox>
 						</div>
 						<div class="blog-title">
 							<h2><a href="#" title="">'<%# Eval("NombreActividad") %>'</a></h2>
@@ -101,18 +103,21 @@
 							<p>'<%# Eval("Descripcion") %>' </p>
 						</div>
 						<div class="blog-button">
-                            	<a class="hover-btn-new orange" href="entregaActividad.aspx"><span>Realizar<span></a>
-                          
+                            	
+                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server" OnClick="btnRealizar_Click" Text=""><span>Realizar<span></span></asp:LinkButton>
+                           <!-- <asp:Button ID="Button1" runat="server" Text="Button" OnClick="btnRealizar_Click"  />-->
 							
 						</div>
 					</div>
                 </div><!-- end col -->
-                </ItemTemplate>
+              </ItemTemplate>
 
             </asp:Repeater>
             		
 			</div><!-- end container -->
     </div><!-- end section -->
+                 <asp:Button ID="Button1" runat="server" Text="Button" OnClick="btnRealizar_Click"  />
+                            
 
    <!-- end section -->
 
@@ -187,7 +192,7 @@
     <script src="js/all.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
-
+       
 </body>
     </html>
 </asp:Content>
