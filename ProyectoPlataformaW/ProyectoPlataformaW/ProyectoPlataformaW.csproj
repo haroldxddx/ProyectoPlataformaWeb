@@ -81,12 +81,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\dbProyectoPlataforma.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="App_Data\dbProyectoPlataforma.mdf" />
     <Content Include="App_Data\dbProyectoPlataforma_log.ldf">
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Global.asax" />
     <Content Include="Imagenes\colegioestu.jpeg" />
@@ -111,6 +108,7 @@
     <Content Include="Vista\actividades.aspx" />
     <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
+    <Content Include="Vista\calificarActividad.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
     <Content Include="Vista\images\16.png" />
     <Content Include="Vista\images\i.jpg" />
@@ -432,6 +430,7 @@
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
     <Content Include="Vista\listadoProfesor.aspx" />
+    <Content Include="Vista\modals.html" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.min.css" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\js\bootstrap-colorpicker.js" />
@@ -2055,7 +2054,6 @@
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
     <Content Include="Vista\projects.html" />
-    <Content Include="Vista\pruebaxd.aspx" />
     <Content Include="Vista\registrarAdministrador2.aspx" />
     <Content Include="Vista\registrarCurso2.aspx" />
     <Content Include="Vista\registrarEstudiante2.aspx" />
@@ -2063,6 +2061,7 @@
     <Content Include="Vista\registrarProfesor2.aspx" />
     <Content Include="Vista\style.css" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
+    <Content Include="Vista\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
     <Content Include="xd.aspx" />
@@ -2080,6 +2079,7 @@
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
     <Compile Include="Entidades\clEntidadActividadE.cs" />
+    <Compile Include="Entidades\clEntidadActividadEstuE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
     <Compile Include="Entidades\clEntidadCursoEE.cs" />
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
@@ -2121,6 +2121,13 @@
     </Compile>
     <Compile Include="Vista\asignarProfesorCursoMateria.aspx.designer.cs">
       <DependentUpon>asignarProfesorCursoMateria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\calificarActividad.aspx.cs">
+      <DependentUpon>calificarActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\calificarActividad.aspx.designer.cs">
+      <DependentUpon>calificarActividad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\entregaActividad.aspx.cs">
       <DependentUpon>entregaActividad.aspx</DependentUpon>
@@ -2232,13 +2239,6 @@
     <Compile Include="Vista\listadoProfesor.aspx.designer.cs">
       <DependentUpon>listadoProfesor.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\pruebaxd.aspx.cs">
-      <DependentUpon>pruebaxd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\pruebaxd.aspx.designer.cs">
-      <DependentUpon>pruebaxd.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Vista\registrarAdministrador2.aspx.cs">
       <DependentUpon>registrarAdministrador2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2280,6 +2280,13 @@
     </Compile>
     <Compile Include="Vista\verEntregasEstudiantes.aspx.designer.cs">
       <DependentUpon>verEntregasEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>

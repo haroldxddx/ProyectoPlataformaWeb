@@ -11,25 +11,16 @@ namespace ProyectoPlataformaW.Vista
 {
 
 
-    public partial class pruebaxd
+    public partial class WebForm1
     {
 
         /// <summary>
-        /// Control form1.
+        /// Control GridView1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// Control dtgExc.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dtgExc;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
     }
 }

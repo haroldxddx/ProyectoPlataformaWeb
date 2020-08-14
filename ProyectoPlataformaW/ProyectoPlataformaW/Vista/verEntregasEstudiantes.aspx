@@ -51,7 +51,22 @@
           <h3 class="card-title">Entregas</h3>
 
          
+            <br />
+            <br />
+            <asp:DropDownList ID="ddlAct" runat="server" class="form-control" Width="60%">
+            </asp:DropDownList>
+            
+
+         
+            <asp:Label ID="lblIdCursoM" runat="server" Text="1"></asp:Label>
+            <br />
+            <asp:Button ID="btnVer" runat="server" BackColor="#001F3F" BorderColor="#001F3F" BorderStyle="Dotted" ForeColor="White" Text="Ver" Width="69px" OnClick="btnVer_Click" />
+            
+
+         
         </div>
+
+
         <div class="card-body p-0">
           <table class="table table-striped projects">
               <thead>
@@ -72,23 +87,31 @@
                           Curso
                       </th>
                       <th style="width: 20%">
+
                       </th>
                   </tr>
               </thead>
-              <tbody>
+
+              <asp:Repeater ID="repeaterEstud" runat="server">
+
+                  <ItemTemplate>
+                       <tbody>
                   <tr>
                      
                       <td>
-                          <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                          <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("Nombres") %>'></asp:Label>
                       </td>
                       <td>
-                         <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                         <asp:Label ID="lblApe" runat="server" Text='<%# Eval("Apellidos") %>'></asp:Label>
                       </td>
                       <td>
-                        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                        <asp:Label ID="lblDesc" runat="server" Text='<%# Eval("Descripcion") %>'></asp:Label>
                       </td>
                       <td>
-                          <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                          <asp:Label ID="lblNombreMat" runat="server" Text='<%# Eval("NombreMateria") %>'></asp:Label>
+                      </td>
+                      <td>
+                          <asp:Label ID="lblCurso" runat="server" Text='<%# Eval("Curso") %>'></asp:Label>
                       </td>
                       <td class="project-actions text-right">
                          
@@ -101,6 +124,11 @@
                       </td>
                   </tr>
                </tbody>
+
+                  </ItemTemplate>
+
+              </asp:Repeater>
+             
           </table>
         </div>
         <!-- /.card-body -->

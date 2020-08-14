@@ -21,6 +21,7 @@ namespace ProyectoPlataformaW
             Session["usuario"] = "nn";
             Session["general"] = "";
             Session["Archivos"] = "";
+            Session["IdCursoMater"] = 0;
         }
 
         protected void Application_BeginRequest(object sender, EventArgs e)

@@ -14,27 +14,17 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <p class="auto-style3">
         &nbsp;
-    </p>
-    <p class="auto-style3">
         &nbsp;
     </p>
 
 
     <p class="auto-style3">
-        ASIGNAR PROFESOR A UN CURSO Y UNA MATERIA
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ASIGNAR PROFESOR Y SU MATERIA A UN CURSO
     </p>
 
-    <p class="auto-style3">
-        &nbsp;
-        &nbsp;
-    
-    </p>
-    <p class="auto-style3">
-        &nbsp;
-    </p>
     <table style="width: 100%;">
         <tr>
-            <td>&nbsp; CURSO<td>&nbsp;&nbsp;<asp:GridView ID="gvCurso" runat="server" ClientIDMode="Static" Width="432px">
+            <td>&nbsp; SELECCIONE UN CURSO<td>&nbsp;&nbsp;<asp:GridView ID="gvCurso" runat="server" ClientIDMode="Static" Width="432px">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
@@ -49,11 +39,13 @@
 
             <br />
 
+            <br />
+
             </td>
             </td>
         </tr>
         <tr>
-            <td>&nbsp; PROFESOR</td>
+            <td>&nbsp;SELECCIONE UN PROFESOR</td>
             <td>
 
                 <asp:GridView ID="gvProfe" runat="server" ClientIDMode="Static" Width="432px">
@@ -69,12 +61,14 @@
 
         <asp:Label ID="lblMensaje" runat="server" Visible="False"></asp:Label>
 
+                <br />
+
             </td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp; MATERIA</td>
-            <td>&nbsp;<asp:GridView ID="gvMateria" runat="server" ClientIDMode="Static" Width="427px">
+            <td>&nbsp; SELECCIONE UN MATERIA</td>
+            <td><asp:GridView ID="gvMateria" runat="server" ClientIDMode="Static" Width="427px">
         <Columns>
             <asp:TemplateField>
                 <ItemTemplate>
@@ -98,8 +92,6 @@
         &nbsp;
     </p>
 
-    <p class="auto-style3">
-        &nbsp;</p>
     <p class="auto-style3">
         <asp:LinkButton ID="lnkGuardar" runat="server" OnClick="lnkGuardar_Click">GUARDAR</asp:LinkButton>
         &nbsp;

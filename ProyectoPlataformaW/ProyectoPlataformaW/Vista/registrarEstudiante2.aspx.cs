@@ -26,33 +26,31 @@ namespace ProyectoPlataformaW.Vista
             dpdCurso.DataBind();
 
 
-            SLDocument sl = new SLDocument(path);
-            {
-                int iRow = 2;
-                List<estudiantesViewModel> listaEs = new List<estudiantesViewModel>();
-            
-
-                while (!string.IsNullOrEmpty(sl.GetCellValueAsString(iRow, 1))) 
-                {
-                    estudiantesViewModel objEVM = new estudiantesViewModel();
-                    objEVM.Nombres = sl.GetCellValueAsString(iRow, 1);
-                    objEVM.Apellidos = sl.GetCellValueAsString(iRow, 2);
-                    objEVM.Documento = sl.GetCellValueAsInt32(iRow, 3);
-                    objEVM.Email = sl.GetCellValueAsString(iRow, 4);
-                    objEVM.Contrasena = sl.GetCellValueAsString(iRow, 5);
-                    objEVM.IdCurso = sl.GetCellValueAsInt32(iRow, 6);
-
-                    listaEs.Add(objEVM);
+            // SLDocument sl = new SLDocument(path);
+            //  {
+            //     int iRow = 2;
+            //     List<estudiantesViewModel> listaEs = new List<estudiantesViewModel>();
 
 
+            //      while (!string.IsNullOrEmpty(sl.GetCellValueAsString(iRow, 1))) 
+            //      {
+            //          estudiantesViewModel objEVM = new estudiantesViewModel();
+            //          objEVM.Nombres = sl.GetCellValueAsString(iRow, 1);
+            //          objEVM.Apellidos = sl.GetCellValueAsString(iRow, 2);
+            //          objEVM.Documento = sl.GetCellValueAsInt32(iRow, 3);
+            //          objEVM.Email = sl.GetCellValueAsString(iRow, 4);
+            //         objEVM.Contrasena = sl.GetCellValueAsString(iRow, 5);
+            //         objEVM.IdCurso = sl.GetCellValueAsInt32(iRow, 6);
 
-                    iRow++;
-                }
-                dtgExc.DataSource = listaEs;
-            }
+            //         listaEs.Add(objEVM);
 
-        }
 
+
+            //      iRow++;
+            //   }
+            //    dtgExc.DataSource = listaEs;
+               }
+          
         protected void btnRegistrarE_Click(object sender, EventArgs e)
         {
             clEntidadEstudianteE objEEstu = new clEntidadEstudianteE();
