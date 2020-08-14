@@ -68,9 +68,9 @@ namespace ProyectoPlataformaW.Vista
             string nombre = txtBuscar.Text;
 
 
-            List<clEntidadProfesorE> listaBuscar = new List<clEntidadProfesorE>();
+            List<clEntidadProfesorEE> listaBuscar = new List<clEntidadProfesorEE>();
 
-            clEntidadProfesorE objProf = new clEntidadProfesorE();
+            clEntidadProfesorEE objProf = new clEntidadProfesorEE();
             objProf.Nombres = nombre;
 
             clProfesorL objProfL = new clProfesorL();

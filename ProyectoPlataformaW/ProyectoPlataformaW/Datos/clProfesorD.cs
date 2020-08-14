@@ -37,18 +37,18 @@ namespace ProyectoPlataformaW.Datos
 
             return listaProf;
         }
-            public List<clEntidadProfesorE> mtdBuscarProf(clEntidadProfesorE objProfe)
+            public List<clEntidadProfesorEE> mtdBuscarProf(clEntidadProfesorEE objProfe)
             {
-                string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email,Especialidad from Profesor WHERE (Estudiante.Nombres LIKE '%" + objProfe.Nombres + "%')";
-            clAdminSQL objSql = new clAdminSQL();
+                string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email,Especialidad from Profesor WHERE (Profesor.Nombres LIKE '%" + objProfe.Nombres + "%')";
+                clAdminSQL objSql = new clAdminSQL();
                 DataTable tblprof = new DataTable();
                 tblprof = objSql.mtdDesconectado(sql);
 
-                List<clEntidadProfesorE> listaProf = new List<clEntidadProfesorE>();
+                List<clEntidadProfesorEE> listaProf = new List<clEntidadProfesorEE>();
 
                 for (int i = 0; i < tblprof.Rows.Count; i++)
                 {
-                    clEntidadProfesorE objProfee = new clEntidadProfesorE();
+                    clEntidadProfesorEE objProfee = new clEntidadProfesorEE();
 
                     objProfee.IdProfesor = int.Parse(tblprof.Rows[i][0].ToString());
                     objProfee.Nombres = tblprof.Rows[i][1].ToString();

@@ -430,6 +430,7 @@
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
     <Content Include="Vista\listadoEstudiantes.aspx" />
+    <Content Include="Vista\listadoMateriasAsignadoaACurso.aspx" />
     <Content Include="Vista\listadoProfesor.aspx" />
     <Content Include="Vista\modals.html" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
@@ -2240,6 +2241,13 @@
     </Compile>
     <Compile Include="Vista\listadoEstudiantes.aspx.designer.cs">
       <DependentUpon>listadoEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\listadoMateriasAsignadoaACurso.aspx.cs">
+      <DependentUpon>listadoMateriasAsignadoaACurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\listadoMateriasAsignadoaACurso.aspx.designer.cs">
+      <DependentUpon>listadoMateriasAsignadoaACurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\listadoProfesor.aspx.cs">
       <DependentUpon>listadoProfesor.aspx</DependentUpon>
