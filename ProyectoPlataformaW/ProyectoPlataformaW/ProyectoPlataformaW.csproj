@@ -2074,6 +2074,7 @@
     <Compile Include="Datos\clCursoD.cs" />
     <Compile Include="Datos\clCursoMateriaD.cs" />
     <Compile Include="Datos\clEncrypt.cs" />
+    <Compile Include="Datos\clEntregaD.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
@@ -2084,6 +2085,7 @@
     <Compile Include="Entidades\clEntidadCursoEE.cs" />
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
+    <Compile Include="Entidades\clEntidadEntregaE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
@@ -2101,6 +2103,7 @@
     </Compile>
     <Compile Include="Logica\clActividadL.cs" />
     <Compile Include="Logica\clCursoMateriaL.cs" />
+    <Compile Include="Logica\clEntregaL.cs" />
     <Compile Include="Vista\actividades.aspx.cs">
       <DependentUpon>actividades.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

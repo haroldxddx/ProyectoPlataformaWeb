@@ -92,7 +92,7 @@
                   </tr>
               </thead>
 
-              <asp:Repeater ID="repeaterEstud" runat="server">
+              <asp:Repeater ID="repeaterEstud" runat="server" OnItemCommand="repeaterEstud_ItemCommand">
 
                   <ItemTemplate>
                        <tbody>
@@ -115,11 +115,8 @@
                       </td>
                       <td class="project-actions text-right">
                          
-                          <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-pencil-alt">
-                              </i>
-                              Ver Entrega
-                          </a>
+                        
+                          <asp:Button ID="btnVerEntrega" runat="server" Text="Ver Entrega" class="btn btn-info btn-sm" OnClick="btnVerEntrega_Click"/>
                          
                       </td>
                   </tr>

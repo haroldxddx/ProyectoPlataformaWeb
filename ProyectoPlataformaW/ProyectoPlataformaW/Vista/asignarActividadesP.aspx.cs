@@ -14,13 +14,13 @@ namespace ProyectoPlataformaW.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Request.Params["id"] != null)
+            /*if (Request.Params["id"] != null)
             {
                 lblCursoM.Text = Request.Params["id"];
-            }
-            /*inicioProfesor objPR = new inicioProfesor();
+            }*/
+            inicioProfesor objPR = new inicioProfesor();
             int vari = inicioProfesor.idCursoM;
-            lblCursoM.Text = Convert.ToString(vari);*/
+            lblCursoM.Text = Convert.ToString(vari);
 
 
         }

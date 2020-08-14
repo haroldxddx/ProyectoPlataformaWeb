@@ -16,17 +16,13 @@ namespace ProyectoPlataformaW.Vista
 
     {
         public static int idCursoM;
+        public string o;
+
 
         protected void lbtCurso_Click(object sender, EventArgs e)
         {
 
-            foreach (RepeaterItem item in repeaterPrueba.Items)
-            {
-                Label lblda = (Label)item.FindControl("lblIdCursoMateria");
-                int idcur = int.Parse(lblda.Text);
-                Response.Redirect("/Vista/asignarActividadesP.aspx?id=" + idcur);
-
-            }
+            
             // Label lblprueba = ((Label)repeaterPrueba.Items[1].FindControl("lblIdCursoMateria"));
             //string xd = lblprueba.Text;
             // clCursoMateriaD objCm = new clCursoMateriaD();
@@ -44,6 +40,9 @@ namespace ProyectoPlataformaW.Vista
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            clCursoMateriaD objCm = new clCursoMateriaD();
+            int var2 = clCursoMateriaD.idCursoMat;
+            idCursoM = var2;
             List<clEntidadCursoMateriaE> listP = new List<clEntidadCursoMateriaE>();
             string user = Session["usuario"].ToString();
 
@@ -58,9 +57,7 @@ namespace ProyectoPlataformaW.Vista
                 repeaterPrueba.DataSource = listP;
                 repeaterPrueba.DataBind();
 
-                clCursoMateriaD objCm = new clCursoMateriaD();
-                int var2 = clCursoMateriaD.idCursoMat;
-                idCursoM = var2;
+                
 
             }
             /*for (int i = 0; i < listP.Count; i++)
@@ -86,7 +83,10 @@ namespace ProyectoPlataformaW.Vista
 
         protected void repeaterPrueba_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
-            Label lb = (Label)e.Item.FindControl("IdCursoMateria");
+            o = repeaterPrueba.Items[e.Item.ItemIndex].ItemIndex.ToString();
+            idCursoM = int.Parse(((Label)repeaterPrueba.Items[int.Parse(o)].FindControl("IdCursoMateria")).Text);
+            Response.Redirect("/Vista/asignarActividadesP.aspx");
+            //Label lb = (Label)e.Item.FindControl("IdCursoMateria");
 
         }
     }

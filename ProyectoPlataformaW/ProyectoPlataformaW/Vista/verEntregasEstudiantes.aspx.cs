@@ -55,5 +55,17 @@ namespace ProyectoPlataformaW.Vista
 
 
         }
+
+        protected void repeaterEstud_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
+        }
+
+        protected void btnVerEntrega_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Vista/calificarActividad.aspx");
+
+
+        }
     }
 }
