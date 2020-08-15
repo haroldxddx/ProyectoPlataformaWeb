@@ -84,17 +84,17 @@
 
 
                       <td>
-                         <asp:Label ID="lblDesc2" runat="server" Text="HOLA "></asp:Label>
+                         <asp:Label ID="lblDesc2" runat="server" Text=""></asp:Label><asp:Label ID="lblIdEntrega" runat="server" Text=""></asp:Label>
                           <br />
                           <br />
-                          <asp:Label ID="lblFecha2" runat="server" Text="QUE HACE  "></asp:Label>
+                          <asp:Label ID="lblFecha2" runat="server" Text=""></asp:Label>
                           <br />
                           <br />
-                          <asp:Label ID="lblArchivo2" runat="server" Text="PTO EL QUE LO LEA "></asp:Label>
+                          <asp:Label ID="lblArchivo2" runat="server" Text=""></asp:Label>
                           &nbsp;<asp:LinkButton ID="lkbDescargar" runat="server">Descargar Archivo</asp:LinkButton>
                           <br />
                           <br />
-                          <asp:Label ID="lblEstado2" runat="server" Text="JAJAJAJAJAJA "></asp:Label>
+                          <asp:Label ID="lblEstado2" runat="server" Text=""></asp:Label>
                       </td>
                       
                   </tr>
@@ -122,7 +122,7 @@
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
              
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar Cambios" class="btn btn-primary"/>
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar Cambios" class="btn btn-primary" OnClick="btnGuardar_Click"/>
             </div>
           </div>
           <!-- /.modal-content -->

@@ -19,7 +19,7 @@ namespace ProyectoPlataformaW.Vista
                 lblCursoM.Text = Request.Params["id"];
             }*/
             inicioProfesor objPR = new inicioProfesor();
-            int vari = inicioProfesor.idCursoM;
+            int vari = inicioProfesor.id;
             lblCursoM.Text = Convert.ToString(vari);
 
 

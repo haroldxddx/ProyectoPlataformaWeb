@@ -93,7 +93,7 @@ namespace ProyectoPlataformaW.Datos
         //Listado de estudiantes con esa actividad Asignada
         public List<clEntidadActividadEstuE> mtdMostrarEst(clEntidadActividadEstuE objE)
         {
-            string sql = "select Estudiante.Nombres , Estudiante.Apellidos, Actividad.Descripcion , Materia.NombreMateria , Curso.Curso from Estudiante inner join CursoMateria on Estudiante.IdCurso = CursoMateria.IdCurso inner join Actividad on Actividad.IdCursoMateria = CursoMateria.IdCursoMateria inner join Materia on Materia.IdMateria = CursoMateria.IdMateria inner join Curso on Curso.IdCurso = CursoMateria.IdCurso where CursoMateria.IdCursoMateria = '" + objE.IdCursoMateria + "' and Actividad.IdActividad = '" + objE.IdActividad + "'";
+            string sql = "select Estudiante.Nombres , Estudiante.Apellidos, Actividad.Descripcion , Materia.NombreMateria , Curso.Curso, Estudiante.IdEstudiante from Estudiante inner join CursoMateria on Estudiante.IdCurso = CursoMateria.IdCurso inner join Actividad on Actividad.IdCursoMateria = CursoMateria.IdCursoMateria inner join Materia on Materia.IdMateria = CursoMateria.IdMateria inner join Curso on Curso.IdCurso = CursoMateria.IdCurso where CursoMateria.IdCursoMateria = '" + objE.IdCursoMateria + "' and Actividad.IdActividad = '" + objE.IdActividad + "'";
 
 
             clAdminSQL objSql = new clAdminSQL();
@@ -111,6 +111,8 @@ namespace ProyectoPlataformaW.Datos
                 objAct.Descripcion = tblCur.Rows[i][2].ToString();
                 objAct.NombreMateria = tblCur.Rows[i][3].ToString();
                 objAct.Curso = tblCur.Rows[i][4].ToString();
+                objAct.IdEstudiante = int.Parse(tblCur.Rows[i][5].ToString());
+
 
 
                 listaActivi.Add(objAct);

@@ -14,12 +14,14 @@ namespace ProyectoPlataformaW.Vista
         List<clEntidadEntregaE> listEnt = new List<clEntidadEntregaE>();
         protected void Page_Load(object sender, EventArgs e)
         {
-            int idact = 4;
-            int idest = 8;
+
+
+            verEntregasEstudiantes objEntrE = new verEntregasEstudiantes();
+
             clEntregaL objEnt = new clEntregaL();
             clEntidadEntregaE objEntrega = new clEntidadEntregaE();
-            objEntrega.IdActividad = idact;
-            objEntrega.IdEstudiante = idest;
+            objEntrega.IdActividad = verEntregasEstudiantes.idAct;
+            objEntrega.IdEstudiante = verEntregasEstudiantes.id;
             listEnt = objEnt.mtdEntregaDetalle(objEntrega);
 
             for (int i = 0; i < listEnt.Count; i++)
@@ -29,7 +31,32 @@ namespace ProyectoPlataformaW.Vista
                 lblFecha2.Text = objEntrega.Fecha = listEnt[i].Fecha;
                 lblArchivo2.Text = objEntrega.Archivos = listEnt[i].Archivos;
                 lblEstado2.Text = objEntrega.Estado = listEnt[i].Estado;
+                int d = objEntrega.IdEntrega = int.Parse(listEnt[i].IdEntrega.ToString());
+                lblIdEntrega.Text = (d).ToString();
+
             }
+        }
+
+        protected void btnGuardar_Click(object sender, EventArgs e)
+        {
+            clEntidadEntregaE objEnt = new clEntidadEntregaE();
+            clEntregaL entL = new clEntregaL();
+
+
+            objEnt.Nota = txtCalificar.Text;
+            objEnt.IdEntrega = int.Parse(lblIdEntrega.Text);
+
+            int result = entL.mtdActNota(objEnt);
+
+            if (result >0)
+            {
+                clEntidadEntregaE objEnt2 = new clEntidadEntregaE();
+                objEnt2.IdEntrega = int.Parse(lblIdEntrega.Text);
+                entL.mtdCambEst(objEnt2);
+
+                Response.Write("<script> alert(" + "'Actividad Calificada Con exito'" + ") </script>");
+            }
+
         }
     }
 }

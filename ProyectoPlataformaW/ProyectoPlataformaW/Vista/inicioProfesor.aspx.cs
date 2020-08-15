@@ -15,7 +15,7 @@ namespace ProyectoPlataformaW.Vista
     public partial class inicioProfesor : System.Web.UI.Page
 
     {
-        public static int idCursoM;
+        public static int id;
         public string o;
 
 
@@ -40,9 +40,7 @@ namespace ProyectoPlataformaW.Vista
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            clCursoMateriaD objCm = new clCursoMateriaD();
-            int var2 = clCursoMateriaD.idCursoMat;
-            idCursoM = var2;
+            
             List<clEntidadCursoMateriaE> listP = new List<clEntidadCursoMateriaE>();
             string user = Session["usuario"].ToString();
 
@@ -83,8 +81,14 @@ namespace ProyectoPlataformaW.Vista
 
         protected void repeaterPrueba_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
+
+
+            //o = repeaterActividad.Items[e.Item.ItemIndex].ItemIndex.ToString();
+
+//            id = int.Parse(((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblidActi")).Text);
             o = repeaterPrueba.Items[e.Item.ItemIndex].ItemIndex.ToString();
-            idCursoM = int.Parse(((Label)repeaterPrueba.Items[int.Parse(o)].FindControl("IdCursoMateria")).Text);
+            id = int.Parse(((Label)repeaterPrueba.Items[int.Parse(o)].FindControl("lblIdCursoMateria")).Text);
+
             Response.Redirect("/Vista/asignarActividadesP.aspx");
             //Label lb = (Label)e.Item.FindControl("IdCursoMateria");
 

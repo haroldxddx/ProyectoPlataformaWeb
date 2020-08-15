@@ -58,7 +58,7 @@
             
 
          
-            <asp:Label ID="lblIdCursoM" runat="server" Text="1"></asp:Label>
+            <asp:Label ID="lblIdCursoM" runat="server" Text=""></asp:Label>
             <br />
             <asp:Button ID="btnVer" runat="server" BackColor="#001F3F" BorderColor="#001F3F" BorderStyle="Dotted" ForeColor="White" Text="Ver" Width="69px" OnClick="btnVer_Click" />
             
@@ -99,7 +99,7 @@
                   <tr>
                      
                       <td>
-                          <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("Nombres") %>'></asp:Label>
+                          <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("Nombres") %>'></asp:Label><asp:Label ID="lblIdEstu" runat="server" Text='<%# Eval("IdEstudiante") %>'></asp:Label>
                       </td>
                       <td>
                          <asp:Label ID="lblApe" runat="server" Text='<%# Eval("Apellidos") %>'></asp:Label>

@@ -91,7 +91,7 @@
 							<div class="course-title">
 								<h2>
                                     <asp:LinkButton ID="lbtCurso" runat="server" OnClick="lbtCurso_Click" Text='<%# Eval("Curso") %>'></asp:LinkButton>
-                                    <asp:Label ID="lblIdCursoMateria" runat="server" Text='<%# Eval("IdCursoMateria") %>'></asp:Label>
+                                    <asp:Label ID="lblIdCursoMateria" runat="server" Text='<%# Eval("IdCursoMateria") %>' Visible="false"></asp:Label>
                                    
 								</h2>
 							</div>
