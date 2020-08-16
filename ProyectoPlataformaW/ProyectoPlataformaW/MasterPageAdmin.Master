@@ -82,7 +82,7 @@
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
 								            <a class="dropdown-item" href="/Vista/listadoProfesor.aspx">Listado de Profesores</a>
 								            <a class="dropdown-item" href="/Vista/registrarProfesor2.aspx">Registro de profesores </a>
-								            <a class="dropdown-item" href="/Vista/asignarProfesorCursoMateria.aspx">Asignacion de profesores </a>
+								            <a class="dropdown-item" href="/Vista/asignarProfesorCursoMateria.aspx">Asignacion de profesores a Materias</a>
 							            </div>
 						            </li>
                                     <li class="nav-item dropdown">
@@ -97,7 +97,7 @@
 							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">
                                         <asp:Label ID="lblAdmin" runat="server" Text=""></asp:Label> </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
-								            <a class="dropdown-item" href="/Vista/buscadorAprendices.aspx">Buscador de aprendices</a>
+								            <a class="dropdown-item" href="#">Editar Perfil</a>
                                             
 								            
 							            </div>

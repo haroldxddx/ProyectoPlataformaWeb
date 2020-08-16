@@ -15,5 +15,6 @@ namespace ProyectoPlataformaW.Entidades
         public string NombreMateria { get; set; }
         public string Curso { get; set; }
         public int IdActividad { get; set; }
+        public int IdEstudiante { get; set; }
     }
 }

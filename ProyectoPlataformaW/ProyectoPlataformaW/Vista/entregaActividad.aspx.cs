@@ -52,15 +52,21 @@ namespace ProyectoPlataformaW.Vista
 
             Actividades objAct = new Actividades();
 
-            int var = Actividades.idAct;
+            //Label var = Actividades.idA;
+            //int X = Convert.ToInt32(var.Text);
+
+
 
             string user = Session["usuario"].ToString();
+
+            
 
             List<clEntidadActividadE> listaActividad = new List<clEntidadActividadE>();
 
             clEntidadActividadE objEs = new clEntidadActividadE();
-            objEs.IdActividad = var;
-            
+            objEs.IdActividad = Actividades.id;
+
+          // Response.Write("<script> alert(" + Actividades.q + ") </script>");
 
             clActividadL objActividad = new clActividadL();
             listaActividad = objActividad.mtdActividad(objEs);

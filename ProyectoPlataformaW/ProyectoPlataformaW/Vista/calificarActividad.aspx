@@ -7,7 +7,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-    <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -84,17 +84,17 @@
 
 
                       <td>
-                         <asp:Label ID="Label1" runat="server" Text="HOLA "></asp:Label>
+                         <asp:Label ID="lblDesc2" runat="server" Text=""></asp:Label><asp:Label ID="lblIdEntrega" runat="server" Text=""></asp:Label>
                           <br />
                           <br />
-                          <asp:Label ID="Label2" runat="server" Text="QUE HACE  "></asp:Label>
+                          <asp:Label ID="lblFecha2" runat="server" Text=""></asp:Label>
                           <br />
                           <br />
-                          <asp:Label ID="Label3" runat="server" Text="PTO EL QUE LO LEA "></asp:Label>
-                          &nbsp;<asp:LinkButton ID="LinkButton1" runat="server">Descargar Archivo</asp:LinkButton>
+                          <asp:Label ID="lblArchivo2" runat="server" Text=""></asp:Label>
+                          &nbsp;<asp:LinkButton ID="lkbDescargar" runat="server">Descargar Archivo</asp:LinkButton>
                           <br />
                           <br />
-                          <asp:Label ID="Label4" runat="server" Text="JAJAJAJAJAJA "></asp:Label>
+                          <asp:Label ID="lblEstado2" runat="server" Text=""></asp:Label>
                       </td>
                       
                   </tr>
@@ -117,12 +117,12 @@
             </div>
             <div class="modal-body">
               <p>Asigne su calificacion de 1.0 a 5.0 segun su criterio&hellip;</p>
-                <asp:TextBox ID="TextBox1" runat="server" TextMode="Number" Step="0.1" Max="5"></asp:TextBox>
+                <asp:TextBox ID="txtCalificar" runat="server" TextMode="Number" Step="0.1" Max="5"></asp:TextBox>
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
              
-                <asp:Button ID="btnGuardar" runat="server" Text="Guardar Cambios" class="btn btn-primary"/>
+                <asp:Button ID="btnGuardar" runat="server" Text="Guardar Cambios" class="btn btn-primary" OnClick="btnGuardar_Click"/>
             </div>
           </div>
           <!-- /.modal-content -->

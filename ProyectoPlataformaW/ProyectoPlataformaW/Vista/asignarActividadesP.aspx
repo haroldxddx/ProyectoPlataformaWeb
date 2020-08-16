@@ -65,7 +65,7 @@
               <h3 class="card-title">Trabajo a realizar</h3>
 
              
-                <asp:Label ID="lblCursoM" runat="server"></asp:Label>
+                <asp:Label ID="lblCursoM" runat="server" Visible="false"></asp:Label>
 
              
             </div>
@@ -100,11 +100,13 @@
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="inputEstimatedBudget">Fecha de inicio</label>
+                
+                  <asp:Label ID="Label2" runat="server" Text="Fecha de inicio"></asp:Label>
                 <asp:TextBox ID="txtFechaIni" runat="server" TextMode="Date" class="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
-                <label for="inputSpentBudget">Fecha Final</label>
+                
+                  <asp:Label ID="Label1" runat="server" Text="Fecha Final"></asp:Label>
                   <asp:TextBox ID="txtFechaFn" runat="server" TextMode="Date" class="form-control"></asp:TextBox>
               </div>
                 <div class="row">

@@ -84,7 +84,7 @@
                                         <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown-e">
-                                            <a class="dropdown-item" href="/Vista/asignarActividadesP.aspx">Asignar Actividad</a>
+                                            <a class="dropdown-item" href="#">Editar Perfil</a>
                                         </div>
                                     </li>
                                     <li class="nav-item"> <asp:LinkButton ID="lbcerrarsesion" class="nav-link"  runat="server" OnClick="lblcerrarsesion_Click" >cerrar sesion</asp:LinkButton></li>

@@ -58,7 +58,7 @@
             
 
          
-            <asp:Label ID="lblIdCursoM" runat="server" Text="1"></asp:Label>
+            <asp:Label ID="lblIdCursoM" runat="server" Text=""></asp:Label>
             <br />
             <asp:Button ID="btnVer" runat="server" BackColor="#001F3F" BorderColor="#001F3F" BorderStyle="Dotted" ForeColor="White" Text="Ver" Width="69px" OnClick="btnVer_Click" />
             
@@ -92,14 +92,14 @@
                   </tr>
               </thead>
 
-              <asp:Repeater ID="repeaterEstud" runat="server">
+              <asp:Repeater ID="repeaterEstud" runat="server" OnItemCommand="repeaterEstud_ItemCommand">
 
                   <ItemTemplate>
                        <tbody>
                   <tr>
                      
                       <td>
-                          <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("Nombres") %>'></asp:Label>
+                          <asp:Label ID="lblNombre" runat="server" Text='<%# Eval("Nombres") %>'></asp:Label><asp:Label ID="lblIdEstu" runat="server" Text='<%# Eval("IdEstudiante") %>'></asp:Label>
                       </td>
                       <td>
                          <asp:Label ID="lblApe" runat="server" Text='<%# Eval("Apellidos") %>'></asp:Label>
@@ -115,11 +115,8 @@
                       </td>
                       <td class="project-actions text-right">
                          
-                          <a class="btn btn-info btn-sm" href="#">
-                              <i class="fas fa-pencil-alt">
-                              </i>
-                              Ver Entrega
-                          </a>
+                        
+                          <asp:Button ID="btnVerEntrega" runat="server" Text="Ver Entrega" class="btn btn-info btn-sm" OnClick="btnVerEntrega_Click"/>
                          
                       </td>
                   </tr>

@@ -121,8 +121,6 @@ C:\Users\Equipo\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoP
 C:\Users\Equipo\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.dll
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
-D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\App_Data\dbProyectoPlataforma.mdf
-D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\App_Data\dbProyectoPlataforma_log.ldf
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\ProyectoPlataformaW.dll.config
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\ProyectoPlataformaW.dll
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\ProyectoPlataformaW.pdb

@@ -9,17 +9,30 @@ using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Datos;
 
 
+
+
 namespace ProyectoPlataformaW.Vista
 {
     public partial class Actividades : System.Web.UI.Page
     {
-        public static int idAct;
+        
+        public static int id;
+      
+        public string o;
+
         protected void Page_Load(object sender, EventArgs e)
 
         {
 
             clCursoMateriaD objcmd = new clCursoMateriaD();
             int var = clCursoMateriaD.datoDT;
+
+
+            
+
+
+
+
 
             string user = Session["usuario"].ToString();
 
@@ -31,6 +44,7 @@ namespace ProyectoPlataformaW.Vista
             clActividadL objActividad = new clActividadL();
             listaActividad = objActividad.mtdActividades(objEs);
 
+
             if (listaActividad.Count != 0)
             {
                 repeaterActividad.DataSource = listaActividad;
@@ -38,7 +52,9 @@ namespace ProyectoPlataformaW.Vista
 
                 clActividadD objact = new clActividadD();
                 int var2 = clActividadD.idActividad;
-                idAct = var2;
+               
+
+
 
             }
        
@@ -48,18 +64,33 @@ namespace ProyectoPlataformaW.Vista
 
         protected void repeaterActividad_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
+           
+          
+            o = repeaterActividad.Items[e.Item.ItemIndex].ItemIndex.ToString();
 
-       
+           id = int.Parse(((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblidActi")).Text);
+
+            Response.Write("<script> alert(" + id + ") </script>");
+
+            Response.Redirect("~/Vista/entregaActividad.aspx");
+
+         
+
         }
-       
+
         protected void btnRealizar_Click(object sender, EventArgs e)
         {
 
-            clActividadD objact = new clActividadD();
-            int var2 = clActividadD.idActividad;
-            idAct = var2;
-            Response.Redirect("~/entregaActividad.aspx");
-
         }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            TextBox TextBox1 = (TextBox)sender;
+            RepeaterItem item = (RepeaterItem)TextBox1.NamingContainer;
+            Label Label1 = (Label)item.FindControl("Label ID");
+            //get value here
+            string strValue = Label1.Text;
+        }
+
     }
 }

@@ -12,21 +12,27 @@ namespace ProyectoPlataformaW.Vista
     public partial class verEntregasEstudiantes : System.Web.UI.Page
     {
         List<clEntidadActividadEstuE> listActAsig = new List<clEntidadActividadEstuE>();
+        public static int id;
+        public string o;
+        public static int idAct;
+
         protected void Page_Load(object sender, EventArgs e)
         {
-          
+            
         }
 
         protected void Page_Init(object sender, EventArgs e)
         {
             string user = Session["usuario"].ToString();
 
-
+            inicioProfesor objPR = new inicioProfesor();
+            //int vari = inicioProfesor.id;
+            //lblIdCursoM.Text = Convert.ToString(vari);
             List<clEntidadActividadE> listAct = new List<clEntidadActividadE>();
             clActividadL objCurso = new clActividadL();
             clEntidadActividadE objAcE = new clEntidadActividadE();
             objAcE.Email = user;
-            objAcE.IdCursoMateria = int.Parse(lblIdCursoM.Text);
+            objAcE.IdCursoMateria = inicioProfesor.id;
 
 
             listAct = objCurso.mtdComboAct(objAcE);
@@ -39,9 +45,11 @@ namespace ProyectoPlataformaW.Vista
 
         protected void btnVer_Click(object sender, EventArgs e)
         {
+            inicioProfesor objPR = new inicioProfesor();
             clEntidadActividadEstuE objEA = new clEntidadActividadEstuE();
-            objEA.IdCursoMateria = int.Parse(lblIdCursoM.Text);
+            objEA.IdCursoMateria = inicioProfesor.id;
             objEA.IdActividad = int.Parse(ddlAct.SelectedValue.ToString());
+            
 
             clCursoMateriaL objcurL = new clCursoMateriaL();
             listActAsig = objcurL.mtdListEstudiantesActivi(objEA);
@@ -52,6 +60,21 @@ namespace ProyectoPlataformaW.Vista
                 repeaterEstud.DataBind();
 
             }
+
+
+        }
+
+        protected void repeaterEstud_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            o = repeaterEstud.Items[e.Item.ItemIndex].ItemIndex.ToString();
+            id = int.Parse(((Label)repeaterEstud.Items[int.Parse(o)].FindControl("lblIdEstu")).Text);
+            idAct = int.Parse(ddlAct.SelectedValue.ToString());
+            Response.Redirect("/Vista/calificarActividad.aspx");
+        }
+
+        protected void btnVerEntrega_Click(object sender, EventArgs e)
+        {
+            
 
 
         }

@@ -81,8 +81,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Entidades\App_Data\dbProyectoPlataforma.mdf" />
-    <Content Include="Entidades\App_Data\dbProyectoPlataforma_log.ldf">
+    <Content Include="App_Data\dbProyectoPlataforma.mdf" />
+    <Content Include="App_Data\dbProyectoPlataforma_log.ldf">
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
     </Content>
     <Content Include="Global.asax" />
@@ -430,7 +430,6 @@
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
     <Content Include="Vista\listadoEstudiantes.aspx" />
-    <Content Include="Vista\listadoMateriasAsignadoCurso.aspx" />
     <Content Include="Vista\listadoProfesor.aspx" />
     <Content Include="Vista\modals.html" />
     <Content Include="Vista\plugins\bootstrap-colorpicker\css\bootstrap-colorpicker.css" />
@@ -2076,21 +2075,21 @@
     <Compile Include="Datos\clCursoD.cs" />
     <Compile Include="Datos\clCursoMateriaD.cs" />
     <Compile Include="Datos\clEncrypt.cs" />
+    <Compile Include="Datos\clEntregaD.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
     <Compile Include="Entidades\clEntidadActividadE.cs" />
     <Compile Include="Entidades\clEntidadActividadEstuE.cs" />
-    <Compile Include="Entidades\clEntidadACursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
     <Compile Include="Entidades\clEntidadCursoEE.cs" />
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
+    <Compile Include="Entidades\clEntidadEntregaE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteEE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
-    <Compile Include="Entidades\clEntidadProfesorCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
     <Compile Include="Entidades\estudiantesViewModel.cs" />
@@ -2106,7 +2105,7 @@
     </Compile>
     <Compile Include="Logica\clActividadL.cs" />
     <Compile Include="Logica\clCursoMateriaL.cs" />
-    <Compile Include="Logica\clMateriaL.cs" />
+    <Compile Include="Logica\clEntregaL.cs" />
     <Compile Include="Vista\actividades.aspx.cs">
       <DependentUpon>actividades.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2244,13 +2243,6 @@
     </Compile>
     <Compile Include="Vista\listadoEstudiantes.aspx.designer.cs">
       <DependentUpon>listadoEstudiantes.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\listadoMateriasAsignadoCurso.aspx.cs">
-      <DependentUpon>listadoMateriasAsignadoCurso.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\listadoMateriasAsignadoCurso.aspx.designer.cs">
-      <DependentUpon>listadoMateriasAsignadoCurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\listadoProfesor.aspx.cs">
       <DependentUpon>listadoProfesor.aspx</DependentUpon>
