@@ -11,11 +11,11 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class listadoProfesor : System.Web.UI.Page
     {
-        List<clEntidadProfesorEE> listaProf = new List<clEntidadProfesorEE>();
+        List<clEntidadProfesorE> listaProf = new List<clEntidadProfesorE>();
         private void mtdCargarGrid()
         {
             clProfesorL objPrf = new clProfesorL();
-            listaProf = objPrf.mtdListProfe();
+            listaProf = objPrf.mtdListProf();
 
             gvProf.DataSource = listaProf;
             gvProf.DataBind();
