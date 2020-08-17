@@ -55,6 +55,9 @@ namespace ProyectoPlataformaW.Vista
                 entL.mtdCambEst(objEnt2);
 
                 Response.Write("<script> alert(" + "'Actividad Calificada Con exito'" + ") </script>");
+                string javas = "swalDefaultSuccess();";
+                ScriptManager.RegisterStartupScript(this, this.GetType(),"script", javas, true);
+
             }
 
         }

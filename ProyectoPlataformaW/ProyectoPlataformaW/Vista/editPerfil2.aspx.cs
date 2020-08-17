@@ -122,6 +122,7 @@ namespace ProyectoPlataformaW.Vista
                     Response.Redirect("~/Vista/inicioEstudiante.aspx");
                     Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
                     txtCo.Text = "";
+                    
                 }
 
             }else if (txtNom.Text != "")
@@ -134,6 +135,7 @@ namespace ProyectoPlataformaW.Vista
                     Response.Redirect("~/Vista/inicioEstudiante.aspx");
                     Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
                     txtNom.Text = "";
+                  
                 }
             }
             else if (txtAp.Text != "")
