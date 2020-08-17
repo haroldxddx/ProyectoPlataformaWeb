@@ -77,7 +77,7 @@
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
-                    <asp:GridView ID="gvProf" class="jsgrid" runat="server" CssClass="auto-style4"></asp:GridView>
+                    <asp:GridView ID="gvProf" class="jsgrid" runat="server" CssClass="auto-style4" OnSelectedIndexChanged="gvProf_SelectedIndexChanged"></asp:GridView>
                     <br />
                 </div>
                 <!-- /.card-body -->

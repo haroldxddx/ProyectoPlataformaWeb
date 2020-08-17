@@ -14,7 +14,10 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class asignarProfesorCursoMateria : System.Web.UI.Page
     {
-        //List<clEntidadACursoMateriaE> listaA = new List<clEntidadACursoMateriaE>();
+        List<clEntidadProfesorEE> listaP = new List<clEntidadProfesorEE>();
+        List<clEntidadCursoEE> listaC = new List<clEntidadCursoEE>();
+        List<clEntidadMateriaE> listaM = new List<clEntidadMateriaE>();
+
 
 
         clEntidadCursoMateriaE objECM = new clEntidadCursoMateriaE();
@@ -22,7 +25,7 @@ namespace ProyectoPlataformaW.Vista
 
         protected void Page_Load(object sender, EventArgs e) 
         {
-            /*if (!Page.IsPostBack) //CargarGrids
+            if (!Page.IsPostBack) //CargarGrids
             {
                 mtdCargarGridC();
 
@@ -32,16 +35,16 @@ namespace ProyectoPlataformaW.Vista
 
 
 
-            }*/
+            }
 
         }
-       /* private void mtdCargarGridC()
+        private void mtdCargarGridC()
         {
            
             clCursoL objCurso = new clCursoL();
-            listaA = objCurso.mtdListarCurso();
+            listaC = objCurso.mtdListarCurso();
 
-            gvCurso.DataSource = listaA;
+            gvCurso.DataSource = listaC;
 
             gvCurso.DataBind();
 
@@ -50,9 +53,9 @@ namespace ProyectoPlataformaW.Vista
         private void mtdCargarGrid()
         {
             clProfesorL objPrf = new clProfesorL();
-            listaA = objPrf.mtdListProfe();
+            listaP = objPrf.mtdListProfe();
 
-            gvProfe.DataSource = listaA;
+            gvProfe.DataSource = listaP;
 
             gvProfe.DataBind();
 
@@ -61,14 +64,14 @@ namespace ProyectoPlataformaW.Vista
         private void mtdCargarGridM()
         {
             clMateriaL objMat = new clMateriaL();
-            listaA = objMat.mtdListMat();
+            listaM = objMat.mtdListMat();
 
-            gvMateria.DataSource = listaA;
+            gvMateria.DataSource = listaM;
 
             gvMateria.DataBind();
 
 
-        }*/
+        }
 
         protected void lnkGuardar_Click(object sender, EventArgs e) //Recorer grids y guardar los id si encuentra checkeado guardarlod
         {

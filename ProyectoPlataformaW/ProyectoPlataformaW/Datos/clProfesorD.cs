@@ -37,18 +37,18 @@ namespace ProyectoPlataformaW.Datos
 
             return listaProf;
         }
-            public List<clEntidadProfesorEE> mtdBuscarProf(clEntidadProfesorEE objProfe)
+            public List<clEntidadProfesorE> mtdBuscarProf(clEntidadProfesorE objProfe)
             {
                 string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email,Especialidad from Profesor WHERE (Profesor.Nombres LIKE '%" + objProfe.Nombres + "%')";
                 clAdminSQL objSql = new clAdminSQL();
                 DataTable tblprof = new DataTable();
                 tblprof = objSql.mtdDesconectado(sql);
 
-                List<clEntidadProfesorEE> listaProf = new List<clEntidadProfesorEE>();
+                List<clEntidadProfesorE> listaProf = new List<clEntidadProfesorE>();
 
                 for (int i = 0; i < tblprof.Rows.Count; i++)
                 {
-                      clEntidadProfesorEE objProfee = new clEntidadProfesorEE();
+                      clEntidadProfesorE objProfee = new clEntidadProfesorE();
 
                     objProfee.IdProfesor = int.Parse(tblprof.Rows[i][0].ToString());
                     objProfee.Nombres = tblprof.Rows[i][1].ToString();
@@ -71,23 +71,23 @@ namespace ProyectoPlataformaW.Datos
 
             
         //listar profesor Asignacion
-       /* public List<clEntidadACursoMateriaE> mtdListarProfe()
+        public List<clEntidadProfesorEE> mtdListarProfe()
         {
-            string sql = "SELECT Nombres,Apellidos,Especialidad from Profesor";
+            string sql = "SELECT IdProfesor,Nombres,Apellidos,Especialidad from Profesor";
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblprof = new DataTable();
             tblprof = objSql.mtdDesconectado(sql);
 
-            List<clEntidadACursoMateriaE> listaProfe = new List<clEntidadACursoMateriaE>();
+            List<clEntidadProfesorEE> listaProfe = new List<clEntidadProfesorEE>();
 
             for (int i = 0; i < tblprof.Rows.Count; i++)
             {
-                clEntidadACursoMateriaE objProf = new clEntidadACursoMateriaE();
+                clEntidadProfesorEE objProf = new clEntidadProfesorEE();
 
-              
-                objProf.Nombres = tblprof.Rows[i][0].ToString();
-                objProf.Apellidos = tblprof.Rows[i][1].ToString();
-                objProf.Especialidad = tblprof.Rows[i][2].ToString();
+                objProf.IdProfesor = int.Parse(tblprof.Rows[i][0].ToString());
+                objProf.Nombres = tblprof.Rows[i][1].ToString() ;
+                objProf.Apellidos = tblprof.Rows[i][2].ToString();
+                objProf.Especialidad = tblprof.Rows[i][3].ToString();
 
 
 
@@ -96,7 +96,7 @@ namespace ProyectoPlataformaW.Datos
             }
 
             return listaProfe;
-        }*/
+        }
 
 
 
