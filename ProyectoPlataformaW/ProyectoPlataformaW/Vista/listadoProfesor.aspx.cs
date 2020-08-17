@@ -68,9 +68,9 @@ namespace ProyectoPlataformaW.Vista
             string nombre = txtBuscar.Text;
 
 
-            List<clEntidadProfesorEE> listaBuscar = new List<clEntidadProfesorEE>();
+            List<clEntidadProfesorE> listaBuscar = new List<clEntidadProfesorE>();
 
-            clEntidadProfesorEE objProf = new clEntidadProfesorEE();
+            clEntidadProfesorE objProf = new clEntidadProfesorE();
             objProf.Nombres = nombre;
 
             clProfesorL objProfL = new clProfesorL();
@@ -82,6 +82,11 @@ namespace ProyectoPlataformaW.Vista
                 gvProf.DataBind();
 
             }
+        }
+
+        protected void gvProf_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }
