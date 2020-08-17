@@ -44,7 +44,7 @@ namespace ProyectoPlataformaW.Datos
 
             return listaCur;
         }
-            public List<clEntidadACursoMateriaE> mtdListarCursos()
+           /* public List<clEntidadACursoMateriaE> mtdListarCursos()
             {
                 string sql = "select Grado,Curso from Curso";
                 clAdminSQL objSql = new clAdminSQL();
@@ -68,7 +68,7 @@ namespace ProyectoPlataformaW.Datos
                 return listaCurs;
 
 
-            }
+            }*/
         }
      
     }

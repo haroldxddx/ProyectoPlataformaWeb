@@ -14,7 +14,7 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class asignarProfesorCursoMateria : System.Web.UI.Page
     {
-        List<clEntidadACursoMateriaE> listaA = new List<clEntidadACursoMateriaE>();
+        //List<clEntidadACursoMateriaE> listaA = new List<clEntidadACursoMateriaE>();
 
 
         clEntidadCursoMateriaE objECM = new clEntidadCursoMateriaE();
@@ -22,7 +22,7 @@ namespace ProyectoPlataformaW.Vista
 
         protected void Page_Load(object sender, EventArgs e) 
         {
-            if (!Page.IsPostBack) //CargarGrids
+            /*if (!Page.IsPostBack) //CargarGrids
             {
                 mtdCargarGridC();
 
@@ -32,10 +32,10 @@ namespace ProyectoPlataformaW.Vista
 
 
 
-            }
+            }*/
 
         }
-        private void mtdCargarGridC()
+       /* private void mtdCargarGridC()
         {
            
             clCursoL objCurso = new clCursoL();
@@ -68,7 +68,7 @@ namespace ProyectoPlataformaW.Vista
             gvMateria.DataBind();
 
 
-        }
+        }*/
 
         protected void lnkGuardar_Click(object sender, EventArgs e) //Recorer grids y guardar los id si encuentra checkeado guardarlod
         {

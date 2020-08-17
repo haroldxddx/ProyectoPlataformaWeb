@@ -71,7 +71,7 @@ namespace ProyectoPlataformaW.Datos
 
             
         //listar profesor Asignacion
-        public List<clEntidadACursoMateriaE> mtdListarProfe()
+       /* public List<clEntidadACursoMateriaE> mtdListarProfe()
         {
             string sql = "SELECT Nombres,Apellidos,Especialidad from Profesor";
             clAdminSQL objSql = new clAdminSQL();
@@ -96,7 +96,7 @@ namespace ProyectoPlataformaW.Datos
             }
 
             return listaProfe;
-        }
+        }*/
 
 
 

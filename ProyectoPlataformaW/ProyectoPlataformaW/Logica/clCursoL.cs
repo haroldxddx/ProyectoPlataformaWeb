@@ -24,12 +24,12 @@ namespace ProyectoPlataformaW.Logica
             listCu = objCurs.mtdListarCurso();
             return listCu;
         }
-        public List<clEntidadACursoMateriaE> mtdListarCurso()
+       /* public List<clEntidadACursoMateriaE> mtdListarCurso()
         {
             clCursoD objCurs = new clCursoD();
             List<clEntidadACursoMateriaE> listCu = new List<clEntidadACursoMateriaE>();
             listCu = objCurs.mtdListarCursos();
             return listCu;
-        }
+        }*/
     }
 }

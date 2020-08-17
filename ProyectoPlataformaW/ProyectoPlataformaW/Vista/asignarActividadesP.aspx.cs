@@ -43,8 +43,9 @@ namespace ProyectoPlataformaW.Vista
 
             if (result>0)
             {
-                Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+                //Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
                 fluArchivo.SaveAs(Server.MapPath("~/Archivo/") + fluArchivo.FileName);
+                ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();", true);
                 txtNomAc.Text = "";
                 txtDesc.Text = "";
                 txtFechaIni.Text = "";

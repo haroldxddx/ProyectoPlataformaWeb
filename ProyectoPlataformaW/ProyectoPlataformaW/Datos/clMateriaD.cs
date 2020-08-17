@@ -20,7 +20,7 @@ namespace ProyectoPlataformaW.Datos
                 return result;
 
             }
-        public List<clEntidadACursoMateriaE> mtdListarMateria()
+        /*public List<clEntidadACursoMateriaE> mtdListarMateria()
         {
             string sql = "select NombreMateria, NivelAcademico from Materia";
             clAdminSQL objSql = new clAdminSQL();
@@ -43,6 +43,6 @@ namespace ProyectoPlataformaW.Datos
             }
 
             return listaMat;
-        }
+        }*/
     }
 }

@@ -2054,7 +2054,6 @@
     <Content Include="Vista\plugins\toastr\toastr.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
-    <Content Include="Vista\projects.html" />
     <Content Include="Vista\registrarAdministrador2.aspx" />
     <Content Include="Vista\registrarCurso2.aspx" />
     <Content Include="Vista\registrarEstudiante2.aspx" />
@@ -2065,7 +2064,6 @@
     <Content Include="Vista\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
-    <Content Include="xd.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\clActividadD.cs" />
@@ -2303,13 +2301,6 @@
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="xd.aspx.cs">
-      <DependentUpon>xd.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="xd.aspx.designer.cs">
-      <DependentUpon>xd.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
