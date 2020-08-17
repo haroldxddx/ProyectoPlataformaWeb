@@ -20,21 +20,22 @@ namespace ProyectoPlataformaW.Datos
                 return result;
 
             }
-        public List<clEntidadACursoMateriaE> mtdListarMateria()
+        public List<clEntidadMateriaE> mtdListarMateria()
         {
-            string sql = "select NombreMateria, NivelAcademico from Materia";
+            string sql = "select IdMateria,NombreMateria, NivelAcademico from Materia";
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblMateria = new DataTable();
             tblMateria = objSql.mtdDesconectado(sql);
 
-            List<clEntidadACursoMateriaE> listaMat = new List<clEntidadACursoMateriaE>();
+            List<clEntidadMateriaE> listaMat = new List<clEntidadMateriaE>();
 
             for (int i = 0; i < tblMateria.Rows.Count; i++)
             {
-                clEntidadACursoMateriaE objMat = new clEntidadACursoMateriaE();
+                clEntidadMateriaE objMat = new clEntidadMateriaE();
     
-                objMat.NombreMateria = tblMateria.Rows[i][0].ToString();
-                objMat.NivelAcademico = tblMateria.Rows[i][1].ToString();
+                objMat.IdMateria = int.Parse(tblMateria.Rows[i][0].ToString());
+                objMat.NombreMateria = tblMateria.Rows[i][1].ToString();
+                objMat.NivelAcademico = tblMateria.Rows[i][2].ToString();
                
                
                 listaMat.Add(objMat);

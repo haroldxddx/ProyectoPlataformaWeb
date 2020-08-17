@@ -2083,7 +2083,6 @@
     <Compile Include="Datos\clRecuperarContra.cs" />
     <Compile Include="Entidades\clEntidadActividadE.cs" />
     <Compile Include="Entidades\clEntidadActividadEstuE.cs" />
-    <Compile Include="Entidades\clEntidadACursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
     <Compile Include="Entidades\clEntidadCursoEE.cs" />
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />

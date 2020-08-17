@@ -9,10 +9,10 @@ namespace ProyectoPlataformaW.Logica
 {
     public class clMateriaL
     {
-        public List<clEntidadACursoMateriaE> mtdListMat()
+        public List<clEntidadMateriaE> mtdListMat()
         {
             clMateriaD objMat = new clMateriaD();
-            List<clEntidadACursoMateriaE> listM = new List<clEntidadACursoMateriaE>();
+            List<clEntidadMateriaE> listM = new List<clEntidadMateriaE>();
             listM = objMat.mtdListarMateria();
             return listM;
         }
