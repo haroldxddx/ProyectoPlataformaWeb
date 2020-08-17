@@ -44,22 +44,22 @@ namespace ProyectoPlataformaW.Datos
 
             return listaCur;
         }
-            public List<clEntidadCursoEE> mtdListarCursos()
+            public List<clEntidadACursoMateriaE> mtdListarCursos()
             {
-                string sql = "select * from Curso";
+                string sql = "select Grado,Curso from Curso";
                 clAdminSQL objSql = new clAdminSQL();
                 DataTable tblcurso = new DataTable();
                 tblcurso = objSql.mtdDesconectado(sql);
 
-                List<clEntidadCursoEE> listaCurs = new List<clEntidadCursoEE>();
+                List<clEntidadACursoMateriaE> listaCurs = new List<clEntidadACursoMateriaE>();
 
                 for (int i = 0; i < tblcurso.Rows.Count; i++)
                 {
-                clEntidadCursoEE objCurs = new clEntidadCursoEE();
+                clEntidadACursoMateriaE objCurs = new clEntidadACursoMateriaE();
 
-                    objCurs.IdCurso = int.Parse(tblcurso.Rows[i][0].ToString());
-                    objCurs.Grado = tblcurso.Rows[i][1].ToString();
-                    objCurs.Curso = tblcurso.Rows[i][2].ToString();
+              
+                    objCurs.Grado = tblcurso.Rows[i][0].ToString();
+                    objCurs.Curso = tblcurso.Rows[i][1].ToString();
                     listaCurs.Add(objCurs);
 
 

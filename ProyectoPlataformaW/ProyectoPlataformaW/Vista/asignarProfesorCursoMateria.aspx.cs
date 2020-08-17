@@ -14,9 +14,8 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class asignarProfesorCursoMateria : System.Web.UI.Page
     {
-        List<clEntidadProfesorEE> listaProfesor = new List<clEntidadProfesorEE>();
-        List<clEntidadCursoEE> listaCurso = new List<clEntidadCursoEE>();
-        List<clEntidadMateriaE> listaMateria = new List<clEntidadMateriaE>();
+        List<clEntidadACursoMateriaE> listaA = new List<clEntidadACursoMateriaE>();
+
 
         clEntidadCursoMateriaE objECM = new clEntidadCursoMateriaE();
         clCursoMateriaD objCM = new clCursoMateriaD();
@@ -38,10 +37,11 @@ namespace ProyectoPlataformaW.Vista
         }
         private void mtdCargarGridC()
         {
-            clCursoD objCurso = new clCursoD();
-            listaCurso = objCurso.mtdListarCursos();
+           
+            clCursoL objCurso = new clCursoL();
+            listaA = objCurso.mtdListarCurso();
 
-            gvCurso.DataSource = listaCurso;
+            gvCurso.DataSource = listaA;
 
             gvCurso.DataBind();
 
@@ -49,10 +49,10 @@ namespace ProyectoPlataformaW.Vista
         }
         private void mtdCargarGrid()
         {
-            clProfesorD objPrf = new clProfesorD();
-            listaProfesor = objPrf.mtdListarProfe();
+            clProfesorL objPrf = new clProfesorL();
+            listaA = objPrf.mtdListProfe();
 
-            gvProfe.DataSource = listaProfesor;
+            gvProfe.DataSource = listaA;
 
             gvProfe.DataBind();
 
@@ -60,10 +60,10 @@ namespace ProyectoPlataformaW.Vista
         }
         private void mtdCargarGridM()
         {
-            clMateriaD objMat = new clMateriaD();
-            listaMateria = objMat.mtdListarMateria();
+            clMateriaL objMat = new clMateriaL();
+            listaA = objMat.mtdListMat();
 
-            gvMateria.DataSource = listaMateria;
+            gvMateria.DataSource = listaA;
 
             gvMateria.DataBind();
 

@@ -52,6 +52,68 @@ namespace ProyectoPlataformaW.Datos
             }
             return listaEcM;
         }
+        public List<clEntidadProfesorCursoMateriaE> mtdBuscarrMatProfCurso (clEntidadProfesorCursoMateriaE objcur)
+
+        {
+            string sql = "select Curso.Curso, Curso.Grado, Materia.NombreMateria, Profesor.Nombres, Profesor.Apellidos from Curso inner join CursoMateria On Curso.IdCurso = CursoMateria.IdCurso inner join Profesor On Profesor.IdProfesor = CursoMateria.IdProfesor inner join Materia On Materia.IdMateria = CursoMateria.IdMateria WHERE (Curso.Curso LIKE '%" + objcur.Curso + "%')";
+
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblProf = new DataTable();
+            tblProf = objSql.mtdDesconectado(sql);
+            List<clEntidadProfesorCursoMateriaE> listaEcM = new List<clEntidadProfesorCursoMateriaE>();
+            for (int i = 0; i < tblProf.Rows.Count; i++)
+            {
+                clEntidadProfesorCursoMateriaE objCMP = new clEntidadProfesorCursoMateriaE();
+                //     objCMP.IdCurso = int.Parse(tblProf.Rows[i][0].ToString());
+                //    objCMP.IdProfesor = int.Parse(tblProf.Rows[i][1].ToString());
+                //    objCMP.IdMateria = int.Parse(tblProf.Rows[i][2].ToString());
+                objCMP.Curso = tblProf.Rows[i][0].ToString();
+                objCMP.Grado = tblProf.Rows[i][1].ToString();
+                objCMP.NombreMateria = tblProf.Rows[i][2].ToString();
+                objCMP.Nombres = tblProf.Rows[i][3].ToString();
+                objCMP.Apellidos = tblProf.Rows[i][4].ToString();
+
+
+
+
+
+                listaEcM.Add(objCMP);
+
+            }
+            return listaEcM;
+        }
+            public List<clEntidadProfesorCursoMateriaE> mtdListarMatProfCurso()
+
+            {
+                string sql = "select   Curso.Curso, Curso.Grado, Materia.NombreMateria, Profesor.Nombres, Profesor.Apellidos from Curso inner join CursoMateria On Curso.IdCurso = CursoMateria.IdCurso inner join Profesor On Profesor.IdProfesor = CursoMateria.IdProfesor inner join Materia On Materia.IdMateria = CursoMateria.IdMateria ";
+
+
+                clAdminSQL objSql = new clAdminSQL();
+                DataTable tblProf = new DataTable();
+                tblProf = objSql.mtdDesconectado(sql);
+                List<clEntidadProfesorCursoMateriaE> listaEcM = new List<clEntidadProfesorCursoMateriaE>();
+                for (int i = 0; i < tblProf.Rows.Count; i++)
+                {
+                    clEntidadProfesorCursoMateriaE objCMP = new clEntidadProfesorCursoMateriaE();
+            //        objCMP.IdCurso = int.Parse(tblProf.Rows[i][0].ToString());
+             //       objCMP.IdProfesor = int.Parse(tblProf.Rows[i][1].ToString());
+            //        objCMP.IdMateria = int.Parse(tblProf.Rows[i][2].ToString());
+                    objCMP.Curso = tblProf.Rows[i][0].ToString();
+                    objCMP.Grado = tblProf.Rows[i][1].ToString();
+                    objCMP.NombreMateria = tblProf.Rows[i][2].ToString();
+                    objCMP.Nombres = tblProf.Rows[i][3].ToString();
+                    objCMP.Apellidos = tblProf.Rows[i][4].ToString();
+
+
+
+
+
+                    listaEcM.Add(objCMP);
+
+                }
+                return listaEcM;
+        }
 
         //Listado de materias a cursos
         public List<clEntidadCursoMateriaE> mtdListMateriasE(clEntidadEstudianteE objE)

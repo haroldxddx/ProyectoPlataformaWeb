@@ -27,17 +27,17 @@ namespace ProyectoPlataformaW.Logica
             return listP;
         }
 
-        public List<clEntidadProfesorE> mtdBuscarProf(clEntidadProfesorE objProf)
+        public List<clEntidadProfesorEE> mtdBuscarProf(clEntidadProfesorEE objProf)
         {
             clProfesorD objProff = new clProfesorD();
-            List<clEntidadProfesorE> listP = new List<clEntidadProfesorE>();
+            List<clEntidadProfesorEE> listP = new List<clEntidadProfesorEE>();
             listP = objProff.mtdBuscarProf(objProf);
             return listP;
         }
-        public List<clEntidadProfesorEE> mtdListProfe()
+        public List<clEntidadACursoMateriaE> mtdListProfe()
         {
             clProfesorD objProfe = new clProfesorD();
-            List<clEntidadProfesorEE> listP = new List<clEntidadProfesorEE>();
+            List<clEntidadACursoMateriaE> listP = new List<clEntidadACursoMateriaE>();
             listP = objProfe.mtdListarProfe();
             return listP;
         }

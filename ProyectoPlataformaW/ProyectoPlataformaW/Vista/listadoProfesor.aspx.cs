@@ -11,11 +11,11 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class listadoProfesor : System.Web.UI.Page
     {
-        List<clEntidadProfesorEE> listaProf = new List<clEntidadProfesorEE>();
+        List<clEntidadProfesorE> listaProf = new List<clEntidadProfesorE>();
         private void mtdCargarGrid()
         {
             clProfesorL objPrf = new clProfesorL();
-            listaProf = objPrf.mtdListProfe();
+            listaProf = objPrf.mtdListProf();
 
             gvProf.DataSource = listaProf;
             gvProf.DataBind();
@@ -68,9 +68,9 @@ namespace ProyectoPlataformaW.Vista
             string nombre = txtBuscar.Text;
 
 
-            List<clEntidadProfesorE> listaBuscar = new List<clEntidadProfesorE>();
+            List<clEntidadProfesorEE> listaBuscar = new List<clEntidadProfesorEE>();
 
-            clEntidadProfesorE objProf = new clEntidadProfesorE();
+            clEntidadProfesorEE objProf = new clEntidadProfesorEE();
             objProf.Nombres = nombre;
 
             clProfesorL objProfL = new clProfesorL();
