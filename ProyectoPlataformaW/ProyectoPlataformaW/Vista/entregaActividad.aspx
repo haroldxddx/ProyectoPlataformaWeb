@@ -86,22 +86,34 @@
                         <form id="contactform" class="" action="contact.php" name="contactform" method="post">
                             <div class="row row-fluid">
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="first_name" id="first_name" class="form-control" placeholder="user">
+                                  
+                                    <asp:Label ID="lblUser" runat="server" Text=""  class="form-control"  placeholder="user"></asp:Label>
+                                    <asp:Label ID="lble" runat="server" Text="" class="form-control"></asp:Label>
+                                    <asp:Label ID="lblnom" runat="server" Text="" class="form-control"></asp:Label>
+                                    <asp:Label ID="lblema" runat="server" Text="" class="form-control"></asp:Label>
+
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="last_name" id="last_name" class="form-control" placeholder="comentario">
+                                   
+                                 <asp:TextBox ID="txtComentario" runat="server" class="form-control" placeholder="comentario"></asp:TextBox>
+
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Adjuntar vinculo">
+                                 
+                                    <asp:TextBox ID="txtVinculo" runat="server" class="form-control"  placeholder="Adjuntar vinculo"></asp:TextBox>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Adjuntar archivo">
+                                   
+                                     <asp:FileUpload ID="AdArchivo" runat="server" class="form-control" placeholder="Adjuntar archivo"/>
                                 </div>
                                 <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="form-control" name="comments" id="comments" rows="6" placeholder="Escribe tu evidencia aqui ...."></textarea>
+                                    
+                                    <asp:TextBox ID="txtEvidencia" runat="server"  class="form-control"  placeholder="Escribe tu evidencia aqui ...." ></asp:TextBox>
                                 </div>
                                 <div class="text-center pd">
-                                    <button type="submit" value="SEND" id="submit" class="btn btn-light btn-radius btn-brd grd1 btn-block">Entregar</button>
+                              
+                                    <asp:Button ID="btnEntregaA" runat="server" Text="Entregar" class="btn btn-light btn-radius btn-brd grd1 btn-block" OnClick="btnEntregaA_Click" />
+
                                 </div>
                             </div>
                         </form>
@@ -111,6 +123,7 @@
                     <div class="map-box">
 					<asp:Repeater ID="repeaterActividad" runat="server" >
                 <ItemTemplate>
+                    
                     <div class="blog-item"> 
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-item">
@@ -119,6 +132,7 @@
 						</div>
 						<div class="meta-info-blog">
 							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha inicio actividad: '<%# Eval("FechaInicio") %>'</a> </span>
+
 							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha fin actividad : '<%# Eval("FechaFinal") %>'</a> </span>
                             <span><i class="fa fa-tag"></i>  <a href="#">por realizar</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
@@ -128,10 +142,12 @@
 						</div>
 						<div class="blog-desc">
 							<p>'<%# Eval("Descripcion") %>' </p>
+                            <asp:Label ID="lblDescripcion" runat="server"     Text='<%# Eval("Descripcion") %>' ></asp:Label>
 						</div>
 						
 					</div>
                 </div><!-- end col -->
+                       
                 </ItemTemplate>
 
             </asp:Repeater>

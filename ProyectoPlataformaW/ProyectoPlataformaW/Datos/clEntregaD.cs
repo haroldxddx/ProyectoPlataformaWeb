@@ -62,5 +62,18 @@ namespace ProyectoPlataformaW.Datos
             return xd;
         }
 
+
+
+        //Entregar  Actividad
+        public int mtdAsignarEntrega(clEntidadEntregaE objEnt)
+        {
+
+            string sql = "insert into Entrega(Descripcion,Fecha,Archivos,idActividad,idEstudiante,Vinculo,OtraRespuesta,Comentario)values('"+objEnt.Descripcion+ "',GETDATE(),'" + objEnt.Archivos+"','"+objEnt.IdActividad+"','"+objEnt.IdEstudiante+"','"+objEnt.Vinculo+"','"+objEnt.otraRespuesta+"','"+objEnt.Comentario+"')";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int vj = objConexion.mtdConectado(sql);
+            return vj;
+        }
+
     }
 }

@@ -101,5 +101,14 @@ namespace ProyectoPlataformaW.Logica
 
         }
 
+
+        public List<clEntidadEstudianteE> mtdListaridEst(clEntidadEstudianteE objDatos)
+        {
+            clEstudianteD objAsA = new clEstudianteD();
+            List<clEntidadEstudianteE> listaApb1 = new List<clEntidadEstudianteE>();
+            listaApb1 = objAsA.mtdBusEEmaiL(objDatos);
+            return listaApb1;
+        }
+
     }
 }

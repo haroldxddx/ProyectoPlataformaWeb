@@ -94,13 +94,16 @@
                             <span><i class="fa fa-tag"></i>  <a href="#">por realizar</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
                             <asp:Label ID="lblidActi" runat="server" Text='<%# Eval("IdActividad") %>'> </asp:Label>
-                            <asp:TextBox ID="txt" runat="server" Text='<%# Eval("IdActividad") %> '></asp:TextBox>
+                          
 						</div>
 						<div class="blog-title">
 							<h2><a href="#" title="">'<%# Eval("NombreActividad") %>'</a></h2>
 						</div>
 						<div class="blog-desc">
-							<p>'<%# Eval("Descripcion") %>' </p>
+							<p>
+                            <asp:Label ID="lblDescripcion" runat="server" Text='<%# Eval("Descripcion") %>'> </asp:Label>
+
+							</p>
 						</div>
 						<div class="blog-button">
                             	

@@ -85,6 +85,7 @@
     <Content Include="App_Data\dbProyectoPlataforma_log.ldf">
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
     </Content>
+    <Content Include="EntregaActividades\mamaos.txt" />
     <Content Include="Global.asax" />
     <Content Include="Imagenes\colegioestu.jpeg" />
     <Content Include="Imagenes\colegioporteria %282%29.jpg" />

@@ -31,5 +31,13 @@ namespace ProyectoPlataformaW.Logica
             return ed;
 
         }
+        public int mtdAsigActi(clEntidadEntregaE objE)
+        {
+            clEntregaD e = new clEntregaD();
+            int hj = e.mtdAsignarEntrega(objE);
+            return hj;
+
+        }
+
     }
 }
