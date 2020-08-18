@@ -2734,6 +2734,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Archivo\" />
+    <Folder Include="EntregaActividades\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

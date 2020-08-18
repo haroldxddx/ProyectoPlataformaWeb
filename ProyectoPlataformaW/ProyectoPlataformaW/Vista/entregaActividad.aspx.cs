@@ -13,6 +13,13 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class entregaActividad : System.Web.UI.Page
     {
+
+        public static int idActi;
+        public static int idEstu;
+
+        public string o;
+        public string Descripcion;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             try
@@ -52,12 +59,9 @@ namespace ProyectoPlataformaW.Vista
 
             Actividades objAct = new Actividades();
 
-            //Label var = Actividades.idA;
-            //int X = Convert.ToInt32(var.Text);
-
-
-
+           
             string user = Session["usuario"].ToString();
+            lblUser.Text = user;
 
             
 
@@ -71,19 +75,83 @@ namespace ProyectoPlataformaW.Vista
             clActividadL objActividad = new clActividadL();
             listaActividad = objActividad.mtdActividad(objEs);
 
-            if (listaActividad.Count != 0)
+
+
+
+            
+
+            if (listaActividad.Count != 0 )
             {
 
-                repeaterActividad.DataSource = listaActividad;
+               repeaterActividad.DataSource = listaActividad ;
                 repeaterActividad.DataBind();
 
 
             }
 
+
+            clEntidadEstudianteE obje = new clEntidadEstudianteE();
+            obje.Email = user;
+            List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
+            clEstudianteL objEstudianteL = new clEstudianteL();
+            listEestu = objEstudianteL.mtdListaridEst(obje);
+
+
+            for (int i = 0; i < listEestu.Count; i++)
+            {
+                if (listEestu[i].Email == user)
+                {
+                    clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
+
+
+                    int d = objEstu.IdEstudiante = int.Parse(listEestu[i].IdEstudiante.ToString());
+                    lble.Text = (d).ToString();
+
+                    lblnom.Text = objEstu.Nombres = listEestu[i].Nombres;
+                    lblema.Text = objEstu.Apellidos = listEestu[i].Apellidos;
+
+
+                }
+
+            }
+        }
+
+        protected void repeaterActividad_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
+
+            o = repeaterActividad.Items[e.Item.ItemIndex].ItemIndex.ToString();
+
+            Descripcion = ((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblDescripcion")).Text;
+            idActi = int.Parse(((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblidActi")).Text);
+
+
            
 
 
-
         }
+
+        protected void btnEntregaA_Click(object sender, EventArgs e)
+        {
+
+
+
+             clEntidadEntregaE objAct = new clEntidadEntregaE();
+
+             objAct.Descripcion = Actividades.Descripcion;
+             objAct.Archivos = (string)(Session["Archivos"] = "~/EntregaActividades/" + AdArchivo.FileName);
+             objAct.IdActividad = Actividades.id;
+             objAct.IdEstudiante = int.Parse(lble.Text);
+             objAct.Vinculo = txtVinculo.Text;
+             objAct.otraRespuesta = txtEvidencia.Text;
+             objAct.Comentario = txtComentario.Text;
+
+
+             clEntregaD objEntregaD = new clEntregaD();
+             int result = objEntregaD.mtdAsignarEntrega(objAct);
+             Response.Write("<script> alert("+"entrega con exito "+") </script>");
+             
+        }
+
     }
 }

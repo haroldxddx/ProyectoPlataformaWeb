@@ -17,6 +17,7 @@ namespace ProyectoPlataformaW.Vista
     {
         
         public static int id;
+        public static string Descripcion;
       
         public string o;
 
@@ -69,6 +70,7 @@ namespace ProyectoPlataformaW.Vista
             o = repeaterActividad.Items[e.Item.ItemIndex].ItemIndex.ToString();
 
            id = int.Parse(((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblidActi")).Text);
+            Descripcion = ((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblDescripcion")).Text;
 
             Response.Write("<script> alert(" + id + ") </script>");
 
