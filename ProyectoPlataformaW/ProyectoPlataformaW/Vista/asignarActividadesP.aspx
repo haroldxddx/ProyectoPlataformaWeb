@@ -14,6 +14,10 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/Vista/plugins/fontawesome-free/css/all.min.css">
+      <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="/Vista/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="/Vista/plugins/toastr/toastr.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- overlayScrollbars -->
@@ -139,6 +143,27 @@
 <script src="/Vista/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/Vista/dist/js/demo.js"></script>
+     <!-- SweetAlert2 -->
+<script src="/Vista/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="/Vista/plugins/toastr/toastr.min.js"></script>
+<script type="text/javascript">
+function registro() {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+    });
+     
+      Toast.fire({
+        icon: 'success',
+        title: 'Actividad Asignada Correctamente'
+      });
+    
+  };
+
+</script>
 </body>
 </html>
     <br />

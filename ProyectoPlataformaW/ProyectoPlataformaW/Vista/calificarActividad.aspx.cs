@@ -1,4 +1,5 @@
-﻿using ProyectoPlataformaW.Entidades;
+﻿using DocumentFormat.OpenXml.Math;
+using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
 using System;
 using System.Collections.Generic;
@@ -54,11 +55,15 @@ namespace ProyectoPlataformaW.Vista
                 objEnt2.IdEntrega = int.Parse(lblIdEntrega.Text);
                 entL.mtdCambEst(objEnt2);
 
-                Response.Write("<script> alert(" + "'Actividad Calificada Con exito'" + ") </script>");
-                string javas = "swalDefaultSuccess();";
-                ScriptManager.RegisterStartupScript(this, this.GetType(),"script", javas, true);
-
+                //Response.Write("<script> alert(" + "'Actividad Calificada Con exito'" + ") </script>");
+                // string javas = "swalDefaultSuccess();";
+                // ScriptManager.RegisterStartupScript(this, this.GetType(), "ShowPopup", "xd", true);
+               
+                ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();", true);
+                //Response.Redirect("/Vista/VerEntregasEstudiantes.aspx");
             }
+
+
 
         }
     }
