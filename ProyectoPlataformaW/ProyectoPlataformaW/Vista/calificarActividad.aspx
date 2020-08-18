@@ -70,16 +70,16 @@
                   <tr>
                      
                       <td class="auto-style2">
-                          <asp:Label ID="lblDesc" runat="server" Text="Descripcion : "></asp:Label>
+                          <asp:Label ID="lblDesc" runat="server" Text="Descripcion de entrega: "></asp:Label>
                           <br />
                           <br />
-                          <asp:Label ID="lblFecha" runat="server" Text="Fecha : "></asp:Label>
+                          <asp:Label ID="lblFecha" runat="server" Text="Fecha de Entrega : "></asp:Label>
                           <br />
                           <br />
                           <asp:Label ID="lblArchivo" runat="server" Text="Archivos Adjuntos : "></asp:Label>
                           <br />
                           <br />
-                          <asp:Label ID="lblEstado" runat="server" Text="Estado : "></asp:Label>
+                          <asp:Label ID="lblEstado" runat="server" Text="Estado de la actividad: "></asp:Label>
                       </td>
 
 
@@ -90,8 +90,8 @@
                           <asp:Label ID="lblFecha2" runat="server" Text=""></asp:Label>
                           <br />
                           <br />
+                          &nbsp;<asp:LinkButton ID="lkbDescargar" runat="server">Ver Archivo</asp:LinkButton>
                           <asp:Label ID="lblArchivo2" runat="server" Text=""></asp:Label>
-                          &nbsp;<asp:LinkButton ID="lkbDescargar" runat="server">Descargar Archivo</asp:LinkButton>
                           <br />
                           <br />
                           <asp:Label ID="lblEstado2" runat="server" Text=""></asp:Label>
@@ -103,8 +103,7 @@
                 
           </table>
           <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-lg">
-                  Calificar Actividad
-                </button>
+                  Calificar Actividad</button>
 
            <div class="modal fade" id="modal-lg">
         <div class="modal-dialog modal-lg">

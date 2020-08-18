@@ -1,5 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="verEntregasEstudiantes.aspx.cs" Inherits="ProyectoPlataformaW.Vista.verEntregasEstudiantes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style2 {
+            height: 28px;
+            top: 82px;
+            left: 605px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <!DOCTYPE html>
@@ -53,6 +60,9 @@
          
             <br />
             <br />
+            <asp:Label ID="Label1" runat="server" Text="Seleccione la actividad"></asp:Label>
+            <br />
+            <br />
             <asp:DropDownList ID="ddlAct" runat="server" class="form-control" Width="60%">
             </asp:DropDownList>
             
@@ -60,7 +70,7 @@
          
             <asp:Label ID="lblIdCursoM" runat="server" Text=""></asp:Label>
             <br />
-            <asp:Button ID="btnVer" runat="server" BackColor="#001F3F" BorderColor="#001F3F" BorderStyle="Dotted" ForeColor="White" Text="Ver" Width="69px" OnClick="btnVer_Click" />
+            <asp:Button ID="btnVer" runat="server" BackColor="#001F3F" BorderColor="#001F3F" BorderStyle="Dotted" ForeColor="White" Text="Ver" Width="69px" OnClick="btnVer_Click" CssClass="auto-style2" />
             
 
          
