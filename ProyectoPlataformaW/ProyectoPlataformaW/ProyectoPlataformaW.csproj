@@ -2247,6 +2247,7 @@
     </Compile>
     <Compile Include="Vista\listadoMateriasAsignadoCurso.aspx.cs">
       <DependentUpon>listadoMateriasAsignadoCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\listadoMateriasAsignadoCurso.aspx.designer.cs">
       <DependentUpon>listadoMateriasAsignadoCurso.aspx</DependentUpon>
