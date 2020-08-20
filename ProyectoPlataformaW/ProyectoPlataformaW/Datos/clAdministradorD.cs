@@ -56,6 +56,34 @@ namespace ProyectoPlataformaW.Datos
             return reg;
         }
 
+        public List<clEntidadAdministradorE> mtdListarAdmin()
+        {
+            string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email from Profesor";
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblprof = new DataTable();
+            tblprof = objSql.mtdDesconectado(sql);
+
+            List<clEntidadAdministradorE> listaAdmin = new List<clEntidadAdministradorE>();
+
+            for (int i = 0; i < tblprof.Rows.Count; i++)
+            {
+                clEntidadAdministradorE objAdmin = new clEntidadAdministradorE();
+
+                objAdmin.idAdministrador = int.Parse(tblprof.Rows[i][0].ToString());
+                objAdmin.Nombres = tblprof.Rows[i][1].ToString();
+                objAdmin.Apellidos = tblprof.Rows[i][2].ToString();
+                objAdmin.Documento = int.Parse(tblprof.Rows[i][3].ToString());
+                objAdmin.Email = tblprof.Rows[i][4].ToString();
+
+
+
+
+                listaAdmin.Add(objAdmin);
+
+            }
+
+            return listaAdmin;
+        }
 
 
         //Actualizar Nombre

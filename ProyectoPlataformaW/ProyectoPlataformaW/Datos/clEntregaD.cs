@@ -75,5 +75,36 @@ namespace ProyectoPlataformaW.Datos
             return vj;
         }
 
+        //Ver notas por materias y actividades
+
+        public List<clEntidadNotas> mtdListarNotasAc(clEntidadNotas objE)
+        {
+
+            string sql = "Select * from(select Estudiante.Nombres, Estudiante.Apellidos, Actividad.NombreActividad as NombreAct, Entrega.Nota as Nota from Actividad inner join Entrega on Actividad.IdActividad = Entrega.IdActividad inner join Estudiante on Estudiante.IdEstudiante = Entrega.IdEstudiante inner join CursoMateria on Actividad.IdCursoMateria = CursoMateria.IdCursoMateria where CursoMateria.IdCursoMateria = 1 )T PIVOT( MAX(T.Nota) FOR T.NombreAct in ([Proyecto]))pivotrReport";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblCur = new DataTable();
+            tblCur = objSql.mtdDesconectado(sql);
+
+            List<clEntidadNotas> listaNot = new List<clEntidadNotas>();
+
+            for (int i = 0; i < tblCur.Rows.Count; i++)
+            {
+                clEntidadNotas objNota = new clEntidadNotas();
+
+                objNota.Nombres = tblCur.Rows[i][0].ToString();
+                objNota.Apellidos = tblCur.Rows[i][1].ToString();
+                objNota.NombreActividad = tblCur.Rows[i][2].ToString();
+                //objNota.Nota = tblCur.Rows[i][4].ToString();
+                
+               
+                listaNot.Add(objNota);
+
+            }
+
+            return listaNot;
+
+        }
+
     }
 }

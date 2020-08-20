@@ -33,6 +33,15 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.LinkButton lkbCalifi;
 
         /// <summary>
+        /// Control lkbNotas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lkbNotas;
+
+        /// <summary>
         /// Control Label1.
         /// </summary>
         /// <remarks>
