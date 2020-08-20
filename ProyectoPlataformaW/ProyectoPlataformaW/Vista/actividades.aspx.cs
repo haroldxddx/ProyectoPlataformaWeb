@@ -28,7 +28,7 @@ namespace ProyectoPlataformaW.Vista
             clCursoMateriaD objcmd = new clCursoMateriaD();
             int var = clCursoMateriaD.datoDT;
 
-
+            
             
 
 
@@ -40,7 +40,7 @@ namespace ProyectoPlataformaW.Vista
             List<clEntidadActividadE> listaActividad = new List<clEntidadActividadE>();
 
             clEntidadActividadE objEs = new clEntidadActividadE();
-            objEs.IdMateria =  var;
+            objEs.IdMateria =  inicioEstu.id;
 
             clActividadL objActividad = new clActividadL();
             listaActividad = objActividad.mtdActividades(objEs);
