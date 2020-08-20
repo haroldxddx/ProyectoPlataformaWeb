@@ -37,11 +37,17 @@
             
             <ul class="nav nav-tabs" id="custom-content-below-tab" role="tablist">
               <li class="nav-item">
-                <asp:LinkButton ID="lkbAsig" runat="server" class="nav-link active" href="/Vista/asignarActividadesP.aspx">Asignacion de Actividades</asp:LinkButton>
+                
+                  <asp:LinkButton ID="lkbAsig" runat="server" class="nav-link" href="/Vista/asignarActividadesP.aspx" >Asignacion de Actividades</asp:LinkButton>
               </li>
               <li class="nav-item">
                 
                   <asp:LinkButton ID="lkbCalifi" runat="server" class="nav-link" href="/Vista/verEntregasEstudiantes.aspx">Calificacion de Actividades</asp:LinkButton>
+              </li>
+
+                 <li class="nav-item">
+                
+                  <asp:LinkButton ID="lkbNotas" runat="server" class="nav-link" href="/Vista/verNotasActi.aspx">Notas Por Actividades</asp:LinkButton>
               </li>
               
             </ul>

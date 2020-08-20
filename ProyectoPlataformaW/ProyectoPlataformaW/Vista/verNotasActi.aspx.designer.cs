@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW.Vista
 {
 
 
-    public partial class verEntregasEstudiantes
+    public partial class verNotasActi
     {
 
         /// <summary>
@@ -42,48 +42,30 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.LinkButton lkbNotas;
 
         /// <summary>
-        /// Control Label1.
+        /// Control lblIdCurso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblIdCurso;
 
         /// <summary>
-        /// Control ddlAct.
+        /// Control gvProf.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAct;
+        protected global::System.Web.UI.WebControls.GridView gvProf;
 
         /// <summary>
-        /// Control lblIdCursoM.
+        /// Control SqlDataSource1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIdCursoM;
-
-        /// <summary>
-        /// Control btnVer.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVer;
-
-        /// <summary>
-        /// Control repeaterEstud.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeaterEstud;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

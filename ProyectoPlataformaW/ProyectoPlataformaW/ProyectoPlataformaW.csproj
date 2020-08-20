@@ -116,6 +116,8 @@
     <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\calificarActividad.aspx" />
+    <Content Include="Vista\editarPerfilProf.aspx" />
+    <Content Include="Vista\editPerfilAdmin.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
     <Content Include="Vista\images\16.png" />
     <Content Include="Vista\images\i.jpg" />
@@ -2069,6 +2071,7 @@
     <Content Include="Vista\registrarProfesor2.aspx" />
     <Content Include="Vista\style.css" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
+    <Content Include="Vista\verNotasActi.aspx" />
     <Content Include="Vista\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
@@ -2096,6 +2099,7 @@
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteEE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
+    <Compile Include="Entidades\clEntidadNotas.cs" />
     <Compile Include="Entidades\clEntidadProfesorCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
@@ -2141,6 +2145,20 @@
     </Compile>
     <Compile Include="Vista\calificarActividad.aspx.designer.cs">
       <DependentUpon>calificarActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\editarPerfilProf.aspx.cs">
+      <DependentUpon>editarPerfilProf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\editarPerfilProf.aspx.designer.cs">
+      <DependentUpon>editarPerfilProf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\editPerfilAdmin.aspx.cs">
+      <DependentUpon>editPerfilAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\editPerfilAdmin.aspx.designer.cs">
+      <DependentUpon>editPerfilAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\entregaActividad.aspx.cs">
       <DependentUpon>entregaActividad.aspx</DependentUpon>
@@ -2307,6 +2325,13 @@
     </Compile>
     <Compile Include="Vista\verEntregasEstudiantes.aspx.designer.cs">
       <DependentUpon>verEntregasEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\verNotasActi.aspx.cs">
+      <DependentUpon>verNotasActi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\verNotasActi.aspx.designer.cs">
+      <DependentUpon>verNotasActi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
