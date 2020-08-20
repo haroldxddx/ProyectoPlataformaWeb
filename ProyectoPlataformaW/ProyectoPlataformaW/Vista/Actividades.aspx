@@ -119,7 +119,7 @@
             		
 			</div><!-- end container -->
     </div><!-- end section -->
-                 <asp:Button ID="Button1" runat="server" Text="Button" OnClick="btnRealizar_Click"  />
+               
                             
 
    <!-- end section -->
