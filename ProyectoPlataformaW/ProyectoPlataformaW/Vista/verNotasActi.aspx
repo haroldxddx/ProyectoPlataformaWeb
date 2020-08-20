@@ -1,5 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="verNotasActi.aspx.cs" Inherits="ProyectoPlataformaW.Vista.verNotasActi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <style type="text/css">
+        .auto-style4 {
+            position: center;
+            height: 100%;
+            width: 100%;
+            left: -1px;
+            top: 2px;
+        }
+        .auto-style5 {
+            float: left;
+            font-size: 1.1rem;
+            font-weight: 400;
+            left: 0px;
+            top: 0px;
+            width: 410px;
+            margin: 0;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
    
@@ -65,7 +83,7 @@
                 <div class="card-body">
                     
                     <br />
-                    <asp:GridView ID="gvProf" class="jsgrid" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
+                    <asp:GridView ID="gvProf" class="jsgrid" CssClass="auto-style4" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1 %>" ProviderName="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1.ProviderName %>">
                     </asp:SqlDataSource>
                     <br />

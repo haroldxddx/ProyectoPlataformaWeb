@@ -2066,6 +2066,7 @@
     <Content Include="Vista\style.css" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
     <Content Include="Vista\verNotasActi.aspx" />
+    <Content Include="Vista\verNotasActividad.aspx" />
     <Content Include="Vista\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
@@ -2326,6 +2327,13 @@
     </Compile>
     <Compile Include="Vista\verNotasActi.aspx.designer.cs">
       <DependentUpon>verNotasActi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\verNotasActividad.aspx.cs">
+      <DependentUpon>verNotasActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\verNotasActividad.aspx.designer.cs">
+      <DependentUpon>verNotasActividad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
