@@ -1,26 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="verNotasActi.aspx.cs" Inherits="ProyectoPlataformaW.Vista.verNotasActi" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="verNotasActividad.aspx.cs" Inherits="ProyectoPlataformaW.Vista.verNotasActividad" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-     <style type="text/css">
-        .auto-style4 {
-            position: center;
-            height: 100%;
-            width: 100%;
-            left: -1px;
-            top: 2px;
-        }
-        .auto-style5 {
-            float: left;
-            font-size: 1.1rem;
-            font-weight: 400;
-            left: 0px;
-            top: 0px;
-            width: 410px;
-            margin: 0;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-   
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,7 +64,7 @@
                 <div class="card-body">
                     
                     <br />
-                    <asp:GridView ID="gvProf" class="jsgrid" CssClass="auto-style4" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
+                    <asp:GridView ID="gvProf" class="jsgrid" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1 %>" ProviderName="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1.ProviderName %>">
                     </asp:SqlDataSource>
                     <br />
@@ -109,27 +90,70 @@
 <!-- AdminLTE for demo purposes -->
 <script src="/Vista/dist/js/demo.js"></script>
 <!-- page script -->
-<script>
-    $(function () {
-        $("#jsGrid1").jsGrid({
-            height: "100%",
-            width: "100%",
 
-            sorting: true,
-            paging: true,
-
-            data: db.clients,
-
-            fields: [
-                { name: "Name", type: "text", width: 150 },
-                { name: "Age", type: "number", width: 50 },
-                { name: "Address", type: "text", width: 200 },
-                { name: "Country", type: "select", items: db.countries, valueField: "Id", textField: "Name" },
-                { name: "Married", type: "checkbox", title: "Is Married" }
-            ]
-        });
-    });
-</script>
 </body>
 </html>
 </asp:Content>
+<asp:Content ID="Content4" runat="server" contentplaceholderid="ContentPlaceHolder1">
+
+								
+
+            <!-- LOADER -->
+          
+          <!-- END LOADER -->
+
+          <!-- Start header -->
+                <header class="top-navbar">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="../index.html">&nbsp;<img alt="logo2" class="auto-style1" src="/logo-email-2-g-suite.png" /></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbars-host">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Cursos </a></li>
+                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Estudiantes </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                            <a class="dropdown-item" href="/Vista/buscadorAprendices.aspx">Buscador de aprendices</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">
+                                        <asp:Label ID="lblUser" runat="server" Text=""></asp:Label>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                            <a class="dropdown-item" href="/Vista/editarPerfilProf.aspx">Editar Perfil</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <asp:LinkButton ID="lbcerrarsesion" class="nav-link"  runat="server" OnClick="lblcerrarsesion_Click" >cerrar sesion</asp:LinkButton>
+                                    </li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+    </header>
+          <!-- End header -->
+                
+
+
+                  <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+	<script src="js/timeline.min.js"></script>
+	<script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+    </script>
+
+
+
+        
+            </asp:Content>
+
