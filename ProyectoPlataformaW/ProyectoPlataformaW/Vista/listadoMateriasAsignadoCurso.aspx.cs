@@ -15,12 +15,12 @@ namespace ProyectoPlataformaW.Vista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           // mtdCargarGrid();
+           mtdCargarGrid();
         }
 
         protected void btnBuscarC_Click(object sender, EventArgs e)
         {
-                /*string Curso= txtBuscarC.Text;
+                string Curso= txtBuscarC.Text;
 
 
              List<clEntidadProfesorCursoMateriaE> listaBuscar = new List<clEntidadProfesorCursoMateriaE>();
@@ -36,11 +36,11 @@ namespace ProyectoPlataformaW.Vista
                 GridView1.DataSource = listaBuscar;
                 GridView1.DataBind();
 
-                }*/
+                }
             }
         
         
-        /*private void mtdCargarGrid()
+        private void mtdCargarGrid()
         {
         List<clEntidadProfesorCursoMateriaE> listaMCP = new List<clEntidadProfesorCursoMateriaE>();
         clCursoMateriaL objCMP = new clCursoMateriaL();
@@ -48,6 +48,6 @@ namespace ProyectoPlataformaW.Vista
             GridView1.DataSource = listaMCP;
             GridView1.DataBind();
 
-        }*/
+        }
     }
 }

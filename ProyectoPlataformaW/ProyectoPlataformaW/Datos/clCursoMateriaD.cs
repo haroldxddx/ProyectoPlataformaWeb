@@ -52,7 +52,7 @@ namespace ProyectoPlataformaW.Datos
             }
             return listaEcM;
         }
-       /* public List<clEntidadProfesorCursoMateriaE> mtdBuscarrMatProfCurso (clEntidadProfesorCursoMateriaE objcur)
+       public List<clEntidadProfesorCursoMateriaE> mtdBuscarrMatProfCurso (clEntidadProfesorCursoMateriaE objcur)
 
         {
             string sql = "select Curso.Curso, Curso.Grado, Materia.NombreMateria, Profesor.Nombres, Profesor.Apellidos from Curso inner join CursoMateria On Curso.IdCurso = CursoMateria.IdCurso inner join Profesor On Profesor.IdProfesor = CursoMateria.IdProfesor inner join Materia On Materia.IdMateria = CursoMateria.IdMateria WHERE (Curso.Curso LIKE '%" + objcur.Curso + "%')";
@@ -82,8 +82,8 @@ namespace ProyectoPlataformaW.Datos
 
             }
             return listaEcM;
-        }*/
-            /*public List<clEntidadProfesorCursoMateriaE> mtdListarMatProfCurso()
+        }
+            public List<clEntidadProfesorCursoMateriaE> mtdListarMatProfCurso()
 
             {
                 string sql = "select   Curso.Curso, Curso.Grado, Materia.NombreMateria, Profesor.Nombres, Profesor.Apellidos from Curso inner join CursoMateria On Curso.IdCurso = CursoMateria.IdCurso inner join Profesor On Profesor.IdProfesor = CursoMateria.IdProfesor inner join Materia On Materia.IdMateria = CursoMateria.IdMateria ";
@@ -113,7 +113,7 @@ namespace ProyectoPlataformaW.Datos
 
                 }
                 return listaEcM;
-        }*/
+        }
 
         //Listado de materias a cursos
         public List<clEntidadCursoMateriaE> mtdListMateriasE(clEntidadEstudianteE objE)
