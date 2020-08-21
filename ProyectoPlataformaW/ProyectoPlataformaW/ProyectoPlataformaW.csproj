@@ -85,6 +85,12 @@
     <Content Include="App_Data\dbProyectoPlataforma_log.ldf">
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
     </Content>
+    <Content Include="Archivo\colegioestu.jpeg" />
+    <Content Include="Archivo\esp.jpg" />
+    <Content Include="Archivo\ic_logo.png" />
+    <Content Include="Archivo\ing.jpg" />
+    <Content Include="Archivo\math.jpg" />
+    <Content Include="Archivo\xdx.png" />
     <Content Include="EntregaActividades\mamaos.txt" />
     <Content Include="Global.asax" />
     <Content Include="Imagenes\colegioestu.jpeg" />
@@ -2576,6 +2582,13 @@
     <Content Include="login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="login\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Archivo\CRUCIGRAMA.docx" />
+    <Content Include="Archivo\Harold Zabala - Phrasal verbs %282%29.docx" />
+    <Content Include="Archivo\HORAS GESTOR MONITOR HAROLD 1834590.xlsx" />
+    <Content Include="Archivo\PLATAFORMA WEB PARA FOMENTAR EL APRENDIZAJE.docx" />
+    <Content Include="Archivo\Product_Back_Log2.xlsx" />
+    <Content Include="Archivo\Tatiana - Phrasal verbs.docx" />
+    <Content Include="Archivo\What do you think about.docx" />
     <None Include="packages.config" />
     <Content Include="Vista\fonts\Flaticon.eot" />
     <Content Include="Vista\fonts\Flaticon.ttf" />
@@ -2767,9 +2780,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Archivo\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
