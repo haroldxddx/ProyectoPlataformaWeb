@@ -43,8 +43,9 @@ namespace ProyectoPlataformaW.Datos
                 objActivi.Nombres = tblCur.Rows[i][4].ToString();
                 objActivi.Apellidos = tblCur.Rows[i][5].ToString();
                 objActivi.IdActividad = int.Parse(tblCur.Rows[i][6].ToString());
+                objActivi.Archivos = tblCur.Rows[i][7].ToString();
 
-                idActividad = int.Parse(tblCur.Rows[i][6].ToString());
+           
 
 
 

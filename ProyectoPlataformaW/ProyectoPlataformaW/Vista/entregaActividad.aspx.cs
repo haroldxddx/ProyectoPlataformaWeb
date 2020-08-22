@@ -107,9 +107,9 @@ namespace ProyectoPlataformaW.Vista
                     int d = objEstu.IdEstudiante = int.Parse(listEestu[i].IdEstudiante.ToString());
                     lble.Text = (d).ToString();
 
-                    lblnom.Text = objEstu.Nombres = listEestu[i].Nombres;
-                    lblema.Text = objEstu.Apellidos = listEestu[i].Apellidos;
-
+                    //lblnom.Text = objEstu.Nombres = listEestu[i].Nombres;
+                    //lblema.Text = objEstu.Apellidos = listEestu[i].Apellidos;
+                  //  lblruta.Text = Actividades.Ruta;
 
                 }
 
@@ -149,9 +149,42 @@ namespace ProyectoPlataformaW.Vista
 
              clEntregaD objEntregaD = new clEntregaD();
              int result = objEntregaD.mtdAsignarEntrega(objAct);
-             Response.Write("<script> alert("+"entrega con exito "+") </script>");
-             
+
+           
+
+            if (result > 0)
+            {
+                
+                AdArchivo.SaveAs(Server.MapPath("~/EntregaActividades/") + AdArchivo.FileName);
+                //ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();", true);
+                Response.Write("<script> alert(" + "'Actividad Entregada Correctamente'" + ") </script>");
+                txtComentario.Text = "";
+                txtEvidencia.Text = "";
+                txtVinculo.Text = "";
+
+            }
+
         }
 
+        protected void DescargarAct(object sender ,EventArgs e)
+        {
+
+            if (Actividades.Ruta ==null)
+            {
+                Response.Write("<script> alert(" + "Sin Archivos " + ") </script>");
+            }
+            else
+            {
+                Response.Redirect(Actividades.Ruta);
+            }
+
+
+           
+        }
+        protected void scrip(object sender, EventArgs e)
+        {
+            Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+            ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();", true);
+        }
     }
 }

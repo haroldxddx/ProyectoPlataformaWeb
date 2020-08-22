@@ -33,24 +33,6 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.Label lble;
 
         /// <summary>
-        /// Control lblnom.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblnom;
-
-        /// <summary>
-        /// Control lblema.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblema;
-
-        /// <summary>
         /// Control txtComentario.
         /// </summary>
         /// <remarks>

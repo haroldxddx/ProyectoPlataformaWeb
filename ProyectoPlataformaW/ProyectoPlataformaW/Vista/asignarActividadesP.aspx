@@ -153,6 +153,7 @@
 <script src="/Vista/plugins/sweetalert2/sweetalert2.min.js"></script>
 <!-- Toastr -->
 <script src="/Vista/plugins/toastr/toastr.min.js"></script>
+
 <script type="text/javascript">
 function registro() {
     const Toast = Swal.mixin({
