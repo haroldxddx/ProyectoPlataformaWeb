@@ -140,8 +140,9 @@
 							</div>
                                  	<div class="blog-button">
                             	
-                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Ver</span></asp:LinkButton>
-							
+                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Actividades</span></asp:LinkButton>
+							<asp:LinkButton   class="hover-btn-new orange" ID="lbtnotas" runat="server"  Text="" OnClick="lbtnotas_Click"><span>Notas</span></asp:LinkButton>
+
 						</div>
 						</div>
 						<div class="course-meta-bot">
