@@ -58,7 +58,7 @@ namespace ProyectoPlataformaW.Datos
 
         public List<clEntidadAdministradorE> mtdListarAdmin()
         {
-            string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email from Profesor";
+            string sql = "select IdAdministrador,Nombres,Apellidos,Documento,Email from Administradores";
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblprof = new DataTable();
             tblprof = objSql.mtdDesconectado(sql);

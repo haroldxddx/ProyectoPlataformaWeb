@@ -77,7 +77,7 @@ namespace ProyectoPlataformaW.Datos
 
         //Ver notas por materias y actividades
 
-        public List<clEntidadNotas> mtdListarNotasAc(clEntidadNotas objE)
+        public List<clEntidadNotas> mtdListarNotasAc()
         {
 
             string sql = "Select * from(select Estudiante.Nombres, Estudiante.Apellidos, Actividad.NombreActividad as NombreAct, Entrega.Nota as Nota from Actividad inner join Entrega on Actividad.IdActividad = Entrega.IdActividad inner join Estudiante on Estudiante.IdEstudiante = Entrega.IdEstudiante inner join CursoMateria on Actividad.IdCursoMateria = CursoMateria.IdCursoMateria where CursoMateria.IdCursoMateria = 1 )T PIVOT( MAX(T.Nota) FOR T.NombreAct in ([Proyecto]))pivotrReport";
@@ -95,7 +95,7 @@ namespace ProyectoPlataformaW.Datos
                 objNota.Nombres = tblCur.Rows[i][0].ToString();
                 objNota.Apellidos = tblCur.Rows[i][1].ToString();
                 objNota.NombreActividad = tblCur.Rows[i][2].ToString();
-                //objNota.Nota = tblCur.Rows[i][4].ToString();
+                //objNota.Nota = tblCur.Rows[i][3].ToString();
                 
                
                 listaNot.Add(objNota);

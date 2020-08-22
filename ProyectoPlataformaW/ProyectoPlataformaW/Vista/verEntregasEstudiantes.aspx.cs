@@ -43,26 +43,7 @@ namespace ProyectoPlataformaW.Vista
             ddlAct.DataBind();
         }
 
-        protected void btnVer_Click(object sender, EventArgs e)
-        {
-            inicioProfesor objPR = new inicioProfesor();
-            clEntidadActividadEstuE objEA = new clEntidadActividadEstuE();
-            objEA.IdCursoMateria = inicioProfesor.id;
-            objEA.IdActividad = int.Parse(ddlAct.SelectedValue.ToString());
-            
-
-            clCursoMateriaL objcurL = new clCursoMateriaL();
-            listActAsig = objcurL.mtdListEstudiantesActivi(objEA);
-
-            if (listActAsig.Count != 0)
-            {
-                repeaterEstud.DataSource = listActAsig;
-                repeaterEstud.DataBind();
-
-            }
-
-
-        }
+       
 
         protected void repeaterEstud_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
@@ -77,6 +58,25 @@ namespace ProyectoPlataformaW.Vista
             
 
 
+        }
+
+        protected void ddlAct_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            inicioProfesor objPR = new inicioProfesor();
+            clEntidadActividadEstuE objEA = new clEntidadActividadEstuE();
+            objEA.IdCursoMateria = inicioProfesor.id;
+            objEA.IdActividad = int.Parse(ddlAct.SelectedValue.ToString());
+
+
+            clCursoMateriaL objcurL = new clCursoMateriaL();
+            listActAsig = objcurL.mtdListEstudiantesActivi(objEA);
+
+            if (listActAsig.Count != 0)
+            {
+                repeaterEstud.DataSource = listActAsig;
+                repeaterEstud.DataBind();
+
+            }
         }
     }
 }

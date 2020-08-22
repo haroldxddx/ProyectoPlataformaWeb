@@ -115,6 +115,7 @@
     <Content Include="Vista\actividades.aspx" />
     <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
+    <Content Include="Vista\buscadorEstudiantes.aspx" />
     <Content Include="Vista\calificarActividad.aspx" />
     <Content Include="Vista\editarPerfilProf.aspx" />
     <Content Include="Vista\editPerfilAdmin.aspx" />
@@ -2072,7 +2073,7 @@
     <Content Include="Vista\style.css" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
     <Content Include="Vista\verNotasActi.aspx" />
-    <Content Include="Vista\verNotasActividad.aspx" />
+    <Content Include="Vista\verNotasMateria.aspx" />
     <Content Include="Vista\WebForm1.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
@@ -2104,6 +2105,7 @@
     <Compile Include="Entidades\clEntidadProfesorCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
+    <Compile Include="Entidades\clNotasEstudE.cs" />
     <Compile Include="Logica\clMateriaL.cs" />
     <Compile Include="Entidades\estudiantesViewModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -2139,6 +2141,13 @@
     </Compile>
     <Compile Include="Vista\asignarProfesorCursoMateria.aspx.designer.cs">
       <DependentUpon>asignarProfesorCursoMateria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\buscadorEstudiantes.aspx.cs">
+      <DependentUpon>buscadorEstudiantes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\buscadorEstudiantes.aspx.designer.cs">
+      <DependentUpon>buscadorEstudiantes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\calificarActividad.aspx.cs">
       <DependentUpon>calificarActividad.aspx</DependentUpon>
@@ -2334,12 +2343,12 @@
     <Compile Include="Vista\verNotasActi.aspx.designer.cs">
       <DependentUpon>verNotasActi.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Vista\verNotasActividad.aspx.cs">
-      <DependentUpon>verNotasActividad.aspx</DependentUpon>
+    <Compile Include="Vista\verNotasMateria.aspx.cs">
+      <DependentUpon>verNotasMateria.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vista\verNotasActividad.aspx.designer.cs">
-      <DependentUpon>verNotasActividad.aspx</DependentUpon>
+    <Compile Include="Vista\verNotasMateria.aspx.designer.cs">
+      <DependentUpon>verNotasMateria.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
