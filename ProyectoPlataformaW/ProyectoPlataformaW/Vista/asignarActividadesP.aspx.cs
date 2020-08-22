@@ -25,6 +25,7 @@ namespace ProyectoPlataformaW.Vista
 
         }
 
+       
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
            

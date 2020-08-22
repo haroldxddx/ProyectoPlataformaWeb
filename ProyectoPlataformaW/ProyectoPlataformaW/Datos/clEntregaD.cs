@@ -68,7 +68,7 @@ namespace ProyectoPlataformaW.Datos
         public int mtdAsignarEntrega(clEntidadEntregaE objEnt)
         {
 
-            string sql = "insert into Entrega(Descripcion,Fecha,Archivos,idActividad,idEstudiante,Vinculo,OtraRespuesta,Comentario)values('"+objEnt.Descripcion+ "',GETDATE(),'" + objEnt.Archivos+"','"+objEnt.IdActividad+"','"+objEnt.IdEstudiante+"','"+objEnt.Vinculo+"','"+objEnt.otraRespuesta+"','"+objEnt.Comentario+"')";
+            string sql = "insert into Entrega(Descripcion,Fecha,Archivos,Estado,Nota,idActividad,idEstudiante,Vinculo,OtraRespuesta,Comentario)values('"+objEnt.Descripcion+ "',GETDATE(),'" + objEnt.Archivos+"','Sin_Calificar',1.0,'"+objEnt.IdActividad+"','"+objEnt.IdEstudiante+"','"+objEnt.Vinculo+"','"+objEnt.otraRespuesta+"','"+objEnt.Comentario+"')";
 
             clAdminSQL objConexion = new clAdminSQL();
             int vj = objConexion.mtdConectado(sql);
