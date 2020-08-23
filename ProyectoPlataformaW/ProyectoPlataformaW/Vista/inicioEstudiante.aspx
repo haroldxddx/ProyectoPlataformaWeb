@@ -123,13 +123,13 @@
 								<h2><a href="#"><span class="auto-style2">'<%# Eval("NombreMateria") %>'</span></a></h2>
                               
                                 <asp:Label ID="lblidMateria" runat="server" Text='<%# Eval("IdMateria") %>'><span>idMateria</span></asp:Label>
-                                  <asp:Label ID="Label1" runat="server" Text='<%# Eval("Curso") %>'><span>curso</span></asp:Label>
+                                
 
 							</div>
 							<div class="course-desc">
 							
-                           	<p><%# Eval("NivelAcademico") %> </p>
-                             
+                           	<p><%# Eval("NivelAcademico") %> </p><br />
+                             <p><%# Eval("Curso") %> </p>
                                 
                                
 							</div>
@@ -140,8 +140,9 @@
 							</div>
                                  	<div class="blog-button">
                             	
-                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Ver</span></asp:LinkButton>
-							
+                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Actividades</span></asp:LinkButton>
+							<asp:LinkButton   class="hover-btn-new orange" ID="lbtnotas" runat="server"  Text="" OnClick="lbtnotas_Click"><span>Notas</span></asp:LinkButton>
+
 						</div>
 						</div>
 						<div class="course-meta-bot">

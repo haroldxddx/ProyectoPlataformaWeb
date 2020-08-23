@@ -135,10 +135,11 @@ namespace ProyectoPlataformaW.Datos
                 objCursoM.Nombres = tblCur.Rows[i][2].ToString();
                 objCursoM.Apellidos = tblCur.Rows[i][3].ToString();
                  objCursoM.IdMateria = int.Parse(tblCur.Rows[i][4].ToString());
+                objCursoM.Curso = tblCur.Rows[i][5].ToString();
 
-                   
 
-                   datoDT =  int.Parse(tblCur.Rows[i][4].ToString());
+
+                datoDT =  int.Parse(tblCur.Rows[i][4].ToString());
 
 
 

@@ -28,7 +28,7 @@ namespace ProyectoPlataformaW.Vista
 
 
                 }
-                else if (Session["general"].ToString() != "estudiante")
+                else if (Session["general"].ToString() != "profesor")
                 {
 
                     Response.Redirect("~/inicio.aspx");

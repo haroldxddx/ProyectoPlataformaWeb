@@ -88,18 +88,37 @@ namespace ProyectoPlataformaW
           
             o = repeaterMateria.Items[e.Item.ItemIndex].ItemIndex.ToString();
 
-           id = int.Parse(((Label)repeaterMateria.Items[int.Parse(o)].FindControl("lblidMateria")).Text);
+            id = int.Parse(((Label)repeaterMateria.Items[int.Parse(o)].FindControl("lblidMateria")).Text);
       
 
             Response.Write("<script> alert(" + id + ") </script>");
-
+           
             Response.Redirect("~/Vista/actividades.aspx");
 
-         
+          
 
         }
 
         protected void btnEntregaA_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+        protected void materia(object sender, RepeaterCommandEventArgs e)
+        {
+            o = repeaterMateria.Items[e.Item.ItemIndex].ItemIndex.ToString();
+
+            id = int.Parse(((Label)repeaterMateria.Items[int.Parse(o)].FindControl("lblidMateria")).Text);
+
+
+            Response.Redirect("~/Vista/NotasEstu.aspx");
+
+
+           
+        }
+
+        protected void lbtnotas_Click(object sender, EventArgs e)
         {
 
         }

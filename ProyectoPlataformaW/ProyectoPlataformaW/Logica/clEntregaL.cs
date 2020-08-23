@@ -38,11 +38,11 @@ namespace ProyectoPlataformaW.Logica
             return hj;
 
         }
-        public List<clEntidadNotas> mtdNotasMat(clEntidadNotas objE)
+        public List<clEntidadNotas> mtdNotasMat()
         {
             clEntregaD objEnt = new clEntregaD();
             List<clEntidadNotas> listaNot = new List<clEntidadNotas>();
-            listaNot = objEnt.mtdListarNotasAc(objE);
+            listaNot = objEnt.mtdListarNotasAc();
             return listaNot;
         }
 

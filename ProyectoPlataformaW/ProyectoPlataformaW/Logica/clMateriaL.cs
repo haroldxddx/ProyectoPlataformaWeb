@@ -16,5 +16,13 @@ namespace ProyectoPlataformaW.Logica
             listM = objMat.mtdListarMateria();
             return listM;
         }
+
+        public List<clNotasEstudE> mtdCargarComboMat(clNotasEstudE objNot)
+        {
+            clMateriaD objMat = new clMateriaD();
+            List<clNotasEstudE> listM = new List<clNotasEstudE>();
+            listM = objMat.mtdComboMateria(objNot);
+            return listM;
+        }
     }
 }

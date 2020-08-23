@@ -22,13 +22,13 @@ namespace ProyectoPlataformaW.Vista
                     Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
                 }
 
-                if (Session["general"].ToString() == "estudiante")
+                if (Session["general"].ToString() == "administrador")
                 {
 
 
 
                 }
-                else if (Session["general"].ToString() != "estudiante")
+                else if (Session["general"].ToString() != "administrador")
                 {
 
                     Response.Redirect("~/inicio.aspx");

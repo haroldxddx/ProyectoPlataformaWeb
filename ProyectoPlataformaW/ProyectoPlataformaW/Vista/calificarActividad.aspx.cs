@@ -55,12 +55,15 @@ namespace ProyectoPlataformaW.Vista
                 objEnt2.IdEntrega = int.Parse(lblIdEntrega.Text);
                 entL.mtdCambEst(objEnt2);
 
-                //Response.Write("<script> alert(" + "'Actividad Calificada Con exito'" + ") </script>");
-                // string javas = "swalDefaultSuccess();";
-                // ScriptManager.RegisterStartupScript(this, this.GetType(), "ShowPopup", "xd", true);
-               
-                ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();", true);
+
+
+                ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/Vista/VerEntregasEstudiantes.aspx'", true);
                 //Response.Redirect("/Vista/VerEntregasEstudiantes.aspx");
+                //string script = @"registro();window.location.href='/Vista/VerEntregasEstudiantes.aspx'";
+
+                //ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, true);
+               // ClientScript.RegisterStartupScript(GetType(), "Mijs", script, true);
+
             }
 
 

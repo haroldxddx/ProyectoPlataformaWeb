@@ -322,7 +322,54 @@ C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataforma
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csproj.CopyComplete
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
-C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\EPPlus.dll
-C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\EPPlus.xml
-C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\ProyectoPlataformaW.dll.config
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\ProyectoPlataformaW.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\ProyectoPlataformaW.pdb
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\csc.exe
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\csc.exe.config
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\csc.rsp
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\csi.exe
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\csi.exe.config
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\csi.rsp
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Collections.Immutable.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Reflection.Metadata.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\vbc.exe
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\vbc.exe.config
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\vbc.rsp
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\VBCSCompiler.exe
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\VBCSCompiler.exe.config
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\DocumentFormat.OpenXml.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.pdb
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Interop.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.pdb
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\Esent.Isam.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\SpreadsheetLight.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csprojAssemblyReference.cache
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csproj.CopyComplete
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.pdb
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Buffers.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Memory.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Numerics.Vectors.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\System.IO.Packaging.dll
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\DocumentFormat.OpenXml.xml
+D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\System.IO.Packaging.xml

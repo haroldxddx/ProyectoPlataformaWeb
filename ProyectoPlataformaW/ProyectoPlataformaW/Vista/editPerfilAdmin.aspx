@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.Master" AutoEventWireup="true" CodeBehind="editPerfilAdmin.aspx.cs" Inherits="ProyectoPlataformaW.Vista.editPerfilAdmin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.Master" AutoEventWireup="true" CodeBehind="editPerfilAdmin.aspx.cs" Inherits="ProyectoPlataformaW.Vista.editPerfilAdmin" EnableEventValidation="false" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style2 {

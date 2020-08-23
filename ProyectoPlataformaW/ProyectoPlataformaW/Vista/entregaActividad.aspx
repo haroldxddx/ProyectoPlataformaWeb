@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>#</title>  
+    <title>Entrega</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -56,7 +56,7 @@
 		</div>
 	</div>
 	<!-- END LOADER -->	
-
+  
     
 	
 	
@@ -89,9 +89,7 @@
                                   
                                     <asp:Label ID="lblUser" runat="server" Text=""  class="form-control"  placeholder="user"></asp:Label>
                                     <asp:Label ID="lble" runat="server" Text="" class="form-control"></asp:Label>
-                                    <asp:Label ID="lblnom" runat="server" Text="" class="form-control"></asp:Label>
-                                    <asp:Label ID="lblema" runat="server" Text="" class="form-control"></asp:Label>
-
+                                   
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                    
@@ -134,8 +132,7 @@
 							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha inicio actividad: '<%# Eval("FechaInicio") %>'</a> </span>
 
 							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha fin actividad : '<%# Eval("FechaFinal") %>'</a> </span>
-                            <span><i class="fa fa-tag"></i>  <a href="#">por realizar</a> </span>
-                            <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
+                         
 						</div>
 						<div class="blog-title">
 							<h2><a href="#" title="">'<%# Eval("NombreActividad") %>'</a></h2>
@@ -144,8 +141,10 @@
 							<p>'<%# Eval("Descripcion") %>' </p>
                             <asp:Label ID="lblDescripcion" runat="server"     Text='<%# Eval("Descripcion") %>' ></asp:Label>
 						</div>
-						
+						<div class="pricing-table-sign-up">
+						  <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server" OnClick="DescargarAct" Text=""><span>&#11123Actividad<span></span></asp:LinkButton>
 					</div>
+
                 </div><!-- end col -->
                        
                 </ItemTemplate>
@@ -207,6 +206,32 @@
 	<script src="js/01-custom-places-example.js"></script>
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+    function registro() {
+    const Toast = Swal.mixin({
+      toast: true,
+        position: 'top_end',
+        my: "center",
+        at: "center",
+        
+
+      
+     
+
+
+      showConfirmButton: false,
+      timer: 3000
+    });
+     
+      Toast.fire({
+        icon: 'success',
+        title: 'Actividad Entregada Correctamente'
+      });
+    
+  };
+
+</script>
 
 </body>
 </html>

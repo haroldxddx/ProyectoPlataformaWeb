@@ -88,7 +88,7 @@
                                     <li class="nav-item dropdown">
 							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Estudiantes </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
-								            <a class="dropdown-item" href="/Vista/buscadorAprendices.aspx">Buscador de aprendices</a>
+								            <a class="dropdown-item" href="/Vista/buscadorEstudiantes.aspx">Buscador de aprendices</a>
                                             <a class="dropdown-item" href="/Vista/registrarEstudiante2.aspx">Registrar Aprendices</a>
 								            
 							            </div>

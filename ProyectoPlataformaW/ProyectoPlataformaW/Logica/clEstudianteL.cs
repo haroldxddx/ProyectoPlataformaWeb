@@ -110,5 +110,13 @@ namespace ProyectoPlataformaW.Logica
             return listaApb1;
         }
 
+        public List<clEntidadEstudianteE> mtdDatosEstu(clEntidadEstudianteE objDatos)
+        {
+            clEstudianteD objEs = new clEstudianteD();
+            List<clEntidadEstudianteE> listaEst = new List<clEntidadEstudianteE>();
+            listaEst = objEs.mtdDatosE(objDatos);
+            return listaEst;
+        }
+
     }
 }

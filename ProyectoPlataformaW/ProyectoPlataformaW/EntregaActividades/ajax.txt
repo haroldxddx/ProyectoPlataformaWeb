@@ -1,0 +1,4 @@
+dom ==es una interfaz de programación de aplicaciones (API) para documentos HTML y XML.
+api==Application Programming Interface. En español sería Interfaz de Programación de Aplicaciones
+
+Podríamos dar esta definición de Ajax: “Ajax es un conjunto de métodos y técnicas que permiten intercambiar datos con un servidor y actualizar partes de páginas web sin necesidad de recargar la página completamente”.

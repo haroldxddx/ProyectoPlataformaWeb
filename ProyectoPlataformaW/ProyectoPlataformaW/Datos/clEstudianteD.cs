@@ -10,6 +10,8 @@ namespace ProyectoPlataformaW.Datos
     public class clEstudianteD
     {
         public static int idestu;
+        public static int idEstudiante;
+        public static int idCurso;
         public int mtdRegistrarEstudiante(clEntidadEstudianteE objEst)
         {
             string sqlInsert = "insert into Estudiante (Nombres,Apellidos,Documento,Email,Contrasena,IdCurso)" +
@@ -72,7 +74,7 @@ namespace ProyectoPlataformaW.Datos
 
         //Listado Completo de estudiantes
 
-        public List<clEntidadEstudianteE> mtdListadoCompletoE()
+        public List<clEntidadEstudianteE> mtdListadoCompletoE( )
         {
             string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso";
 
@@ -168,7 +170,7 @@ where Email = 'haroldzabala5@gmail.com'*/
         //Filtro de estudiantes por curso
         public List<clEntidadEstudianteE> mtdFiltroCurso(clEntidadEstudianteE objEstud)
         {
-            string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso WHERE Curso.Curso = '"+ objEstud.Curso +"'";
+            string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso WHERE Curso.IdCurso = '"+ objEstud.IdCurso +"'";
 
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblEstud = new DataTable();
@@ -302,6 +304,38 @@ where Email = 'haroldzabala5@gmail.com'*/
                 objEstu.Apellidos = tblEstud.Rows[i][2].ToString();
                 objEstu.Email = tblEstud.Rows[i][3].ToString();
                 
+
+                listaEstud.Add(objEstu);
+
+            }
+
+            return listaEstud;
+        }
+
+        public List<clEntidadEstudianteE> mtdDatosE(clEntidadEstudianteE objE)
+        {
+            string sql = "select IdEstudiante,Nombres,Apellidos,Documento,Email,IdCurso from Estudiante where Email = '"+ objE.Email +"'";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblEstud = new DataTable();
+            tblEstud = objSql.mtdDesconectado(sql);
+
+            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
+
+            for (int i = 0; i < tblEstud.Rows.Count; i++)
+            {
+                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
+
+                objEstu.IdEstudiante = int.Parse(tblEstud.Rows[i][0].ToString());
+                objEstu.Nombres = tblEstud.Rows[i][1].ToString();
+                objEstu.Apellidos = tblEstud.Rows[i][2].ToString();
+                objEstu.Documento = int.Parse(tblEstud.Rows[i][3].ToString());
+                objEstu.Email = tblEstud.Rows[i][4].ToString();
+                objEstu.IdCurso = int.Parse(tblEstud.Rows[i][5].ToString());
+
+
+                idEstudiante = int.Parse(tblEstud.Rows[i][0].ToString());
+                idCurso = int.Parse(tblEstud.Rows[i][5].ToString());
 
                 listaEstud.Add(objEstu);
 
