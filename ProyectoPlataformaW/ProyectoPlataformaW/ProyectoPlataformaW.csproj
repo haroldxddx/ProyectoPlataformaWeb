@@ -106,6 +106,13 @@
     <Content Include="App_Data\dbProyectoPlataforma_log.ldf">
       <DependentUpon>dbProyectoPlataforma.mdf</DependentUpon>
     </Content>
+    <Content Include="Archivo\colegioestu.jpeg" />
+    <Content Include="Archivo\esp.jpg" />
+    <Content Include="Archivo\ic_logo.png" />
+    <Content Include="Archivo\ing.jpg" />
+    <Content Include="Archivo\math.jpg" />
+    <Content Include="Archivo\xdx.png" />
+    <Content Include="EntregaActividades\mamaos.txt" />
     <Content Include="Global.asax" />
     <Content Include="Imagenes\colegioestu.jpeg" />
     <Content Include="Imagenes\colegioporteria %282%29.jpg" />
@@ -130,6 +137,8 @@
     <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\calificarActividad.aspx" />
+    <Content Include="Vista\editarPerfilProf.aspx" />
+    <Content Include="Vista\editPerfilAdmin.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
     <Content Include="Vista\images\16.png" />
     <Content Include="Vista\images\i.jpg" />
@@ -2083,6 +2092,8 @@
     <Content Include="Vista\registrarProfesor2.aspx" />
     <Content Include="Vista\style.css" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
+    <Content Include="Vista\verNotasActi.aspx" />
+    <Content Include="Vista\verNotasActividad.aspx" />
     <Content Include="Vista\WebForm1.aspx" />
     <Content Include="Vista\WebForm2.aspx" />
     <Content Include="Web.config" />
@@ -2112,6 +2123,7 @@
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteEE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
+    <Compile Include="Entidades\clEntidadNotas.cs" />
     <Compile Include="Entidades\clEntidadProfesorCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
@@ -2157,6 +2169,20 @@
     </Compile>
     <Compile Include="Vista\calificarActividad.aspx.designer.cs">
       <DependentUpon>calificarActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\editarPerfilProf.aspx.cs">
+      <DependentUpon>editarPerfilProf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\editarPerfilProf.aspx.designer.cs">
+      <DependentUpon>editarPerfilProf.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\editPerfilAdmin.aspx.cs">
+      <DependentUpon>editPerfilAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\editPerfilAdmin.aspx.designer.cs">
+      <DependentUpon>editPerfilAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\entregaActividad.aspx.cs">
       <DependentUpon>entregaActividad.aspx</DependentUpon>
@@ -2323,6 +2349,20 @@
     </Compile>
     <Compile Include="Vista\verEntregasEstudiantes.aspx.designer.cs">
       <DependentUpon>verEntregasEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\verNotasActi.aspx.cs">
+      <DependentUpon>verNotasActi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\verNotasActi.aspx.designer.cs">
+      <DependentUpon>verNotasActi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\verNotasActividad.aspx.cs">
+      <DependentUpon>verNotasActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\verNotasActividad.aspx.designer.cs">
+      <DependentUpon>verNotasActividad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -2572,6 +2612,13 @@
     <Content Include="login\vendor\bootstrap\css\bootstrap-reboot.min.css.map" />
     <Content Include="login\vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="login\vendor\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Archivo\CRUCIGRAMA.docx" />
+    <Content Include="Archivo\Harold Zabala - Phrasal verbs %282%29.docx" />
+    <Content Include="Archivo\HORAS GESTOR MONITOR HAROLD 1834590.xlsx" />
+    <Content Include="Archivo\PLATAFORMA WEB PARA FOMENTAR EL APRENDIZAJE.docx" />
+    <Content Include="Archivo\Product_Back_Log2.xlsx" />
+    <Content Include="Archivo\Tatiana - Phrasal verbs.docx" />
+    <Content Include="Archivo\What do you think about.docx" />
     <None Include="packages.config" />
     <Content Include="Vista\fonts\Flaticon.eot" />
     <Content Include="Vista\fonts\Flaticon.ttf" />
@@ -2764,9 +2811,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Archivo\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -112,7 +112,7 @@
 
            
 
-            <asp:Repeater ID="repeaterMateria" runat="server">
+            <asp:Repeater ID="repeaterMateria" runat="server" OnItemCommand="repeaterMateria_ItemCommand">
                 <ItemTemplate>
                     <div class="row"> 
                 <div class="col-lg-3 col-md-6 col-12">
@@ -120,24 +120,39 @@
 						
 						<div class="course-br">
 							<div class="course-title">
-								<h2><a href="actividades.aspx"><span class="auto-style2">'<%# Eval("NombreMateria") %>'</span></a></h2>
+								<h2><a href="#"><span class="auto-style2">'<%# Eval("NombreMateria") %>'</span></a></h2>
+                              
+                                <asp:Label ID="lblidMateria" runat="server" Text='<%# Eval("IdMateria") %>'><span>idMateria</span></asp:Label>
+                                  <asp:Label ID="Label1" runat="server" Text='<%# Eval("Curso") %>'><span>curso</span></asp:Label>
+
 							</div>
 							<div class="course-desc">
-								<p><%# Eval("NivelAcademico") %></p>
+							
+                           	<p><%# Eval("NivelAcademico") %> </p>
+                             
                                 
                                
 							</div>
 							<div class="course-rating">
-								<p>Seccion Basica Media</p>
-                                <p>&nbsp;</p>
+								<p>Seccion Basica Media</p><br />
+                             
 															
 							</div>
+                                 	<div class="blog-button">
+                            	
+                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Ver</span></asp:LinkButton>
+							
+						</div>
 						</div>
 						<div class="course-meta-bot">
 							<ul>
 								<li>Profesor : <%# Eval("Nombres") + " " + Eval("Apellidos") %></li>
 							</ul>
 						</div>
+                          <div class="text-center pd">
+                              
+
+                                </div>
 					</div>
                 </div><!-- end col -->
 

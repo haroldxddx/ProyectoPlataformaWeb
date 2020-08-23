@@ -31,5 +31,20 @@ namespace ProyectoPlataformaW.Logica
             return ed;
 
         }
+        public int mtdAsigActi(clEntidadEntregaE objE)
+        {
+            clEntregaD e = new clEntregaD();
+            int hj = e.mtdAsignarEntrega(objE);
+            return hj;
+
+        }
+        public List<clEntidadNotas> mtdNotasMat(clEntidadNotas objE)
+        {
+            clEntregaD objEnt = new clEntregaD();
+            List<clEntidadNotas> listaNot = new List<clEntidadNotas>();
+            listaNot = objEnt.mtdListarNotasAc(objE);
+            return listaNot;
+        }
+
     }
 }

@@ -9,6 +9,7 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clEstudianteD
     {
+        public static int idestu;
         public int mtdRegistrarEstudiante(clEntidadEstudianteE objEst)
         {
             string sqlInsert = "insert into Estudiante (Nombres,Apellidos,Documento,Email,Contrasena,IdCurso)" +
@@ -281,6 +282,34 @@ where Email = 'haroldzabala5@gmail.com'*/
             int xd = objConexion.mtdConectado(sql);
             return xd;
         }
+
+        public List<clEntidadEstudianteE> mtdBusEEmaiL(clEntidadEstudianteE objest)
+        {
+            string sql = "select  Estudiante.idEstudiante,Estudiante.Nombres ,Estudiante.Apellidos,Estudiante.Email from Estudiante where Email= '"+objest.Email+"'";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblEstud = new DataTable();
+            tblEstud = objSql.mtdDesconectado(sql);
+
+            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
+
+            for (int i = 0; i < tblEstud.Rows.Count; i++)
+            {
+                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
+
+                objEstu.IdEstudiante = int.Parse(tblEstud.Rows[i][0].ToString());
+                objEstu.Nombres = tblEstud.Rows[i][1].ToString();
+                objEstu.Apellidos = tblEstud.Rows[i][2].ToString();
+                objEstu.Email = tblEstud.Rows[i][3].ToString();
+                
+
+                listaEstud.Add(objEstu);
+
+            }
+
+            return listaEstud;
+        }
+
 
 
     }

@@ -91,16 +91,27 @@
 						<div class="meta-info-blog">
 							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha inicio actividad: '<%# Eval("FechaInicio") %>'</a> </span>
 							<span><i class="fa fa-calendar"></i> <a href="#"> Fecha fin actividad : '<%# Eval("FechaFinal") %>'</a> </span>
-                            <span><i class="fa fa-tag"></i>  <a href="#">por realizar</a> </span>
-                            <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                            <asp:Label ID="lblidActi" runat="server" Text='<%# Eval("IdActividad") %>'> </asp:Label>
-                            <asp:TextBox ID="txt" runat="server" Text='<%# Eval("IdActividad") %> '></asp:TextBox>
+                            <span><i class="fa fa-tag"></i>  <a href="#">por realizar </a> </span>
+                              <span><i class="fa fa-tag"></i>  <a href="#">Ruta:'<%# Eval("Archivos") %>'</a> </span>
+                           
+                            <span><i class="fa fa-tag"></i>  <a href="/Archivo/esp.jpg">Archivos5</a> </span>
+                            <a href="<%# Eval("Archivos")%>" target="_blank"><%#Eval("Archivos")%>sdjk</a>
+
+                            
+                            <asp:Label ID="lblDireccion"  class="fa fa-comments" runat="server" Text="">  </asp:Label>
+          
+
+                            <asp:LinkButton ID="LinkButton1" runat="server" OnClick="btn_Exc_Click">LinkButton</asp:LinkButton>
 						</div>
 						<div class="blog-title">
 							<h2><a href="#" title="">'<%# Eval("NombreActividad") %>'</a></h2>
 						</div>
 						<div class="blog-desc">
-							<p>'<%# Eval("Descripcion") %>' </p>
+							<p>
+                            <asp:Label ID="lblDescripcion" runat="server" Text='<%# Eval("Descripcion") %>'> </asp:Label>
+                         
+
+							</p>
 						</div>
 						<div class="blog-button">
                             	
@@ -116,7 +127,7 @@
             		
 			</div><!-- end container -->
     </div><!-- end section -->
-                 <asp:Button ID="Button1" runat="server" Text="Button" OnClick="btnRealizar_Click"  />
+               
                             
 
    <!-- end section -->

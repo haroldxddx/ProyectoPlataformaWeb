@@ -52,7 +52,7 @@ namespace ProyectoPlataformaW.Datos
             }
             return listaEcM;
         }
-       public List<clEntidadProfesorCursoMateriaE> mtdBuscarrMatProfCurso (clEntidadProfesorCursoMateriaE objcur)
+        public List<clEntidadProfesorCursoMateriaE> mtdBuscarrMatProfCurso (clEntidadProfesorCursoMateriaE objcur)
 
         {
             string sql = "select Curso.Curso, Curso.Grado, Materia.NombreMateria, Profesor.Nombres, Profesor.Apellidos from Curso inner join CursoMateria On Curso.IdCurso = CursoMateria.IdCurso inner join Profesor On Profesor.IdProfesor = CursoMateria.IdProfesor inner join Materia On Materia.IdMateria = CursoMateria.IdMateria WHERE (Curso.Curso LIKE '%" + objcur.Curso + "%')";
@@ -118,7 +118,7 @@ namespace ProyectoPlataformaW.Datos
         //Listado de materias a cursos
         public List<clEntidadCursoMateriaE> mtdListMateriasE(clEntidadEstudianteE objE)
         {
-            string sql = "select Materia.NombreMateria, Materia.NivelAcademico , Profesor.Nombres,Profesor.Apellidos,Materia.IdMateria from Materia inner join CursoMateria ON Materia.IdMateria = CursoMateria.IdMateria inner join Profesor on Profesor.IdProfesor = CursoMateria.IdProfesor inner join Curso on Curso.IdCurso = CursoMateria.IdCurso inner join Estudiante On Curso.IdCurso = Estudiante.IdCurso where Estudiante.Email = '"+ objE.Email +"' ";
+            string sql = "select Materia.NombreMateria, Materia.NivelAcademico , Profesor.Nombres,Profesor.Apellidos,Materia.IdMateria ,Curso.Curso from Materia inner join CursoMateria ON Materia.IdMateria = CursoMateria.IdMateria inner join Profesor on Profesor.IdProfesor = CursoMateria.IdProfesor inner join Curso on Curso.IdCurso = CursoMateria.IdCurso inner join Estudiante On Curso.IdCurso = Estudiante.IdCurso where Estudiante.Email = '"+ objE.Email +"' ";
 
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblCur = new DataTable();

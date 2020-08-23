@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW.Datos
     {
         public List<clEntidadProfesorE> mtdListarProf()
         {
-            string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email,Especialidad from Profesor";
+            string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email from Profesor";
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblprof = new DataTable();
             tblprof = objSql.mtdDesconectado(sql);
@@ -27,7 +27,7 @@ namespace ProyectoPlataformaW.Datos
                 objProf.Apellidos = tblprof.Rows[i][2].ToString();
                 objProf.Documento = int.Parse(tblprof.Rows[i][3].ToString());
                 objProf.Email = tblprof.Rows[i][4].ToString();
-                objProf.Especialidad = tblprof.Rows[i][5].ToString();
+               
 
 
 

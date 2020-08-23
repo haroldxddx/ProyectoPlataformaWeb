@@ -13,6 +13,10 @@ namespace ProyectoPlataformaW
 {
     public partial class inicioEstu : System.Web.UI.Page
     {
+        public static int id;
+
+        public string o;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -74,6 +78,29 @@ namespace ProyectoPlataformaW
                 
 
             }
+
+
+        }
+      
+      protected void repeaterMateria_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+           
+          
+            o = repeaterMateria.Items[e.Item.ItemIndex].ItemIndex.ToString();
+
+           id = int.Parse(((Label)repeaterMateria.Items[int.Parse(o)].FindControl("lblidMateria")).Text);
+      
+
+            Response.Write("<script> alert(" + id + ") </script>");
+
+            Response.Redirect("~/Vista/actividades.aspx");
+
+         
+
+        }
+
+        protected void btnEntregaA_Click(object sender, EventArgs e)
+        {
 
         }
     }

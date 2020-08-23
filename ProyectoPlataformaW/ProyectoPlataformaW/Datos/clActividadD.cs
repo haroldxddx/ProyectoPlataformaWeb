@@ -24,7 +24,7 @@ namespace ProyectoPlataformaW.Datos
         public List<clEntidadActividadE> mtdListActividad(clEntidadActividadE objE)
         {
             
-            string sql = "select   Actividad.FechaInicio,Actividad.FechaFinal,Actividad.NombreActividad,Actividad.Descripcion,Profesor.Nombres,Profesor.Apellidos , Actividad.IdActividad from Actividad inner join CursoMateria on Actividad.IdCursoMateria=CursoMateria.IdCursoMateria inner join Curso on CursoMateria.IdCurso=Curso.IdCurso inner join Profesor on CursoMateria.IdProfesor=Profesor.IdProfesor inner join Materia on CursoMateria.IdMateria= Materia.IdMateria where Materia.IdMateria='" + objE.IdMateria + "' ";
+            string sql = "select   Actividad.FechaInicio,Actividad.FechaFinal,Actividad.NombreActividad,Actividad.Descripcion,Profesor.Nombres,Profesor.Apellidos , Actividad.IdActividad ,Actividad.Archivos from Actividad inner join CursoMateria on Actividad.IdCursoMateria=CursoMateria.IdCursoMateria inner join Curso on CursoMateria.IdCurso=Curso.IdCurso inner join Profesor on CursoMateria.IdProfesor=Profesor.IdProfesor inner join Materia on CursoMateria.IdMateria= Materia.IdMateria where Materia.IdMateria='" + objE.IdMateria + "' ";
 
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblCur = new DataTable();
