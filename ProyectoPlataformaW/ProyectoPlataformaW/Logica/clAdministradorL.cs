@@ -75,5 +75,12 @@ namespace ProyectoPlataformaW.Logica
             return ed;
 
         }
+        public List<clEntidadAdministradorE> mtdDatosEstu(clEntidadAdministradorE objDatos)
+        {
+            clAdministradorD objEs = new clAdministradorD();
+            List<clEntidadAdministradorE> listaEst = new List<clEntidadAdministradorE>();
+            listaEst = objEs.mtdDatosE(objDatos);
+            return listaEst;
+        }
     }
 }
