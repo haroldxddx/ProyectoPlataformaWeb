@@ -180,9 +180,7 @@ C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataforma
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.IO.FileSystem.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Security.Cryptography.Primitives.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Text.Encoding.CodePages.dll
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\obj\Debug\ProyectoPlataformaW.csprojAssemblyReference.cache
 C:\Users\USUARIO\Source\Repos\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\ProyectoPlataformaW.dll.config
@@ -279,28 +277,7 @@ C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataforma
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.Managed.Core.targets
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.AppContext.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Console.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Globalization.Calendars.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.IO.Compression.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.IO.Compression.ZipFile.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Net.Http.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Net.Sockets.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.ValueTuple.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Xml.XPath.XDocument.dll
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\vbc.exe
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\vbc.exe.config
 C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\vbc.rsp
@@ -373,3 +350,10 @@ D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\P
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\System.IO.Packaging.dll
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\DocumentFormat.OpenXml.xml
 D:\Mis documentos\Documentos\GitHub\ProyectoPlataformaWeb2\ProyectoPlataformaW\ProyectoPlataformaW\bin\System.IO.Packaging.xml
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Buffers.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Memory.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\System.IO.Packaging.dll
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\DocumentFormat.OpenXml.xml
+C:\Users\Harold\Source\Repos\haroldxddx\ProyectoPlataformaWeb\ProyectoPlataformaW\ProyectoPlataformaW\bin\System.IO.Packaging.xml

@@ -98,12 +98,19 @@
                                         <asp:Label ID="lblAdmin" runat="server" Text=""></asp:Label> </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
 								            <a class="dropdown-item" href="/Vista/editPerfilAdmin.aspx">Editar Perfil</a>
+                                            <a class="dropdown-item" href="/Vista/registrarAdministrador2.aspx">Registrar Administrador</a>
                                             
 								            
 							            </div>
 						            </li>
                                   
-                                    <li class="nav-item"><a class="nav-link" href="#">Anuncios</a></li>
+                                    <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Anuncios </a>
+							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+								            <a class="dropdown-item" href="/Vista/registrarAnuncios.aspx">Registro de Anuncios</a>
+								            
+							            </div>
+						            </li>
                                      <li class="nav-item"> <asp:LinkButton ID="lbcerrarsesion" class="nav-link"  runat="server" OnClick="lblcerrarsesion_Click" >cerrar sesion</asp:LinkButton></li>
 
                                 </ul>
