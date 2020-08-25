@@ -56,11 +56,16 @@ namespace ProyectoPlataformaW
 
             }*/
 
-         
-
-
 
             string user = Session["usuario"].ToString();
+
+            clRecuperarContra c = new clRecuperarContra();
+            c.enviarCorreoIsecion(user);
+
+
+
+
+            
 
             List<clEntidadCursoMateriaE> listaCm = new List<clEntidadCursoMateriaE>();
 

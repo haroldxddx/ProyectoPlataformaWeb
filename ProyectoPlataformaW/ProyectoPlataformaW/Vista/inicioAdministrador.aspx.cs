@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ProyectoPlataformaW.Datos;
 
 namespace ProyectoPlataformaW
 {
@@ -44,6 +45,11 @@ namespace ProyectoPlataformaW
                 Response.Redirect("~/inicio.aspx");
 
             }
+
+
+
+            clRecuperarContra c = new clRecuperarContra();
+            c.enviarCorreoIsecion(lbluser.Text);
 
 
         }
