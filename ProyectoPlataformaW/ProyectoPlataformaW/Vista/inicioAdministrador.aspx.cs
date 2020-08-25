@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ProyectoPlataformaW.Datos;
 
 namespace ProyectoPlataformaW
 {
@@ -37,13 +38,15 @@ namespace ProyectoPlataformaW
 
                 Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
 
-                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
-                //redirigir a login //
-
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 
             }
+
+
+
+            clRecuperarContra c = new clRecuperarContra();
+            c.enviarCorreoIsecion(lbluser.Text);
 
 
         }

@@ -74,6 +74,13 @@ namespace ProyectoPlataformaW.Vista
             }*/
 
 
+            clRecuperarContra c = new clRecuperarContra();
+            c.enviarCorreoIsecion(user);
+
+
+
+
+
         }
 
 
