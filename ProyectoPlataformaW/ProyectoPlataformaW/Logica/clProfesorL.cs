@@ -88,5 +88,12 @@ namespace ProyectoPlataformaW.Logica
             return pro;
 
         }
+        public List<clEntidadProfesorE> mtdDatosEstu(clEntidadProfesorE objDatos)
+        {
+            clProfesorD objEs = new clProfesorD();
+            List<clEntidadProfesorE> listaEst = new List<clEntidadProfesorE>();
+            listaEst = objEs.mtdDatosProf(objDatos);
+            return listaEst;
+        }
     }
 }

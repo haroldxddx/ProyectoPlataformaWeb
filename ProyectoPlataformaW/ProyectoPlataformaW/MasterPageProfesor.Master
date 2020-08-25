@@ -71,7 +71,7 @@
                             <div class="collapse navbar-collapse" id="navbars-host">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item dropdown">
-							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Cursos </a>
+							        <a class="nav-link dropdown-toggle" href="/Vista/inicioProfesor.aspx" id="dropdown-a" data-toggle="dropdown">Cursos </a>
 							            
 						            </li>
                                    
@@ -79,6 +79,14 @@
 							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Estudiantes </a>
 							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
 								            <a class="dropdown-item" href="/Vista/buscadorAprendices.aspx">Buscador de aprendices</a>
+                                            
+								            
+							            </div>
+						            </li>
+                                    <li class="nav-item dropdown">
+							        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Anuncios </a>
+							            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+								            <a class="dropdown-item" href="/Vista/registrarAnunciosProf.aspx">Registro de anuncios</a>
                                             
 								            
 							            </div>

@@ -9,6 +9,7 @@ namespace ProyectoPlataformaW.Datos
 {
     public class clProfesorD
     {
+        public static int IdProfesor;
         public List<clEntidadProfesorE> mtdListarProf()
         {
             string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email from Profesor";
@@ -202,6 +203,36 @@ namespace ProyectoPlataformaW.Datos
             clAdminSQL objConexion = new clAdminSQL();
             int xd = objConexion.mtdConectado(sql);
             return xd;
+        }
+        public List<clEntidadProfesorE> mtdDatosProf(clEntidadProfesorE objE)
+        {
+            string sql = "select IdProfesor,Nombres,Apellidos,Documento,Email from Profesor where Email = '" + objE.Email + "'";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblEstud = new DataTable();
+            tblEstud = objSql.mtdDesconectado(sql);
+
+            List<clEntidadProfesorE> listaEstud = new List<clEntidadProfesorE>();
+
+            for (int i = 0; i < tblEstud.Rows.Count; i++)
+            {
+                clEntidadProfesorE objEstu = new clEntidadProfesorE();
+
+                objEstu.IdProfesor = int.Parse(tblEstud.Rows[i][0].ToString());
+                objEstu.Nombres = tblEstud.Rows[i][1].ToString();
+                objEstu.Apellidos = tblEstud.Rows[i][2].ToString();
+                objEstu.Documento = int.Parse(tblEstud.Rows[i][3].ToString());
+                objEstu.Email = tblEstud.Rows[i][4].ToString();
+
+
+                IdProfesor = int.Parse(tblEstud.Rows[i][0].ToString());
+
+
+                listaEstud.Add(objEstu);
+
+            }
+
+            return listaEstud;
         }
 
 

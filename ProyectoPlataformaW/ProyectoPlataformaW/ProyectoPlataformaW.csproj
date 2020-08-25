@@ -2087,6 +2087,8 @@
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
     <Content Include="Vista\registrarAdministrador2.aspx" />
+    <Content Include="Vista\registrarAnuncios.aspx" />
+    <Content Include="Vista\registrarAnunciosProf.aspx" />
     <Content Include="Vista\registrarCurso2.aspx" />
     <Content Include="Vista\registrarEstudiante2.aspx" />
     <Content Include="Vista\registrarMateria2.aspx" />
@@ -2103,6 +2105,7 @@
     <Compile Include="Datos\clActividadD.cs" />
     <Compile Include="Datos\clAdministradorD.cs" />
     <Compile Include="Datos\clAdminSQL.cs" />
+    <Compile Include="Datos\clAnunciosD.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clCursoD.cs" />
     <Compile Include="Datos\clCursoMateriaD.cs" />
@@ -2115,6 +2118,7 @@
     <Compile Include="Entidades\clEntidadActividadE.cs" />
     <Compile Include="Entidades\clEntidadActividadEstuE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
+    <Compile Include="Entidades\clEntidadAnunciosE.cs" />
     <Compile Include="Entidades\clEntidadCursoEE.cs" />
     <Compile Include="Entidades\clEntidadCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadCursosE.cs" />
@@ -2127,6 +2131,7 @@
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
     <Compile Include="Entidades\clNotasEstudE.cs" />
+    <Compile Include="Logica\clAnunciosL.cs" />
     <Compile Include="Logica\clMateriaL.cs" />
     <Compile Include="Entidades\estudiantesViewModel.cs" />
     <Compile Include="Global.asax.cs">
@@ -2335,6 +2340,20 @@
     </Compile>
     <Compile Include="Vista\registrarAdministrador2.aspx.designer.cs">
       <DependentUpon>registrarAdministrador2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\registrarAnuncios.aspx.cs">
+      <DependentUpon>registrarAnuncios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\registrarAnuncios.aspx.designer.cs">
+      <DependentUpon>registrarAnuncios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\registrarAnunciosProf.aspx.cs">
+      <DependentUpon>registrarAnunciosProf.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\registrarAnunciosProf.aspx.designer.cs">
+      <DependentUpon>registrarAnunciosProf.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\registrarCurso2.aspx.cs">
       <DependentUpon>registrarCurso2.aspx</DependentUpon>
@@ -2824,7 +2843,9 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Anuncios\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
