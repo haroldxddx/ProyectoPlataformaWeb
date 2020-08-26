@@ -2427,6 +2427,7 @@
     </Compile>
     <Compile Include="Vista\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
