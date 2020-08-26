@@ -13,7 +13,7 @@ namespace ProyectoPlataformaW.Datos
 
         public static void save(object obj, Exception ex)
         {
-            string fecha = System.DateTime.Now.ToString("ddMMyyyy");
+            string fecha = System.DateTime.Now.ToString("yyyyMMdd");
             string hora = System.DateTime.Now.ToString("HH:mm:ss");
             string path = HttpContext.Current.Request.MapPath("~/Log/" + fecha +"_"+hora+".txt");
 
