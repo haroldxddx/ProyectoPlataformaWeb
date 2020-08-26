@@ -80,7 +80,7 @@ namespace ProyectoPlataformaW.login
                 Session["usuario"] = txtUsuario.Text;
                 Session["general"] = "administrador";
                 // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                Response.Redirect("~/Vista/inicioAdministrador.aspx");
+                Response.Redirect("~/Vista/inicioAnuncio.aspx");
 
 
             } else if (listaBus.Count != 0)

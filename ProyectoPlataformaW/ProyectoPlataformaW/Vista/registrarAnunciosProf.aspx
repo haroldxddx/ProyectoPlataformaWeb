@@ -51,7 +51,7 @@
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="inputName">Titulo</label>
+                <label for="inputName">Titulo</label><asp:Label ID="lblFecha" runat="server"></asp:Label>
                 
                   <asp:TextBox ID="txtTitulo" runat="server" placeholder="Ingrese Titulo del Anuncio" class="form-control"></asp:TextBox>
               </div>
