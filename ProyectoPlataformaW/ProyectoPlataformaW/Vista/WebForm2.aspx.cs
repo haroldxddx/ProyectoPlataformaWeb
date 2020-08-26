@@ -1,5 +1,4 @@
-﻿using OfficeOpenXml;
-using ProyectoPlataformaW.Datos;
+﻿using ProyectoPlataformaW.Datos;
 using ProyectoPlataformaW.Entidades;
 using SpreadsheetLight;
 using System;
