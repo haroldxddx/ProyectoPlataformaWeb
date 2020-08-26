@@ -350,6 +350,7 @@
     <Content Include="Vista\dist\js\pages\dashboard2.js" />
     <Content Include="Vista\dist\js\pages\dashboard3.js" />
     <Content Include="Vista\editPerfil2.aspx" />
+    <Content Include="Vista\inicioAnuncios.aspx" />
     <Content Include="Vista\inicioEstudiante.aspx" />
     <Content Include="Vista\css\animate.css" />
     <Content Include="Vista\css\animate.min.css" />
@@ -2085,6 +2086,7 @@
     <Content Include="Vista\plugins\toastr\toastr.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.css" />
     <Content Include="Vista\plugins\toastr\toastr.min.js" />
+    <Content Include="Vista\profile.html" />
     <Content Include="Vista\registrarAdministrador2.aspx" />
     <Content Include="Vista\registrarAnuncios.aspx" />
     <Content Include="Vista\registrarAnunciosProf.aspx" />
@@ -2114,6 +2116,7 @@
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
+    <Compile Include="Entidades\clAdminAnunciosE.cs" />
     <Compile Include="Entidades\clEntidadActividadE.cs" />
     <Compile Include="Entidades\clEntidadActividadEstuE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
@@ -2261,6 +2264,13 @@
     </Compile>
     <Compile Include="Vista\editPerfil2.aspx.designer.cs">
       <DependentUpon>editPerfil2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\inicioAnuncios.aspx.cs">
+      <DependentUpon>inicioAnuncios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\inicioAnuncios.aspx.designer.cs">
+      <DependentUpon>inicioAnuncios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\inicioEstudiante.aspx.cs">
       <DependentUpon>inicioEstudiante.aspx</DependentUpon>
@@ -2837,6 +2847,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anuncios\" />
+    <Folder Include="Log\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

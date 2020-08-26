@@ -21,5 +21,12 @@ namespace ProyectoPlataformaW.Logica
             int regi = objAnunciosD.mtdRegistrarAProf(objDatos);
             return regi;
         }
+        public List<clAdminAnunciosE> mtdListAnunAd()
+        {
+            clAnunciosD objEs = new clAnunciosD();
+            List<clAdminAnunciosE> listaEst = new List<clAdminAnunciosE>();
+            listaEst = objEs.mtdListAnunAdm();
+            return listaEst;
+        }
     }
 }
