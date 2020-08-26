@@ -24,8 +24,6 @@ namespace ProyectoPlataformaW
                 if (Session["general"].ToString() == "administrador")
                 {
 
-                    // Response.Redirect("~/inicio.aspx");
-
                 }
                 else if (Session["general"].ToString() != "administrador")
                 {
@@ -33,11 +31,11 @@ namespace ProyectoPlataformaW
                     Response.Redirect("~/inicio.aspx");
                 }
             }
-            catch (Exception)
+            catch (Exception error)
             {
 
                 Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
-
+                clErrores.save(this, error);
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 

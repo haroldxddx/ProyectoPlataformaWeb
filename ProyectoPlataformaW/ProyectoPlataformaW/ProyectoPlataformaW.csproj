@@ -2110,6 +2110,7 @@
     <Compile Include="Datos\clCursoMateriaD.cs" />
     <Compile Include="Datos\clEncrypt.cs" />
     <Compile Include="Datos\clEntregaD.cs" />
+    <Compile Include="Datos\clErrores.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
@@ -2837,6 +2838,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anuncios\" />
+    <Folder Include="App_LocalResources\" />
+    <Folder Include="Log\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

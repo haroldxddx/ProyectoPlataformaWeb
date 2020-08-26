@@ -21,9 +21,9 @@ namespace ProyectoPlataformaW
         {
 
 
-            // Session["general"] = "estudiante";
+           
 
-            /*try
+            try
             {
                 if (Session["general"].ToString() == null)
                 {
@@ -33,8 +33,6 @@ namespace ProyectoPlataformaW
                 if (Session["general"].ToString() == "estudiante")
                 {
 
-                    // Response.Redirect("~/inicio.aspx");
-
                 }
                 else if (Session["general"].ToString() != "estudiante")
                 {
@@ -42,19 +40,16 @@ namespace ProyectoPlataformaW
                     Response.Redirect("~/inicio.aspx");
                 }
             }
-            catch (Exception)
+            catch (Exception error )
             {
 
-
                 Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
-
-                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
-                //redirigir a login //
-
+                clErrores.save(this, error);
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 
-            }*/
+            }
+
 
 
             string user = Session["usuario"].ToString();
