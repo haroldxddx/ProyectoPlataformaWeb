@@ -86,7 +86,13 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							&nbsp;</div>
+
+                            <p>
+
+                            </p>
+							<img src="cursos-online.png" alt="" class="img-fluid">
+
+						</div>
 						<div class="course-br">
 							<div class="course-title">
 								<h2>

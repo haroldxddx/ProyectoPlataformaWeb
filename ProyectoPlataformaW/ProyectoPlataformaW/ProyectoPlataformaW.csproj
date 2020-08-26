@@ -131,6 +131,7 @@
     <Content Include="Imagenes\sobresalir %282%29.png" />
     <Content Include="Imagenes\video.png" />
     <Content Include="inicio.aspx" />
+    <Content Include="login\images\cursos-online.png" />
     <Content Include="Vista\actividades.aspx" />
     <Content Include="Vista\asignarActividadesP.aspx" />
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
@@ -350,6 +351,7 @@
     <Content Include="Vista\dist\js\pages\dashboard2.js" />
     <Content Include="Vista\dist\js\pages\dashboard3.js" />
     <Content Include="Vista\editPerfil2.aspx" />
+    <Content Include="Vista\inicioAnuncio.aspx" />
     <Content Include="Vista\inicioEstudiante.aspx" />
     <Content Include="Vista\css\animate.css" />
     <Content Include="Vista\css\animate.min.css" />
@@ -2118,6 +2120,7 @@
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
+    <Compile Include="Entidades\clAdminAnunciosE2.cs" />
     <Compile Include="Entidades\clEntidadActividadE.cs" />
     <Compile Include="Entidades\clEntidadActividadEstuE.cs" />
     <Compile Include="Entidades\clEntidadAdministradorE.cs" />
@@ -2266,6 +2269,13 @@
     </Compile>
     <Compile Include="Vista\editPerfil2.aspx.designer.cs">
       <DependentUpon>editPerfil2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\inicioAnuncio.aspx.cs">
+      <DependentUpon>inicioAnuncio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\inicioAnuncio.aspx.designer.cs">
+      <DependentUpon>inicioAnuncio.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\inicioEstudiante.aspx.cs">
       <DependentUpon>inicioEstudiante.aspx</DependentUpon>
