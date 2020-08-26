@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW.Datos
         SqlConnection conexBD = null;
         public SqlConnection mtdConexion()
         {
-            string cadena = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbProyectoPlataformaa.mdf;Integrated Security=True";
+            string cadena = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbProyectoPlataforma.mdf;Integrated Security=True";
             try
             {
                 conexBD = new SqlConnection(cadena);

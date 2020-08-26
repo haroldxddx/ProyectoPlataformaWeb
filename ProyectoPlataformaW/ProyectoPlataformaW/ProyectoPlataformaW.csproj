@@ -2848,7 +2848,7 @@
     <Folder Include="Anuncios\" />
     <Folder Include="App_GlobalResources\" />
     <Folder Include="App_LocalResources\" />
-    <Folder Include="log\" />
+    <Folder Include="Errores\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
