@@ -15,7 +15,7 @@ namespace ProyectoPlataformaW.Datos
         {
             string fecha = System.DateTime.Now.ToString("yyyyMMdd");
             string hora = System.DateTime.Now.ToString("HH:mm:ss");
-            string path = HttpContext.Current.Request.MapPath("~/Log/" + fecha +"_"+hora+".txt");
+            string path = HttpContext.Current.Request.MapPath("~/Errores/" + fecha +"_"+hora+".txt");
 
             StreamWriter sw = new StreamWriter(path, true);
 
