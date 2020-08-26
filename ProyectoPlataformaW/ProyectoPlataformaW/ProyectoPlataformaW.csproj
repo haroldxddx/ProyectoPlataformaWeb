@@ -2132,6 +2132,7 @@
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
     <Compile Include="Entidades\clNotasEstudE.cs" />
+    <Compile Include="Errores\Class1.cs" />
     <Compile Include="Logica\clAnunciosL.cs" />
     <Compile Include="Logica\clMateriaL.cs" />
     <Compile Include="Entidades\estudiantesViewModel.cs" />
@@ -2848,7 +2849,6 @@
     <Folder Include="Anuncios\" />
     <Folder Include="App_GlobalResources\" />
     <Folder Include="App_LocalResources\" />
-    <Folder Include="Errores\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
