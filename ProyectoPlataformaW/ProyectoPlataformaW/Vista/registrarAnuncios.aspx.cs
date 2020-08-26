@@ -14,6 +14,7 @@ namespace ProyectoPlataformaW.Vista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblFecha.Text = DateTime.Now.ToShortDateString();
             string user = Session["usuario"].ToString();
             clEntidadAdministradorE objAdminE = new clEntidadAdministradorE();
             objAdminE.Email = user;
@@ -30,6 +31,7 @@ namespace ProyectoPlataformaW.Vista
 
             clEntidadAnunciosE objAnunE = new clEntidadAnunciosE();
             objAnunE.Titulo = txtTitulo.Text;
+            objAnunE.Fecha = lblFecha.Text;
             objAnunE.Descripcion = txtDesc.Text;
             objAnunE.Archivos = (string)(Session["Archivos"] = "~/Anuncios/" + fluArchivo.FileName); 
             objAnunE.IdAdministrador = id;

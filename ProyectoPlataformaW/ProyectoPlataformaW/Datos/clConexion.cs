@@ -18,7 +18,7 @@ namespace ProyectoPlataformaW.Datos
             }
             catch (Exception error)
             {
-
+                clErrores.save(this, error);
                 string err = error.Message;
                 HttpContext.Current.Response.Redirect("paginaError.aspx", true);
                 conexBD = null;

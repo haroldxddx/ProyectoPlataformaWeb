@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
 using static ProyectoPlataformaW.Datos.clEncrypt;
+using ProyectoPlataformaW.Datos;
 
 
 namespace ProyectoPlataformaW.login
@@ -95,9 +96,17 @@ namespace ProyectoPlataformaW.login
                 txtContraseña.Text = "";
                 txtUsuario.Text = "";
             }
-                    
 
-                
+
+            try
+            {
+
+            }
+            catch (Exception error)
+            {
+                clErrores.save(this, error);
+                throw;
+            }
 
 
 

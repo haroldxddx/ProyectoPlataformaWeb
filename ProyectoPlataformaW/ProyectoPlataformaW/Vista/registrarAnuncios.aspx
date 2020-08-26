@@ -51,9 +51,8 @@
             </div>
             <div class="card-body">
               <div class="form-group">
-                <label for="inputName">Titulo</label>
-                
-                  <asp:TextBox ID="txtTitulo" runat="server" placeholder="Ingrese Titulo del Anuncio" class="form-control"></asp:TextBox>
+                <label for="inputName">Titulo</label><asp:Label ID="lblFecha" runat="server"></asp:Label>
+&nbsp;<asp:TextBox ID="txtTitulo" runat="server" placeholder="Ingrese Titulo del Anuncio" class="form-control"></asp:TextBox>
               </div>
               <div class="form-group">
                 <label for="inputDescription">Descripcion</label>

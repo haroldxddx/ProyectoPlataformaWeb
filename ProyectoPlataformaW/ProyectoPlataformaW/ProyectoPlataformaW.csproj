@@ -2113,6 +2113,7 @@
     <Compile Include="Datos\clCursoMateriaD.cs" />
     <Compile Include="Datos\clEncrypt.cs" />
     <Compile Include="Datos\clEntregaD.cs" />
+    <Compile Include="Datos\clErrores.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
@@ -2133,6 +2134,7 @@
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
     <Compile Include="Entidades\clNotasEstudE.cs" />
+    <Compile Include="Errores\Class1.cs" />
     <Compile Include="Logica\clAnunciosL.cs" />
     <Compile Include="Logica\clMateriaL.cs" />
     <Compile Include="Entidades\estudiantesViewModel.cs" />
@@ -2853,6 +2855,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anuncios\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="App_LocalResources\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
