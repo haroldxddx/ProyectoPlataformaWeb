@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ProyectoPlataformaW.Datos;
 
 namespace ProyectoPlataformaW
 {
@@ -23,8 +24,6 @@ namespace ProyectoPlataformaW
                 if (Session["general"].ToString() == "administrador")
                 {
 
-                    // Response.Redirect("~/inicio.aspx");
-
                 }
                 else if (Session["general"].ToString() != "administrador")
                 {
@@ -32,18 +31,20 @@ namespace ProyectoPlataformaW
                     Response.Redirect("~/inicio.aspx");
                 }
             }
-            catch (Exception)
+            catch (Exception error)
             {
 
                 Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
-
-                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
-                //redirigir a login //
-
+                clErrores.save(this, error);
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 
             }
+
+
+
+            clRecuperarContra c = new clRecuperarContra();
+            c.enviarCorreoIsecion(lbluser.Text);
 
 
         }

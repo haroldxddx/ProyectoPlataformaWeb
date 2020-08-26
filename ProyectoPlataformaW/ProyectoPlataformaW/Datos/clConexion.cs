@@ -11,14 +11,14 @@ namespace ProyectoPlataformaW.Datos
         SqlConnection conexBD = null;
         public SqlConnection mtdConexion()
         {
-            string cadena = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbProyectoPlataforma.mdf;Integrated Security=True";
+            string cadena = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\dbProyectoPlataformaa.mdf;Integrated Security=True";
             try
             {
                 conexBD = new SqlConnection(cadena);
             }
             catch (Exception error)
             {
-
+                clErrores.save(this, error);
                 string err = error.Message;
                 HttpContext.Current.Response.Redirect("paginaError.aspx", true);
                 conexBD = null;

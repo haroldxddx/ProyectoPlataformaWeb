@@ -45,5 +45,41 @@ namespace ProyectoPlataformaW.Datos
 
             }
         }
+
+        public void enviarCorreoIsecion(string correo)
+        {
+            string rutimag = "~/logo-email-2-g-suite.png";
+            try
+            {
+                Attachment data = new Attachment(rutimag);
+                correos.To.Clear();
+                correos.Body = "";
+                correos.Subject = "";
+                correos.Body = " Se ha iniciado sesion desde un dispositivo nuevo en GLVCLASSROOM // " +correo+" ,Si Usted no ha sido verifique sus datos y cambie  su contraseña la proxima vez que ingrese a la plataforma ";
+                correos.Subject = ("INICIO DE SESION");
+                
+                correos.IsBodyHtml = true;
+                correos.To.Add(correo.Trim());
+
+                correos.From = new MailAddress("glvduitama0@gmail.com"); //Enviar informacion
+                envios.Credentials = new NetworkCredential("glvduitama0@gmail.com", "integrado");//enviar correo verificacion correo y password
+
+
+                envios.Host = "smtp.gmail.com";
+                envios.Port = 587;
+                envios.EnableSsl = true;
+
+                envios.Send(correos);
+
+
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+        }
+
+
     }
 }
