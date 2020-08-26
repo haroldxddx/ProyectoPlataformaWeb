@@ -2148,6 +2148,7 @@
     <Compile Include="Logica\clActividadL.cs" />
     <Compile Include="Logica\clCursoMateriaL.cs" />
     <Compile Include="Logica\clEntregaL.cs" />
+    <Compile Include="log\Class1.cs" />
     <Compile Include="Vista\actividades.aspx.cs">
       <DependentUpon>actividades.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2846,8 +2847,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anuncios\" />
+    <Folder Include="App_GlobalResources\" />
     <Folder Include="App_LocalResources\" />
-    <Folder Include="Log\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
