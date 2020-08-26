@@ -2098,6 +2098,7 @@
     <Content Include="Vista\verNotasActi.aspx" />
     <Content Include="Vista\verNotasMateria.aspx" />
     <Content Include="Vista\WebForm1.aspx" />
+    <Content Include="Vista\WebForm2.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebService.asmx" />
   </ItemGroup>
@@ -2106,6 +2107,7 @@
     <Compile Include="Datos\clAdministradorD.cs" />
     <Compile Include="Datos\clAdminSQL.cs" />
     <Compile Include="Datos\clAnunciosD.cs" />
+    <Compile Include="Datos\Class1.cs" />
     <Compile Include="Datos\clConexion.cs" />
     <Compile Include="Datos\clCursoD.cs" />
     <Compile Include="Datos\clCursoMateriaD.cs" />
@@ -2410,6 +2412,12 @@
     </Compile>
     <Compile Include="Vista\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebService.asmx.cs">
       <DependentUpon>WebService.asmx</DependentUpon>
