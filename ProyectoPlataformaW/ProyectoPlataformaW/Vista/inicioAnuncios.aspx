@@ -28,7 +28,7 @@
       <asp:Repeater ID="repeaterAnuncio" runat="server">
           <ItemTemplate>
 
-                <section class="content">
+    <section class="content">
       <div class="container-fluid">
         <div class="row">
             <div class="card-body">
@@ -40,14 +40,14 @@
                         <img class="img-circle img-bordered-sm" src="/Vista/dist/img/user1-128x128.jpg" alt="user image">
                         <span class="username">
                           <a href="#">
-                              <asp:Label ID="lblNomAp" runat="server" Text="'<%# Eval("Curso") %>'"></asp:Label></a>
+                              <asp:Label ID="lblNomAp" runat="server" Text='<%# Eval("Nombres") %>'></asp:Label></a>
                           <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
                         </span>
-                        <span class="description">Fecha : <asp:Label ID="lblFecha" runat="server" Text="'<%# Eval("Curso") %>'"></asp:Label></span>
+                        <span class="description">Fecha : <asp:Label ID="lblFecha" runat="server" Text='<%# Eval("Fecha") %>'></asp:Label></span>
                       </div>
                       <!-- /.user-block -->
                       <p>
-                          <asp:Label ID="lblDesc" runat="server" Text="'<%# Eval("Curso") %>'"></asp:Label>
+                          <asp:Label ID="lblDesc" runat="server" Text='<%# Eval("Descripcion") %>'></asp:Label>
                       </p>
                       
                     </div>
