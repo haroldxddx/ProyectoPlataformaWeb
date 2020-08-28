@@ -21,7 +21,7 @@ namespace ProyectoPlataformaW
         {
 
 
-           
+            string user = Session["usuario"].ToString();
 
             try
             {
@@ -32,7 +32,8 @@ namespace ProyectoPlataformaW
 
                 if (Session["general"].ToString() == "estudiante")
                 {
-
+                    clRecuperarContra c = new clRecuperarContra();
+                    c.enviarCorreoIsecion(user);
                 }
                 else if (Session["general"].ToString() != "estudiante")
                 {
@@ -51,16 +52,6 @@ namespace ProyectoPlataformaW
             }
 
 
-
-            string user = Session["usuario"].ToString();
-
-            clRecuperarContra c = new clRecuperarContra();
-            c.enviarCorreoIsecion(user);
-
-
-
-
-            
 
             List<clEntidadCursoMateriaE> listaCm = new List<clEntidadCursoMateriaE>();
 

@@ -140,6 +140,7 @@
     <Content Include="Vista\editarPerfilProf.aspx" />
     <Content Include="Vista\editPerfilAdmin.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
+    <Content Include="Vista\foro.aspx" />
     <Content Include="Vista\images\16.png" />
     <Content Include="Vista\images\i.jpg" />
     <Content Include="Vista\inicioAdministrador.aspx" />
@@ -2215,6 +2216,13 @@
     <Compile Include="Vista\entregaActividad.aspx.designer.cs">
       <DependentUpon>entregaActividad.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\foro.aspx.cs">
+      <DependentUpon>foro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\foro.aspx.designer.cs">
+      <DependentUpon>foro.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vista\inicioAdministrador.aspx.cs">
       <DependentUpon>inicioAdministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2899,8 +2907,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anuncios\" />
-    <Folder Include="App_GlobalResources\" />
-    <Folder Include="App_LocalResources\" />
+    <Folder Include="log\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

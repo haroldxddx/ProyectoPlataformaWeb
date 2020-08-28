@@ -78,10 +78,10 @@ namespace ProyectoPlataformaW.Datos
 
         public void enviarCorreoIsecion(string correo)
         {
-            string rutimag = "~/logo-email-2-g-suite.png";
+            
             try
             {
-                Attachment data = new Attachment(rutimag);
+                
                 correos.To.Clear();
                 correos.Body = "";
                 correos.Subject = "";
@@ -106,6 +106,7 @@ namespace ProyectoPlataformaW.Datos
             catch (Exception ex)
             {
 
+                clErrores.save(this, ex);
 
             }
         }
