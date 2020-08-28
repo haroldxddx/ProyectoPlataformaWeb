@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Web;
+using System.Text;
 
 namespace ProyectoPlataformaW.Datos
 {
@@ -15,7 +16,7 @@ namespace ProyectoPlataformaW.Datos
         {
             string fecha = System.DateTime.Now.ToString("yyyyMMdd");
             string hora = System.DateTime.Now.ToString("HH:mm:ss");
-            string path = HttpContext.Current.Request.MapPath("~/Errores/" + fecha +"_"+hora+".txt");
+            string path = HttpContext.Current.Request.MapPath("~/log/" + fecha + ".txt");
 
             StreamWriter sw = new StreamWriter(path, true);
 
