@@ -344,7 +344,84 @@ where Email = 'haroldzabala5@gmail.com'*/
             return listaEstud;
         }
 
+        public List<clEntidadEstudianteEE> mtdDatosEstuP(ClEntidadCursosE objE)
+        {
+            string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email from Estudiante inner join Curso on Estudiante.IdCurso = Curso.IdCurso where Curso.Curso = '" + objE.Curso + "'";
 
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblEstud = new DataTable();
+            tblEstud = objSql.mtdDesconectado(sql);
+
+            List<clEntidadEstudianteEE> listaEstud = new List<clEntidadEstudianteEE>();
+
+            for (int i = 0; i < tblEstud.Rows.Count; i++)
+            {
+                clEntidadEstudianteEE objEstu = new clEntidadEstudianteEE();
+ 
+                objEstu.Nombres = tblEstud.Rows[i][0].ToString();
+                objEstu.Apellidos = tblEstud.Rows[i][1].ToString();
+                objEstu.Documento = int.Parse(tblEstud.Rows[i][2].ToString());
+                objEstu.Email = tblEstud.Rows[i][3].ToString();
+                
+                listaEstud.Add(objEstu);
+
+            }
+
+            return listaEstud;
+        }
+
+        //Listado de correos
+        public List<clEntidadEstudianteEE> mtdCorreos(clEntidadCursoMateriaE objCm)
+        {
+            string sql = "select Email from Estudiante inner join Curso ON Estudiante.IdCurso = Curso.IdCurso inner join CursoMateria on CursoMateria.IdCurso = Curso.IdCurso where CursoMateria.IdCursoMateria = '" + objCm.IdCursoMateria +"'";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblEstud = new DataTable();
+            tblEstud = objSql.mtdDesconectado(sql);
+
+            List<clEntidadEstudianteEE> listaEstud = new List<clEntidadEstudianteEE>();
+
+            for (int i = 0; i < tblEstud.Rows.Count; i++)
+            {
+                clEntidadEstudianteEE objEstu = new clEntidadEstudianteEE();
+
+                objEstu.Email = tblEstud.Rows[i][0].ToString();
+               
+
+                listaEstud.Add(objEstu);
+
+            }
+
+            return listaEstud;
+        }
+
+        public List<clEntidadEstudianteE> mtdInforme(clEntidadEstudianteE objCm)
+        {
+            string sql = "select Estudiante.Nombres , Estudiante.Apellidos ,Estudiante.Documento, Estudiante.Email , Curso.Curso , Curso.Grado from Estudiante inner join Curso on Estudiante.IdCurso = Curso.IdCurso where Estudiante.IdEstudiante = '"+objCm.IdEstudiante+"' ";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblEstud = new DataTable();
+            tblEstud = objSql.mtdDesconectado(sql);
+
+            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
+
+            for (int i = 0; i < tblEstud.Rows.Count; i++)
+            {
+                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
+
+                objEstu.Nombres = tblEstud.Rows[i][0].ToString();
+                objEstu.Apellidos = tblEstud.Rows[i][1].ToString();
+                objEstu.Documento = int.Parse(tblEstud.Rows[i][2].ToString());
+                objEstu.Email = tblEstud.Rows[i][3].ToString();
+                objEstu.Curso = tblEstud.Rows[i][4].ToString();
+                objEstu.Grado = tblEstud.Rows[i][5].ToString();
+                            
+                listaEstud.Add(objEstu);
+
+            }
+
+            return listaEstud;
+        }
 
     }
 

@@ -74,53 +74,6 @@
 
       </asp:Repeater>
 
-      <asp:Repeater ID="repeaterProf" runat="server">
-          <ItemTemplate>
-
-                <section class="content">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="card-body">
-                <div class="tab-content">
-                  <div class="active tab-pane" id="activity">
-                    <!-- Post -->
-                    <div class="post">
-                      <div class="user-block">
-                        <img class="img-circle img-bordered-sm" src="/Vista/dist/img/user1-128x128.jpg" alt="user image">
-                        <span class="username">
-                          <a href="#">
-                              <asp:Label ID="lblNomApProf" runat="server" Text='<%# Eval("Nombres") %>'></asp:Label></a>
-                               <asp:Label ID="lblApP" runat="server" Text='<%# Eval("Apellidos") %>'></asp:Label></a>
-                          <a href="#" class="float-right btn-tool"><i class="fas fa-times"></i></a>
-                        </span>
-                        <span class="description">Fecha : <asp:Label ID="lblFechaP" runat="server" Text='<%# Eval("Fecha") %>'></asp:Label></span>
-                      </div>
-                      <!-- /.user-block -->
-                      <p>
-                          <asp:Label ID="lblTituloP" runat="server" Text='<%# Eval("Titulo") %>'></asp:Label>
-                                             
-                      </p>
-                        <p>
-                          
-                          <asp:Label ID="Label2P" runat="server" Text='<%# Eval("Descripcion") %>'></asp:Label>
-                
-                      </p>
-                        <p>
-                          <asp:Label ID="lblArchP" runat="server" Text='<%# Eval("Archivos") %>'></asp:Label>
-                      </p>
-
-                    </div>
-
-                   </div>
-                 </div>
-               </div>
-            </div>
-        </div>
-    </section>
-
-          </ItemTemplate>
-
-      </asp:Repeater>
 
 </div>
 </div>

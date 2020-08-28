@@ -352,6 +352,8 @@
     <Content Include="Vista\dist\js\pages\dashboard3.js" />
     <Content Include="Vista\editPerfil2.aspx" />
     <Content Include="Vista\inicioAnuncio.aspx" />
+    <Content Include="Vista\inicioAnunciosE.aspx" />
+    <Content Include="Vista\inicioAnunciosP.aspx" />
     <Content Include="Vista\inicioEstudiante.aspx" />
     <Content Include="Vista\css\animate.css" />
     <Content Include="Vista\css\animate.min.css" />
@@ -453,6 +455,7 @@
     <Content Include="Vista\images\testi_03.png" />
     <Content Include="Vista\images\world-map.png" />
     <Content Include="Vista\inicioProfesor.aspx" />
+    <Content Include="Vista\invoice.html" />
     <Content Include="Vista\js\01-custom-places-example.js" />
     <Content Include="Vista\js\all.js" />
     <Content Include="Vista\js\custom.js" />
@@ -461,6 +464,7 @@
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
     <Content Include="Vista\listadoEstudiantes.aspx" />
+    <Content Include="Vista\listadoEstudiantesCurso.aspx" />
     <Content Include="Vista\listadoMateriasAsignadoCurso.aspx" />
     <Content Include="Vista\listadoProfesor.aspx" />
     <Content Include="Vista\listadoEstudiantesCursoMateria.aspx" />
@@ -2095,6 +2099,7 @@
     <Content Include="Vista\registrarEstudiante2.aspx" />
     <Content Include="Vista\registrarMateria2.aspx" />
     <Content Include="Vista\registrarProfesor2.aspx" />
+    <Content Include="Vista\reporteNotasEstud.aspx" />
     <Content Include="Vista\style.css" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
     <Content Include="Vista\verNotasActi.aspx" />
@@ -2277,6 +2282,20 @@
     <Compile Include="Vista\inicioAnuncio.aspx.designer.cs">
       <DependentUpon>inicioAnuncio.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\inicioAnunciosE.aspx.cs">
+      <DependentUpon>inicioAnunciosE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\inicioAnunciosE.aspx.designer.cs">
+      <DependentUpon>inicioAnunciosE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\inicioAnunciosP.aspx.cs">
+      <DependentUpon>inicioAnunciosP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\inicioAnunciosP.aspx.designer.cs">
+      <DependentUpon>inicioAnunciosP.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vista\inicioEstudiante.aspx.cs">
       <DependentUpon>inicioEstudiante.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2319,6 +2338,13 @@
     </Compile>
     <Compile Include="Vista\listadoEstudiantes.aspx.designer.cs">
       <DependentUpon>listadoEstudiantes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\listadoEstudiantesCurso.aspx.cs">
+      <DependentUpon>listadoEstudiantesCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\listadoEstudiantesCurso.aspx.designer.cs">
+      <DependentUpon>listadoEstudiantesCurso.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\listadoMateriasAsignadoCurso.aspx.cs">
       <DependentUpon>listadoMateriasAsignadoCurso.aspx</DependentUpon>
@@ -2397,6 +2423,13 @@
     <Compile Include="Vista\registrarProfesor2.aspx.designer.cs">
       <DependentUpon>registrarProfesor2.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\reporteNotasEstud.aspx.cs">
+      <DependentUpon>reporteNotasEstud.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\reporteNotasEstud.aspx.designer.cs">
+      <DependentUpon>reporteNotasEstud.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Vista\verEntregasEstudiantes.aspx.cs">
       <DependentUpon>verEntregasEstudiantes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2427,6 +2460,7 @@
     </Compile>
     <Compile Include="Vista\WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Vista\WebForm2.aspx.designer.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>

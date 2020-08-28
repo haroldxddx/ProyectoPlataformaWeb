@@ -12,7 +12,37 @@ namespace ProyectoPlataformaW.Datos
 
         MailMessage correos = new MailMessage();
         SmtpClient envios = new SmtpClient();
-        
+
+        public void enviarCorreoMasivo(string correo)
+        {
+            try
+            {
+                correos.To.Clear();
+                correos.Body = "";
+                correos.Subject = "";
+                correos.Body = "Prueba";
+                correos.Subject = ("Recuperacion de Contraseña");
+                correos.IsBodyHtml = true;
+                correos.To.Add(correo.Trim());
+
+                correos.From = new MailAddress("glvduitama0@gmail.com"); //Enviar informacion
+                envios.Credentials = new NetworkCredential("glvduitama0@gmail.com", "integrado");//enviar correo verificacion correo y password
+
+
+                envios.Host = "smtp.gmail.com";
+                envios.Port = 587;
+                envios.EnableSsl = true;
+
+                envios.Send(correos);
+
+
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+        }
 
         public void enviarCorreo(string correo, string contra)
         {

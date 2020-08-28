@@ -42,7 +42,8 @@ namespace ProyectoPlataformaW.Vista
             if (result > 0)
             {
                 fluArchivo.SaveAs(Server.MapPath("~/Anuncios/") + fluArchivo.FileName);
-                Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+                ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/Vista/inicioAnuncio.aspx'", true);
+                //Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
                 txtTitulo.Text = "";
                 txtDesc.Text = "";
 

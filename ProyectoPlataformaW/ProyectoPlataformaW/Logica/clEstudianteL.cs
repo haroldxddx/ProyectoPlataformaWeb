@@ -118,5 +118,28 @@ namespace ProyectoPlataformaW.Logica
             return listaEst;
         }
 
+        public List<clEntidadEstudianteEE> mtdDatosEstuProf(ClEntidadCursosE objDatos)
+        {
+            clEstudianteD objEs = new clEstudianteD();
+            List<clEntidadEstudianteEE> listaEst = new List<clEntidadEstudianteEE>();
+            listaEst = objEs.mtdDatosEstuP(objDatos);
+            return listaEst;
+        }
+
+        public List<clEntidadEstudianteEE> mtdCorreoMasivo(clEntidadCursoMateriaE objDatos)
+        {
+            clEstudianteD objEs = new clEstudianteD();
+            List<clEntidadEstudianteEE> listaEst = new List<clEntidadEstudianteEE>();
+            listaEst = objEs.mtdCorreos(objDatos);
+            return listaEst;
+        }
+
+        public List<clEntidadEstudianteE> mtdInformeNotas(clEntidadEstudianteE objDatos)
+        {
+            clEstudianteD objEs = new clEstudianteD();
+            List<clEntidadEstudianteE> listaEst = new List<clEntidadEstudianteE>();
+            listaEst = objEs.mtdInforme(objDatos);
+            return listaEst;
+        }
     }
 }

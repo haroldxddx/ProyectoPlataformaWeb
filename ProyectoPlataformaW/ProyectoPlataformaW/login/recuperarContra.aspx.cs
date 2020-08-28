@@ -33,7 +33,7 @@ namespace ProyectoPlataformaW.login
             //string email = (objEstu.Email = txtCorreo.Text);
             string email = txtEmail.Text;
             List<clEntidadEstudianteE> listaEstuDos = new List<clEntidadEstudianteE>();
-            clEstudianteD objEstuD = new clEstudianteD();
+            //clEstudianteD objEstuD = new clEstudianteD();
 
             for (int i = 0; i < listEestu.Count; i++)
             {
@@ -47,9 +47,10 @@ namespace ProyectoPlataformaW.login
 
                     listaEstuDos.Add(objEstu);
                     c.enviarCorreo(email, contra);
-                    
-                    Response.Redirect("~/login/login.aspx");
-                    Response.Write("<script language=javascript>alert('Revise la bandeja de entrada de su correo electronico en breve recibira un correo con su contraseña');</script>");
+
+                    //Response.Redirect("~/login/login.aspx");
+                    //Response.Write("<script language=javascript>alert('Revise la bandeja de entrada de su correo electronico en breve recibira un correo con su contraseña');</script>");
+                    ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='~/login/login.aspx'", true);
                     txtEmail.Text = "";
 
                 }

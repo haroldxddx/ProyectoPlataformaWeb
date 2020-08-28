@@ -17,6 +17,8 @@ namespace ProyectoPlataformaW.Vista
     {
         public static int id;
         public string o;
+        public static string cur;
+        public string r;
 
 
         protected void lbtCurso_Click(object sender, EventArgs e)
@@ -124,9 +126,11 @@ namespace ProyectoPlataformaW.Vista
 //            id = int.Parse(((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblidActi")).Text);
             o = repeaterPrueba.Items[e.Item.ItemIndex].ItemIndex.ToString();
             id = int.Parse(((Label)repeaterPrueba.Items[int.Parse(o)].FindControl("lblIdCursoMateria")).Text);
-
+           
+            cur = ((LinkButton)repeaterPrueba.Items[int.Parse(o)].FindControl("lbtCurso")).Text;
             Response.Redirect("/Vista/asignarActividadesP.aspx");
             //Label lb = (Label)e.Item.FindControl("IdCursoMateria");
+           
 
         }
     }

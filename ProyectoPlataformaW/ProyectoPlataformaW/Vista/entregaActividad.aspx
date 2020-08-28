@@ -33,6 +33,12 @@
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
+        <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="/Vista/dist/css/adminlte.min.css">
+     <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="/Vista/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+  <!-- Toastr -->
+  <link rel="stylesheet" href="/Vista/plugins/toastr/toastr.min.css">
 
     <!-- Modernizer for Portfolio -->
     <script src="js/modernizer.js"></script>

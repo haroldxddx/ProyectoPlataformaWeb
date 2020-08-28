@@ -17,7 +17,7 @@ namespace ProyectoPlataformaW.Vista
             List<clAdminAnunciosE2> listP2= new List<clAdminAnunciosE2>();
 
             clAnunciosL objCmL = new clAnunciosL();
-            listP2 = objCmL.mtdListAnunPr();
+            //listP2 = objCmL.mtdListAnunPr();
             listP = objCmL.mtdListAnunAd();
 
             if (listP.Count != 0)
@@ -26,12 +26,7 @@ namespace ProyectoPlataformaW.Vista
                 repeaterAnuncio.DataBind();
 
             }
-            if (listP2.Count != 0)
-            {
-                repeaterProf.DataSource = listP2;
-                repeaterProf.DataBind();
-
-            }
+           
         }
     }
 }
