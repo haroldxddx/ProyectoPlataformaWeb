@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW.Vista
 {
 
 
-    public partial class inicioAnuncio
+    public partial class inicioAnunciosP
     {
 
         /// <summary>

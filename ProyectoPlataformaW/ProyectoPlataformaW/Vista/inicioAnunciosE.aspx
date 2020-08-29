@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.Master" AutoEventWireup="true" CodeBehind="inicioAnuncio.aspx.cs" Inherits="ProyectoPlataformaW.Vista.inicioAnuncio" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageEstud.Master" AutoEventWireup="true" CodeBehind="inicioAnunciosE.aspx.cs" Inherits="ProyectoPlataformaW.Vista.inicioAnunciosE" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
-       <br />
+     <br />
        <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +73,6 @@
           </ItemTemplate>
 
       </asp:Repeater>
-
 
 </div>
 </div>

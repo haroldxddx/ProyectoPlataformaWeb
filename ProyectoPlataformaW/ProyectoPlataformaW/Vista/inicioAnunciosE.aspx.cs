@@ -9,12 +9,12 @@ using System.Web.UI.WebControls;
 
 namespace ProyectoPlataformaW.Vista
 {
-    public partial class inicioAnuncio : System.Web.UI.Page
+    public partial class inicioAnunciosE : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             List<clAdminAnunciosE2> listP = new List<clAdminAnunciosE2>();
-            List<clAdminAnunciosE2> listP2= new List<clAdminAnunciosE2>();
+            //List<clAdminAnunciosE2> listP2 = new List<clAdminAnunciosE2>();
 
             clAnunciosL objCmL = new clAnunciosL();
             //listP2 = objCmL.mtdListAnunPr();

@@ -1,5 +1,6 @@
 ﻿using ProyectoPlataformaW.Datos;
 using ProyectoPlataformaW.Entidades;
+using ProyectoPlataformaW.Logica;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class asignarActividadesP : System.Web.UI.Page
     {
+        List<clEntidadEstudianteEE> listEestu = new List<clEntidadEstudianteEE>();
+        clRecuperarContra c = new clRecuperarContra();
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -28,7 +31,13 @@ namespace ProyectoPlataformaW.Vista
        
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
-           
+            /*clEntidadCursoMateriaE OBJE = new clEntidadCursoMateriaE();
+            OBJE.IdCursoMateria = 1;
+
+            clEstudianteL objEstudianteL = new clEstudianteL();
+            listEestu = objEstudianteL.mtdCorreoMasivo(OBJE);*/
+
+            //
 
             clEntidadActividadE objAct = new clEntidadActividadE();
             objAct.NombreActividad = txtNomAc.Text;
@@ -44,6 +53,19 @@ namespace ProyectoPlataformaW.Vista
 
             if (result>0)
             {
+                /*for (int i = 0; i < listEestu.Count; i++)
+                {
+                    clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
+                    string correos = objEstu.Email = listEestu[i].Email;
+
+                    while (listEestu.Count != 0)
+                    {
+                        c.enviarCorreoMasivo(correos);
+                    }
+                    //Response.Redirect("~/login/login.aspx");
+                    //Response.Write("<script language=javascript>alert('Revise la bandeja de entrada de su correo electronico en breve recibira un correo con su contraseña');</script>");
+                    //ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='~/login/login.aspx'", true);
+                }*/
                 //Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
                 fluArchivo.SaveAs(Server.MapPath("~/Archivo/") + fluArchivo.FileName);
                 ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();", true);
