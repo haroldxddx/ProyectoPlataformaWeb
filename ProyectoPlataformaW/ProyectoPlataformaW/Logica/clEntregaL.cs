@@ -45,6 +45,13 @@ namespace ProyectoPlataformaW.Logica
             listaNot = objEnt.mtdListarNotasAc();
             return listaNot;
         }
+        public List<clEntidadNotas> mtdInformeNotas2(clEntidadNotas objN)
+        {
+            clEntregaD objEnt = new clEntregaD();
+            List<clEntidadNotas> listaNot = new List<clEntidadNotas>();
+            listaNot = objEnt.mtdInformeN(objN);
+            return listaNot;
+        }
 
     }
 }

@@ -397,7 +397,7 @@ where Email = 'haroldzabala5@gmail.com'*/
 
         public List<clEntidadEstudianteE> mtdInforme(clEntidadEstudianteE objCm)
         {
-            string sql = "select Estudiante.Nombres , Estudiante.Apellidos ,Estudiante.Documento, Estudiante.Email , Curso.Curso , Curso.Grado from Estudiante inner join Curso on Estudiante.IdCurso = Curso.IdCurso where Estudiante.IdEstudiante = '"+objCm.IdEstudiante+"' ";
+            string sql = "select Estudiante.Nombres , Estudiante.Apellidos ,Estudiante.Documento, Estudiante.Email , Curso.Curso , Curso.Grado from Estudiante inner join Curso on Estudiante.IdCurso = Curso.IdCurso where Estudiante.Email = '"+objCm.Email+"' ";
 
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblEstud = new DataTable();

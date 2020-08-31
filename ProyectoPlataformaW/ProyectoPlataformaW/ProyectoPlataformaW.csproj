@@ -456,6 +456,7 @@
     <Content Include="Vista\images\testi_03.png" />
     <Content Include="Vista\images\world-map.png" />
     <Content Include="Vista\inicioProfesor.aspx" />
+    <Content Include="Vista\invoice-print.html" />
     <Content Include="Vista\invoice.html" />
     <Content Include="Vista\js\01-custom-places-example.js" />
     <Content Include="Vista\js\all.js" />
@@ -2102,6 +2103,7 @@
     <Content Include="Vista\registrarProfesor2.aspx" />
     <Content Include="Vista\reporteNotasEstud.aspx" />
     <Content Include="Vista\style.css" />
+    <Content Include="Vista\timeline.html" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
     <Content Include="Vista\verNotasActi.aspx" />
     <Content Include="Vista\verNotasMateria.aspx" />

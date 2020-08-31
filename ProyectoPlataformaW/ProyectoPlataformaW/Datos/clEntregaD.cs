@@ -106,5 +106,35 @@ namespace ProyectoPlataformaW.Datos
 
         }
 
+        //Notas Generales
+
+        public List<clEntidadNotas> mtdInformeN(clEntidadNotas objN)
+        {
+
+            string sql = "select Actividad.NombreActividad, Actividad.Descripcion, Entrega.Nota from Actividad inner join Entrega on Actividad.IdActividad = Entrega.IdActividad inner join CursoMateria on Actividad.IdCursoMateria = CursoMateria.IdCursoMateria inner join Estudiante on Entrega.IdEstudiante = Estudiante.IdEstudiante  WHERE CursoMateria.IdCursoMateria = '"+ objN.IdCursoMateria +"' and Estudiante.IdEstudiante = '8'";
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblCur = new DataTable();
+            tblCur = objSql.mtdDesconectado(sql);
+
+            List<clEntidadNotas> listaNot = new List<clEntidadNotas>();
+
+            for (int i = 0; i < tblCur.Rows.Count; i++)
+            {
+                clEntidadNotas objNota = new clEntidadNotas();
+
+                objNota.NombreActividad = tblCur.Rows[i][0].ToString();
+                objNota.Descripcion = tblCur.Rows[i][1].ToString();
+                objNota.Nota = tblCur.Rows[i][2].ToString();
+                //objNota.Nota = tblCur.Rows[i][3].ToString();
+
+
+                listaNot.Add(objNota);
+
+            }
+
+            return listaNot;
+
+        }
     }
 }
