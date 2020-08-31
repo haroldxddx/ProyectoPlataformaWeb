@@ -9,19 +9,20 @@ namespace ProyectoPlataformaW.Datos
 {
     public class Class1
     {
-        public List<estudiantesViewModel> mtdlis()
+        public List<EntidadEstudianteXlsx> mtdlis()
         {
-            string path = @"C:\Users\USUARIO\source\repos\ProyectoPlataformaWeb\ProyectoPlataformaW\Estu.xlsx";
+            // string path = @"C:\Users\USUARIO\source\repos\ProyectoPlataformaWeb\ProyectoPlataformaW\Estu.xlsx";
+            string path  = @"driver={Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)}";
           
 
-            SLDocument sl = new SLDocument(path);
+         SLDocument sl = new SLDocument(path);
 
             int iRow = 2;
-            List<estudiantesViewModel> listaEs = new List<estudiantesViewModel>();
+            List<EntidadEstudianteXlsx> listaEs = new List<EntidadEstudianteXlsx>();
 
-            while (!string.IsNullOrEmpty(sl.GetCellValueAsString(iRow, 1)))
+           while (!string.IsNullOrEmpty(sl.GetCellValueAsString(iRow, 1)))
             {
-                estudiantesViewModel objEVM = new estudiantesViewModel();
+                EntidadEstudianteXlsx objEVM = new EntidadEstudianteXlsx();
                 objEVM.Nombres = sl.GetCellValueAsString(iRow, 1);
                 objEVM.Apellidos = sl.GetCellValueAsString(iRow, 2);
                 objEVM.Documento = sl.GetCellValueAsInt32(iRow, 3);
@@ -33,7 +34,7 @@ namespace ProyectoPlataformaW.Datos
 
 
 
-                iRow++;
+               iRow++;
             }
 
             return listaEs;
