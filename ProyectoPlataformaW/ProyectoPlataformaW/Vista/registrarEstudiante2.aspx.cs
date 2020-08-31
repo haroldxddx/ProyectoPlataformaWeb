@@ -54,7 +54,8 @@ namespace ProyectoPlataformaW.Vista
 
             if (resultsql > 0)
             {
-                Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+                ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/Vista/inicioAnuncio.aspx'", true);
+               // Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
                 txtNom.Text = "";
                 txtApe.Text = "";
                 txtDoc.Text = "";

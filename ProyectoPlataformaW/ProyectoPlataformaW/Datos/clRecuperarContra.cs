@@ -12,7 +12,37 @@ namespace ProyectoPlataformaW.Datos
 
         MailMessage correos = new MailMessage();
         SmtpClient envios = new SmtpClient();
-        
+
+        public void enviarCorreoMasivo(string correo)
+        {
+            try
+            {
+                correos.To.Clear();
+                correos.Body = "";
+                correos.Subject = "";
+                correos.Body = "Prueba";
+                correos.Subject = ("Recuperacion de Contraseña");
+                correos.IsBodyHtml = true;
+                correos.To.Add(correo.Trim());
+
+                correos.From = new MailAddress("glvduitama0@gmail.com"); //Enviar informacion
+                envios.Credentials = new NetworkCredential("glvduitama0@gmail.com", "integrado");//enviar correo verificacion correo y password
+
+
+                envios.Host = "smtp.gmail.com";
+                envios.Port = 587;
+                envios.EnableSsl = true;
+
+                envios.Send(correos);
+
+
+            }
+            catch (Exception ex)
+            {
+
+
+            }
+        }
 
         public void enviarCorreo(string correo, string contra)
         {
@@ -41,17 +71,17 @@ namespace ProyectoPlataformaW.Datos
             }
             catch (Exception ex)
             {
-               
+                clErrores.save(this, ex);
 
             }
         }
 
         public void enviarCorreoIsecion(string correo)
         {
-            string rutimag = "~/logo-email-2-g-suite.png";
+            
             try
             {
-                Attachment data = new Attachment(rutimag);
+                
                 correos.To.Clear();
                 correos.Body = "";
                 correos.Subject = "";
@@ -76,6 +106,42 @@ namespace ProyectoPlataformaW.Datos
             catch (Exception ex)
             {
 
+                clErrores.save(this, ex);
+
+            }
+        }
+
+        public void enviarActividad(string correo,string descripcion )
+        {
+
+            try
+            {
+
+                correos.To.Clear();
+                correos.Body = "";
+                correos.Subject = "";
+                correos.Body = " Se ha entregado correctamente su actividad en GLVCLASSROOM ! " + correo + "  Acticidad: " +descripcion+"";
+                correos.Subject = ("ENTREGA ACTIVIDAD");
+
+                correos.IsBodyHtml = true;
+                correos.To.Add(correo.Trim());
+
+                correos.From = new MailAddress("glvduitama0@gmail.com"); //Enviar informacion
+                envios.Credentials = new NetworkCredential("glvduitama0@gmail.com", "integrado");//enviar correo verificacion correo y password
+
+
+                envios.Host = "smtp.gmail.com";
+                envios.Port = 587;
+                envios.EnableSsl = true;
+
+                envios.Send(correos);
+
+
+            }
+            catch (Exception ex)
+            {
+
+                clErrores.save(this, ex);
 
             }
         }

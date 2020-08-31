@@ -22,6 +22,7 @@ namespace ProyectoPlataformaW.Vista
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            string user = Session["usuario"].ToString();
             try
             {
                 if (Session["general"].ToString() == null)
@@ -60,7 +61,7 @@ namespace ProyectoPlataformaW.Vista
             Actividades objAct = new Actividades();
 
            
-            string user = Session["usuario"].ToString();
+           
             lblUser.Text = user;
 
             
@@ -154,10 +155,13 @@ namespace ProyectoPlataformaW.Vista
 
             if (result > 0)
             {
-                
+
+                string user = Session["usuario"].ToString();
                 AdArchivo.SaveAs(Server.MapPath("~/EntregaActividades/") + AdArchivo.FileName);
-                //ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();", true);
+                clRecuperarContra c = new clRecuperarContra();
+                c.enviarActividad(user,Actividades.Descripcion);
                 Response.Write("<script> alert(" + "'Actividad Entregada Correctamente'" + ") </script>");
+
                 txtComentario.Text = "";
                 txtEvidencia.Text = "";
                 txtVinculo.Text = "";

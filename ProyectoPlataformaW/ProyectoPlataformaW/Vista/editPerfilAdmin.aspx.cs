@@ -118,8 +118,9 @@ namespace ProyectoPlataformaW.Vista
                 int r = clE.mtdCambiarC(objEs);
                 if (r > 0)
                 {
-                    Response.Redirect("~/Vista/inicioAdministrador.aspx");
-                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/login/login.aspx'", true);
+                   // Response.Redirect("~/Vista/inicioAdministrador.aspx");
+                    //Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
                     txtCo.Text = "";
 
                 }
@@ -132,8 +133,9 @@ namespace ProyectoPlataformaW.Vista
                 int r = clE.mtdENom(objEs);
                 if (r > 0)
                 {
-                    Response.Redirect("~/Vista/inicioAdministrador.aspx");
-                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='~/Vista/inicioAdministrador.aspx'", true);
+                    //Response.Redirect("~/Vista/inicioAdministrador.aspx");
+                    //Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
                     txtNom.Text = "";
 
                 }
@@ -145,8 +147,9 @@ namespace ProyectoPlataformaW.Vista
                 int r = clE.mtdEAp(objEs);
                 if (r > 0)
                 {
-                    Response.Redirect("~/Vista/inicioAdministrador.aspx");
-                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='~/Vista/inicioAdministrador.aspx'", true);
+                    //Response.Redirect("~/Vista/inicioAdministrador.aspx");
+                    //Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
                     txtAp.Text = "";
                 }
             }
@@ -157,8 +160,9 @@ namespace ProyectoPlataformaW.Vista
                 int r = clE.mtdEDoc(objEs);
                 if (r > 0)
                 {
-                    Response.Redirect("~/Vista/inicioAdministrador.aspx");
-                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='~/Vista/inicioAdministrador.aspx'", true);
+                    //Response.Redirect("~/Vista/inicioAdministrador.aspx");
+                    //Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
                     txtDoc.Text = "";
                 }
             }
@@ -169,8 +173,9 @@ namespace ProyectoPlataformaW.Vista
                 int r = clE.mtdEemail(objEs);
                 if (r > 0)
                 {
-                    Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
-                    Response.Redirect("~/Vista/login.aspx");
+                    ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/login/login.aspx'", true);
+                    //Response.Write("<script> alert(" + "'Informacion Actualizada Correctamente'" + ") </script>");
+                    //Response.Redirect("~/Vista/login.aspx");
 
                     txtEmail.Text = "";
                 }

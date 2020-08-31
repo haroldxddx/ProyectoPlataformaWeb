@@ -71,7 +71,7 @@ namespace ProyectoPlataformaW.login
                         Session["usuario"] = txtUsuario.Text;
                         Session["general"] = "profesor";
                         // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                        Response.Redirect("~/Vista/inicioProfesor.aspx");
+                        Response.Redirect("~/Vista/inicioAnunciosP.aspx");
 
 
                     }
@@ -88,7 +88,7 @@ namespace ProyectoPlataformaW.login
                 Session["usuario"] = txtUsuario.Text;
                 Session["general"] = "estudiante";
                 // Response.Write("<script> alert(" + "'Datos correctos'" + ") </script>");
-                Response.Redirect("~/Vista/inicioEstudiante.aspx");
+                Response.Redirect("~/Vista/inicioAnunciosE.aspx");
 
             }
             else {

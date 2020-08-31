@@ -10,6 +10,7 @@
 
 
 
+
     <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"/>
@@ -28,8 +29,16 @@
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css"/>
 <!--===============================================================================================-->
+
 	<link rel="stylesheet" type="text/css" href="css/util.css"/>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+
+	<!-- overlayScrollbars -->
+  <link rel="stylesheet" href="/Vista/dist/css/adminlte.min.css" />
+     <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="/Vista/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css" />
+  <!-- Toastr -->
+  <link rel="stylesheet" href="/Vista/plugins/toastr/toastr.min.css" />
 
 
 
@@ -88,5 +97,27 @@
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	  <!-- SweetAlert2 -->
+<script src="/Vista/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="/Vista/plugins/toastr/toastr.min.js"></script>
+
+<script type="text/javascript">
+function registro() {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 2000
+    });
+     
+      Toast.fire({
+        icon: 'success',
+        title: 'Actividad Calificada Correctamente'
+      });
+    
+  };
+
+</script>
 </body>
 </html>

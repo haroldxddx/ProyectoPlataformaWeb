@@ -50,6 +50,12 @@
     <link rel="stylesheet" href="/Vista/dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="/Vista/dist/css/adminlte.min.css">
+     <!-- SweetAlert2 -->
+     <link rel="stylesheet" href="/Vista/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+     <!-- Toastr -->
+     <link rel="stylesheet" href="/Vista/plugins/toastr/toastr.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">  
@@ -164,6 +170,29 @@ $(document).ready(function () {
   bsCustomFileInput.init();
 });
 </script>
+      <!-- SweetAlert2 -->
+<script src="/Vista/plugins/sweetalert2/sweetalert2.min.js"></script>
+<!-- Toastr -->
+<script src="/Vista/plugins/toastr/toastr.min.js"></script>
+
+<script type="text/javascript">
+    function registro() {
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 2000
+        });
+
+        Toast.fire({
+            icon: 'success',
+            title: 'Informacion Actualizada Correctamente'
+        });
+
+    };
+
+</script>
+
 </body>
 </html>
 </asp:Content>
