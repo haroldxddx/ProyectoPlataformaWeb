@@ -72,11 +72,6 @@
 		</div>
 	</div>
 	
-   
-
-
-
-
 
       <div id="contact" class="section wb">
         <div class="container">

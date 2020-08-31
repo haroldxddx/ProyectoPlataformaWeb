@@ -4,12 +4,14 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <asp:GridView ID="dtgExc" runat="server">
     </asp:GridView>
-    <asp:Button ID="Button1" runat="server"  Text="Button" />
+    <asp:Table ID="Table1" runat="server">
+    </asp:Table>
+    <asp:Button ID="Button1" runat="server"  Text="Button"  />
 
   
 
    <asp:FileUpload id="FileUpload1"                 
-       runat="server">
+       runat="server" OnClick="UploadButton_Click">
    </asp:FileUpload>
 
    
@@ -22,8 +24,10 @@
     <asp:HyperLink ID="HiperLink1" runat="server">HyperLink</asp:HyperLink>
 
 
-    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click1">LinkButton</asp:LinkButton>
     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+
+
+    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
 
 
 </asp:Content>
