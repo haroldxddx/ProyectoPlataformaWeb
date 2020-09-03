@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ProyectoPlataformaW.Entidades
 {
-    public class estudiantesViewModel
+    public class EntidadEstudianteXlsx
     {
         public int IdEstudiante { get; set; }
         public string Nombres { get; set; }

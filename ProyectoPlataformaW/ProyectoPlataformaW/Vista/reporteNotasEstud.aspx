@@ -25,7 +25,7 @@
   
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" id="imp">
     <!-- Content Header (Page header) -->
  
 
@@ -78,67 +78,55 @@
                 <!-- /.col -->
               </div>
               <!-- /.row -->
-
-              <!-- Table row -->
-              <div class="row">
+                <div class="row">
                 <div class="col-12 table-responsive">
-                  <table class="table table-striped">
+
+                <asp:Repeater ID="repeaterNot" runat="server">
+
+                    <ItemTemplate>
+
+                     <table class="table table-striped">
                     <thead>
                     <tr>
-                      <th>Qty</th>
-                      <th>Product</th>
-                      <th>Serial #</th>
-                      <th>Description</th>
-                      <th>Subtotal</th>
+                      <th>Nombre Actividad</th>
+                      <th>Descripcion</th>
+                      <th>Nota</th>
+                      
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                      <td>1</td>
-                      <td>Call of Duty</td>
-                      <td>455-981-221</td>
-                      <td>El snort testosterone trophy driving gloves handsome</td>
-                      <td>$64.50</td>
+                      <td>
+                         <asp:Label ID="lblNomAct" runat="server" Text='<%# Eval("NombreActividad") %>'></asp:Label></td>
+                      <td>
+                             <asp:Label ID="lblDesc" runat="server" Text='<%# Eval("Descripcion") %>'></asp:Label></td>
+                      <td>
+                                 <asp:Label ID="lblNota" runat="server" Text='<%# Eval("Nota") %>'></asp:Label></td>
+                      
                     </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Need for Speed IV</td>
-                      <td>247-925-726</td>
-                      <td>Wes Anderson umami biodiesel</td>
-                      <td>$50.00</td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Monsters DVD</td>
-                      <td>735-845-642</td>
-                      <td>Terry Richardson helvetica tousled street art master</td>
-                      <td>$10.70</td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>Grown Ups Blue Ray</td>
-                      <td>422-568-642</td>
-                      <td>Tousled lomo letterpress</td>
-                      <td>$25.99</td>
-                    </tr>
+                    
                     </tbody>
                   </table>
+                    </ItemTemplate>
+
+                </asp:Repeater>
+                  
                 </div>
                 <!-- /.col -->
               </div>
+              <!-- Table row -->
               <!-- /.row -->
+               
 
-            
+                   
               <!-- /.row -->
 
               <!-- this row will not appear when printing -->
               <div class="row no-print">
                 <div class="col-12">
-                  <a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fas fa-print"></i> Imprimir</a>
                  
-                  <button type="button" class="btn btn-primary float-right" style="margin-right: 5px;">
-                    <i class="fas fa-download"></i> Descargar Reporte de Notas
-                  </button>
+                    <input id="btn2" type="button" value="Imprimir" class="btn btn-default" onclick="imprimir2();" />
+                  
                 </div>
               </div>
             </div>
@@ -167,6 +155,25 @@
 <script src="/Vista/dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/Vista/dist/js/demo.js"></script>
+    
+<script type="text/javascript">
+
+    function Imprime(nombre) {
+        var ficha = document.getElementById(nombre);
+        var ventimp = window.open(' ', 'popimpr');
+        ventimp.document.write(ficha.innerHTML);
+        ventimp.document.close();
+        ventimp.print();
+        ventimp.close();
+    }
+
+</script>
+    <script type="text/javascript"> 
+        function imprimir2() {
+            window.addEventListener("load", window.print());
+        }
+       
+</script>
 </body>
 </html>
 </asp:Content>

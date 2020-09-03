@@ -46,6 +46,7 @@
     <TypeScriptSourceMap>True</TypeScriptSourceMap>
     <TypeScriptMapRoot />
     <TypeScriptSourceRoot />
+    <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -81,6 +82,7 @@
     <Reference Include="System.IO.Packaging, Version=4.0.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IO.Packaging.4.7.0\lib\net46\System.IO.Packaging.dll</HintPath>
     </Reference>
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -456,6 +458,7 @@
     <Content Include="Vista\images\testi_03.png" />
     <Content Include="Vista\images\world-map.png" />
     <Content Include="Vista\inicioProfesor.aspx" />
+    <Content Include="Vista\invoice-print.html" />
     <Content Include="Vista\invoice.html" />
     <Content Include="Vista\js\01-custom-places-example.js" />
     <Content Include="Vista\js\all.js" />
@@ -2100,10 +2103,12 @@
     <Content Include="Vista\registrarAnunciosProf.aspx" />
     <Content Include="Vista\registrarCurso2.aspx" />
     <Content Include="Vista\registrarEstudiante2.aspx" />
+    <Content Include="Vista\registrarForo.aspx" />
     <Content Include="Vista\registrarMateria2.aspx" />
     <Content Include="Vista\registrarProfesor2.aspx" />
     <Content Include="Vista\reporteNotasEstud.aspx" />
     <Content Include="Vista\style.css" />
+    <Content Include="Vista\timeline.html" />
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
     <Content Include="Vista\verNotasActi.aspx" />
     <Content Include="Vista\verNotasMateria.aspx" />
@@ -2140,6 +2145,7 @@
     <Compile Include="Entidades\clEntidadEntregaE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteE.cs" />
     <Compile Include="Entidades\clEntidadEstudianteEE.cs" />
+    <Compile Include="Entidades\clEntidadForoE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
     <Compile Include="Entidades\clEntidadNotas.cs" />
     <Compile Include="Entidades\clEntidadProfesorCursoMateriaE.cs" />
@@ -2149,7 +2155,7 @@
     <Compile Include="Errores\Class1.cs" />
     <Compile Include="Logica\clAnunciosL.cs" />
     <Compile Include="Logica\clMateriaL.cs" />
-    <Compile Include="Entidades\estudiantesViewModel.cs" />
+    <Compile Include="Entidades\EntidadEstudianteXlsx.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2419,6 +2425,13 @@
     </Compile>
     <Compile Include="Vista\registrarEstudiante2.aspx.designer.cs">
       <DependentUpon>registrarEstudiante2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\registrarForo.aspx.cs">
+      <DependentUpon>registrarForo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\registrarForo.aspx.designer.cs">
+      <DependentUpon>registrarForo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\registrarMateria2.aspx.cs">
       <DependentUpon>registrarMateria2.aspx</DependentUpon>
