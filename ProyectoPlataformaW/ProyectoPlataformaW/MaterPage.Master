@@ -77,7 +77,7 @@
                             <div class="collapse navbar-collapse" id="navbars-host">
                                 <ul class="navbar-nav ml-auto">
                                     <li class="nav-item active"><a class="nav-link" href="#">Inicio</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#">Conocenos</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="Vista/conocenos.aspx">Conocenos</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#">Contactos</a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">

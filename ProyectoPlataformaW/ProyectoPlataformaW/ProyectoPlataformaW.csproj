@@ -139,6 +139,7 @@
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\buscadorEstudiantes.aspx" />
     <Content Include="Vista\calificarActividad.aspx" />
+    <Content Include="Vista\conocenos.aspx" />
     <Content Include="Vista\editarPerfilProf.aspx" />
     <Content Include="Vista\editPerfilAdmin.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
@@ -2203,6 +2204,13 @@
     </Compile>
     <Compile Include="Vista\calificarActividad.aspx.designer.cs">
       <DependentUpon>calificarActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\conocenos.aspx.cs">
+      <DependentUpon>conocenos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\conocenos.aspx.designer.cs">
+      <DependentUpon>conocenos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\editarPerfilProf.aspx.cs">
       <DependentUpon>editarPerfilProf.aspx</DependentUpon>
