@@ -140,8 +140,9 @@ namespace ProyectoPlataformaW.Vista
              clEntidadEntregaE objAct = new clEntidadEntregaE();
 
              objAct.Descripcion = Actividades.Descripcion;
-             objAct.Archivos = (string)(Session["Archivos"] = "~/EntregaActividades/" + AdArchivo.FileName);
-             objAct.IdActividad = Actividades.id;
+
+            objAct.Archivos = (string)(Session["Archivos"] = "~/EntregaActividades/" + AdArchivo.FileName);
+            objAct.IdActividad = Actividades.id;
              objAct.IdEstudiante = int.Parse(lble.Text);
              objAct.Vinculo = txtVinculo.Text;
              objAct.otraRespuesta = txtEvidencia.Text;
@@ -157,7 +158,20 @@ namespace ProyectoPlataformaW.Vista
             {
 
                 string user = Session["usuario"].ToString();
-                AdArchivo.SaveAs(Server.MapPath("~/EntregaActividades/") + AdArchivo.FileName);
+
+                if (AdArchivo.HasFile)
+                {
+                    AdArchivo.SaveAs(Server.MapPath("~/EntregaActividades/") + AdArchivo.FileName);
+                   // lblarc.Text = AdArchivo.FileName;
+                }
+                else
+                {
+                   // lblarc.Text = "sin archivos";
+                 
+                }
+
+
+               
                 clRecuperarContra c = new clRecuperarContra();
                 c.enviarActividad(user,Actividades.Descripcion);
                 Response.Write("<script> alert(" + "'Actividad Entregada Correctamente'" + ") </script>");

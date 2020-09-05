@@ -31,6 +31,7 @@ namespace ProyectoPlataformaW.Vista
                 lblDesc2.Text = objEntrega.Descripcion = listEnt[i].Descripcion;
                 lblFecha2.Text = objEntrega.Fecha = listEnt[i].Fecha;
                 lblArchivo2.Text = objEntrega.Archivos = listEnt[i].Archivos;
+                lblLink2.Text = objEntrega.Vinculo = listEnt[i].Vinculo;
                 lblEstado2.Text = objEntrega.Estado = listEnt[i].Estado;
                 int d = objEntrega.IdEntrega = int.Parse(listEnt[i].IdEntrega.ToString());
                 lblIdEntrega.Text = (d).ToString();

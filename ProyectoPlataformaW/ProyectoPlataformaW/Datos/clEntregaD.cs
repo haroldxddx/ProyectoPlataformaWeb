@@ -13,7 +13,7 @@ namespace ProyectoPlataformaW.Datos
         public List<clEntidadEntregaE> mtdEntregaEst(clEntidadEntregaE objE)
         {
 
-            string sql = "select Entrega.Descripcion, Entrega.Fecha, Entrega.Archivos,Entrega.Estado,Entrega.IdEntrega from Entrega inner join Actividad on Entrega.IdActividad = Actividad.IdActividad inner join Estudiante on Entrega.IdEstudiante = Estudiante.IdEstudiante where Actividad.IdActividad = '"+ objE.IdActividad + "' and Estudiante.IdEstudiante = '" + objE.IdEstudiante + "'";
+            string sql = "select Entrega.Descripcion, Entrega.Fecha, Entrega.Archivos,Entrega.Estado,Entrega.IdEntrega,Entrega.vinculo from Entrega inner join Actividad on Entrega.IdActividad = Actividad.IdActividad inner join Estudiante on Entrega.IdEstudiante = Estudiante.IdEstudiante where Actividad.IdActividad = '" + objE.IdActividad + "' and Estudiante.IdEstudiante = '" + objE.IdEstudiante + "'";
 
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblCur = new DataTable();
@@ -30,6 +30,7 @@ namespace ProyectoPlataformaW.Datos
                 objEntr.Archivos = tblCur.Rows[i][2].ToString();
                 objEntr.Estado = tblCur.Rows[i][3].ToString();
                 objEntr.IdEntrega = int.Parse(tblCur.Rows[i][4].ToString());
+                objEntr.Vinculo= tblCur.Rows[i][5].ToString();
 
                 listaEnt.Add(objEntr);
 

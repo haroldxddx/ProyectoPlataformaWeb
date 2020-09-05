@@ -104,7 +104,12 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                    
                                      <asp:FileUpload ID="AdArchivo" runat="server" class="form-control" placeholder="Adjuntar archivo"/>
+
+                                   
+
+                                     
                                 </div>
+
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     
                                     <asp:TextBox ID="txtEvidencia" runat="server"  class="form-control"  placeholder="Escribe tu evidencia aqui ...." ></asp:TextBox>
@@ -114,6 +119,7 @@
                                     <asp:Button ID="btnEntregaA" runat="server" Text="Entregar" class="btn btn-light btn-radius btn-brd grd1 btn-block" OnClick="btnEntregaA_Click" />
 
                                 </div>
+                               
                             </div>
                         </form>
                     </div>
