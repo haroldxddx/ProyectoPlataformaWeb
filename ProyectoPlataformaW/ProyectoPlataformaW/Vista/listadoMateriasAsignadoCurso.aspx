@@ -30,7 +30,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>AdminLTE 3 | jsGrid</title>
+        <title>Listado de materias asignadas a Curso</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -58,6 +58,7 @@
                     <div class="card">
                         <div class="auto-style7">
                             <h3 class="card-title">
+                                <br />
                                 <br />
                                 LISTADO DE MATERIAS ASIGNADAS A CADA CURSO CON SU RESPECTIVO PROFESOR</h3>
                             <br />

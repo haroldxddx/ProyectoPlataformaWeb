@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>GlvClassroom</title>  
+    <title>Actividades</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -79,9 +79,10 @@
 
            
 
-            <asp:Repeater ID="repeaterActividad" runat="server" OnItemCommand="repeaterActividad_ItemCommand">
-                <ItemTemplate>
+           
                     <div class="row"> 
+                <asp:Repeater ID="repeaterActividad" runat="server" OnItemCommand="repeaterActividad_ItemCommand">
+                <ItemTemplate>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-item">
 						<div class="image-blog">
@@ -114,10 +115,11 @@
 						</div>
 					</div>
                 </div><!-- end col -->
+                   
               </ItemTemplate>
 
             </asp:Repeater>
-            		
+            		 </div>
 			</div><!-- end container -->
     </div><!-- end section -->
                

@@ -27,7 +27,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | jsGrid</title>
+  <title>Listado de Profesores</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -58,7 +58,7 @@
                         <br />
                         Listado de Profesores</h3>
                     <br />
-                    <asp:Label ID="lblUsera" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="lblUsera" runat="server" Text="Label" Visible="False"></asp:Label>
                    
                     <br />
                     <br />

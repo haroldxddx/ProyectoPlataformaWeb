@@ -50,5 +50,13 @@ namespace ProyectoPlataformaW.Logica
             return listaEstAc;
         }
 
+        public List<clEntidadCursoMateriaE> mtdIdCursoMateria(clEntidadCursoEE objE)
+        {
+            clCursoMateriaD objCm = new clCursoMateriaD();
+            List<clEntidadCursoMateriaE> listaEstAc = new List<clEntidadCursoMateriaE>();
+            listaEstAc = objCm.mtdIdCursoMat(objE);
+            return listaEstAc;
+        }
+
     }
 }

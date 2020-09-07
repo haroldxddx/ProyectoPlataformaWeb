@@ -89,8 +89,6 @@ namespace ProyectoPlataformaW.Vista
                 repeaterPrueba.DataSource = listP;
                 repeaterPrueba.DataBind();
 
-                
-
             }
             /*for (int i = 0; i < listP.Count; i++)
             {

@@ -12,7 +12,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Projects</title>
+  <title>Calificar Actividades</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -79,6 +79,9 @@
                           <asp:Label ID="lblArchivo" runat="server" Text="Archivos Adjuntos : "></asp:Label>
                           <br />
                           <br />
+                          <asp:Label ID="lblLink" runat="server" Text=" Link Adjunto : "></asp:Label>
+                           <br />
+                          <br />
                           <asp:Label ID="lblEstado" runat="server" Text="Estado de la actividad: "></asp:Label>
                       </td>
 
@@ -92,6 +95,9 @@
                           <br />
                           &nbsp;<asp:LinkButton ID="lkbDescargar" runat="server">Ver Archivo</asp:LinkButton>
                           <asp:Label ID="lblArchivo2" runat="server" Text=""></asp:Label>
+                          <br />
+                          <br />
+                          <asp:Label ID="lblLink2" runat="server" Text=""></asp:Label>
                           <br />
                           <br />
                           <asp:Label ID="lblEstado2" runat="server" Text=""></asp:Label>

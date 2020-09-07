@@ -141,9 +141,6 @@ namespace ProyectoPlataformaW.Datos
 
                 datoDT =  int.Parse(tblCur.Rows[i][4].ToString());
 
-
-
-
                 listaEcM.Add(objCursoM);
 
             }
@@ -185,6 +182,29 @@ namespace ProyectoPlataformaW.Datos
             return listaActivi;
 
 
+        }
+
+        //IDCursoMateria
+        public List<clEntidadCursoMateriaE> mtdIdCursoMat(clEntidadCursoEE objC)
+
+        {
+            string sql = "select CursoMateria.IdCursoMateria from CursoMateria inner join Curso on Curso.IdCurso = CursoMateria.IdCurso where Curso.Curso = '"+ objC.Curso +"'";
+
+
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblProf = new DataTable();
+            tblProf = objSql.mtdDesconectado(sql);
+            List<clEntidadCursoMateriaE> listaEcM = new List<clEntidadCursoMateriaE>();
+
+            for (int i = 0; i < tblProf.Rows.Count; i++)
+            {
+                clEntidadCursoMateriaE objCMP = new clEntidadCursoMateriaE();
+                objCMP.IdCursoMateria = int.Parse(tblProf.Rows[i][0].ToString());
+               
+                listaEcM.Add(objCMP);
+
+            }
+            return listaEcM;
         }
 
 
