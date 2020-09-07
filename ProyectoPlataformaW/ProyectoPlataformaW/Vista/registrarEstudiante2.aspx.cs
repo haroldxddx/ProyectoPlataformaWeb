@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,6 +18,7 @@ namespace ProyectoPlataformaW.Vista
     {
         List<EntidadEstudianteXlsx> listaEs = new List<EntidadEstudianteXlsx>();
         DataTable dt1 = new DataTable();
+      
         protected void Page_Load(object sender, EventArgs e)
         {
             List<ClEntidadCursosE> listaCurso = new List<ClEntidadCursosE>();
@@ -158,6 +160,37 @@ namespace ProyectoPlataformaW.Vista
             DtSet = null;
             Datable = null;
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+
+
+            clEntidadEstudianteE objEx = new clEntidadEstudianteE();
+            
+            for (int i = 0; i < dtgExc.Rows.Count; i++)
+            {
+                clEntidadEstudianteE objPasDatos = new clEntidadEstudianteE();
+                objEx.Nombres = dtgExc.Rows[0].ToString();
+                objEx.Apellidos = dtgExc.Rows[1].ToString();
+                objEx.Documento = int.Parse(dtgExc.Rows[2].ToString());
+                objEx.Email = dtgExc.Rows[3].ToString();
+                objEx.Contrasena = Encrypt.GetSHA256(dtgExc.Rows[4].ToString());
+                objEx.IdCurso = int.Parse(dtgExc.Rows[5].ToString());
+        
+
+
+
+                clEstudianteD objExl = new clEstudianteD();
+                int resultsql = objExl.mtdRegistrarEstudiante(objEx);
+            }
+            }
+        
+        
+        
+
+        
+
+
+        }
     }
-}
 
