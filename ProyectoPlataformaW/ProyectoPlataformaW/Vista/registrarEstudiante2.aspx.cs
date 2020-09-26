@@ -184,13 +184,11 @@ namespace ProyectoPlataformaW.Vista
                 int resultsql = objExl.mtdRegistrarEstudiante(objEx);
             }
             }
-        
-        
-        
 
-        
-
+        protected void dpdCurso_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
+    }
     }
 
