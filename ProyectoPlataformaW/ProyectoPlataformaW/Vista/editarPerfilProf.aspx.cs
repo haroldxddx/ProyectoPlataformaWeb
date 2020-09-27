@@ -12,7 +12,7 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class editarPerfilProf : System.Web.UI.Page
     {
-        List<clEntidadProfesorE> listEestu = new List<clEntidadProfesorE>();
+        List<clProfesorEEE> listEestu = new List<clProfesorEEE>();
         protected void Page_Load(object sender, EventArgs e)
         {
             try

@@ -34,7 +34,7 @@ namespace ProyectoPlataformaW.Vista
                 if (Session["general"].ToString() == "administrador")
                 {
                     List<ClEntidadCursosE> listC = new List<ClEntidadCursosE>();
-                    List<clEntidadEstudianteE> listE = new List<clEntidadEstudianteE>();
+                    List<clEstudianteEEE> listE = new List<clEstudianteEEE>();
 
                     clCursoL objCurso = new clCursoL();
                     clEstudianteL objEstud = new clEstudianteL();
@@ -83,9 +83,9 @@ namespace ProyectoPlataformaW.Vista
         {
             string nomAP = txtNombreE.Text;
 
-            List<clEntidadEstudianteE> listaBuscar = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaBuscar = new List<clEstudianteEEE>();
 
-            clEntidadEstudianteE objEstudiante = new clEntidadEstudianteE();
+            clEstudianteEEE objEstudiante = new clEstudianteEEE();
             objEstudiante.Nombres = nomAP;
 
             clEstudianteL objEstudianteL = new clEstudianteL();
@@ -104,7 +104,7 @@ namespace ProyectoPlataformaW.Vista
             //string cur = cmbCurso.SelectedIndex.ToString();
 
 
-            List<clEntidadEstudianteE> listaFilt = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaFilt = new List<clEstudianteEEE>();
 
             clEntidadEstudianteE objEstudiante = new clEntidadEstudianteE();
             objEstudiante.IdCurso = int.Parse(cmbCurso.SelectedValue);

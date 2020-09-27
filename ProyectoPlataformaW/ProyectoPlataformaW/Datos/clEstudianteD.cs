@@ -74,7 +74,7 @@ namespace ProyectoPlataformaW.Datos
 
         //Listado Completo de estudiantes
 
-        public List<clEntidadEstudianteE> mtdListadoCompletoE( )
+        public List<clEstudianteEEE> mtdListadoCompletoE( )
         {
             string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso";
 
@@ -82,11 +82,11 @@ namespace ProyectoPlataformaW.Datos
             DataTable tblEstud = new DataTable();
             tblEstud = objSql.mtdDesconectado(sql);
 
-            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaEstud = new List<clEstudianteEEE>();
 
             for (int i = 0; i < tblEstud.Rows.Count; i++)
             {
-                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
+                clEstudianteEEE objEstu = new clEstudianteEEE();
 
                 objEstu.Nombres = tblEstud.Rows[i][0].ToString();
                 objEstu.Apellidos = tblEstud.Rows[i][1].ToString();
@@ -131,7 +131,7 @@ namespace ProyectoPlataformaW.Datos
         }
 
             //Busqueda de estudiante por nombre
-            public List<clEntidadEstudianteE> mtdBuscarPorNom(clEntidadEstudianteE objEstud)
+            public List<clEstudianteEEE> mtdBuscarPorNom(clEstudianteEEE objEstud)
         {
             string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso WHERE (Estudiante.Nombres LIKE '%" + objEstud.Nombres + "%')";
 
@@ -139,11 +139,11 @@ namespace ProyectoPlataformaW.Datos
             DataTable tblEstud = new DataTable();
             tblEstud = objSql.mtdDesconectado(sql);
 
-            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaEstud = new List<clEstudianteEEE>();
 
             for (int i = 0; i < tblEstud.Rows.Count; i++)
             {
-                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
+                clEstudianteEEE objEstu = new clEstudianteEEE();
 
                 objEstu.Nombres = tblEstud.Rows[i][0].ToString();
                 objEstu.Apellidos = tblEstud.Rows[i][1].ToString();
@@ -168,7 +168,7 @@ on Curso.IdCurso = Estudiante.IdCurso
 where Email = 'haroldzabala5@gmail.com'*/
 
         //Filtro de estudiantes por curso
-        public List<clEntidadEstudianteE> mtdFiltroCurso(clEntidadEstudianteE objEstud)
+        public List<clEstudianteEEE> mtdFiltroCurso(clEntidadEstudianteE objEstud)
         {
             string sql = "select Estudiante.Nombres,Estudiante.Apellidos,Estudiante.Documento,Estudiante.Email,Curso.Grado,Curso.Curso from Estudiante INNER JOIN Curso ON Estudiante.IdCurso = Curso.IdCurso WHERE Curso.IdCurso = '"+ objEstud.IdCurso +"'";
 
@@ -176,11 +176,11 @@ where Email = 'haroldzabala5@gmail.com'*/
             DataTable tblEstud = new DataTable();
             tblEstud = objSql.mtdDesconectado(sql);
 
-            List<clEntidadEstudianteE> listaEstud = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaEstud = new List<clEstudianteEEE>();
 
             for (int i = 0; i < tblEstud.Rows.Count; i++)
             {
-                clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
+                clEstudianteEEE objEstu = new clEstudianteEEE();
 
                 objEstu.Nombres = tblEstud.Rows[i][0].ToString();
                 objEstu.Apellidos = tblEstud.Rows[i][1].ToString();

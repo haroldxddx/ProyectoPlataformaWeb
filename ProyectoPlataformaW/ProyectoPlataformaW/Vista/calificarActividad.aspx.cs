@@ -3,6 +3,7 @@ using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -31,6 +32,7 @@ namespace ProyectoPlataformaW.Vista
                 lblDesc2.Text = objEntrega.Descripcion = listEnt[i].Descripcion;
                 lblFecha2.Text = objEntrega.Fecha = listEnt[i].Fecha;
                 lblArchivo2.Text = objEntrega.Archivos = listEnt[i].Archivos;
+               
                 lblEstado2.Text = objEntrega.Estado = listEnt[i].Estado;
                 int d = objEntrega.IdEntrega = int.Parse(listEnt[i].IdEntrega.ToString());
                 lblIdEntrega.Text = (d).ToString();
@@ -68,6 +70,11 @@ namespace ProyectoPlataformaW.Vista
 
 
 
+        }
+
+        protected void lkbDescargar_Click(object sender, EventArgs e)
+        {
+            Process.Start(lblArchivo2.Text);
         }
     }
 }
