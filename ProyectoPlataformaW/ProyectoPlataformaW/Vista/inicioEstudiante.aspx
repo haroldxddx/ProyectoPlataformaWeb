@@ -68,6 +68,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
+
+
+
     <!-- Modernizer for Portfolio -->
     <script src="js/modernizer.js"></script>
 
@@ -92,9 +95,8 @@
 	</div>
 	<!-- END LOADER -->	
 
-    <!-- Start header -->
-	
-	<!-- End header -->
+   
+
 	
 	<div class="all-title-box">
 		<div class="container text-center">
@@ -110,63 +112,58 @@
                 </div>
             </div><!-- end title -->
 
-           
-
-            <asp:Repeater ID="repeaterMateria" runat="server" OnItemCommand="repeaterMateria_ItemCommand">
-                <ItemTemplate>
-                    <div class="row"> 
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
-						
-						<div class="course-br">
-							<div class="course-title">
-								<h2><a href="#"><span class="auto-style2">'<%# Eval("NombreMateria") %>'</span></a></h2>
-                              
-                                <asp:Label ID="lblidMateria" runat="server" Text='<%# Eval("IdMateria") %>'><span>idMateria</span></asp:Label>
-                                
-
-							</div>
-							<div class="course-desc">
-							
-                           	<p><%# Eval("NivelAcademico") %> </p><br />
-                             <p><%# Eval("Curso") %> </p>
-                                
-                               
-							</div>
-							<div class="course-rating">
-								<p>Seccion Basica Media</p><br />
-                             
-															
-							</div>
-                                 	<div class="blog-button">
-                            	
-                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Actividades</span></asp:LinkButton>
-							<asp:LinkButton   class="hover-btn-new orange" ID="lbtnotas" runat="server"  Text="" OnClick="lbtnotas_Click"><span>Notas</span></asp:LinkButton>
-
-						</div>
-						</div>
-						<div class="course-meta-bot">
-							<ul>
-								<li>Profesor : <%# Eval("Nombres") + " " + Eval("Apellidos") %></li>
-							</ul>
-						</div>
-                          <div class="text-center pd">
-                              
-
-                                </div>
-					</div>
-                </div><!-- end col -->
-
-            </div><!-- end row -->	
-                    
-                </ItemTemplate>
-              
-            </asp:Repeater>
-            		
 			</div><!-- end container -->
     </div><!-- end section -->
 
    <!-- end section -->
+    <div class="container">
+     <div class="row"> 
+     <asp:Repeater ID="repeaterMateria" runat="server" OnItemCommand="repeaterMateria_ItemCommand">
+                <ItemTemplate>
+       <div class="col-md-4 col-sm-6">
+                    <div class="pricingTable orange">
+                        <div class="pricingTable-header">
+                            <span class="heading">
+                                <h3>'<%# Eval("NombreMateria") %>'</h3>
+                            </span>
+                            <asp:Label ID="lblidMateria" runat="server" Text='<%# Eval("IdMateria") %>' ><span class="month">idMateria</span></asp:Label>
+                            <span class="price-value"> <span>	<%# Eval("NivelAcademico") %> <br />
+                            
+                                </span><span> <p><%# Eval("Curso") %> </p></span></span>
+                        </div>
+
+                        <div class="pricingContent">
+                            <i class="fa fa-cube"></i>
+                            <ul>
+                                <li>Profesor : <%# Eval("Nombres") + " " + Eval("Apellidos") %></li>
+                               
+                            </ul>
+                        </div><!-- /  CONTENT BOX-->
+
+                        <div class="pricingTable-sign-up">
+                         
+
+                               	
+                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Actividades</span></asp:LinkButton>
+							<asp:LinkButton   class="hover-btn-new orange" ID="lbtnotas" runat="server"  Text="" PostBackUrl="~/Vista/verNotasMateria.aspx"><span>Notas</span></asp:LinkButton>
+
+                        </div><!-- BUTTON BOX-->
+                    </div>
+                </div>
+
+
+
+
+
+
+                    </ItemTemplate>
+              
+            </asp:Repeater>
+         </div></div>
+
+
+
+
 
     <footer class="footer">
         <div class="container">

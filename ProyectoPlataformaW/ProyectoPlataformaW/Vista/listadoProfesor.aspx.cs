@@ -1,5 +1,6 @@
 ﻿using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
+using ProyectoPlataformaW.Datos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,11 +24,10 @@ namespace ProyectoPlataformaW.Vista
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            lblUsera.Text = Session["usuario"].ToString();
 
-            mtdCargarGrid();
+            string user = Session["usuario"].ToString();
 
-            /*try
+            try
             {
                 if (Session["general"].ToString() == null)
                 {
@@ -36,9 +36,8 @@ namespace ProyectoPlataformaW.Vista
 
                 if (Session["general"].ToString() == "administrador")
                 {
-                    mtdCargarGrid();
-                    // Response.Redirect("~/inicio.aspx");
-
+                    clRecuperarContra c = new clRecuperarContra();
+                    c.enviarCorreoIsecion(user);
                 }
                 else if (Session["general"].ToString() != "administrador")
                 {
@@ -46,20 +45,24 @@ namespace ProyectoPlataformaW.Vista
                     Response.Redirect("~/inicio.aspx");
                 }
             }
-            catch (Exception)
+            catch (Exception error)
             {
 
-                Response.Write("<script> alert(" + "'modo edicion'" +") </script>");
+                Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
+                clErrores.save(this, error);
+                Session.Clear();
+                Response.Redirect("~/inicio.aspx");
 
-                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
-                //Session.Clear();
-                //redirigir a login //Response.Redirect("~/inicio.aspx");
-
-
-
-            }*/
+            }
 
 
+
+
+            lblUsera.Text = Session["usuario"].ToString();
+
+            mtdCargarGrid();
+
+            
             
         }
 

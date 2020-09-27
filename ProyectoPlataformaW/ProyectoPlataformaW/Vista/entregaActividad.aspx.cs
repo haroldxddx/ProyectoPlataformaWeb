@@ -23,6 +23,7 @@ namespace ProyectoPlataformaW.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
             string user = Session["usuario"].ToString();
+
             try
             {
                 if (Session["general"].ToString() == null)
@@ -32,9 +33,8 @@ namespace ProyectoPlataformaW.Vista
 
                 if (Session["general"].ToString() == "estudiante")
                 {
-
-                    // Response.Redirect("~/inicio.aspx");
-
+                    clRecuperarContra c = new clRecuperarContra();
+                    c.enviarCorreoIsecion(user);
                 }
                 else if (Session["general"].ToString() != "estudiante")
                 {
@@ -42,21 +42,16 @@ namespace ProyectoPlataformaW.Vista
                     Response.Redirect("~/inicio.aspx");
                 }
             }
-            catch (Exception)
+            catch (Exception error)
             {
 
-
                 Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
-
-                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
-                //redirigir a login //
-
+                clErrores.save(this, error);
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 
             }
 
-          
 
             Actividades objAct = new Actividades();
 
@@ -140,8 +135,9 @@ namespace ProyectoPlataformaW.Vista
              clEntidadEntregaE objAct = new clEntidadEntregaE();
 
              objAct.Descripcion = Actividades.Descripcion;
-             objAct.Archivos = (string)(Session["Archivos"] = "~/EntregaActividades/" + AdArchivo.FileName);
-             objAct.IdActividad = Actividades.id;
+
+            objAct.Archivos = (string)(Session["Archivos"] = "~/EntregaActividades/" + AdArchivo.FileName);
+            objAct.IdActividad = Actividades.id;
              objAct.IdEstudiante = int.Parse(lble.Text);
              objAct.Vinculo = txtVinculo.Text;
              objAct.otraRespuesta = txtEvidencia.Text;
@@ -157,7 +153,20 @@ namespace ProyectoPlataformaW.Vista
             {
 
                 string user = Session["usuario"].ToString();
-                AdArchivo.SaveAs(Server.MapPath("~/EntregaActividades/") + AdArchivo.FileName);
+
+                if (AdArchivo.HasFile)
+                {
+                    AdArchivo.SaveAs(Server.MapPath("~/EntregaActividades/") + AdArchivo.FileName);
+                   // lblarc.Text = AdArchivo.FileName;
+                }
+                else
+                {
+                   // lblarc.Text = "sin archivos";
+                 
+                }
+
+
+               
                 clRecuperarContra c = new clRecuperarContra();
                 c.enviarActividad(user,Actividades.Descripcion);
                 Response.Write("<script> alert(" + "'Actividad Entregada Correctamente'" + ") </script>");

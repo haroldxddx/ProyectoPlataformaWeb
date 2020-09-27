@@ -79,9 +79,10 @@
 
            
 
-            <asp:Repeater ID="repeaterActividad" runat="server" OnItemCommand="repeaterActividad_ItemCommand">
-                <ItemTemplate>
+           
                     <div class="row"> 
+                <asp:Repeater ID="repeaterActividad" runat="server" OnItemCommand="repeaterActividad_ItemCommand">
+                <ItemTemplate>
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-item">
 						<div class="image-blog">
@@ -114,10 +115,11 @@
 						</div>
 					</div>
                 </div><!-- end col -->
+                   
               </ItemTemplate>
 
             </asp:Repeater>
-            		
+            		 </div>
 			</div><!-- end container -->
     </div><!-- end section -->
                

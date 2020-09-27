@@ -139,6 +139,7 @@
     <Content Include="Vista\asignarProfesorCursoMateria.aspx" />
     <Content Include="Vista\buscadorEstudiantes.aspx" />
     <Content Include="Vista\calificarActividad.aspx" />
+    <Content Include="Vista\conocenos.aspx" />
     <Content Include="Vista\editarPerfilProf.aspx" />
     <Content Include="Vista\editPerfilAdmin.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
@@ -462,7 +463,9 @@
     <Content Include="Vista\js\01-custom-places-example.js" />
     <Content Include="Vista\js\all.js" />
     <Content Include="Vista\js\custom.js" />
+    <Content Include="Vista\js\index.js" />
     <Content Include="Vista\js\mapsed.js" />
+    <Content Include="Vista\js\meeting.js" />
     <Content Include="Vista\js\modernizer.js" />
     <Content Include="Vista\js\timeline.min.js" />
     <Content Include="style.css" />
@@ -2109,6 +2112,7 @@
     <Content Include="Vista\verEntregasEstudiantes.aspx" />
     <Content Include="Vista\verNotasActi.aspx" />
     <Content Include="Vista\verNotasMateria.aspx" />
+    <Content Include="Vista\Vieollamada.aspx" />
     <Content Include="Vista\WebForm1.aspx" />
     <Content Include="Vista\WebForm2.aspx" />
     <Content Include="Web.config" />
@@ -2127,6 +2131,7 @@
     <Compile Include="Datos\clEntregaD.cs" />
     <Compile Include="Datos\clErrores.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
+    <Compile Include="Datos\clForoD.cs" />
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
@@ -2152,6 +2157,7 @@
     <Compile Include="Entidades\clProfesorEEE.cs" />
     <Compile Include="Errores\Class1.cs" />
     <Compile Include="Logica\clAnunciosL.cs" />
+    <Compile Include="Logica\clForoL.cs" />
     <Compile Include="Logica\clMateriaL.cs" />
     <Compile Include="Entidades\EntidadEstudianteXlsx.cs" />
     <Compile Include="Global.asax.cs">
@@ -2201,6 +2207,14 @@
     </Compile>
     <Compile Include="Vista\calificarActividad.aspx.designer.cs">
       <DependentUpon>calificarActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ClEntidadActividadE.cs" />
+    <Compile Include="Vista\conocenos.aspx.cs">
+      <DependentUpon>conocenos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\conocenos.aspx.designer.cs">
+      <DependentUpon>conocenos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\editarPerfilProf.aspx.cs">
       <DependentUpon>editarPerfilProf.aspx</DependentUpon>
@@ -2465,6 +2479,13 @@
     </Compile>
     <Compile Include="Vista\verNotasMateria.aspx.designer.cs">
       <DependentUpon>verNotasMateria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Vieollamada.aspx.cs">
+      <DependentUpon>Vieollamada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\Vieollamada.aspx.designer.cs">
+      <DependentUpon>Vieollamada.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
@@ -2914,6 +2935,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anuncios\" />
+    <Folder Include="Foro\" />
     <Folder Include="log\" />
   </ItemGroup>
   <PropertyGroup>

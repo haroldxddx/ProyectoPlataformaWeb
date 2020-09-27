@@ -1,5 +1,6 @@
 ﻿using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
+using ProyectoPlataformaW.Datos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,50 @@ namespace ProyectoPlataformaW.Vista
         List<clEntidadCursoMateriaE> listaCursoMa = new List<clEntidadCursoMateriaE>();
         List<clEntidadNotas> listNotas = new List<clEntidadNotas>();
         protected void Page_Load(object sender, EventArgs e)
+
         {
+
+
+            string user = Session["usuario"].ToString();
+
+            try
+            {
+                if (Session["general"].ToString() == null)
+                {
+                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                }
+
+                if (Session["general"].ToString() == "estudiante")
+                {
+                    clRecuperarContra c = new clRecuperarContra();
+                    c.enviarCorreoIsecion(user);
+                }
+                else if (Session["general"].ToString() != "estudiante")
+                {
+
+                    Response.Redirect("~/inicio.aspx");
+                }
+            }
+            catch (Exception error)
+            {
+
+                Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
+                clErrores.save(this, error);
+                Session.Clear();
+                Response.Redirect("~/inicio.aspx");
+
+            }
+
+
+
+
+
+
+
+
+
+
+
             clEstudianteL objEstudianteL = new clEstudianteL();
             clCursoMateriaL objCml = new clCursoMateriaL();
             clEntregaL objEL = new clEntregaL(); 
@@ -24,7 +68,7 @@ namespace ProyectoPlataformaW.Vista
             clEntidadEstudianteE objE = new clEntidadEstudianteE();
             clEntidadNotas objNOtas = new clEntidadNotas();
 
-            string user = Session["usuario"].ToString();
+            //string user = Session["usuario"].ToString();
             objE.Email = user;
             objCC.Curso = "1109";
             
