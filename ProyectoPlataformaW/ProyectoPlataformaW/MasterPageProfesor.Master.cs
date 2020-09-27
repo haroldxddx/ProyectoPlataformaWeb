@@ -11,7 +11,7 @@ namespace ProyectoPlataformaW
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-         //   lblUser.Text = Session["usuario"].ToString();
+          lblUser.Text = Session["usuario"].ToString();
 
         }
         protected void lblcerrarsesion_Click(object sender, EventArgs e)
