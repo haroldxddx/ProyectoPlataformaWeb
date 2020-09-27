@@ -57,6 +57,34 @@ namespace ProyectoPlataformaW.Datos
 
 
         }
+        public List<clEntidadActividadE> mtdListActividadN()
+        {
+
+            string sql = "select IdActividad,NombreActividad from Actividad";
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblAct = new DataTable();
+            tblAct = objSql.mtdDesconectado(sql);
+
+            List<clEntidadActividadE> listaAct = new List<clEntidadActividadE>();
+
+            for (int i = 0; i < tblAct.Rows.Count; i++)
+            {
+                clEntidadActividadE objActivi = new clEntidadActividadE();
+
+
+                objActivi.IdActividad = int.Parse(tblAct.Rows[i][0].ToString());
+                objActivi.NombreActividad = tblAct.Rows[i][1].ToString();
+             
+
+
+                listaAct.Add(objActivi);
+
+            }
+
+            return listaAct;
+
+
+        }
 
 
 

@@ -2132,6 +2132,7 @@
     <Compile Include="Datos\clEntregaD.cs" />
     <Compile Include="Datos\clErrores.cs" />
     <Compile Include="Datos\clEstudianteD.cs" />
+    <Compile Include="Datos\clForoD.cs" />
     <Compile Include="Datos\clMateriaD.cs" />
     <Compile Include="Datos\clProfesorD.cs" />
     <Compile Include="Datos\clRecuperarContra.cs" />
@@ -2155,6 +2156,7 @@
     <Compile Include="Entidades\clNotasEstudE.cs" />
     <Compile Include="Errores\Class1.cs" />
     <Compile Include="Logica\clAnunciosL.cs" />
+    <Compile Include="Logica\clForoL.cs" />
     <Compile Include="Logica\clMateriaL.cs" />
     <Compile Include="Entidades\EntidadEstudianteXlsx.cs" />
     <Compile Include="Global.asax.cs">
@@ -2205,6 +2207,7 @@
     <Compile Include="Vista\calificarActividad.aspx.designer.cs">
       <DependentUpon>calificarActividad.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Vista\ClEntidadActividadE.cs" />
     <Compile Include="Vista\conocenos.aspx.cs">
       <DependentUpon>conocenos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2938,6 +2941,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anuncios\" />
+    <Folder Include="Foro\" />
     <Folder Include="log\" />
   </ItemGroup>
   <PropertyGroup>
