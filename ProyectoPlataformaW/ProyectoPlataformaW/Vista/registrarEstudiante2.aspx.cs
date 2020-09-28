@@ -2,6 +2,7 @@
 using ProyectoPlataformaW.Entidades;
 using SpreadsheetLight;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.OleDb;
@@ -18,7 +19,7 @@ namespace ProyectoPlataformaW.Vista
     {
         List<EntidadEstudianteXlsx> listaEs = new List<EntidadEstudianteXlsx>();
         DataTable dt1 = new DataTable();
-      
+
         protected void Page_Load(object sender, EventArgs e)
         {
             List<ClEntidadCursosE> listaCurso = new List<ClEntidadCursosE>();
@@ -57,7 +58,7 @@ namespace ProyectoPlataformaW.Vista
             if (resultsql > 0)
             {
                 ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/Vista/inicioAnuncio.aspx'", true);
-               // Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+                // Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
                 txtNom.Text = "";
                 txtApe.Text = "";
                 txtDoc.Text = "";
@@ -67,29 +68,12 @@ namespace ProyectoPlataformaW.Vista
 
         }
 
-        protected void LinkButton1_Click(object sender, EventArgs e)
+
+        protected void UploadButton_Click(object sender, EventArgs e)
         {
-            //Verificar si el FileUpload contiene un Archivo
-            if (FileUpload1.HasFile)
-            {
-
-                //Colocar el nombre del Archivo 
-                string filename = FileUpload1.FileName;
-
-                //Enviar el Archivo a un Directorio de forma Temporal
-                FileUpload1.SaveAs(Server.MapPath("//" + filename));
-
-
-                //Importar el Archivo Excel a un Gridview 
-                ExportToGrid(Server.MapPath("//" + filename), System.IO.Path.GetExtension(Server.MapPath("/Uploads/" + filename)));
-
-            }
-        }
-            protected void UploadButton_Click(object sender, EventArgs e)
-            {
 
             // Verifica si existe algun archivo cargado
-            
+
             if (FileUpload1.HasFile)
             {
                 lblEstado.Text = "Se cargo correctamente el archivo.";
@@ -97,11 +81,11 @@ namespace ProyectoPlataformaW.Vista
             }
             else
             {
-      
+
                 lblEstado.Text = "Especifique un archivo.";
             }
 
-           
+
 
         }
         public void ExportToGrid(String path, String Extension)
@@ -130,10 +114,10 @@ namespace ProyectoPlataformaW.Vista
             //Seleccionar la Hoja 
             Datable = Conexion.GetOleDbSchemaTable(OleDbSchemaGuid.Tables, null);
             String Hoja = Datable.Rows[0]["TABLE_NAME"].ToString();
-       
+
             Comando = new System.Data.OleDb.OleDbDataAdapter("select * from [" + Hoja + "]", Conexion);
             DtSet = new System.Data.DataSet();
-            
+
             //  Contenido de Excel a un Dataset
             Comando.Fill(DtSet, "[" + Hoja + "]");
             dt1 = DtSet.Tables[0];
@@ -141,14 +125,14 @@ namespace ProyectoPlataformaW.Vista
 
             //  Verificar si el Datatable Contiene Valores
             if (dt1.Rows.Count > 0)
-            { 
-              // GridView dtgExc = new GridView();
+            {
+                // GridView dtgExc = new GridView();
                 dtgExc.DataSource = dt1;
 
                 dtgExc.DataBind();
 
                 // Label1.Text = "holi: <b><font color=red>" + dtgExc.Rows.Count.ToString() + "</font></b>";
-               
+
             }
             //Eliminar el Archivo Excel del Directorio Temporal
             if (System.IO.File.Exists(path))
@@ -161,34 +145,58 @@ namespace ProyectoPlataformaW.Vista
             Datable = null;
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-
-            clEntidadEstudianteE objEx = new clEntidadEstudianteE();
-            
-            for (int i = 0; i < dtgExc.Rows.Count; i++)
-            {
-                clEntidadEstudianteE objPasDatos = new clEntidadEstudianteE();
-                objEx.Nombres = dtgExc.Rows[0].ToString();
-                objEx.Apellidos = dtgExc.Rows[1].ToString();
-                objEx.Documento = int.Parse(dtgExc.Rows[2].ToString());
-                objEx.Email = dtgExc.Rows[3].ToString();
-                objEx.Contrasena = Encrypt.GetSHA256(dtgExc.Rows[4].ToString());
-                objEx.IdCurso = int.Parse(dtgExc.Rows[5].ToString());
-        
-
-
-
-                clEstudianteD objExl = new clEstudianteD();
-                int resultsql = objExl.mtdRegistrarEstudiante(objEx);
-            }
-            }
-
+       
         protected void dpdCurso_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+        protected void LinkButton1_Click1(object sender, EventArgs e)
+        {
+
+            //Verificar si el FileUpload contiene un Archivo
+            if (FileUpload1.HasFile)
+            {
+
+                //Colocar el nombre del Archivo 
+                string filename = FileUpload1.FileName;
+
+                //Enviar el Archivo a un Directorio de forma Temporal
+                FileUpload1.SaveAs(Server.MapPath("//" + filename));
+
+
+                //Importar el Archivo Excel a un Gridview 
+                ExportToGrid(Server.MapPath("//" + filename), System.IO.Path.GetExtension(Server.MapPath("/Uploads/" + filename)));
+
+
+                clEntidadEstudianteE objEx = new clEntidadEstudianteE();
+
+                for (int i = 0; i < dtgExc.Rows.Count; i++)
+                {
+                   
+                    objEx.Nombres = dtgExc.Rows[i].Cells[0].Text.ToString();
+                    objEx.Apellidos = dtgExc.Rows[i].Cells[1].Text.ToString();
+                    objEx.Documento = int.Parse(dtgExc.Rows[i].Cells[2].Text.ToString());
+                    objEx.Email = dtgExc.Rows[i].Cells[3].Text.ToString();
+                    objEx.Contrasena = Encrypt.GetSHA256(dtgExc.Rows[i].Cells[4].Text.ToString());
+                    objEx.IdCurso = int.Parse(dtgExc.Rows[i].Cells[5].Text.ToString());
+
+     
+
+                    clEstudianteD objExl = new clEstudianteD();
+                    int resultsql = objExl.mtdRegistrarEstudiante(objEx);
+                    if (resultsql > 0)
+                    {
+                        ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/Vista/inicioAnuncio.aspx'", true);
+                      //  Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+
+                    }
+
+                }
+
+            }
+        }
     }
-    }
+}
+    
 
