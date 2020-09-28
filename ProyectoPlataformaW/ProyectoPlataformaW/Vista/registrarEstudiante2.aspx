@@ -1,5 +1,19 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.Master" AutoEventWireup="true" CodeBehind="registrarEstudiante2.aspx.cs" Inherits="ProyectoPlataformaW.Vista.registrarEstudiante2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style2 {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+            left: 0px;
+            top: 0px;
+            padding-left: 7.5px;
+            padding-right: 7.5px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <br />
@@ -93,11 +107,10 @@
             <div class="col-12">
           
            <asp:Button ID="btnRegistrarE" type="submit" runat="server" class="btn btn-success float-right" Text="Registrar" OnClick="btnRegistrarE_Click"/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:GridView ID="dtgExec" runat="server">
-                </asp:GridView>
-                <asp:GridView ID="dtgExc" runat="server" AutoGenerateColumns="False"  EmptyDataText="No hay registros de datos para mostrar.">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="lblEstado" runat="server" Text=""></asp:Label>
+                <asp:FileUpload ID="FileUpload1" runat="server" />
+                <asp:GridView ID="dtgExc" runat="server" AutoGenerateColumns="False"  EmptyDataText="No hay registros de datos para mostrar." Visible="False" >
                     <Columns>
-                        <asp:BoundField DataField="IdEstudiante" HeaderText="IdEstudiante" ReadOnly="True" SortExpression="IdEstudiante" />
                         <asp:BoundField DataField="Nombres" HeaderText="Nombres" SortExpression="Nombres" />
                         <asp:BoundField DataField="Apellidos" HeaderText="Apellidos" SortExpression="Apellidos" />
                         <asp:BoundField DataField="Documento" HeaderText="Documento" SortExpression="Documento" />
@@ -106,16 +119,16 @@
                         <asp:BoundField DataField="IdCurso" HeaderText="IdCurso" SortExpression="IdCurso" />
                     </Columns>
                 </asp:GridView>
-&nbsp;<br />
+&nbsp;<asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-success float-right" OnClick="LinkButton1_Click1">Guardar Archivo</asp:LinkButton>
+                <br />
                 <br />
         </div>
       </div>
                 <div class="row">
        
 
-            <div class="col-12">
+            <div class="auto-style2">
           
-           <asp:Button ID="Button1" type="submit" runat="server" class="btn btn-success float-right" Text="Subir Archivo Excel" OnClick="Button1_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
