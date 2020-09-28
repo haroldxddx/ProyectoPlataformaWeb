@@ -15,6 +15,35 @@ namespace ProyectoPlataformaW.Vista
         List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            string user = Session["usuario"].ToString();
+
+            try
+            {
+                if (Session["general"].ToString() == null)
+                {
+                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                }
+
+                if (Session["general"].ToString() == "administrador")
+                {
+                    clRecuperarContra c = new clRecuperarContra();
+                    c.enviarCorreoIsecion(user);
+                }
+                else if (Session["general"].ToString() != "administrador")
+                {
+
+                    Response.Redirect("~/inicio.aspx");
+                }
+            }
+            catch (Exception error)
+            {
+
+                Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
+                clErrores.save(this, error);
+                Session.Clear();
+                Response.Redirect("~/inicio.aspx");
+
+            }
 
         }
         protected void Page_Init(object sender, EventArgs e)
@@ -34,7 +63,7 @@ namespace ProyectoPlataformaW.Vista
                 if (Session["general"].ToString() == "administrador")
                 {
                     List<ClEntidadCursosE> listC = new List<ClEntidadCursosE>();
-                    List<clEntidadEstudianteE> listE = new List<clEntidadEstudianteE>();
+                    List<clEstudianteEEE> listE = new List<clEstudianteEEE>();
 
                     clCursoL objCurso = new clCursoL();
                     clEstudianteL objEstud = new clEstudianteL();
@@ -83,9 +112,9 @@ namespace ProyectoPlataformaW.Vista
         {
             string nomAP = txtNombreE.Text;
 
-            List<clEntidadEstudianteE> listaBuscar = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaBuscar = new List<clEstudianteEEE>();
 
-            clEntidadEstudianteE objEstudiante = new clEntidadEstudianteE();
+            clEstudianteEEE objEstudiante = new clEstudianteEEE();
             objEstudiante.Nombres = nomAP;
 
             clEstudianteL objEstudianteL = new clEstudianteL();
@@ -104,7 +133,7 @@ namespace ProyectoPlataformaW.Vista
             //string cur = cmbCurso.SelectedIndex.ToString();
 
 
-            List<clEntidadEstudianteE> listaFilt = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaFilt = new List<clEstudianteEEE>();
 
             clEntidadEstudianteE objEstudiante = new clEntidadEstudianteE();
             objEstudiante.IdCurso = int.Parse(cmbCurso.SelectedValue);

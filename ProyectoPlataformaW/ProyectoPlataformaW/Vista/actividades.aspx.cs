@@ -25,17 +25,50 @@ namespace ProyectoPlataformaW.Vista
 
         {
 
+            string user = Session["usuario"].ToString();
+
+            try
+            {
+                if (Session["general"].ToString() == null)
+                {
+                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                }
+
+                if (Session["general"].ToString() == "estudiante")
+                {
+                    clRecuperarContra c = new clRecuperarContra();
+                    c.enviarCorreoIsecion(user);
+                }
+                else if (Session["general"].ToString() != "estudiante")
+                {
+
+                    Response.Redirect("~/inicio.aspx");
+                }
+            }
+            catch (Exception error)
+            {
+
+                Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
+                clErrores.save(this, error);
+                Session.Clear();
+                Response.Redirect("~/inicio.aspx");
+
+            }
+
+
+
+
+
+
+
+
+
             clCursoMateriaD objcmd = new clCursoMateriaD();
             int var = clCursoMateriaD.datoDT;
 
             
-            
 
-
-
-
-
-            string user = Session["usuario"].ToString();
+            //string user = Session["usuario"].ToString();
 
             List<clEntidadActividadE> listaActividad = new List<clEntidadActividadE>();
 

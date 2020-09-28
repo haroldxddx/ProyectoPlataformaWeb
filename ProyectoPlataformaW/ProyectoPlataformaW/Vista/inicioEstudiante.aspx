@@ -68,6 +68,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
+
+
+
     <!-- Modernizer for Portfolio -->
     <script src="js/modernizer.js"></script>
 
@@ -92,9 +95,8 @@
 	</div>
 	<!-- END LOADER -->	
 
-    <!-- Start header -->
-	
-	<!-- End header -->
+   
+
 	
 	<div class="all-title-box">
 		<div class="container text-center">
@@ -110,13 +112,6 @@
                 </div>
             </div><!-- end title -->
 
-           
-
-          
-                  
-                    
-                
-            		
 			</div><!-- end container -->
     </div><!-- end section -->
 

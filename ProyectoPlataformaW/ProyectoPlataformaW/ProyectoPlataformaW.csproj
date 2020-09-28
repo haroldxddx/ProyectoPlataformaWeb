@@ -301,7 +301,6 @@
     <Content Include="Vista\build\npm\DocsPublish.js" />
     <Content Include="Vista\build\npm\Plugins.js" />
     <Content Include="Vista\build\npm\Publish.js" />
-    <Content Include="Vista\buscadorAprendices.aspx" />
     <Content Include="Vista\dist\css\adminlte.css" />
     <Content Include="Vista\dist\css\adminlte.min.css" />
     <Content Include="Vista\dist\css\alt\adminlte.components.css" />
@@ -2153,7 +2152,9 @@
     <Compile Include="Entidades\clEntidadProfesorCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
+    <Compile Include="Entidades\clEstudianteEEE.cs" />
     <Compile Include="Entidades\clNotasEstudE.cs" />
+    <Compile Include="Entidades\clProfesorEEE.cs" />
     <Compile Include="Errores\Class1.cs" />
     <Compile Include="Logica\clAnunciosL.cs" />
     <Compile Include="Logica\clForoL.cs" />
@@ -2288,13 +2289,6 @@
     </Compile>
     <Compile Include="Vista\adminregistro.aspx.designer.cs">
       <DependentUpon>adminregistro.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Vista\buscadorAprendices.aspx.cs">
-      <DependentUpon>buscadorAprendices.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Vista\buscadorAprendices.aspx.designer.cs">
-      <DependentUpon>buscadorAprendices.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\editPerfil2.aspx.cs">
       <DependentUpon>editPerfil2.aspx</DependentUpon>

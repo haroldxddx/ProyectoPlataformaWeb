@@ -93,7 +93,7 @@
                           <asp:Label ID="lblFecha2" runat="server" Text=""></asp:Label>
                           <br />
                           <br />
-                          &nbsp;<asp:LinkButton ID="lkbDescargar" runat="server">Ver Archivo</asp:LinkButton>
+                          &nbsp;<asp:LinkButton ID="lkbDescargar" runat="server" OnClick="lkbDescargar_Click">Ver Archivo</asp:LinkButton>
                           <asp:Label ID="lblArchivo2" runat="server" Text=""></asp:Label>
                           <br />
                           <br />
@@ -122,7 +122,7 @@
             </div>
             <div class="modal-body">
               <p>Asigne su calificacion de 1.0 a 5.0 segun su criterio&hellip;</p>
-                <asp:TextBox ID="txtCalificar" runat="server" TextMode="Number" Step="0.1" Max="5"></asp:TextBox>
+                <asp:TextBox ID="txtCalificar" runat="server" TextMode="Number" Step="0.1" Min="1" Max="5"></asp:TextBox>
             </div>
             <div class="modal-footer justify-content-between">
               <button type="button" class="btn btn-default swalDefaultSuccess" data-dismiss="modal">Cerrar</button>

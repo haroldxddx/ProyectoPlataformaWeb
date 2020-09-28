@@ -1,5 +1,6 @@
 ﻿using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
+using ProyectoPlataformaW.Datos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,11 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class editPerfil2 : System.Web.UI.Page
     {
-        List<clEntidadEstudianteE> listEestu = new List<clEntidadEstudianteE>();
+        List<clEstudianteEEE> listEestu = new List<clEstudianteEEE>();
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            string user = Session["usuario"].ToString();
 
             try
             {
@@ -25,9 +28,8 @@ namespace ProyectoPlataformaW.Vista
 
                 if (Session["general"].ToString() == "estudiante")
                 {
-
-
-
+                    clRecuperarContra c = new clRecuperarContra();
+                    c.enviarCorreoIsecion(user);
                 }
                 else if (Session["general"].ToString() != "estudiante")
                 {
@@ -35,15 +37,11 @@ namespace ProyectoPlataformaW.Vista
                     Response.Redirect("~/inicio.aspx");
                 }
             }
-            catch (Exception)
+            catch (Exception error)
             {
 
-
                 Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
-
-                //si necesita editar la pagina de estudiante no descomentarear la siguiente linea :v by mao
-                //redirigir a login //
-
+                clErrores.save(this, error);
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 
@@ -81,7 +79,7 @@ namespace ProyectoPlataformaW.Vista
 
             clEstudianteL objEstudianteL = new clEstudianteL();
             listEestu = objEstudianteL.mtdListadoComEs();
-            string user = Session["usuario"].ToString();
+           // string user = Session["usuario"].ToString();
 
             for (int i = 0; i < listEestu.Count; i++)
             {

@@ -29,19 +29,19 @@ namespace ProyectoPlataformaW.Logica
         }
 
 
-        public List<clEntidadEstudianteE> mtdListadoComEs()
+        public List<clEstudianteEEE> mtdListadoComEs()
         {
             clEstudianteD objEst = new clEstudianteD();
-            List<clEntidadEstudianteE> listaE = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaE = new List<clEstudianteEEE>();
             listaE = objEst.mtdListadoCompletoE();
             return listaE;
 
         }
 
-        public List<clEntidadEstudianteE> mtdBuscarEstu(clEntidadEstudianteE objDatos)
+        public List<clEstudianteEEE> mtdBuscarEstu(clEstudianteEEE objDatos)
         {
             clEstudianteD objEs = new clEstudianteD();
-            List<clEntidadEstudianteE> listaEst = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaEst = new List<clEstudianteEEE>();
             listaEst = objEs.mtdBuscarPorNom(objDatos);
             return listaEst;
         }
@@ -53,10 +53,10 @@ namespace ProyectoPlataformaW.Logica
             return listaEst;
         }
 
-        public List<clEntidadEstudianteE> mtdFiltroE(clEntidadEstudianteE objDatos)
+        public List<clEstudianteEEE> mtdFiltroE(clEntidadEstudianteE objDatos)
         {
             clEstudianteD objE = new clEstudianteD();
-            List<clEntidadEstudianteE> listaEs = new List<clEntidadEstudianteE>();
+            List<clEstudianteEEE> listaEs = new List<clEstudianteEEE>();
             listaEs = objE.mtdFiltroCurso(objDatos);
             return listaEs;
         }

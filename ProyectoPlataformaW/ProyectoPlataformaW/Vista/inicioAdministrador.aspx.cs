@@ -12,8 +12,8 @@ namespace ProyectoPlataformaW
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lbluser.Text = Session["usuario"].ToString();
-
+            string user = Session["usuario"].ToString();
+            
             try
             {
                 if (Session["general"].ToString() == null)
@@ -23,7 +23,8 @@ namespace ProyectoPlataformaW
 
                 if (Session["general"].ToString() == "administrador")
                 {
-
+                    clRecuperarContra c = new clRecuperarContra();
+                    c.enviarCorreoIsecion(user);
                 }
                 else if (Session["general"].ToString() != "administrador")
                 {
@@ -43,8 +44,7 @@ namespace ProyectoPlataformaW
 
 
 
-            clRecuperarContra c = new clRecuperarContra();
-            c.enviarCorreoIsecion(lbluser.Text);
+
 
 
         }
