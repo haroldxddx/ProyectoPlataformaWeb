@@ -26,7 +26,7 @@
   <div class="content-wrapper">
  <!-- Main content -->
 
-      <asp:Repeater ID="repeaterAnuncio" runat="server">
+      <asp:Repeater ID="repeaterAnuncio" runat="server" OnItemCommand="repeaterAnuncio_ItemCommand1"  >
           <ItemTemplate>
 
                 <section class="content">
@@ -59,6 +59,15 @@
                       </p>
                         <p>
                           <asp:Label ID="lblArch" runat="server" Text='<%# Eval("Archivos") %>'></asp:Label>
+                            <div class="btn-group dropup">
+
+                             <asp:LinkButton  runat="server" type="button" class="btn btn-default dropdown-toggle"  onclick="DescargarAct"    data-toggle="dropdown"><span>&#x1f441 <span></span></asp:LinkButton>
+
+                             <ul class="dropdown-menu pull-right">
+                             <li><asp:LinkButton   ID="lbtArchivos" runat="server" OnClick="DescargarAct" Text=""><span>Descargar/Ver <span></span></asp:LinkButton></li>
+                            </ul>
+                          </div>
+
                       </p>
 
                     </div>

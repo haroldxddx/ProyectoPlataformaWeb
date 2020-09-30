@@ -13,6 +13,15 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class inicioAnunciosE : System.Web.UI.Page
     {
+
+        public static int id;
+        public static string Descripcion;
+
+        public string o;
+        public static string Ruta;
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
             string user = Session["usuario"].ToString();
@@ -62,6 +71,36 @@ namespace ProyectoPlataformaW.Vista
 
             }
            
+        }
+
+        protected void repeaterAnuncio_ItemCommand1(object source, RepeaterCommandEventArgs e)
+        {
+            o = repeaterAnuncio.Items[e.Item.ItemIndex].ItemIndex.ToString();
+            Ruta = ((Label)repeaterAnuncio.Items[int.Parse(o)].FindControl("lblArch")).Text;
+
+        
+
+
+            if (Ruta !=null)
+            {
+                Response.Redirect(inicioAnunciosE.Ruta);
+
+            }
+            else
+            {
+                Response.Write("<script> alert(" + "Sin Archivos " + ") </script>");
+            }
+        }
+
+
+        protected void DescargarAct(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
