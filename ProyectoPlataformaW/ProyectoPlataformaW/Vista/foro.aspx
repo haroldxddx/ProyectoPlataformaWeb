@@ -8,7 +8,7 @@
             <input type="hidden" name="comment_id" id="commentId"
                 placeholder="Name" /> &nbsp;<asp:GridView ID="gdvListarCom" runat="server">
             </asp:GridView>
-            <asp:Label ID=lblFecha" runat="server" Text=""></asp:Label>
+            <asp:Label ID="lblFecha" runat="server" Text=""></asp:Label>
         </div>
         <div class="input-row">
             <textarea class="input-field" type="text" name="comment"
