@@ -47,6 +47,37 @@ namespace ProyectoPlataformaW.Datos
         
         }
 
+        //update contraseña al recuperar
+
+        public int mtdEditarContra(clEntidadEstudianteE objEst)
+        {
+
+            string sql = "UPDATE Estudiante SET Contrasena = '" + objEst.Contrasena + "' WHERE (Estudiante.Email = '" + objEst.Email + "') AND (Estudiante.Documento = '" + objEst.Documento + "')";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+        public int mtdEditarContraA(clEntidadAdministradorE objEst)
+        {
+
+            string sql = "UPDATE Administradores SET Contrasena = '" + objEst.Contrasena + "' WHERE (Administradores.Email = '" + objEst.Email + "') AND (Administradores.Documento = '" + objEst.Documento + "')";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+        public int mtdEditarContraP(clEntidadProfesorE objEst)
+        {
+
+            string sql = "UPDATE Profesor SET Contrasena = '" + objEst.Contrasena + "' WHERE (Profesor.Email = '" + objEst.Email + "') AND (Profesor.Documento = '" + objEst.Documento + "')";
+
+            clAdminSQL objConexion = new clAdminSQL();
+            int xd = objConexion.mtdConectado(sql);
+            return xd;
+        }
+
+
         // login
         public List<clEntidadEstudianteE> mtdListarlogin(clEntidadEstudianteE objest)
         {
