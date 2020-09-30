@@ -68,7 +68,7 @@
                     <br />
                     
                     <br />
-                    <asp:GridView ID="gvEstu" class="jsgrid" CssClass="auto-style4" runat="server"></asp:GridView>
+                    <asp:GridView ID="gvEstu" class="jsgrid" CssClass="table table-striped" runat="server"></asp:GridView>
                     <br />
                 </div>
                 <!-- /.card-body -->

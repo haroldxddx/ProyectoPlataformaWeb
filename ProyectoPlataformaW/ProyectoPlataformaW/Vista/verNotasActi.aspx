@@ -83,7 +83,7 @@
                 <div class="card-body">
                     
                     <br />
-                    <asp:GridView ID="gvProf" class="jsgrid" CssClass="auto-style4" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
+                    <asp:GridView ID="gvProf" class="jsgrid" CssClass="table table-striped" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1 %>" ProviderName="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1.ProviderName %>">
                     </asp:SqlDataSource>
                     <br />

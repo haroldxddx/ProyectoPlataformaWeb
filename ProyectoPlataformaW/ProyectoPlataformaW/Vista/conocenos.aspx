@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>SmartEDU - Education Responsive HTML5 Template</title>  
+    <title>conocenos</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -89,7 +89,7 @@ de los estudiantes; y en permanente búsqueda de la excelencia.</p>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="inner-hmv">
 						<div class="icon-box-hmv"><i class="flaticon-history"></i></div>
-						<h3>Pltatafroma </h3>
+						<h3>Plataforma </h3>
 						<div class="tr-pa">H</div>
 						<p>
 
@@ -118,7 +118,7 @@ de los estudiantes; y en permanente búsqueda de la excelencia.</p>
                             </div>
                             <div class="desc">
                                 <h3><i class="fa fa-quote-left"></i>Desarrollador back-end</h3>
-                                <p class="lead"> Desarrillador </p>
+                                <p class="lead"> Desarrollador </p>
                             </div>
                             <!-- end testi-meta -->
                         </div>

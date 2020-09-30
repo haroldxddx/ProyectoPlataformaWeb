@@ -96,7 +96,7 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <asp:GridView ID="gvlistEstudiante" runat="server" CssClass="auto-style4"></asp:GridView>
+                                    <asp:GridView ID="gvlistEstudiante" runat="server" CssClass="table table-striped"></asp:GridView>
                                     
                                     <br />
                                 </div>

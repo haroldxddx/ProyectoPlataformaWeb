@@ -112,7 +112,7 @@
 
                                 <div class="col-lg-12 col-md-12 col-sm-12">
                                     
-                                    <asp:TextBox ID="txtEvidencia" runat="server"  class="form-control"  placeholder="Escribe tu evidencia aqui ...." ></asp:TextBox>
+                                    <asp:TextBox ID="txtEvidencia" runat="server"  class="form-control"  placeholder="Escribe tu evidencia aqui ...." required="Completa este campo"  ></asp:TextBox>
                                 </div>
                                 <div class="text-center pd">
                               
