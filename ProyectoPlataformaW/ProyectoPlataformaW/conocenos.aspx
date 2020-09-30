@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="Vista/css/custom.css">
 
     <!-- Modernizer for Portfolio -->
+    <!-- Modernizer for Portfolio -->
     <script src="Vista/js/modernizer.js"></script>
 
     <!--[if lt IE 9]>
