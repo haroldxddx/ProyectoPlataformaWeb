@@ -18,15 +18,15 @@ namespace ProyectoPlataformaW.Datos
             string hora = System.DateTime.Now.ToString("HH:mm:ss");
             string path = HttpContext.Current.Request.MapPath("~/log/" + fecha + ".txt");
 
-            //StreamWriter sw = new StreamWriter(path, true);
+            StreamWriter sw = new StreamWriter(path, true);
 
-           // StackTrace stacktrace = new StackTrace();
-           // sw.WriteLine(obj.GetType().FullName + " " + hora);
-           // sw.WriteLine(stacktrace.GetFrame(1).GetMethod().Name + " - " + ex.Message);
-           // sw.WriteLine("");
+            StackTrace stacktrace = new StackTrace();
+            sw.WriteLine(obj.GetType().FullName + " " + hora);
+            sw.WriteLine(stacktrace.GetFrame(1).GetMethod().Name + " - " + ex.Message);
+            sw.WriteLine("");
 
-           // sw.Flush();
-           // sw.Close();
+            sw.Flush();
+            sw.Close();
         }
 
 
