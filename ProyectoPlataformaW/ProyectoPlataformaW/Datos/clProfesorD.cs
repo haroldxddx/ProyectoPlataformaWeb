@@ -75,7 +75,7 @@ namespace ProyectoPlataformaW.Datos
         //listar profesor Asignacion
         public List<clEntidadProfesorEE> mtdListarProfe()
         {
-            string sql = "SELECT IdProfesor,Nombres,Apellidos,Especialidad from Profesor";
+            string sql = "select Profesor.IdProfesor, Profesor.Nombres, Profesor.Apellidos, Profesor.Especialidad from Profesor";
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblprof = new DataTable();
             tblprof = objSql.mtdDesconectado(sql);

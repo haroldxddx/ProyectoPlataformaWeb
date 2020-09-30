@@ -29,9 +29,9 @@ namespace ProyectoPlataformaW.Vista
 
             try
             {
-                if (Session["general"].ToString() == null)
+               if (Session["general"].ToString() == null)
                 {
-                    Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
+                   Response.Write("<script> alert(" + "'sitio deshabilitado'" + ") </script>");
                 }
 
                 if (Session["general"].ToString() == "administrador")
@@ -47,9 +47,9 @@ namespace ProyectoPlataformaW.Vista
             }
             catch (Exception error)
             {
-
+           
                 Response.Write("<script> alert(" + "'sitio deshabilitado favor redirijase a nuestra pagina'" + ") </script>");
-                clErrores.save(this, error);
+               clErrores.save(this, error);
                 Session.Clear();
                 Response.Redirect("~/inicio.aspx");
 
@@ -116,6 +116,7 @@ namespace ProyectoPlataformaW.Vista
             string idC = string.Empty;
             string idP = string.Empty;
             string idM = string.Empty;
+            int resultsql = objCM.mtdAsignarCursoMateria(objECM);
 
             foreach (GridViewRow grvRowC in gvCurso.Rows)
             {
@@ -156,17 +157,29 @@ namespace ProyectoPlataformaW.Vista
 
                 }
             }
-
-            int resultsql = objCM.mtdAsignarCursoMateria(objECM);
+            
             lblMensajeC.Text = idC;
             lblMensaje.Text = idP;
             lblMensajeM.Text = idM;
+        
+            if (resultsql < 0)
+            {
+              
+               
+            }else if (resultsql == 1)
+                { 
+                ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/Vista/inicioAnuncio.aspx'", true);
+
+              //  Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+            }
+
         }
+    }
 
     }
 
 
-}
+
 
 
 
