@@ -58,13 +58,13 @@
                 
                       </p>
                         <p>
-                          <asp:Label ID="lblArch" runat="server" Text='<%# Eval("Archivos") %>'></asp:Label>
+                          <asp:Label ID="lblArch" runat="server" Text='<%# Eval("Archivos") %>' Visible="false"></asp:Label>
                             <div class="btn-group dropup">
 
                              <asp:LinkButton  runat="server" type="button" class="btn btn-default dropdown-toggle"  onclick="DescargarAct"    data-toggle="dropdown"><span>&#x1f441 <span></span></asp:LinkButton>
 
                              <ul class="dropdown-menu pull-right">
-                             <li><asp:LinkButton   ID="lbtArchivos" runat="server" OnClick="DescargarAct" Text=""><span>Descargar/Ver <span></span></asp:LinkButton></li>
+                             <li><asp:LinkButton   ID="lbtArchivos" runat="server" OnClick="DescargarAct" Text=""><span>Archivos <span></span></asp:LinkButton></li>
                             </ul>
                           </div>
 
