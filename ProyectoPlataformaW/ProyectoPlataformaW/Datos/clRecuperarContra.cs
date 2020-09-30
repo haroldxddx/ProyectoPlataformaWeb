@@ -32,7 +32,6 @@ namespace ProyectoPlataformaW.Datos
                 envios.Host = "smtp.gmail.com";
                 envios.Port = 587;
                 envios.EnableSsl = true;
-
                 envios.Send(correos);
 
 
