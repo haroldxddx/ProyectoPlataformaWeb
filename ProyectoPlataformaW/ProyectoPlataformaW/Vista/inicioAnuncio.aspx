@@ -22,8 +22,17 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
+      <div class="all-title-box">
+		<div class="container text-center">
+			<h1>Anuncios Informativos<span class="m_1"></span></h1>
+		</div>
+	</div>
+
+    <br
 <div class="wrapper">
   <div class="content-wrapper">
+
+     
  <!-- Main content -->
 
       <asp:Repeater ID="repeaterAnuncio" runat="server">
@@ -58,7 +67,8 @@
                 
                       </p>
                         <p>
-                          <asp:Label ID="lblArch" runat="server" Text='<%# Eval("Archivos") %>'></asp:Label>
+                          
+                            <asp:LinkButton ID="lblArch" runat="server" Text='<%# Eval("Archivos") %>'></asp:LinkButton>
                       </p>
 
                     </div>

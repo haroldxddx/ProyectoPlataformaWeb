@@ -107,6 +107,8 @@ namespace ProyectoPlataformaW.Vista
             Descripcion = ((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblDescripcion")).Text;
             Ruta = ((Label)repeaterActividad.Items[int.Parse(o)].FindControl("lblArchivos")).Text;
         
+
+
             Response.Redirect("~/Vista/entregaActividad.aspx");
 
          

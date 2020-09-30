@@ -3,6 +3,8 @@ using ProyectoPlataformaW.Entidades;
 using ProyectoPlataformaW.Logica;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -69,6 +71,20 @@ namespace ProyectoPlataformaW.Vista
 
 
 
+        }
+
+        protected void lkbDescargar_Click(object sender, EventArgs e)
+        {
+            string archivo = lblArchivo2.Text;
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, archivo);
+
+            Process.Start(path);
+
+            //string archivo = lblArchivo2.Text;
+
+            /*Process proceso = new Process();
+            proceso.StartInfo.FileName = "/Archivo/esp.jpg";
+            proceso.Start();*/
         }
     }
 }

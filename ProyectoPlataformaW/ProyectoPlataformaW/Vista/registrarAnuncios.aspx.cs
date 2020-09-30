@@ -84,5 +84,27 @@ namespace ProyectoPlataformaW.Vista
                 
             }
         }
+
+        protected void btnInforme_Click(object sender, EventArgs e)
+        {
+            clAdministradorD objA = new clAdministradorD();
+            int id = clAdministradorD.IdAdmin;
+
+            clEntidadAnunciosE objAnunE = new clEntidadAnunciosE();
+            objAnunE.Fecha = lblFecha.Text;
+            objAnunE.IdAdministrador = id;
+
+            clAnunciosL objAnunL = new clAnunciosL();
+            int result1 = objAnunL.mtdGeneInfo(objAnunE);
+
+            if (result1 > 0)
+            {
+                //fluArchivo.SaveAs(Server.MapPath("~/Anuncios/") + fluArchivo.FileName);
+                ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/Vista/inicioAnuncio.aspx'", true);
+                // Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+             
+
+            }
+        }
     }
 }

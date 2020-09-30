@@ -44,7 +44,7 @@ namespace ProyectoPlataformaW.Datos
             }
         }
 
-        public void enviarCorreo(string correo, string contra)
+        public void enviarCorreo(string correo, string pass)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace ProyectoPlataformaW.Datos
                 correos.Body = ""; 
                 correos.Subject = "";
                 correos.Body = "Hola! Buen dia, Usted solicito recuperar su contrasena, recuerde cambiar su contraseña la proxima vez que ingrese a la plataforma " 
-                 + " Su Contrasena es : " + contra;
+                 + " Su Contrasena es : " + pass;
                 correos.Subject = ("Recuperacion de Contraseña");
                 correos.IsBodyHtml = true;
                 correos.To.Add(correo.Trim());

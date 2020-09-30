@@ -61,6 +61,7 @@
 						<span class="label-input100">Usuario</span>
                         <asp:TextBox ID="txtUsuario"  class="input100" type="text" placeholder="Usuario"  runat="server"></asp:TextBox>
 
+
 						<span class="focus-input100"></span>
 					</div>
 

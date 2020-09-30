@@ -14,6 +14,7 @@ namespace ProyectoPlataformaW
     public partial class inicioEstu : System.Web.UI.Page
     {
         public static int id;
+        public static int idmat;
 
         public string o;
 
@@ -80,7 +81,8 @@ namespace ProyectoPlataformaW
             o = repeaterMateria.Items[e.Item.ItemIndex].ItemIndex.ToString();
 
             id = int.Parse(((Label)repeaterMateria.Items[int.Parse(o)].FindControl("lblidMateria")).Text);
-      
+            idmat = int.Parse(((Label)repeaterMateria.Items[int.Parse(o)].FindControl("lblIdCursoM")).Text);
+
 
             Response.Write("<script> alert(" + id + ") </script>");
            

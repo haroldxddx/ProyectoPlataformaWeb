@@ -73,7 +73,7 @@
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
-                    <p class="lead">Actividades propuestas por instructor  de area!</p>
+                    <p class="lead">Actividades propuestas por instructor de area!</p>
                 </div>
             </div><!-- end title -->
 
@@ -110,6 +110,7 @@
 						<div class="blog-button">
                             	
                             <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server" OnClick="btnRealizar_Click" Text=""><span>Realizar<span></span></asp:LinkButton>
+                             <asp:LinkButton class="hover-btn-new orange" ID="lbtForo" runat="server"  Text="" PostBackUrl="~/Vista/foroTot2.aspx"><span>Foros</span></asp:LinkButton>
                            <!-- <asp:Button ID="Button1" runat="server" Text="Button" OnClick="btnRealizar_Click"  />-->
 							
 						</div>

@@ -78,6 +78,11 @@
           
            <asp:Button ID="btnRegistrarP" type="submit" runat="server" class="btn btn-success float-right" Text="Registrar" OnClick="btnRegistrarP_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+            
+                <br />
+                <asp:Button ID="btnInforme" type="submit" runat="server" class="btn btn-success float-right" Text="Generar Informe" OnClick="btnInforme_Click"/>
+        &nbsp;&nbsp;&nbsp;
         </div>
       </div>
             </div>

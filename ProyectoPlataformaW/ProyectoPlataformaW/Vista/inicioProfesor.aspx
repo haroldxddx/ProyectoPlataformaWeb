@@ -77,14 +77,14 @@
 
             <hr class="invis"> 
 
-            
+            <div class="row"> 
 
             <asp:Repeater ID="repeaterPrueba" runat="server" OnItemCommand="repeaterPrueba_ItemCommand">
 
                 <ItemTemplate>
                   
                 <div class="col-lg-3 col-md-6 col-12">
-                    <div class="course-item">
+                    <div class="blog-item">
 						<div class="image-blog">
 
                             <p>
@@ -124,7 +124,7 @@
 
                 </ItemTemplate>
             </asp:Repeater>
-            				
+            		</div>		
 		
         </div><!-- end container -->
     </div><!-- end section -->

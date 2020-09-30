@@ -14,7 +14,7 @@ namespace ProyectoPlataformaW.Vista
     { 
      protected void Page_Load(object sender, EventArgs e)
     {
-        lblFecha.Text = DateTime.Now.ToShortDateString();
+       /* lblFecha.Text = DateTime.Now.ToShortDateString();
 
        // clForoL objFoL = new clForoL();
          //   clEntidadForoE objDatos = new clEntidadForoE();
@@ -27,7 +27,7 @@ namespace ProyectoPlataformaW.Vista
             dpdActividad.DataSource = listaAc;
             dpdActividad.DataTextField = "NombreActividad";
             dpdActividad.DataValueField = "IdActividad";
-            dpdActividad.DataBind();
+            dpdActividad.DataBind();*/
 
         }
 

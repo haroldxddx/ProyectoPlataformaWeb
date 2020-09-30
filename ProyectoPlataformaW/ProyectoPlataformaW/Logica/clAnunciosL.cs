@@ -35,5 +35,11 @@ namespace ProyectoPlataformaW.Logica
             listaEst = objEs.mtdListAnunProf();
             return listaEst;
         }
+        public int mtdGeneInfo(clEntidadAnunciosE objDatos)
+        {
+            clAnunciosD objAnunciosD = new clAnunciosD();
+            int regi = objAnunciosD.mtdGenerarInforme(objDatos);
+            return regi;
+        }
     }
 }

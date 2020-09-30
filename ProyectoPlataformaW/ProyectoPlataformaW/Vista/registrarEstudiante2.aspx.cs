@@ -103,7 +103,7 @@ namespace ProyectoPlataformaW.Vista
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             //Verificar si el FileUpload contiene un Archivo
-            if (FileUpload1.HasFile)
+           /* if (FileUpload1.HasFile)
             {
 
                 //Colocar el nombre del Archivo 
@@ -116,14 +116,14 @@ namespace ProyectoPlataformaW.Vista
                 //Importar el Archivo Excel a un Gridview 
                 ExportToGrid(Server.MapPath("//" + filename), System.IO.Path.GetExtension(Server.MapPath("/Uploads/" + filename)));
 
-            }
+            }*/
         }
             protected void UploadButton_Click(object sender, EventArgs e)
             {
 
             // Verifica si existe algun archivo cargado
             
-            if (FileUpload1.HasFile)
+            /*if (FileUpload1.HasFile)
             {
                 lblEstado.Text = "Se cargo correctamente el archivo.";
 
@@ -132,7 +132,7 @@ namespace ProyectoPlataformaW.Vista
             {
       
                 lblEstado.Text = "Especifique un archivo.";
-            }
+            }*/
 
            
 

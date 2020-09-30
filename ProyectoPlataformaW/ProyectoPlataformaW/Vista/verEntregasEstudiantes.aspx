@@ -42,6 +42,14 @@
                 
                   <asp:LinkButton ID="lkbNotas" runat="server" class="nav-link" href="/Vista/verNotasActi.aspx">Notas Por Actividades</asp:LinkButton>
               </li>
+                 <li class="nav-item">
+                
+                  <asp:LinkButton ID="lkbListado" runat="server" class="nav-link" href="/Vista/listadoEstudiantesCurso.aspx">Listado de Estudiantes</asp:LinkButton>
+              </li>
+                 <li class="nav-item">
+                
+                  <asp:LinkButton ID="lkbForo" runat="server" class="nav-link" href="/Vista/registrarForoActividad.aspx">Foros</asp:LinkButton>
+              </li>
               
             </ul>
          </div>

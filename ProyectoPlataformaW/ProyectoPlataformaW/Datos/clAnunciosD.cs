@@ -88,5 +88,15 @@ namespace ProyectoPlataformaW.Datos
             return listaEstud;
         }
 
+        public int mtdGenerarInforme(clEntidadAnunciosE objAnun)
+        {
+            string sqlInsert = "insert into Anuncios (Titulo,Fecha,Descripcion,Archivos,IdAdministrador)" +
+                "values('Informes de Notas Finales' , '" + objAnun.Fecha + "' , 'A continuacion se encuentran las notas finales', '.' , " + objAnun.IdAdministrador + ")";
+
+            clAdminSQL objSQL = new clAdminSQL();
+            int result = objSQL.mtdConectado(sqlInsert);
+            return result;
+        }
+
     }
 }

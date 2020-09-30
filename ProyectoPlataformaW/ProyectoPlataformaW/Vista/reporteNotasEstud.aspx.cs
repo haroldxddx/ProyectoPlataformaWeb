@@ -50,27 +50,25 @@ namespace ProyectoPlataformaW.Vista
 
             }
 
-
-
-
-
-
-
-
-
-
-
             clEstudianteL objEstudianteL = new clEstudianteL();
             clCursoMateriaL objCml = new clCursoMateriaL();
-            clEntregaL objEL = new clEntregaL(); 
+            clEntregaL objEL = new clEntregaL();
+
+            clEntidadEstudianteE objEst = new clEntidadEstudianteE();
+            objEst.Email = user;
 
             clEntidadCursoEE objCC = new clEntidadCursoEE();
             clEntidadEstudianteE objE = new clEntidadEstudianteE();
             clEntidadNotas objNOtas = new clEntidadNotas();
+            clEstudianteL objELn = new clEstudianteL();
+            objELn.mtdDatosEstu(objEst);
+
+            clEstudianteD est = new clEstudianteD();
+            int idcur = clEstudianteD.idCurso;
 
             //string user = Session["usuario"].ToString();
             objE.Email = user;
-            objCC.Curso = "1109";
+            objCC.IdCurso = idcur;
             
 
             listEestu = objEstudianteL.mtdInformeNotas(objE);

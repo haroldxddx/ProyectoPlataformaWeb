@@ -53,6 +53,11 @@ namespace ProyectoPlataformaW.Vista
             //List<clAdminAnunciosE2> listP2 = new List<clAdminAnunciosE2>();
 
             clAnunciosL objCmL = new clAnunciosL();
+            clProfesorL objProfL = new clProfesorL();
+
+            clProfesorEEE objEp = new clProfesorEEE();
+           /* objEp.Email = user;
+            objProfL.mtdNomProfe(objEp);*/
            
             listP = objCmL.mtdListAnunAd();
 

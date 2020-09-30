@@ -141,9 +141,14 @@
     <Content Include="Vista\calificarActividad.aspx" />
     <Content Include="Vista\conocenos.aspx" />
     <Content Include="Vista\editarPerfilProf.aspx" />
+    <Content Include="Vista\editors.html" />
     <Content Include="Vista\editPerfilAdmin.aspx" />
     <Content Include="Vista\entregaActividad.aspx" />
     <Content Include="Vista\foro.aspx" />
+    <Content Include="Vista\foroActividad.aspx" />
+    <Content Include="Vista\foroActividad2.aspx" />
+    <Content Include="Vista\forosTotalesAct.aspx" />
+    <Content Include="Vista\foroTot2.aspx" />
     <Content Include="Vista\images\16.png" />
     <Content Include="Vista\images\i.jpg" />
     <Content Include="Vista\inicioAdministrador.aspx" />
@@ -2104,6 +2109,7 @@
     <Content Include="Vista\registrarCurso2.aspx" />
     <Content Include="Vista\registrarEstudiante2.aspx" />
     <Content Include="Vista\registrarForo.aspx" />
+    <Content Include="Vista\registrarForoActividad.aspx" />
     <Content Include="Vista\registrarMateria2.aspx" />
     <Content Include="Vista\registrarProfesor2.aspx" />
     <Content Include="Vista\reporteNotasEstud.aspx" />
@@ -2149,6 +2155,7 @@
     <Compile Include="Entidades\clEntidadForoE.cs" />
     <Compile Include="Entidades\clEntidadMateriaE.cs" />
     <Compile Include="Entidades\clEntidadNotas.cs" />
+    <Compile Include="Entidades\clEntidadParticipacionE.cs" />
     <Compile Include="Entidades\clEntidadProfesorCursoMateriaE.cs" />
     <Compile Include="Entidades\clEntidadProfesorE.cs" />
     <Compile Include="Entidades\clEntidadProfesorEE.cs" />
@@ -2243,6 +2250,34 @@
     </Compile>
     <Compile Include="Vista\foro.aspx.designer.cs">
       <DependentUpon>foro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\foroActividad.aspx.cs">
+      <DependentUpon>foroActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\foroActividad.aspx.designer.cs">
+      <DependentUpon>foroActividad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\foroActividad2.aspx.cs">
+      <DependentUpon>foroActividad2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\foroActividad2.aspx.designer.cs">
+      <DependentUpon>foroActividad2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\forosTotalesAct.aspx.cs">
+      <DependentUpon>forosTotalesAct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\forosTotalesAct.aspx.designer.cs">
+      <DependentUpon>forosTotalesAct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\foroTot2.aspx.cs">
+      <DependentUpon>foroTot2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\foroTot2.aspx.designer.cs">
+      <DependentUpon>foroTot2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\inicioAdministrador.aspx.cs">
       <DependentUpon>inicioAdministrador.aspx</DependentUpon>
@@ -2437,6 +2472,13 @@
     </Compile>
     <Compile Include="Vista\registrarForo.aspx.designer.cs">
       <DependentUpon>registrarForo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\registrarForoActividad.aspx.cs">
+      <DependentUpon>registrarForoActividad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vista\registrarForoActividad.aspx.designer.cs">
+      <DependentUpon>registrarForoActividad.aspx</DependentUpon>
     </Compile>
     <Compile Include="Vista\registrarMateria2.aspx.cs">
       <DependentUpon>registrarMateria2.aspx</DependentUpon>
@@ -2935,6 +2977,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anuncios\" />
+    <Folder Include="ForoImagen\" />
     <Folder Include="Foro\" />
     <Folder Include="log\" />
   </ItemGroup>

@@ -10,6 +10,34 @@ namespace ProyectoPlataformaW.Datos
     public class clProfesorD
     {
         public static int IdProfesor;
+        public List<clProfesorEEE> mtdNombrePro(clProfesorEEE objja)
+        {
+            string sql = "select Nombres,Email from Profesor where Email = "+ objja.Email +"";
+            clAdminSQL objSql = new clAdminSQL();
+            DataTable tblprof = new DataTable();
+            tblprof = objSql.mtdDesconectado(sql);
+
+            List<clProfesorEEE> listaProf = new List<clProfesorEEE>();
+
+            for (int i = 0; i < tblprof.Rows.Count; i++)
+            {
+                clProfesorEEE objProf = new clProfesorEEE();
+
+
+                objProf.Nombres = tblprof.Rows[i][0].ToString();
+                
+                objProf.Email = tblprof.Rows[i][1].ToString();
+                
+
+
+
+
+                listaProf.Add(objProf);
+
+            }
+
+            return listaProf;
+        }
         public List<clProfesorEEE> mtdListarProf()
         {
             string sql = "select Nombres,Apellidos,Documento,Email,Especialidad from Profesor";
@@ -75,7 +103,7 @@ namespace ProyectoPlataformaW.Datos
         //listar profesor Asignacion
         public List<clEntidadProfesorEE> mtdListarProfe()
         {
-            string sql = "SELECT IdProfesor,Nombres,Apellidos,Especialidad from Profesor";
+            string sql = "SELECT IdProfesor,Nombres,Apellidos,Documento,Email,Especialidad from Profesor";
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblprof = new DataTable();
             tblprof = objSql.mtdDesconectado(sql);
@@ -89,7 +117,9 @@ namespace ProyectoPlataformaW.Datos
                 objProf.IdProfesor = int.Parse(tblprof.Rows[i][0].ToString());
                 objProf.Nombres = tblprof.Rows[i][1].ToString() ;
                 objProf.Apellidos = tblprof.Rows[i][2].ToString();
-                objProf.Especialidad = tblprof.Rows[i][3].ToString();
+                objProf.Documento = int.Parse(tblprof.Rows[i][3].ToString());
+                objProf.Email = tblprof.Rows[i][4].ToString();
+                objProf.Especialidad = tblprof.Rows[i][5].ToString();
 
 
 

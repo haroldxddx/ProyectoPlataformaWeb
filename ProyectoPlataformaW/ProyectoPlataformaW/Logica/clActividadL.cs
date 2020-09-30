@@ -35,6 +35,13 @@ namespace ProyectoPlataformaW.Logica
             return listaActi;
         }
 
+        public List<clEntidadActividadE> mtdComboact2(clEntidadActividadE objE)
+        {
+            clActividadD objAc = new clActividadD();
+            List<clEntidadActividadE> listaActi = new List<clEntidadActividadE>();
+            listaActi = objAc.mtdListActividadN(objE);
+            return listaActi;
+        }
 
     }
 }

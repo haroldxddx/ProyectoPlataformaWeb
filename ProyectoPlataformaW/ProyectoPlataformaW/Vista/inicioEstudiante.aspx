@@ -126,7 +126,7 @@
                             <span class="heading">
                                 <h3>'<%# Eval("NombreMateria") %>'</h3>
                             </span>
-                            <asp:Label ID="lblidMateria" runat="server" Text='<%# Eval("IdMateria") %>' ><span class="month">idMateria</span></asp:Label>
+                            <asp:Label ID="lblidMateria" runat="server" Text='<%# Eval("IdMateria") %>' ><span class="month">idMateria</span></asp:Label><asp:Label ID="lblIdCursoM" runat="server" Text='<%# Eval("IdCursoMateria") %>'></asp:Label>
                             <span class="price-value"> <span>	<%# Eval("NivelAcademico") %> <br />
                             
                                 </span><span> <p><%# Eval("Curso") %> </p></span></span>
@@ -144,8 +144,9 @@
                          
 
                                	
-                            <asp:LinkButton   class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Actividades</span></asp:LinkButton>
-							<asp:LinkButton   class="hover-btn-new orange" ID="lbtnotas" runat="server"  Text="" PostBackUrl="~/Vista/verNotasMateria.aspx"><span>Notas</span></asp:LinkButton>
+                            <asp:LinkButton  class="hover-btn-new orange" ID="lbtCurso" runat="server"  Text=""><span>Actividades</span></asp:LinkButton>
+                             
+							
 
                         </div><!-- BUTTON BOX-->
                     </div>

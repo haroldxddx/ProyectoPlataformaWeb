@@ -118,7 +118,7 @@ namespace ProyectoPlataformaW.Datos
         //Listado de materias a cursos
         public List<clEntidadCursoMateriaE> mtdListMateriasE(clEntidadEstudianteE objE)
         {
-            string sql = "select Materia.NombreMateria, Materia.NivelAcademico , Profesor.Nombres,Profesor.Apellidos,Materia.IdMateria ,Curso.Curso from Materia inner join CursoMateria ON Materia.IdMateria = CursoMateria.IdMateria inner join Profesor on Profesor.IdProfesor = CursoMateria.IdProfesor inner join Curso on Curso.IdCurso = CursoMateria.IdCurso inner join Estudiante On Curso.IdCurso = Estudiante.IdCurso where Estudiante.Email = '"+ objE.Email +"' ";
+            string sql = "select Materia.NombreMateria, Materia.NivelAcademico , Profesor.Nombres,Profesor.Apellidos,Materia.IdMateria ,Curso.Curso, CursoMateria.IdCursoMateria from Materia inner join CursoMateria ON Materia.IdMateria = CursoMateria.IdMateria inner join Profesor on Profesor.IdProfesor = CursoMateria.IdProfesor inner join Curso on Curso.IdCurso = CursoMateria.IdCurso inner join Estudiante On Curso.IdCurso = Estudiante.IdCurso where Estudiante.Email = '"+ objE.Email +"' ";
 
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblCur = new DataTable();
@@ -136,7 +136,7 @@ namespace ProyectoPlataformaW.Datos
                 objCursoM.Apellidos = tblCur.Rows[i][3].ToString();
                  objCursoM.IdMateria = int.Parse(tblCur.Rows[i][4].ToString());
                 objCursoM.Curso = tblCur.Rows[i][5].ToString();
-
+                objCursoM.IdCursoMateria = int.Parse(tblCur.Rows[i][6].ToString());
 
 
                 datoDT =  int.Parse(tblCur.Rows[i][4].ToString());
@@ -188,7 +188,7 @@ namespace ProyectoPlataformaW.Datos
         public List<clEntidadCursoMateriaE> mtdIdCursoMat(clEntidadCursoEE objC)
 
         {
-            string sql = "select CursoMateria.IdCursoMateria from CursoMateria inner join Curso on Curso.IdCurso = CursoMateria.IdCurso where Curso.Curso = '"+ objC.Curso +"'";
+            string sql = "select CursoMateria.IdCursoMateria from CursoMateria inner join Curso on Curso.IdCurso = CursoMateria.IdCurso where Curso.IdCurso = '"+ objC.IdCurso +"'";
 
 
             clAdminSQL objSql = new clAdminSQL();

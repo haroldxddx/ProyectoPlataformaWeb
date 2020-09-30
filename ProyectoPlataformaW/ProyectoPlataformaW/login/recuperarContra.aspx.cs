@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using static ProyectoPlataformaW.Datos.clEncrypt;
 
 namespace ProyectoPlataformaW.login
 {
@@ -42,15 +43,19 @@ namespace ProyectoPlataformaW.login
                     clEntidadEstudianteE objEstu = new clEntidadEstudianteE();
 
                     objEstu.Email = listEestu[i].Email;
+
                     string contra = objEstu.Contrasena = listEestu[i].Contrasena;
+
+                    string pass = Encrypt.GetSHA256(contra);
+
 
 
                     listaEstuDos.Add(objEstu);
-                    c.enviarCorreo(email, contra);
+                    c.enviarCorreo(email, pass);
 
-                    //Response.Redirect("~/login/login.aspx");
-                    //Response.Write("<script language=javascript>alert('Revise la bandeja de entrada de su correo electronico en breve recibira un correo con su contraseña');</script>");
-                    ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='~/login/login.aspx'", true);
+                    Response.Redirect("~/login/login.aspx");
+                    Response.Write("<script language=javascript>alert('Revise la bandeja de entrada de su correo electronico en breve recibira un correo con su contraseña');</script>");
+                    //ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='~/login/login.aspx'", true);
                     txtEmail.Text = "";
 
                 }

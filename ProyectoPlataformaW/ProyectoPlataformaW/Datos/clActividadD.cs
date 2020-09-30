@@ -57,10 +57,10 @@ namespace ProyectoPlataformaW.Datos
 
 
         }
-        public List<clEntidadActividadE> mtdListActividadN()
+        public List<clEntidadActividadE> mtdListActividadN(clEntidadActividadE objACT)
         {
 
-            string sql = "select IdActividad,NombreActividad from Actividad";
+            string sql = "select IdActividad,NombreActividad from Actividad where IdCursoMateria = "+ objACT.IdCursoMateria + "";
             clAdminSQL objSql = new clAdminSQL();
             DataTable tblAct = new DataTable();
             tblAct = objSql.mtdDesconectado(sql);
