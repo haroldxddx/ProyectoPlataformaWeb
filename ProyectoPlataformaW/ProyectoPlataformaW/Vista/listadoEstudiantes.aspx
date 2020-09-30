@@ -2,14 +2,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style4 {
-            position: center;
-            height: 100%;
-            width: 100%;
-            left: -1px;
-            top: 2px;
-        }
-
+        
         .auto-style5 {
             float: left;
             font-size: 1.1rem;
@@ -18,6 +11,37 @@
             top: 0px;
             width: 410px;
             margin: 0;
+        }
+          * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font: 11px Tahoma;
+        }
+
+        h1 {
+            font: bold 32px Times;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+
+
+        .mGrid td {
+            padding: 2px;
+            border: solid 1px #c1c1c1;
+            color: #2C3038;
+        }
+
+        .mGrid th {
+            padding: 4px 2px;
+            color: #fff;
+            background: #001F3F url(grd_head.png) repeat-x top;
+            border-left: solid 1px #525252;
+            font-size: 0.9em;
         }
         
        
@@ -72,14 +96,13 @@
                                         Ingrese el nombre de estudiante que desee buscar : </h3>
                                     <br />
                                     <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
-                                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="BUSCAR" />
+                                    <asp:Button ID="Button1" runat="server" class="btn btn-outline-warning" OnClick="Button1_Click" Text="BUSCAR" />
                                     <br />
                                     <br />
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <asp:GridView ID="gvlistEstudiante" runat="server" CssClass="auto-style4"></asp:GridView>
-                                    <asp:Button ID="btnDescargar" runat="server" Text="Button" OnClick="btnDescargar_Click" />
+                                    <asp:GridView ID="gvlistEstudiante" runat="server" ClientIDMode="Static" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" PageSize="7" Width="677px"></asp:GridView>
                                     <br />
                                 </div>
                                 <!-- /.card-body -->

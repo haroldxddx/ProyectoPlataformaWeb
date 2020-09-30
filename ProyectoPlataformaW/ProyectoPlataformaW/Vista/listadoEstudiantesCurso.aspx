@@ -18,6 +18,37 @@
             width: 410px;
             margin: 0;
         }
+          * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font: 11px Tahoma;
+        }
+
+        h1 {
+            font: bold 32px Times;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+
+
+        .mGrid td {
+            padding: 2px;
+            border: solid 1px #c1c1c1;
+            color: #2C3038;
+        }
+
+        .mGrid th {
+            padding: 4px 2px;
+            color: #fff;
+            background: #001F3F url(grd_head.png) repeat-x top;
+            border-left: solid 1px #525252;
+            font-size: 0.9em;
+        }
         
        
     </style>
@@ -100,7 +131,7 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <asp:GridView ID="gvlistEstudiante" runat="server" CssClass="auto-style4"></asp:GridView>
+                                    <asp:GridView ID="gvlistEstudiante" runat="server" ClientIDMode="Static" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" PageSize="7" Width="677px"></asp:GridView>
                                     
                                     <br />
                                 </div>

@@ -78,7 +78,7 @@
             <td>
                 <asp:DropDownList ID="dpdActividad" runat="server">
                 </asp:DropDownList>
-                 <asp:Button ID="btnRegistrar" runat="server" Text="Button" OnClick="btnRegistrar_Click" />
+                 <asp:Button ID="btnRegistrar" runat="server" Text="Guardar" OnClick="btnRegistrar_Click" />
                  </td>
 
     </table>

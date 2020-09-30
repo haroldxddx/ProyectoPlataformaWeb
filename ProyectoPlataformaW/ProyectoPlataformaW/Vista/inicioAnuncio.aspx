@@ -22,20 +22,11 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body class="hold-transition sidebar-mini">
-      <div class="all-title-box">
-		<div class="container text-center">
-			<h1>Anuncios Informativos<span class="m_1"></span></h1>
-		</div>
-	</div>
-
-    <br
 <div class="wrapper">
   <div class="content-wrapper">
-
-     
  <!-- Main content -->
 
-      <asp:Repeater ID="repeaterAnuncio" runat="server">
+      <asp:Repeater ID="repeaterAnuncio" runat="server" OnItemCommand="repeaterAnuncio_ItemCommand1">
           <ItemTemplate>
 
                 <section class="content">
@@ -67,8 +58,15 @@
                 
                       </p>
                         <p>
-                          
-                            <asp:LinkButton ID="lblArch" runat="server" Text='<%# Eval("Archivos") %>'></asp:LinkButton>
+                          <asp:Label ID="lblArch" runat="server" Text='<%# Eval("Archivos") %>'  Visible="false"></asp:Label>
+                            <div class="btn-group dropup">
+
+                             <asp:LinkButton  runat="server" type="button" class="btn btn-default dropdown-toggle"  onclick="DescargarAct"    data-toggle="dropdown"><span>&#x1f441 <span></span></asp:LinkButton>
+
+                             <ul class="dropdown-menu pull-right">
+                             <li><asp:LinkButton   ID="lbtArchivos" runat="server" OnClick="DescargarAct" Text=""><span>Archivos<span></span></asp:LinkButton></li>
+                            </ul>
+                          </div>
                       </p>
 
                     </div>

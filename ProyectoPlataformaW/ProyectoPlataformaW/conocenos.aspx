@@ -13,28 +13,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
      <!-- Site Metas -->
-    <title>SmartEDU - Education Responsive HTML5 Template</title>  
+    <title>conocenos</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="Vista/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="Vista/images/apple-touch-icon.png">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="Vista/css/bootstrap.min.css">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Vista/style.css">
     <!-- ALL VERSION CSS -->
-    <link rel="stylesheet" href="css/versions.css">
+    <link rel="stylesheet" href="Vista/css/versions.css">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="Vista/css/responsive.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="Vista/css/custom.css">
 
     <!-- Modernizer for Portfolio -->
-    <script src="js/modernizer.js"></script>
+    <!-- Modernizer for Portfolio -->
+    <script src="Vista/js/modernizer.js"></script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -56,7 +57,7 @@
 
     <div class="all-title-box">
 		<div class="container text-center">
-			<h1>Conocenos<span class="m_1">instru ponganos un 5.</span></h1>
+			<h1>Conocenos<span class="m_1">...</span></h1>
 		</div>
 	</div>
 
@@ -89,20 +90,23 @@ de los estudiantes; y en permanente búsqueda de la excelencia.</p>
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="inner-hmv">
 						<div class="icon-box-hmv"><i class="flaticon-history"></i></div>
-						<h3>Historia</h3>
+						<h3>Plataforma </h3>
 						<div class="tr-pa">H</div>
-						<p> zdfvfafggragd</p>
+						<p>
+
+ Plataforma educativa –por y para los estudiantes, software desarrollado en Sena cimm 
+ </p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('images/parallax_04.jpg');">
+    <div id="testimonials" class="parallax section db parallax-off" style="background-image:url('Vista/images/parallax_04.jpg');">
         <div class="container">
             <div class="section-title text-center">
                 <h3>Creadores</h3>
-                <p>los meros pro </p>
+                <p>Sena CIMM </p>
             </div><!-- end title -->
 
             <div class="row">
@@ -110,12 +114,12 @@ de los estudiantes; y en permanente búsqueda de la excelencia.</p>
                     <div class="testi-carousel owl-carousel owl-theme">
                         <div class="testimonial clearfix">
 							<div class="testi-meta">
-                                <img src="images/testi_01.png" alt="" class="img-fluid">
-                                <h4>Harol "subsi" </h4>
+                                <img src="Vista/images/testi_01.png" alt="" class="img-fluid">
+                                <h4>Harold  </h4>
                             </div>
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">se cree el crak pero no lo es .</p>
+                                <h3><i class="fa fa-quote-left"></i>Desarrollador back-end</h3>
+                                <p class="lead"> Desarrollador </p>
                             </div>
                             <!-- end testi-meta -->
                         </div>
@@ -123,12 +127,12 @@ de los estudiantes; y en permanente búsqueda de la excelencia.</p>
 
                         <div class="testimonial clearfix">
 							<div class="testi-meta">
-                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <img src="Vista/images/testi_02.png" alt="" class="img-fluid">
                                 <h4>Angel </h4>
                             </div>
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">crack por lo del repeater </p>
+                                <h3><i class="fa fa-quote-left"></i> Desarrollador Frontend</h3>
+                                <p class="lead">Desarrollador </p>
                             </div>
                             <!-- end testi-meta -->
                         </div>
@@ -136,12 +140,12 @@ de los estudiantes; y en permanente búsqueda de la excelencia.</p>
 
                         <div class="testimonial clearfix">
 							<div class="testi-meta">
-                                <img src="images/testi_03.png" alt="" class="img-fluid ">
+                                <img src="Vista/images/testi_03.png" alt="" class="img-fluid ">
                                 <h4>Tatiana  </h4>
                             </div>
                             <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">Y lo de exel que pdp! </p>
+                                <h3><i class="fa fa-quote-left"></i> Desarrollador Frontend</h3>
+                                <p class="lead">Desarolladora </p>
                             </div>
                             <!-- end testi-meta -->
                         </div>
@@ -160,22 +164,22 @@ de los estudiantes; y en permanente búsqueda de la excelencia.</p>
         <div class="container">
             <div class="row logos">
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="Vista/images/logo_01.png" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="Vista/images/logo_02.png" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="Vista/images/logo_03.png" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="Vista/images/logo_04.png" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="Vista/images/logo_05.png" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="Vista/images/logo_06.png" alt="" class="img-repsonsive"></a>
                 </div>
             </div><!-- end row -->
         </div><!-- end container -->
@@ -239,9 +243,9 @@ de los estudiantes; y en permanente búsqueda de la excelencia.</p>
 
 
       <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
+    <script src="Vista/js/all.js"></script>
     <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
+    <script src="Vista/js/custom.js"></script>
 
     </body>
     </html>

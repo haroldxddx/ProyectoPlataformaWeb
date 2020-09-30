@@ -61,7 +61,7 @@
 						
 							</a>Recuperacion de Contraseña<br />
                         <br />
-                        Ingrese el correo electronico registrado con su cuenta de usuario<br />
+                        Ingrese el correo electronico y el documento de identidad registrado con su cuenta de usuario<br />
                             <br />
 
 							<a href="#" class="txt1">
@@ -69,6 +69,9 @@
                         <asp:TextBox ID="txtEmail"  class="input100" type="text" placeholder="Email"  runat="server"></asp:TextBox>
 
 						    <br />
+								<br />
+								 <asp:TextBox ID="txtDocumento"  class="input100" type="text" placeholder="Documento"  runat="server"></asp:TextBox>
+								<br />
 
 						<asp:Button ID="btnEnviar"   class="login100-form-btn" runat="server"  Text="Enviar" OnClick="btnEnviar_Click"/>
                         </a>
@@ -79,6 +82,7 @@
 			</div>
 		</div>
 	</div>
+	
 
 	
 <!--===============================================================================================-->

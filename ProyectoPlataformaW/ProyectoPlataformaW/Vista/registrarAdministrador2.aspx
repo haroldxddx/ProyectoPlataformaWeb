@@ -49,7 +49,7 @@
     <section class="content">
       <div class="row">
         <div class="col-md-6">
-          <div class="card card-primary">
+          <div class="card card-dark">
             <div class="card-header">
               <h3 class="card-title">Registrar Administrador</h3>
 
@@ -93,7 +93,7 @@
 
             <div class="col-12">
           
-           <asp:Button ID="btnRegistrarP" type="submit" runat="server" class="btn btn-success float-right" Text="Registrar" OnClick="btnRegistrarP_Click"/>
+           <asp:Button ID="btnRegistrarP" type="submit" runat="server" class="btn btn-outline-warning float-right" Text="Registrar" OnClick="btnRegistrarP_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>

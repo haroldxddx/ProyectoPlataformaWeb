@@ -12,6 +12,8 @@ namespace ProyectoPlataformaW.Vista
 {
     public partial class inicioAnuncio : System.Web.UI.Page
     {
+        public string o;
+        public static string Ruta;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -63,6 +65,37 @@ namespace ProyectoPlataformaW.Vista
 
             }
            
+      
+        }
+
+        protected void repeaterAnuncio_ItemCommand1(object source, RepeaterCommandEventArgs e)
+        {
+            o = repeaterAnuncio.Items[e.Item.ItemIndex].ItemIndex.ToString();
+            Ruta = ((Label)repeaterAnuncio.Items[int.Parse(o)].FindControl("lblArch")).Text;
+
+
+
+
+            if (Ruta != null)
+            {
+                Response.Redirect(inicioAnuncio.Ruta);
+
+            }
+            else
+            {
+                Response.Write("<script> alert(" + "Sin Archivos " + ") </script>");
+            }
+        }
+
+
+        protected void DescargarAct(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void repeaterAnuncio_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+
         }
     }
 }

@@ -4,15 +4,7 @@
     <style type="text/css">
       
 
-         .auto-style4 {
-            position: center;
-            height: 100%;
-            width: 100%;
-            left: -1px;
-            top: 2px;
-        }
-
-        .auto-style5 {
+         .auto-style5 {
             float: left;
             font-size: 1.1rem;
             font-weight: 400;
@@ -20,6 +12,37 @@
             top: 0px;
             width: 721px;
             margin: 0;
+        }
+          * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font: 11px Tahoma;
+        }
+
+        h1 {
+            font: bold 32px Times;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+
+
+        .mGrid td {
+            padding: 2px;
+            border: solid 1px #c1c1c1;
+            color: #2C3038;
+        }
+
+        .mGrid th {
+            padding: 4px 2px;
+            color: #fff;
+            background: #001F3F url(grd_head.png) repeat-x top;
+            border-left: solid 1px #525252;
+            font-size: 0.9em;
         }
         
     </style>
@@ -54,23 +77,21 @@
                 <!-- Content Header (Page header) -->
 
 
-                <section class="content">
+            <section class="content">
                     <div class="card">
-                        <div class="auto-style7">
-                            <h3 class="card-title">
+                        <div class="card-header">
+                            <h1 class="card-title">
                                 <br />
-                                <br />
-                                LISTADO DE MATERIAS ASIGNADAS A CADA CURSO CON SU RESPECTIVO PROFESOR</h3>
-                            <br />
-
-                            <br />
+                                <h3 class="center">
+                                    <br />
+                                    LISTADO DE MATERIAS ASIGNADAS A CADA CURSO CON SU RESPECTIVO PROFESOR</h3>
                             <br />
                         </div>
                         <section class="content">
                             <div class="auto-style8">
                                 <div class="auto-style6">
-                                    <h3 class="auto-style5">Ingrese el nùmero del curso que desee ver:&nbsp; <asp:TextBox ID="txtBuscarC" runat="server" Width="229px"></asp:TextBox>
-                                        <asp:Button ID="btnBuscarC" runat="server" Text="Buscar" OnClick="btnBuscarC_Click" />
+                                    <h3 class="auto-style5">&nbsp; Ingrese el número del curso que desee ver:&nbsp; <asp:TextBox ID="txtBuscarC" runat="server" Width="218px" Height="21px"></asp:TextBox>
+                                        <asp:Button ID="btnBuscarC" runat="server" class="btn-outline-warning" Text="Buscar" OnClick="btnBuscarC_Click" Height="31px" Width="69px" />
                                         <br />
                                         </h3>
                                     <br />
@@ -79,7 +100,7 @@
                                 </div>
                                 <!-- /.card-header -->
                                 <div class="card-body">
-                                    <asp:GridView ID="GridView1" runat="server" CssClass="auto-style4" Height="143px" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Horizontal">
+                                    <asp:GridView ID="GridView1" runat="server" ClientIDMode="Static" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" PageSize="7" Width="677px">
                                         <FooterStyle BackColor="#CCCC99" ForeColor="Black" />
                                         <HeaderStyle BackColor="#333333" Font-Bold="True" ForeColor="White" />
                                         <PagerStyle BackColor="White" ForeColor="Black" HorizontalAlign="Right" />

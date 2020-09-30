@@ -38,6 +38,18 @@
   <link rel="stylesheet" href="/Vista/dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+ <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+ 
+    <!-- Datatables-->
+    <link href="bootstrap/vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css" 
+
+     rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
 <body class="hold-transition sidebar-mini">
 
@@ -73,7 +85,7 @@
                     <br />
                     
                     <br />
-                    <asp:GridView ID="gvProf" class="jsgrid" CssClass="auto-style4" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
+                    <asp:GridView ID="gvProf" class="jsgrid" CssClass="table table-striped" runat="server" DataSourceID="SqlDataSource1"></asp:GridView>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1 %>" ProviderName="<%$ ConnectionStrings:dbProyectoPlataformaConnectionString1.ProviderName %>">
                     </asp:SqlDataSource>
                     <br />

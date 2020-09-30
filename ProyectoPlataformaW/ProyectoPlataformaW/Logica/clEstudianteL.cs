@@ -29,6 +29,8 @@ namespace ProyectoPlataformaW.Logica
         }
 
 
+
+
         public List<clEstudianteEEE> mtdListadoComEs()
         {
             clEstudianteD objEst = new clEstudianteD();
@@ -100,6 +102,16 @@ namespace ProyectoPlataformaW.Logica
             return ed;
 
         }
+
+
+        public int mtdEditContra(clEntidadEstudianteE objE)
+        {
+            clEstudianteD e = new clEstudianteD();
+            int ed = e.mtdEditarContra(objE);
+            return ed;
+
+        }
+
 
 
         public List<clEntidadEstudianteE> mtdListaridEst(clEntidadEstudianteE objDatos)

@@ -78,13 +78,22 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.Button btnRegistrarE;
 
         /// <summary>
-        /// Control dtgExec.
+        /// Control lblEstado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dtgExec;
+        protected global::System.Web.UI.WebControls.Label lblEstado;
+
+        /// <summary>
+        /// Control FileUpload1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
 
         /// <summary>
         /// Control dtgExc.
@@ -96,12 +105,12 @@ namespace ProyectoPlataformaW.Vista
         protected global::System.Web.UI.WebControls.GridView dtgExc;
 
         /// <summary>
-        /// Control Button1.
+        /// Control LinkButton1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.LinkButton LinkButton1;
     }
 }
