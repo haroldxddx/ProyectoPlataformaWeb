@@ -50,14 +50,6 @@ namespace ProyectoPlataformaW.Vista
             }
         }
 
-        protected void btnDescargar_Click(object sender, EventArgs e)
-        {
-           /* {
-                Response.ContentType = "text/xlsx";
-                Response.ContentEncoding = System.Text.Encoding.UTF8;
-                Response.AppendHeader("NombreCabecera", "MensajeCabecera");
-                Response.TransmitFile(Server.MapPath("'https://docs.google.com/spreadsheets/d/1Hdp3Y42cWDF_4RZdFDgJKPCwNOFwu4m5/edit#gid=528470768);
-                Response.End();
-           */ }
+      
         }
     }

@@ -127,10 +127,13 @@ h1 {
                             <h1 class="card-title">
                                 <br />
                                 <h3 class="center">
+                                   
                                     <br />
+                                   
+                                    ASIGNACIÓN DE PROFESOR A CURSO Y MATERIA</h3>
+                               <div class="card">
+                
                                     <br />
-                                    Asignar profesor a curso y materia</h3>
-                                <br />
 
                                 <div class="card-body">
 
@@ -208,7 +211,7 @@ h1 {
                                     </p>
 
                                     <p class="auto-style3">
-                                        <asp:LinkButton ID="lnkGuardar" runat="server" class="btn btn-outline-warning float-right" OnClick="lnkGuardar_Click" >GUARDAR SELECCIÒN</asp:LinkButton>
+                                        <asp:LinkButton ID="lnkGuardar" runat="server" class="btn btn-outline-warning float-right" OnClick="lnkGuardar_Click" Height="16px" Width="114px" >GUARDAR SELECCIÒN</asp:LinkButton>
                                         &nbsp;
                                     </p>
 

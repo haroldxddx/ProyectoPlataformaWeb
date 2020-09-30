@@ -1,22 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="verNotasActi.aspx.cs" Inherits="ProyectoPlataformaW.Vista.verNotasActi" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style type="text/css">
-        .auto-style4 {
-            position: center;
-            height: 100%;
-            width: 100%;
-            left: -1px;
-            top: 2px;
-        }
-        .auto-style5 {
-            float: left;
-            font-size: 1.1rem;
-            font-weight: 400;
-            left: 0px;
-            top: 0px;
-            width: 410px;
-            margin: 0;
-        }
+         .auto-style6 {
+             float: left;
+             font-size: 1.1rem;
+             font-weight: 400;
+             left: 7px;
+             top: 5px;
+             margin: 0;
+         }
     </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
@@ -68,12 +60,13 @@
             </ul>
          </div>
 
-        <section class="content">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">
-                        <br />
-                        Notas Por Actividades</h3>
+         <section class="content">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <br />
+                                NOTAS POR ACTIVIDADES</h3>
+                           
                     <br />
                     &nbsp;<asp:Label ID="lblIdCurso" runat="server"></asp:Label>
                     <br />

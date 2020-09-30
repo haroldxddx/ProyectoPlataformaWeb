@@ -82,7 +82,7 @@
           <!-- left column -->
           <div class="col-md-6">
             <!-- general form elements -->
-            <div class="card card-primary">
+            <div class="card card-dark">
               <div class="card-header">
                 <h3 class="card-title">Editar Informacion Personal</h3>
               </div>
@@ -142,7 +142,7 @@
 
                 <div class="card-footer">
                   
-                    <asp:Button ID="btnEditar" type="submit" class="btn btn-primary" runat ="server" Text="Editar Informacion" OnClick="btnEditar_Click" />
+                    <asp:Button ID="btnEditar" type="submit" class="btn btn-outline-warning float-right" runat ="server" Text="Editar Informacion" OnClick="btnEditar_Click" />
                     <br />
                 </div>
               </form>

@@ -108,8 +108,7 @@
 
                 
           </table>
-          <button type="button" class="btn btn-default" data-toggle="modal" data-target="#modal-lg">
-                  Calificar Actividad</button>
+          <button type="button" class="btn btn-outline-warning" data-toggle="modal" data-target="#modal-lg"> Calificar Actividad</button>
 
            <div class="modal fade" id="modal-lg">
         <div class="modal-dialog modal-lg">

@@ -76,8 +76,8 @@
       <div id="contact" class="section wb">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Entrega tu actividad !</h3>
-                <p class="lead">entrega la actividad propuesta<br>:V!</p>
+                <h3>¡Entrega tu actividad !</h3>
+                <p class="lead">&nbsp;</p>
             </div><!-- end title -->
 
             <div class="row">

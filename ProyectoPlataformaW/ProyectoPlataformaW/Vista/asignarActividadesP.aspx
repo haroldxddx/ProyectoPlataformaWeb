@@ -1,5 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="asignarActividadesP.aspx.cs" Inherits="ProyectoPlataformaW.Vista.asignarActividadesP" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style2 {
+            float: left;
+            font-size: 1.1rem;
+            font-weight: 400;
+            left: 0px;
+            top: 0px;
+            margin: 0;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <br />
@@ -57,12 +67,16 @@
               
             </ul>
          </div>
-    <section class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1>Asignacion de actividades a estudiantes</h1>
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card card-dark">
+            <div class="card-header">
+              <h3 class="card-title">Asignacion de actividades a estudiantes</h3>
+            
           </div>
+
         
         </div>
       </div><!-- /.container-fluid -->
@@ -75,9 +89,9 @@
           
                 
         <div class="col-md-6">
-          <div class="card card-primary">
+          <div class="card card-dark">
             <div class="card-header">
-              <h3 class="card-title">Trabajo a realizar</h3>
+              <h3 class="auto-style2">Trabajo a realizar</h3>
 
              
                 <asp:Label ID="lblCursoM" runat="server" Visible="false"></asp:Label>
@@ -107,7 +121,7 @@
         </div>
                 
         <div class="col-md-6">
-          <div class="card card-secondary">
+          <div class="card card-dark">
             <div class="card-header">
               <h3 class="card-title">Fechas</h3>
 
@@ -129,7 +143,7 @@
 
             <div class="col-12">
           
-           <asp:Button ID="btnEnviar" type="submit" runat="server" class="btn btn-success float-right" Text="Enviar" OnClick="btnEnviar_Click"/>
+           <asp:Button ID="btnEnviar" type="submit" runat="server" class="btn-outline-warning float-right" Text="Enviar" OnClick="btnEnviar_Click"/>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>

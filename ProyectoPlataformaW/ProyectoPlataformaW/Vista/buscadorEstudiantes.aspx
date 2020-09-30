@@ -1,12 +1,36 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageAdmin.Master" AutoEventWireup="true" CodeBehind="buscadorEstudiantes.aspx.cs" Inherits="ProyectoPlataformaW.Vista.buscadorEstudiantes" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style type="text/css">
-        .auto-style4 {
-            position: center;
-            height: 100%;
-            width: 100%;
-            left: -1px;
-            top: 2px;
+         * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font: 11px Tahoma;
+        }
+
+        h1 {
+            font: bold 32px Times;
+            color: #666;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+
+
+        .mGrid td {
+            padding: 2px;
+            border: solid 1px #c1c1c1;
+            color: #2C3038;
+        }
+
+        .mGrid th {
+            padding: 4px 2px;
+            color: #fff;
+            background: #001F3F url(grd_head.png) repeat-x top;
+            border-left: solid 1px #525252;
+            font-size: 0.9em;
         }
         </style>
 </asp:Content>
@@ -39,16 +63,14 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
          
-
-        <section class="content">
-            <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">
-                        <br />
-                        Buscador de Estudiantes</h3>
-                    <br />
-                    &nbsp;<br />
-                    <br />
+                  <section class="content">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-title">
+                                <br />
+                                <h3 class="center">
+                                    <br />
+                                    BUSCADOR DE ESTUDIANTES</h3>                 
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
@@ -68,7 +90,7 @@
                     <br />
                     
                     <br />
-                    <asp:GridView ID="gvEstu" class="jsgrid" CssClass="table table-striped" runat="server"></asp:GridView>
+                    <asp:GridView ID="gvEstu" class="jsgrid"  runat="server" ClientIDMode="Static" AllowPaging="true" CssClass="mGrid" PagerStyle-CssClass="pgr" AlternatingRowStyle-CssClass="alt" PageSize="7" Width="818px"></asp:GridView>
                     <br />
                 </div>
                 <!-- /.card-body -->
