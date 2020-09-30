@@ -23,7 +23,7 @@ namespace ProyectoPlataformaW.Vista
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            string user = Session["usuario"].ToString();
+           string user = Session["usuario"].ToString();
 
             try
             {
@@ -221,7 +221,7 @@ namespace ProyectoPlataformaW.Vista
                     if (resultsql > 0)
                     {
                         ClientScript.RegisterStartupScript(GetType(), "Mijs", "registro();window.location.href='/Vista/inicioAnuncio.aspx'", true);
-                      //  Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
+                        Response.Write("<script> alert(" + "'Registro Realizado Correctamente'" + ") </script>");
 
                     }
 
