@@ -156,13 +156,13 @@
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        &nbsp;<img alt="colegioport" class="auto-style2" src="Imagenes/colegioporteria%20(2).jpg" /></div><!-- end media -->
+                        &nbsp;<img alt="colegioport" class="auto-style2" src="Vista/images/about_03.jpg" /></div><!-- end media -->
                 </div><!-- end col -->
       </div>
       <div class="row align-items-center">
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="post-media wow fadeIn">
-                        &nbsp;<img alt="estudiantes" class="auto-style3" src="Imagenes/colegioestu.jpeg" /></div><!-- end media -->
+                        &nbsp;<img alt="estudiantes" class="auto-style3" src="Vista/images/blog_4.jpg" /></div><!-- end media -->
                 </div><!-- end col -->
 
         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
