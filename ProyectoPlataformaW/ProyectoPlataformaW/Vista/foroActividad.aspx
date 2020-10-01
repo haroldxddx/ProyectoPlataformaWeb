@@ -225,7 +225,7 @@
           
         </div>
           <br />
-          <asp:Button ID="btnGuardar" runat="server" Text="Publicar" class="btn btn-success" Width="200px" OnClick="btnGuardar_Click"/>
+          <asp:Button ID="btnGuardar" runat="server" Text="Publicar" class="btn btn-outline-warning float-right" Width="200px" OnClick="btnGuardar_Click"/>
           <asp:Label ID="lblFecha" runat="server" Visible="false"></asp:Label>
           <br />
         <!-- /.col-->

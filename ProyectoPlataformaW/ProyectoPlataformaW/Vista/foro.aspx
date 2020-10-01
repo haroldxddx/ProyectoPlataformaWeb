@@ -15,7 +15,7 @@
                 id="comment" placeholder="Add a Comment">  </textarea>
         </div>
         <div>
-            <input type="button" class="btn-submit" id="btnPublicar"
+            <input type="button" class="btn btn-outline-warning " id="btnPublicar"
                 value="Publicar" />
             <div id="comment-message">Tu comentario se ha publicado correctamente!</div>
         </div>

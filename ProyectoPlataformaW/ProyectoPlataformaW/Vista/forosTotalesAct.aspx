@@ -1,5 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPageProfesor.Master" AutoEventWireup="true" CodeBehind="forosTotalesAct.aspx.cs" Inherits="ProyectoPlataformaW.Vista.forosTotalesAct" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style2 {
+            float: left;
+            font-size: 1.1rem;
+            font-weight: 400;
+            left: 0px;
+            top: 0px;
+            width: 56px;
+            margin: 0;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
       <!DOCTYPE html>
@@ -50,13 +61,15 @@
     <section class="content">
 
       <!-- Default box -->
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Foros</h3>
-
-         
-            <br />
-            <br />
+       <section class="content">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="card-title">
+                                <br />
+                                <h3 class="center">
+                                    <br />
+                                 Foros</h3>
+                            <br />
             <asp:Label ID="Label1" runat="server" Text="Seleccione la actividad para ver los foros disponibles"></asp:Label>
             <asp:Label ID="lblCursoMat" runat="server" Text="Label"></asp:Label>
             <br />
